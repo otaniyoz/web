@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Image proccessing library in C",
+    "work": "Development, computer vision, C",
+    "date": "March 2023...",
+    "published": "true",
+    "link": "image-c"
+  },
+  {
+    "title": "Customer segmentation",
+    "work": "Development, data analysis, Python",
+    "date": "A couple of hours in 2023",
+    "published": "true",
+    "link": "customer-segmentation"
+  },
+  {
+    "title": "Genuary 2023",
+    "work": "Creative coding, Python",
+    "date": "A couple of hours in 2023",
+    "published": "true",
+    "link": "genuary-2023"
+  },
+  {
+    "title": "Visualisation of sports sites in the Presnya",
+    "work": "Design, data visualisation, Python, Figma",
+    "date": "A couple of hours in 2022",
+    "published": "true",
+    "link": "vis-presnya"
+  },
+  {
+    "title": "Concept design of a landing page for a barrel of oil",
+    "work": "Design, Figma",
+    "date": "A couple of hours in 2022",
+    "published": "true",
+    "link": "oil-barrel"
+  },
+  {
+    "title": "Pocket pack: a collection of utilities and games",
+    "work": "Design, development, HTML, CSS, JS, SvelteKit, Figma",
+    "date": "2022",
+    "published": "true",
+    "link": "pocket-pack"
+  }
+]
