@@ -69,6 +69,7 @@
 }
 
 body {
+  font-family: sans-serif;
   margin: var(--gap-small);
   background-color: var(--color-light);
 }
