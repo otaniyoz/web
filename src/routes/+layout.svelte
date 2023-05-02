@@ -1,13 +1,14 @@
 <script>
   import "../styles/app.css";
+  import { base } from "$app/paths";
 </script>
 
 <header>
   <nav>
     <ul>
-      <li class="about"><a href="/">About</a></li>
-      <li class="text-right"><a href="/projects">Projects</a></li>
-      <li class="text-right"><a href="/notes">Notes</a></li>
+      <li class="about"><a href="{base}">About</a></li>
+      <li class="text-right"><a href="{base}/projects">Projects</a></li>
+      <li class="text-right"><a href="{base}/notes">Notes</a></li>
     </ul>
   </nav>
 </header>
