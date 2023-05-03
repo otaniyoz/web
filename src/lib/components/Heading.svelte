@@ -66,6 +66,7 @@
     h2,
     h3 {
       padding-top: var(--gap-large);
+      padding-bottom: var(--gap-small);
       grid-area: auto/ 1 / auto / 5;
     }
   }

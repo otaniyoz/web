@@ -19,7 +19,7 @@
 
   --font-size-large: clamp(2rem, 7.4vw + 1rem, 9rem);
   --font-size-medium: clamp(1rem, 3vw + 1rem, 8rem);
-  --font-size-regular: clamp(0.75rem, 2vmax, 2rem);
+  --font-size-regular: clamp(0.85rem, 2vmax, 2rem);
 
   --gap-small: 1vmin;
   --gap-regular: 1vmax;
