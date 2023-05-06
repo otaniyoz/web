@@ -15,59 +15,71 @@
   }
 </script>
 
-<article
-  class="table-container"
-  style="grid-template-rows: repeat({numRows}, minmax(min-content, max-content));"
->
-  {#each tableData.tableRows as row, rowIndex}
-    <div
-      class="table-row"
-      style="grid-template-columns: repeat({numColumns}, minmax(0, 1fr));"
-    >
-      {#each row as column, columnIndex}
-        <p
-          class:accent={tableData.tableAccents[
-            numColumns * rowIndex + columnIndex
-          ]}
-          class:text-right={tableData.tableColumns[columnIndex] === "date"}
-        >
-          {#if tableData.tableLinks && tableData.tableLinks[numColumns * rowIndex + columnIndex]}
-            <a href={tableData.tableLinks[numColumns * rowIndex + columnIndex]}
-              >{column}</a
+<figure>
+  <table>
+    <tbody>
+      {#each tableData.tableRows as row, rowIndex}
+        <tr>
+          {#each row as column, columnIndex}
+            <td
+              ><p
+                class:accent={tableData.tableAccents[
+                  numColumns * rowIndex + columnIndex
+                ]}
+                class:text-right={tableData.tableColumns[columnIndex] ===
+                  "date"}
+              >
+                {#if tableData.tableLinks && tableData.tableLinks[numColumns * rowIndex + columnIndex]}
+                  <a
+                    href={tableData.tableLinks[
+                      numColumns * rowIndex + columnIndex
+                    ]}>{column}</a
+                  >
+                {:else}
+                  {column}
+                {/if}
+              </p></td
             >
-          {:else}
-            {column}
-          {/if}
-        </p>
+          {/each}
+        </tr>
       {/each}
-    </div>
-  {/each}
-</article>
+    </tbody>
+  </table>
+</figure>
 
 <style>
   p {
     hyphens: auto;
   }
 
-  .table-container {
-    display: grid;
+  figure {
+    overflow: auto;
     grid-column: 1/-1;
-    row-gap: var(--gap-regular);
-    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
   }
 
-  .table-row {
-    display: grid;
-    overflow-x: auto;
-    overflow-y: clip;
-    column-gap: var(--gap-small);
-    grid-template-rows: repeat(1, 1fr);
+  table {
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
   }
 
-  .table-row:hover,
-  .table-row:hover > *,
-  .table-row:hover > p > * {
+  tr {
+    vertical-align: top;
+  }
+
+  tr > td {
+    padding-bottom: var(--gap-small);
+  }
+
+  tr:hover,
+  tr:hover > td > p,
+  tr:hover > td > p > a {
     background-color: var(--color-dark);
     color: var(--color-light);
+  }
+
+  tr:hover > td > p > a {
+    border-bottom: 1px solid var(--color-light);
   }
 </style>
