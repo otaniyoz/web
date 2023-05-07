@@ -3,10 +3,6 @@
   import { base } from "$app/paths";
 </script>
 
-<svelte:head>
-  <meta name="theme-color" content="#f5f5f2">
-</svelte:head>
-
 <header>
   <nav>
     <ul>
