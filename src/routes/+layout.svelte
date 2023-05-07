@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-  <meta name="theme-color" content="rgb(245, 245, 242)">
+  <meta name="theme-color" content="#f5f5f2">
 </svelte:head>
 
 <header>
