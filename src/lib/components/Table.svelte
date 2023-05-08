@@ -82,4 +82,8 @@
   tr:hover > td > p > a {
     border-bottom: 1px solid var(--color-light);
   }
+
+  tr:hover > td > p > a:hover {
+    border-bottom: 1px solid var(--color-orange);
+  }
 </style>
