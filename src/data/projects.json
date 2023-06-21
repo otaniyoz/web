@@ -1,5 +1,12 @@
 [
   {
+    "title": "Pocket puzzles: a collection of puzzles to fit in a pocket",
+    "work": "Design, development, HTML, CSS, JS",
+    "date": "2023",
+    "published": "true",
+    "link": "pocket-puzzles"
+  },
+  {
     "title": "Image proccessing library in C",
     "work": "Development, computer vision, C",
     "date": "March 2023...",
