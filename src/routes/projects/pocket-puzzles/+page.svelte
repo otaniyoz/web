@@ -4,13 +4,13 @@
 </script>
 
 <svelte:head>
-  <title>Pocket puzzles: a collection of puzzles to fit in a pocket</title>
+  <title>Pocket puzzles</title>
 </svelte:head>
 
 <section class="page-section">
   <article>
     <Heading
-      headingTitle="Pocket puzzles: a collection of puzzles to fit in a pocket"
+      headingTitle="Pocket puzzles"
       headingLevel={2}
     />
     <img
