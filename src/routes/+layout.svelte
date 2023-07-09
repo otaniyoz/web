@@ -19,9 +19,6 @@
 <main class="short-page-wrapper">
   <slot />
 </main>
-<footer>
-  <p>Beannacht libh</p>
-</footer>
 
 <style>
   .short-page-wrapper {
@@ -34,13 +31,6 @@
 
   .about {
     grid-column: 1 / span 2;
-  }
-
-  footer {
-    display: grid;
-    align-items: end;
-    height: var(--footer-height);
-    justify-items: start;
   }
 
   header {
