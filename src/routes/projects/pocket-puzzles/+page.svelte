@@ -42,8 +42,6 @@
   #intro {
     display: grid;
     align-items: end;
-    gap: var(--gap-small);
-    row-gap: var(--gap-regular);
     grid-area: 1 / 1 / auto / 7;
   }
 

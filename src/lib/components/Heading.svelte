@@ -55,6 +55,7 @@
     h2,
     h3 {
       grid-area: auto / 1 / auto / 3;
+      padding-bottom: calc(var(--gap-regular) + var(--gap-large));
       hyphens: auto;
     }
     h3 {
@@ -66,7 +67,7 @@
     h2,
     h3 {
       padding-top: var(--gap-large);
-      padding-bottom: var(--gap-small);
+      padding-bottom: calc(var(--gap-regular) + var(--gap-large));
       grid-area: auto/ 1 / auto / 5;
     }
   }
