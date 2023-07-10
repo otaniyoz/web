@@ -16,10 +16,18 @@
     />
     <div id="gallery">
       <img id="img-1" src="../../pocket-puzzles/1.png" />
-      <img id="img-2" src="../../pocket-puzzles/2.png" />
-      <img id="img-3" src="../../pocket-puzzles/3.png" />
-      <img id="img-4" src="../../pocket-puzzles/4.png" />
-      <img id="img-5" src="../../pocket-puzzles/5.png" />
+      <div id="col-1">
+        <div class="image-wrapper">
+          <img id="img-2" src="../../pocket-puzzles/2.png" />
+        </div>
+        <div class="image-wrapper">
+          <img id="img-3" src="../../pocket-puzzles/3.png" />
+        </div>
+      </div>
+      <div id="col-2">
+        <img id="img-4" src="../../pocket-puzzles/4.png" />
+        <img id="img-5" src="../../pocket-puzzles/5.png" />
+      </div>
     </div>
   </article>
 </section>
@@ -40,28 +48,33 @@
     grid-area: auto / 1 / auto / 5;
   }
 
-  img {
-    object-fit: scale-down; 
+  #col-1,
+  #col-2 {
+    display: flex;
+    gap: var(--gap-small);
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+  }
+
+  #col-1 {
+    flex-shrink: 2;
+    flex-grow: 2;
+    flex-basis: 160px;
+    grid-area: 2 / 1 / 3 / 10;
+  }
+
+  #col-2 {
+    grid-area: 2 / 10 / 3 / 13;
+  }
+
+  #img-2,
+  #img-3 {
+    object-fit: scale-down;
   }
 
   #img-1 {
     grid-area: 1 / 1 / 2 / 13;
-  }
-
-  #img-2 {
-    grid-area: 2 / 1 / 3 / 10;
-  }
-
-  #img-3 {
-    grid-area: 3 / 4 / 4 / 13;
-  }
-
-  #img-4 {
-    grid-area: 3 / 1 / 4 / 4;
-  }
-
-  #img-5 {
-    grid-area: 2 / 10 / 3 / 13;
+    object-fit: fill;
   }
 
   @media screen and (min-width: 1200px) {
