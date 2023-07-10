@@ -16,12 +16,12 @@
     </ul>
   </nav>
 </header>
-<main class="short-page-wrapper">
+<main>
   <slot />
 </main>
 
 <style>
-  .short-page-wrapper {
+  main {
     display: flex;
     min-height: calc(100vh - var(--footer-height));
     flex-flow: column nowrap;
