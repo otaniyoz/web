@@ -15,7 +15,6 @@
   p {
     margin-block: 0;
     color: var(--color-dark);
-    font-weight: var(--font-weight-regular);
     font-size: var(--font-size-regular);
     line-height: var(--line-height-large);
     padding-bottom: var(--gap-regular);
