@@ -77,6 +77,11 @@
     object-fit: fill;
   }
 
+  .image-wrapper {
+    display: flex;
+    justify-content: start;
+  }
+
   @media screen and (min-width: 1200px) {
     article {
       grid-area: 1 / 1 / auto / 5;
