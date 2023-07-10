@@ -7,11 +7,10 @@
   <title>Pocket puzzles</title>
 </svelte:head>
 
-<section id="page-section">
+<section>
   <article id="intro">
     <Heading headingTitle="Pocket puzzles" headingLevel={2} />
     <Paragraph
-      paragraphClass="grid-col-all"
       paragraphContent="This is an ongoing experiment in design and development to create a collection of puzzles:"
     />
   </article>
@@ -33,12 +32,6 @@
 </section>
 
 <style>
-  #page-section {
-    display: grid;
-    gap: var(--gap-small);
-    grid-template-columns: repeat(8, 1fr);
-  }
-
   #intro {
     display: grid;
     align-items: end;
@@ -85,10 +78,6 @@
   }
 
   @media screen and (max-width: 1200px) {
-    #page-section {
-      grid-template-columns: repeat(6, 1fr);
-    }
-
     #intro {
       grid-area: 1 / 1 / auto / 7;
     }

@@ -13,7 +13,6 @@
     <Heading headingLevel={2} headingTitle="Image proccessing library in C" />
 
     <Paragraph
-      paragraphClass="grid-col14"
       paragraphContent="This is a personal collection of image processing tools written in C. It is built on top of pjreddie's uwimg homework assignments."
     />
     <List
@@ -27,7 +26,6 @@
       ]}
     />
     <Paragraph
-      paragraphClass="grid-col14"
       paragraphContent="But don't use it, okay: https://github.com/otaniyoz/celp"
     />
   </article>

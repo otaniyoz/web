@@ -7,15 +7,16 @@
   <title>Web-home of Otaniyoz</title>
 </svelte:head>
 
-<section class="page-section">
+<section>
   <HeadingWithSuper title="About" level={2} superTitle={"me"} />
   <figure class="welcome-image">
     <img alt="Stylized photograph of a man" src="home-banner.jpg" />
   </figure>
-  <Paragraph
-    paragraphClass="grid-col14"
-    paragraphContent="Hallo cyber-stranger. This is a web-home for Otaniyoz. Here you can find various projects and sporadic notes -- all on perhaps too far spread topics and in too different languages. But I might just as well be wrong, so don't take my word for it -- go and see for yourself. Or don't."
-  />
+  <div id="welcome-message">
+    <Paragraph
+      paragraphContent="Hallo cyber-stranger. This is a web-home for Otaniyoz. Here you can find various projects and sporadic notes -- all on perhaps too far spread topics and in too different languages. But I might just as well be wrong, so don't take my word for it -- go and see for yourself. Or don't."
+    />
+  </div>
 </section>
 
 <style>
@@ -23,6 +24,11 @@
     margin: 0;
     grid-column: 1 / -1;
     aspect-ratio: 1 / 1.25;
+    padding-bottom: var(--gap-regular);
+  }
+
+  #welcome-message {
+    grid-column: 1 / span 6;
   }
 
   @media screen and (min-width: 1200px) {

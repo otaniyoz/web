@@ -7,30 +7,26 @@
   export let level: number;
 </script>
 
-<article class="counter-container">
+<article>
   <Heading headingTitle={title} headingLevel={level} />
-  <aside class="count">
-    <Paragraph
-      paragraphClass="grid-col14"
-      paragraphContent={"(" + superTitle + ")"}
-    />
+  <aside>
+    <Paragraph paragraphContent={"(" + superTitle + ")"} />
   </aside>
 </article>
 
 <style>
-  .counter-container {
+  article {
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
   }
 
-  .count {
+  aside {
     min-width: fit-content;
-    /* padding-top: var(--gap-large); */
   }
 
   @media screen and (min-width: 1200px) {
-    .count {
+    aside {
       padding-top: 0;
     }
   }

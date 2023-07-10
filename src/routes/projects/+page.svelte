@@ -14,7 +14,7 @@
   <title>Projects</title>
 </svelte:head>
 
-<section class="page-section">
+<section>
   {#if projects}
     <HeadingWithSuper
       title="Projects"

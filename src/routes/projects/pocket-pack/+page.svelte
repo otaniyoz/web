@@ -15,12 +15,10 @@
       headingLevel={2}
     />
     <Paragraph
-      paragraphClass="grid-col14"
       paragraphContent="In 2022, I designed and developed a collection of small utilies and games for personal use. Over time they grew into a SvelteKit app with dark and light themes, adaptive layout, and what-not. At some point even wanted to put the whole thing online, but didn't."
     />
     <Heading headingTitle="Editor with improved typography" headingLevel={3} />
     <Paragraph
-      paragraphClass="grid-col14"
       paragraphContent="It all started with the desire to have my text nicely formatted, so I wrote a utility to automatically improve typography in Russian and English texts, then added a GUI:"
     />
     <img
@@ -30,7 +28,6 @@
     />
     <Heading headingTitle="Tiles-based puzzles" headingLevel={3} />
     <Paragraph
-      paragraphClass="grid-col14"
       paragraphContent="Then added some puzzles that I enjoy playing. They are based on flipping and sliding tiles. Everything is drawn with the Canvas API, parametric equations, and lots of trigonometry:"
     />
     <aside class="four-screens-container grid-col14">
@@ -53,7 +50,6 @@
     </aside>
     <Heading headingTitle="Step sequencer" headingLevel={3} />
     <Paragraph
-      paragraphClass="grid-col14"
       paragraphContent="Afterwards I created a step sequencer so that I could listen to some music while writing nicely formatted texts or solving puzzles:"
     />
     <aside class="two-screens-container grid-col14">
@@ -68,7 +64,6 @@
     </aside>
     <Heading headingTitle="Concept redesign" headingLevel={3} />
     <Paragraph
-      paragraphClass="grid-col14"
       paragraphContent="At some point wanted to put the app online, so started redesigning it in Figma. Even though I decided not to go through with this idea, I did finish some design mockups. Here they are:"
     />
     <aside class="four-screens-container grid-col14">

@@ -13,12 +13,10 @@
   <article>
     <Heading headingTitle="Customer segmentation" headingLevel={2} />
     <Paragraph
-      paragraphClass="grid-col14"
       paragraphContent="In 2023, I was tasked with identifying types of customers a company had. This was a broad task and I had a couple of hours to present the solution, so I focused on customer segmentation for marketing purposes based on the Recency-Frequency-Monetary (RFM) model and k-means as it is a simple and efficient solution."
     />
     <Heading headingTitle="Exploration" headingLevel={3} />
     <Paragraph
-      paragraphClass="grid-col14"
       paragraphContent="I looked over the data, removed duplicates, dropped values with too little information, and checked formatting."
     />
     <SideNote
@@ -31,7 +29,6 @@
     />
     <Heading headingTitle="RFM analysis" headingLevel={3} />
     <Paragraph
-      paragraphClass="grid-col14"
       paragraphContent="To perform RFM analysis, I calculated the number of days since the last purchase (recency), the number of purchases (frequency), and the amount of money spent (monetary value) for each user."
     />
     <img
@@ -40,12 +37,10 @@
       src="../../customer-segmentation/2.png"
     />
     <Paragraph
-      paragraphClass="grid-col14"
       paragraphContent="Upon itinial examination: most customers seemed to use the platform regularly. However a large percentage of customers also seemed to come to the platform for a single-time purchase. This could be related to the regular spikes in the number of registered users from earlier (e.g. special offers)."
     />
     <Heading headingTitle="K-means" headingLevel={3} />
     <Paragraph
-      paragraphClass="grid-col14"
       paragraphContent="For k-means, I did additional data proccessing: I removed outliers, standarised data, and found optimal number of clusters with the elbow method."
     />
     <SideNote

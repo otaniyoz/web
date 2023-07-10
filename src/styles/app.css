@@ -51,18 +51,16 @@
   margin-left: auto;
 }
 
-.page-section {
+section {
   display: grid;
   overflow: hidden;
-  row-gap: var(--gap-regular);
-  column-gap: var(--gap-small);
+  gap: var(--gap-small);
+  grid-template-columns: repeat(8, 1fr);
   padding-bottom: var(--gap-large);
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: max-content;
 }
 
-@media screen and (min-width: 1200px) {
-  .page-section {
+@media screen and (max-width: 1200px) {
+  section {
     grid-template-columns: repeat(6, 1fr);
   }
 }

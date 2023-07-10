@@ -35,5 +35,3 @@ export type TableType = {
   tableAccents: string[];
   tableColumns: string[];
 }
-
-export type paragraphClassType = "grid-col14" | "grid-col23" | "grid-col-all";
