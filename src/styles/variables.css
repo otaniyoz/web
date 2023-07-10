@@ -24,6 +24,7 @@
   --gap-small: 1vmin;
   --gap-regular: 1vmax;
   --gap-large: 2vmax;
+  --gap-xlarge: 2.5vmax;
 
   --footer-height: 80px;
 }

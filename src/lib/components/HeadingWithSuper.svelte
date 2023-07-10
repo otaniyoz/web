@@ -26,7 +26,7 @@
 
   .count {
     min-width: fit-content;
-    padding-top: var(--gap-large);
+    /* padding-top: var(--gap-large); */
   }
 
   @media screen and (min-width: 1200px) {

@@ -34,7 +34,7 @@
   }
 
   header {
-    top: 8px;
+    top: 1vw;
     position: sticky;
     padding-bottom: var(--gap-large);
   }

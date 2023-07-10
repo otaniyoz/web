@@ -48,14 +48,19 @@
     margin-block: 0;
   }
 
+  h1,
+  h2,
+  h3 {
+    grid-area: auto / 1 / auto / -1;
+  }
+
   @media screen and (min-width: 1200px) {
     h1 {
       font-size: clamp(6rem, 11.5vw + 1rem, 8rem);
     }
     h2,
     h3 {
-      grid-area: auto / 1 / auto / 3;
-      padding-bottom: calc(var(--gap-regular) + var(--gap-large));
+      padding-bottom: var(--gap-xlarge);
       hyphens: auto;
     }
     h3 {
@@ -66,9 +71,7 @@
   @media screen and (max-width: 1200px) {
     h2,
     h3 {
-      padding-top: var(--gap-large);
-      padding-bottom: calc(var(--gap-regular) + var(--gap-large));
-      grid-area: auto/ 1 / auto / 5;
+      padding-bottom: var(--gap-xlarge);
     }
   }
 </style>
