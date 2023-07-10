@@ -36,4 +36,4 @@ export type TableType = {
   tableColumns: string[];
 }
 
-export type paragraphClassType = "grid-col14" | "grid-col23";
+export type paragraphClassType = "grid-col14" | "grid-col23" | "grid-col-all";

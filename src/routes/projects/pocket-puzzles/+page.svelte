@@ -7,45 +7,51 @@
   <title>Pocket puzzles</title>
 </svelte:head>
 
-<section class="page-section">
-  <article>
+<section id="page-section">
+  <div id="intro">
     <Heading headingTitle="Pocket puzzles" headingLevel={2} />
     <Paragraph
-      paragraphClass="grid-col14"
+      paragraphClass="grid-col-all"
       paragraphContent="This is a collection of puzzles that fits in a pocket. Available online at https://otaniyoz.github.io/pocket-puzzles/"
     />
-    <div id="gallery">
-      <img id="img-1" src="../../pocket-puzzles/1.png" />
-      <div id="col-1">
-        <div class="image-wrapper">
-          <img id="img-2" src="../../pocket-puzzles/2.png" />
-        </div>
-        <div class="image-wrapper">
-          <img id="img-3" src="../../pocket-puzzles/3.png" />
-        </div>
+  </div>
+  <article id="gallery">
+    <img id="img-1" src="../../pocket-puzzles/1.png" alt="Pocket puzzles" />
+    <div id="col-1">
+      <div class="image-wrapper">
+        <img id="img-2" src="../../pocket-puzzles/2.png" alt="Pocket puzzles" />
       </div>
-      <div id="col-2">
-        <img id="img-4" src="../../pocket-puzzles/4.png" />
-        <img id="img-5" src="../../pocket-puzzles/5.png" />
+      <div class="image-wrapper">
+        <img id="img-3" src="../../pocket-puzzles/3.png" alt="Pocket puzzles" />
       </div>
+    </div>
+    <div id="col-2">
+      <img id="img-4" src="../../pocket-puzzles/4.png" alt="Pocket puzzles" />
+      <img id="img-5" src="../../pocket-puzzles/5.png" alt="Pocket puzzles" />
     </div>
   </article>
 </section>
 
 <style>
-  article {
+  #page-section {
+    display: grid;
+    gap: var(--gap-small);
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  #intro {
     display: grid;
     gap: var(--gap-small);
     row-gap: var(--gap-regular);
-    grid-area: auto / 1 / auto / 5;
+    grid-area: 1 / 1 / auto / 7;
   }
 
   #gallery {
     display: grid;
     gap: var(--gap-small);
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, min-content);
-    grid-area: auto / 1 / auto / 5;
+    grid-area: auto / 2 / auto / 8;
   }
 
   #col-1,
@@ -57,14 +63,11 @@
   }
 
   #col-1 {
-    flex-shrink: 2;
-    flex-grow: 2;
-    flex-basis: 160px;
-    grid-area: 2 / 1 / 3 / 10;
+    grid-area: 2 / 1 / 3 / 4;
   }
 
   #col-2 {
-    grid-area: 2 / 10 / 3 / 13;
+    grid-area: 2 / 4 / 3 / 5;
   }
 
   #img-2,
@@ -73,7 +76,7 @@
   }
 
   #img-1 {
-    grid-area: 1 / 1 / 2 / 13;
+    grid-area: 1 / 1 / 2 / -1;
     object-fit: fill;
   }
 
@@ -82,9 +85,17 @@
     justify-content: start;
   }
 
-  @media screen and (min-width: 1200px) {
-    article {
-      grid-area: 1 / 1 / auto / 5;
+  @media screen and (max-width: 1200px) {
+    #page-section {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    #intro {
+      grid-area: 1 / 1 / auto / 7;
+    }
+
+    #gallery {
+      grid-area: auto / 1 / auto / 7;
     }
   }
 </style>

@@ -1,5 +1,9 @@
 @import "variables.css";
 
+.grid-col-all {
+  grid-column: 1 / -1;
+}
+
 .grid-col14 {
   grid-row: auto;
   grid-column: 1 / span 4;
