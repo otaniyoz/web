@@ -8,13 +8,13 @@
 </svelte:head>
 
 <section id="page-section">
-  <div id="intro">
+  <article id="intro">
     <Heading headingTitle="Pocket puzzles" headingLevel={2} />
     <Paragraph
       paragraphClass="grid-col-all"
-      paragraphContent="This is a collection of puzzles that fits in a pocket. Available online at https://otaniyoz.github.io/pocket-puzzles/"
+      paragraphContent="This is an ongoing experiment in design and development to create a collection of puzzles:"
     />
-  </div>
+  </article>
   <article id="gallery">
     <img id="img-1" src="../../pocket-puzzles/1.png" alt="Pocket puzzles" />
     <div id="col-1">
@@ -41,6 +41,7 @@
 
   #intro {
     display: grid;
+    align-items: end;
     gap: var(--gap-small);
     row-gap: var(--gap-regular);
     grid-area: 1 / 1 / auto / 7;
