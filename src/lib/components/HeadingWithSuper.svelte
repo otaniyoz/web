@@ -7,28 +7,21 @@
   export let level: number;
 </script>
 
-<article>
+<div class="heading-wrapper">
   <Heading headingTitle={title} headingLevel={level} />
   <aside>
     <Paragraph paragraphContent={"(" + superTitle + ")"} />
   </aside>
-</article>
+</div>
 
 <style>
-  article {
+  .heading-wrapper {
     display: flex;
     flex-flow: row nowrap;
-    gap: var(--gap-small);
-    width: 100%;
   }
 
   aside {
+    padding-left: var(--gap-small);
     min-width: fit-content;
-  }
-
-  @media screen and (min-width: 1200px) {
-    aside {
-      padding-top: 0;
-    }
   }
 </style>
