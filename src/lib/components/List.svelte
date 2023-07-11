@@ -1,6 +1,6 @@
 <script lang="ts">
-  import typographString from "../../utils/typographString";
   import Heading from "./Heading.svelte";
+  import typographString from "../../utils/typographString";
 
   export let listRows: string[];
   export let showIndex: boolean = false;

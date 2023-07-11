@@ -18,6 +18,7 @@
   article {
     display: flex;
     flex-flow: row nowrap;
+    gap: var(--gap-small);
     width: 100%;
   }
 

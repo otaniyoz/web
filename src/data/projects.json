@@ -1,35 +1,42 @@
 [  
   {
     "title": "Pocket puzzles",
-    "work": "Design, development, HTML, CSS, JS",
+    "work": "Design, development",
     "date": "2023...",
     "published": "true",
     "link": "pocket-puzzles"
   },
   {
     "title": "Image proccessing library in C",
-    "work": "Development, computer vision, C",
+    "work": "Development, computer vision",
     "date": "2023...",
     "published": "false",
     "link": "image-c"
   },
   {
     "title": "Customer segmentation",
-    "work": "Development, data analysis, Python",
+    "work": "Data analysis",
     "date": "2023",
     "published": "true",
     "link": "customer-segmentation"
   },
   {
     "title": "Genuary 2023",
-    "work": "Creative coding, Python",
+    "work": "Creative coding",
     "date": "2023",
     "published": "true",
     "link": "genuary-2023"
   },
   {
+    "title": "DIY clothes and gear",
+    "work": "Design, sewing",
+    "date": "2022...",
+    "published": "true",
+    "link": "diy-clothes-and-gear"
+  },
+  {
     "title": "Visualisation of sports sites in the Presnya",
-    "work": "Design, data visualisation, Python, Figma",
+    "work": "Design, data visualisation",
     "date": "2022",
     "published": "true",
     "link": "vis-presnya"
@@ -43,7 +50,7 @@
   },
   {
     "title": "Pocket pack: a collection of utilities and games",
-    "work": "Design, development, HTML, CSS, JS, SvelteKit, Figma",
+    "work": "Design, development",
     "date": "2022",
     "published": "true",
     "link": "pocket-pack"

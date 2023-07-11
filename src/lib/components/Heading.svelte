@@ -19,43 +19,41 @@
 
 <style>
   h1 {
-    color: var(--color-dark);
-    position: sticky;
-    letter-spacing: -0.05em;
+    padding: 0;
+    margin-block: 0;
     word-spacing: -0.1em;
+    margin-left: -0.5vmin;
+    letter-spacing: -0.05em;
+    color: var(--color-dark);
     line-height: var(--line-height-small);
     font-weight: var(--font-weight-heavy);
     font-size: var(--font-size-large);
-    padding: 0;
-    margin-block: 0;
   }
 
   h2 {
+    margin: 0;
+    padding: 0;
+    margin-block: 0;
     color: var(--color-dark);
     line-height: var(--line-height-regular);
     font-weight: var(--font-weight-heavy);
     font-size: var(--font-size-medium);
-    margin: 0;
-    margin-block: 0;
-    padding: 0;
   }
 
   h3 {
+    margin-block: 0;
     color: var(--color-dark);
     font-weight: var(--font-weight-heavy);
     font-size: var(--font-size-regular);
     line-height: var(--line-height-large);
-    margin-block: 0;
   }
 
   @media screen and (min-width: 1200px) {
-    h1 {
-      font-size: clamp(6rem, 11.5vw + 1rem, 8rem);
-    }
+    h1,
     h2,
     h3 {
-      padding-bottom: var(--gap-xlarge);
       hyphens: auto;
+      padding-bottom: var(--gap-xlarge);
     }
     h3 {
       padding-top: var(--gap-large);
@@ -63,6 +61,7 @@
   }
 
   @media screen and (max-width: 1200px) {
+    h1,
     h2,
     h3 {
       padding-bottom: var(--gap-xlarge);

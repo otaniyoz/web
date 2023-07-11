@@ -25,8 +25,6 @@
     display: flex;
     min-height: calc(100vh - var(--footer-height));
     flex-flow: column nowrap;
-    row-gap: var(--gap-large);
-    justify-content: space-between;
   }
 
   .about {

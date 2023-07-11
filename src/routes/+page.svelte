@@ -8,7 +8,7 @@
 </svelte:head>
 
 <section>
-  <HeadingWithSuper title="About" level={2} superTitle={"me"} />
+  <HeadingWithSuper title="About" level={1} superTitle={"me"} />
   <figure class="welcome-image">
     <img alt="Stylized photograph of a man" src="home-banner.jpg" />
   </figure>

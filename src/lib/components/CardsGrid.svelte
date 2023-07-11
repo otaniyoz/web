@@ -1,4 +1,5 @@
 <script lang="ts">
+  import typographString from "../../utils/typographString";
   import type { CardMapType } from "$lib/types";
 
   export let cardsMaps: CardMapType[];
@@ -14,13 +15,15 @@
           ><source src={cardMap.video} type="video/mp4" /></video
         >
       {/if}
-      {#if cardMap.link && cardMap.title}
+      {#if cardMap.title}
         <div class="card-info-container">
-          {#if cardMap.title.length && cardMap.link.length}
-            <p class="accent"><a href={cardMap.link}>{cardMap.title}</a></p>
+          {#if cardMap.link && cardMap.link.length}
+            <p class="card-title"><a href={cardMap.link}>{cardMap.title}</a></p>
+          {:else if cardMap.title && cardMap.title.length}
+            <p class="card-title">{cardMap.title}</p>
           {/if}
           {#if cardMap.description && cardMap.description.length}
-            <p>{cardMap.description}</p>
+            <p class="card-description">{typographString(cardMap.description)}</p>
           {/if}
         </div>
       {/if}
@@ -29,8 +32,30 @@
 </div>
 
 <style>
+  .card-title {
+    color: var(--color-orange);
+    line-height: var(--line-height-small);
+    font-weight: var(--font-weight-heavy);
+    font-size: var(--font-size-medium);
+    padding-bottom: var(--gap-regular);
+    margin-left: -0.5vmin; /* to aligh horizontaly. */
+  }
+
   p {
     hyphens: auto;
+    margin-block: 0;
+    color: var(--color-dark);
+    font-size: var(--font-size-regular);
+    line-height: var(--line-height-regular);
+  }
+
+  .card-description {
+    color: var(--color-orange);
+  }
+
+  .card:nth-child(7n + 1) > .card-info-container > .card-title {
+    font-size: var(--font-size-xlarge);
+    margin-left: -1vmin; /* to aligh horizontaly. */
   }
 
   .card {
@@ -55,11 +80,6 @@
   .card-media {
     height: 100%;
     aspect-ratio: 1 / 1;
-  }
-
-  .card-info-container {
-    background-color: var(--color-light);
-    width: 100%;
   }
 
   .cards-grid {

@@ -18,7 +18,7 @@
   {#if projects}
     <HeadingWithSuper
       title="Projects"
-      level={2}
+      level={1}
       superTitle={projects.length.toString()}
     />
   {/if}
