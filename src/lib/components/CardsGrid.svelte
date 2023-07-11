@@ -66,13 +66,11 @@
     display: grid;
     gap: var(--gap-small);
     grid-template-columns: repeat(2, 1fr);
-    grid-area: auto / 1 / auto / 5;
   }
 
   @media screen and (min-width: 1200px) {
     .cards-grid {
       grid-template-columns: repeat(4, 1fr);
-      grid-area: auto / 1 / auto / 8;
     }
   }
 </style>
