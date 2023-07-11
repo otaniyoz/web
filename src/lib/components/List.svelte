@@ -18,22 +18,26 @@
   }
 </script>
 
-<article class="list grid-col14">
+<article>
   {#if listTitle}
     <Heading headingTitle={listTitle} headingLevel={3} />
   {/if}
   {#if listDescription}
-    <p class="grid-col14">
+    <p>
       {listDescription}
     </p>
   {/if}
   {#each listRows as row, rowIndex}
-    <p class="list-index {showIndex ? 'visually-visible' : 'visually-hidden'}">
-      {rowIndex + 1}.
-    </p>
-    <p class="grid-col23">
-      {row}
-    </p>
+    <div class="row">
+      <p
+        class="list-index {showIndex ? 'visually-visible' : 'visually-hidden'}"
+      >
+        {rowIndex + 1}.
+      </p>
+      <p class="list-item">
+        {row}
+      </p>
+    </div>
   {/each}
 </article>
 
@@ -46,18 +50,30 @@
     visibility: visible;
   }
 
-  .list {
-    display: grid;
-    gap: var(--gap-small);
+  .row {
+    display: flex;
+    flex-direction: row nowrap;
   }
 
   .list-index {
-    grid-column: 1;
+    grid-column: 1 / 3;
     align-self: start;
     justify-self: end;
     color: var(--color-dark);
     padding: 0 0 0 var(--gap-large);
     font-size: var(--font-size-regular);
     font-weight: var(--font-weight-regular);
+  }
+
+  .list-item {
+    grid-column: 3 / 7;
+  }
+
+  p {
+    margin-block: 0;
+    color: var(--color-dark);
+    font-size: var(--font-size-regular);
+    line-height: var(--line-height-large);
+    padding-bottom: var(--gap-regular);
   }
 </style>

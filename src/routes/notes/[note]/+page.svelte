@@ -32,16 +32,16 @@
     font-family: serif;
     row-gap: var(--gap-regular);
     padding-bottom: var(--gap-large);
-    grid-area: auto / 1 / auto / 9;
+    grid-area: auto / 1 / auto / 7;
   }
 
   #heading-wrapper {
-    grid-area: 1 / 1 / auto / 9;
+    grid-area: 1 / 1 / auto / 7;
   }
 
   @media screen and (min-width: 1200px) {
     article {
-      grid-area: 1 / 4 / auto / 9;
+      grid-area: auto / 4 / auto / 9;
     }
 
     #heading-wrapper {

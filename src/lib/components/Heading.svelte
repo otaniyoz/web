@@ -48,12 +48,6 @@
     margin-block: 0;
   }
 
-  h1,
-  h2,
-  h3 {
-    grid-area: auto / 1 / auto / -1;
-  }
-
   @media screen and (min-width: 1200px) {
     h1 {
       font-size: clamp(6rem, 11.5vw + 1rem, 8rem);
