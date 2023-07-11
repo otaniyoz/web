@@ -8,9 +8,9 @@
   <title>Customer segmentation</title>
 </svelte:head>
 
-<Heading headingTitle="Customer segmentation" headingLevel={2} />
 <section>
   <article class="sub-section">
+    <Heading headingTitle="Customer segmentation" headingLevel={2} />
     <Paragraph
       paragraphContent="In 2023, I was tasked with identifying types of customers a company had. This was a broad task and I had a couple of hours to present the solution, so I focused on customer segmentation for marketing purposes based on the Recency-Frequency-Monetary (RFM) model and k-means as it is a simple and efficient solution."
     />
@@ -73,16 +73,16 @@
 </section>
 <section>
   <article class="sub-section">
-      <List
-        listTitle="Segments"
-        listDescription="I grouped customers into four segments based on their RFM scores:"
-        listRows={[
-          "Segment 1 had the best recency and frequency, and the second best monetary",
-          "Segment 3 spent the most amount of money with reasonable recency and frequency",
-          "Segment 0 spent the reasonable amount of money with reasonable recency and frequency",
-          "Segment 2 spent the least amount of money on the platform with the highest recency and lowest frequency",
-        ]}
-      />
+    <List
+      listTitle="Segments"
+      listDescription="I grouped customers into four segments based on their RFM scores:"
+      listRows={[
+        "Segment 1 had the best recency and frequency, and the second best monetary",
+        "Segment 3 spent the most amount of money with reasonable recency and frequency",
+        "Segment 0 spent the reasonable amount of money with reasonable recency and frequency",
+        "Segment 2 spent the least amount of money on the platform with the highest recency and lowest frequency",
+      ]}
+    />
     <img
       alt="Bin plot of customer segments"
       src="../../customer-segmentation/4.png"
