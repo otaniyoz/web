@@ -65,7 +65,7 @@
       paragraphContent="Afterwards I created a step sequencer so that I could listen to some music while writing nicely formatted texts or solving puzzles:"
     />
   </article>
-  <figure class="two-screens-container grid-col14">
+  <figure class="two-screens-container">
     <img
       alt="A screen of an app showing a step sequencer"
       src="../../pocket-pack/7.png"
@@ -83,7 +83,7 @@
       paragraphContent="At some point wanted to put the app online, so started redesigning it in Figma. Even though I decided not to go through with this idea, I did finish some design mockups. Here they are:"
     />
   </article>
-  <figure class="four-screens-container grid-col14">
+  <figure class="four-screens-container">
     <img
       alt="A concept logo for a note-taking app"
       src="../../pocket-pack/9.png"
@@ -100,15 +100,11 @@
       alt="Another concept logo for a step sequencer app"
       src="../../pocket-pack/14.png"
     />
-  </figure>
-  <figure class="two-screens-container grid-col14">
     <img
       alt="A screen of an app showing tiles based puzzle in the initial state"
       src="../../pocket-pack/11.png"
     />
     <img alt="A screen of a note-taking app" src="../../pocket-pack/12.png" />
-  </figure>
-  <figure class="four-screens-container grid-col14">
     <img
       alt="A screen of a note-taking app with a selected note"
       src="../../pocket-pack/15.png"
