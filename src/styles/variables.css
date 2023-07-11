@@ -17,6 +17,7 @@
   --font-weight-heavy: 700;
   --font-weight-regular: 400;
 
+  --font-size-xlarge: clamp(2.5rem, 10vw + 1rem, 9rem);
   --font-size-large: clamp(2rem, 7.4vw + 1rem, 9rem);
   --font-size-medium: clamp(1rem, 3vw + 1rem, 8rem);
   --font-size-regular: clamp(0.85rem, 2vmax, 2rem);

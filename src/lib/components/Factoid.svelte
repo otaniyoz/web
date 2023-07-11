@@ -23,7 +23,7 @@
   .factoid-number {
     line-height: var(--line-height-small);
     font-weight: var(--font-weight-heavy);
-    font-size: var(--font-size-large);
+    font-size: var(--font-size-xlarge);
   }
 
   p {
