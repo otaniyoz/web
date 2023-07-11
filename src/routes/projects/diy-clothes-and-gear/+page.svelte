@@ -12,7 +12,7 @@
   <article>
     <Heading headingTitle="DIY clothes and gear" headingLevel={2} />
     <Paragraph
-      paragraphContent="I think of clothes as tools: I try to patch and fix them if I can, and when I can't -- I try to repurpose them responsibly. Here are some examples:"
+      paragraphContent="I try to patch and fix things if I can, and when I can't -- I try to repurpose them responsibly. Here are some examples:"
     />
   </article>
 </section>
