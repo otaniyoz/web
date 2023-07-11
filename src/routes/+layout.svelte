@@ -4,15 +4,19 @@
 </script>
 
 <svelte:head>
-  <meta name="theme-color" content="#151516">
+  <meta name="theme-color" content="#151516" />
 </svelte:head>
 
 <header>
   <nav>
     <ul>
-      <li class="about"><a href="{base}">About</a></li>
-      <li class="text-right"><a href="{base}/projects">Projects</a></li>
-      <li class="text-right"><a href="{base}/notes">Notes</a></li>
+      <li><a href={base}>About</a></li>
+      <li id="second-nav-item">
+        <a href="{base}/projects">Projects</a>
+      </li>
+      <li id="third-nav-item" class="text-right">
+        <a href="{base}/notes">Notes</a>
+      </li>
     </ul>
   </nav>
 </header>
@@ -22,18 +26,12 @@
 
 <style>
   main {
-    display: flex;
     min-height: calc(100vh - var(--footer-height));
-    flex-flow: column nowrap;
-  }
-
-  .about {
-    grid-column: 1 / span 2;
   }
 
   header {
-    top: 1vw;
     position: sticky;
+    top: calc(- var(--gap-small));
     padding-bottom: var(--gap-large);
   }
 
@@ -43,13 +41,34 @@
     line-height: var(--line-height-small);
   }
 
+  #second-nav-item {
+    grid-column: 5 / 6;
+  }
+
+  #third-nav-item {
+    grid-column: 8 / 9;
+  }
+
   ul {
     padding: 0;
     display: grid;
     margin-block: 0;
     list-style: none;
     padding-inline: 0;
-    gap: var(--gap-small);
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  @media screen and (max-width: 1200px) {
+    ul {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    #second-nav-item {
+      grid-column: 4 / 5;
+    }
+
+    #third-nav-item {
+      grid-column: 6 / 7;
+    }
   }
 </style>

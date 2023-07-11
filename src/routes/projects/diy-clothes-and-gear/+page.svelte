@@ -2,22 +2,25 @@
   import Heading from "$lib/components/Heading.svelte";
   import Paragraph from "$lib/components/Paragraph.svelte";
   import CardsGrid from "$lib/components/CardsGrid.svelte";
+  import SectionGrid from "$lib/components/SectionGrid.svelte";
 </script>
 
 <svelte:head>
   <title>DIY clothing</title>
 </svelte:head>
 
-<section>
-  <article>
+<SectionGrid>
+  <div class="section-title" slot="title">
     <Heading headingTitle="DIY clothes and gear" headingLevel={2} />
+  </div>
+  <div class="section-body" slot="body">
     <Paragraph
       paragraphContent="I try to patch and fix things if I can, and when I can't -- I try to repurpose them responsibly. Here are some examples:"
     />
-  </article>
-</section>
-<section>
-  <article id="cards-grid">
+  </div>
+</SectionGrid>
+<SectionGrid>
+  <article slot="body">
     <CardsGrid
       cardsMaps={[
         {
@@ -38,17 +41,15 @@
       ]}
     />
   </article>
-</section>
+</SectionGrid>
 
 <style>
-  article {
-    display: grid;
-    gap: var(--gap-small);
-    row-gap: var(--gap-regular);
+  .section-title,
+  .section-body {
     grid-area: auto / 1 / auto / 7;
   }
 
-  #cards-grid {
+  article {
     grid-area: auto / 1 / auto / -1;
   }
 </style>

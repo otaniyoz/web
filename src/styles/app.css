@@ -24,6 +24,14 @@
   grid-column: 4 / span 4;
 }
 
+.grid-col45 {
+  grid-column: 4 / 5;
+}
+
+.grid-col67 {
+  grid-column: 6 / 7;
+}
+
 .grid-col23 {
   grid-area: auto / 2 / auto / 5;
 }
@@ -51,7 +59,7 @@
   margin-left: auto;
 }
 
-section {
+/* section {
   display: grid;
   overflow: hidden;
   gap: var(--gap-small);
@@ -63,7 +71,7 @@ section {
   section {
     grid-template-columns: repeat(6, 1fr);
   }
-}
+} */
 
 ::selection {
   color: var(--color-light);

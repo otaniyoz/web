@@ -9,7 +9,7 @@
 
 <section>
   <HeadingWithSuper title="About" level={1} superTitle={"me"} />
-  <figure class="welcome-image">
+  <figure id="welcome-image">
     <img alt="Stylized photograph of a man" src="home-banner.jpg" />
   </figure>
   <div id="welcome-message">
@@ -20,7 +20,7 @@
 </section>
 
 <style>
-  .welcome-image {
+  #welcome-image {
     margin: 0;
     grid-column: 1 / -1;
     aspect-ratio: 1 / 1.25;
@@ -32,7 +32,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    .welcome-image {
+    #welcome-image {
       aspect-ratio: 2 / 1;
     }
   }

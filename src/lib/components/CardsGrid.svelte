@@ -7,7 +7,7 @@
 
 <div class="cards-grid">
   {#each cardsMaps as cardMap}
-    <article class="card">
+    <figure class="card">
       {#if cardMap.image && cardMap.image.length}
         <img alt="Card cover" src={cardMap.image} class="card-media" />
       {:else if cardMap.video && cardMap.video.length}
@@ -27,7 +27,7 @@
           {/if}
         </div>
       {/if}
-    </article>
+      </figure>
   {/each}
 </div>
 
@@ -59,12 +59,13 @@
   }
 
   .card {
+    margin: 0;
     padding: 0;
     display: grid;
-    aspect-ratio: 1 / 1;
-    color: var(--color-dark);
     align-items: end;
     justify-items: start;
+    aspect-ratio: 1 / 1;
+    color: var(--color-dark);
   }
 
   .card > * {
