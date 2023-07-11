@@ -25,4 +25,12 @@
     font-weight: var(--font-weight-heavy);
     font-size: var(--font-size-large);
   }
+
+  p {
+    margin-block: 0;
+    color: var(--color-orange);
+    font-size: var(--font-size-regular);
+    line-height: var(--line-height-large);
+    padding-bottom: var(--gap-regular);
+  }
 </style>

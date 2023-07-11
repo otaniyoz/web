@@ -16,31 +16,36 @@
     { video: "../../vis-presnya/icons-slideshow.mp4" },
   ]}
 />
-<section class="page-section">
+<section>
   <article>
     <Heading
       headingLevel={2}
       headingTitle="Visualisation of sports sites in the Presnya"
     />
     <Paragraph
-      paragraphClass="grid-col14"
       paragraphContent="The Presnensky district, also commonly referred to as the Presnya, is one of the central districts in Moscow. It's known for its recreational locations such as Patriarshy ponds."
     />
     <Paragraph
-      paragraphClass="grid-col14"
       paragraphContent="In 2022, I spent a couple of hours making an illustration of sports sites in the district and using public data identified around 64 sports sites:"
     />
-    <img
-      alt="Illustration of sports sites in the Presnya"
-      class="grid-col14"
-      src="../../vis-presnya/12.jpg"
-    />
-    <aside class="grid-col14">
-      <Factoid factoidNumber="32" factoidDescription="sports halls & gyms" />
-      <Factoid factoidNumber="17" factoidDescription="workout grounds" />
-      <Factoid factoidNumber="11" factoidDescription="sports fields" />
-      <Factoid factoidNumber="4" factoidDescription="gardens & parks" />
-    </aside>
+  </article>
+</section>
+
+<figure>
+  <img
+    alt="Illustration of sports sites in the Presnya"
+    src="../../vis-presnya/12.jpg"
+  />
+  <aside>
+    <Factoid factoidNumber="32" factoidDescription="sports halls & gyms" />
+    <Factoid factoidNumber="17" factoidDescription="workout grounds" />
+    <Factoid factoidNumber="11" factoidDescription="sports fields" />
+    <Factoid factoidNumber="4" factoidDescription="gardens & parks" />
+  </aside>
+</figure>
+
+<section>
+  <article>
     <List
       listTitle="Approach"
       listDescription="I didn't want to use a map editor, so did most of the work from scratch:"
@@ -65,13 +70,13 @@
 
   article {
     display: grid;
+    gap: var(--gap-small);
     row-gap: var(--gap-regular);
-    grid-area: auto / 1 / auto / 5;
+    grid-area: auto / 1 / auto / 7;
   }
 
-  @media screen and (min-width: 1200px) {
-    article {
-      grid-area: 1 / 1 / auto / 5;
-    }
+  figure {
+    margin: 0;
+    padding-bottom: var(--gap-large);
   }
 </style>
