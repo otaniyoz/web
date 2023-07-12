@@ -7,17 +7,15 @@
   <title>Web-home of Otaniyoz</title>
 </svelte:head>
 
-<section>
-  <HeadingWithSuper title="About" level={1} superTitle={"me"} />
-  <figure id="welcome-image">
-    <img alt="Stylized photograph of a man" src="home-banner.jpg" />
-  </figure>
-  <div id="welcome-message">
-    <Paragraph
-      paragraphContent="Hallo cyber-stranger. This is a web-home for Otaniyoz. Here you can find various projects and sporadic notes -- all on perhaps too far spread topics and in too different languages. But I might just as well be wrong, so don't take my word for it -- go and see for yourself. Or don't."
-    />
-  </div>
-</section>
+<HeadingWithSuper title="About" level={1} superTitle={"me"} />
+<figure id="welcome-image">
+  <img alt="Stylized photograph of a man" src="home-banner.jpg" />
+</figure>
+<div id="welcome-message">
+  <Paragraph
+    paragraphContent="Hallo cyber-stranger. This is a web-home for Otaniyoz. Here you can find various projects and sporadic notes -- all on perhaps too far spread topics and in too different languages. But I might just as well be wrong, so don't take my word for it -- go and see for yourself. Or don't."
+  />
+</div>
 
 <style>
   #welcome-image {
@@ -28,7 +26,7 @@
   }
 
   #welcome-message {
-    grid-column: 1 / span 6;
+    grid-column: 1 / span 7;
   }
 
   @media screen and (min-width: 1200px) {

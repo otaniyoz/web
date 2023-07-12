@@ -6,21 +6,19 @@
 </script>
 
 <svelte:head>
-  <title>DIY clothing</title>
+  <title>DIY clothes and gear</title>
 </svelte:head>
 
 <SectionGrid>
-  <div class="section-title" slot="title">
+  <article class="narrative">
     <Heading headingTitle="DIY clothes and gear" headingLevel={2} />
-  </div>
-  <div class="section-body" slot="body">
     <Paragraph
       paragraphContent="I try to patch and fix things if I can, and when I can't -- I try to repurpose them responsibly. Here are some examples:"
     />
-  </div>
+  </article>
 </SectionGrid>
 <SectionGrid>
-  <article slot="body">
+  <article class="visual">
     <CardsGrid
       cardsMaps={[
         {
@@ -44,12 +42,11 @@
 </SectionGrid>
 
 <style>
-  .section-title,
-  .section-body {
+  .narrative {
     grid-area: auto / 1 / auto / 7;
   }
 
-  article {
+  .visual {
     grid-area: auto / 1 / auto / -1;
   }
 </style>

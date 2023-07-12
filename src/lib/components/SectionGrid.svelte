@@ -1,6 +1,5 @@
 <section>
-  <slot name="title" />
-  <slot name="body" />
+  <slot/>
 </section>
 
 <style>
