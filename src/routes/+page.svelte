@@ -1,6 +1,7 @@
 <script lang="ts">
   import HeadingWithSuper from "$lib/components/HeadingWithSuper.svelte";
   import Paragraph from "$lib/components/Paragraph.svelte";
+  import SectionGrid from "$lib/components/SectionGrid.svelte";
 </script>
 
 <svelte:head>
@@ -8,29 +9,30 @@
 </svelte:head>
 
 <HeadingWithSuper title="About" level={1} superTitle={"me"} />
-<figure id="welcome-image">
+<figure>
   <img alt="Stylized photograph of a man" src="home-banner.jpg" />
 </figure>
-<div id="welcome-message">
-  <Paragraph
-    paragraphContent="Hallo cyber-stranger. This is a web-home for Otaniyoz. Here you can find various projects and sporadic notes -- all on perhaps too far spread topics and in too different languages. But I might just as well be wrong, so don't take my word for it -- go and see for yourself. Or don't."
-  />
-</div>
+<SectionGrid>
+  <div class="narrative">
+    <Paragraph
+      paragraphContent="Hallo cyber-stranger. This is a web-home for Otaniyoz. Here you can find various projects and sporadic notes -- all on perhaps too far spread topics and in too different languages. But I might just as well be wrong, so don't take my word for it -- go and see for yourself. Or don't."
+    />
+  </div>
+</SectionGrid>
 
 <style>
-  #welcome-image {
+ .narrative {
+    grid-area: auto / 1 / auto / 7;
+  }
+
+  figure {
     margin: 0;
-    grid-column: 1 / -1;
     aspect-ratio: 1 / 1.25;
     padding-bottom: var(--gap-regular);
   }
 
-  #welcome-message {
-    grid-column: 1 / span 7;
-  }
-
   @media screen and (min-width: 1200px) {
-    #welcome-image {
+    figure {
       aspect-ratio: 2 / 1;
     }
   }

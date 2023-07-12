@@ -2,6 +2,7 @@
   import { page } from "$app/stores";
   import Heading from "$lib/components/Heading.svelte";
   import Paragraph from "$lib/components/Paragraph.svelte";
+  import SectionGrid from "$lib/components/SectionGrid.svelte";
   import type { NoteContentType } from "$lib/types";
 
   export let data: NoteContentType;
@@ -14,23 +15,21 @@
 </svelte:head>
 
 {#if data.post}
-  <section>
+  <SectionGrid>
     <div id="heading-wrapper">
       <Heading headingTitle={data.post.title} headingLevel={2} />
     </div>
-    <article>
+    <article class="narrative">
       {#each data.post.content as paragraph}
         <Paragraph paragraphContent={paragraph} />
       {/each}
     </article>
-  </section>
+  </SectionGrid>
 {/if}
 
 <style>
-  article {
-    display: grid;
+  .narrative {
     font-family: serif;
-    row-gap: var(--gap-regular);
     padding-bottom: var(--gap-large);
     grid-area: auto / 1 / auto / 7;
   }
@@ -40,7 +39,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    article {
+    .narrative {
       grid-area: auto / 4 / auto / 9;
     }
 

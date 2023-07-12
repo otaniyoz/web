@@ -14,15 +14,13 @@
   <title>Notes</title>
 </svelte:head>
 
-<section class="page-section">
-  {#if notes}
-    <HeadingWithSuper
-      title="Notes"
-      level={1}
-      superTitle={notes.length.toString()}
-    />
-  {/if}
-  {#if tableData}
-    <Table {tableData} />
-  {/if}
-</section>
+{#if notes}
+  <HeadingWithSuper
+    title="Notes"
+    level={1}
+    superTitle={notes.length.toString()}
+  />
+{/if}
+{#if tableData}
+  <Table {tableData} />
+{/if}

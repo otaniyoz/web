@@ -4,20 +4,24 @@
   import ImageGrid from "$lib/components/CardsGrid.svelte";
   import Paragraph from "$lib/components/Paragraph.svelte";
   import Heading from "$lib/components/Heading.svelte";
+  import SectionGrid from "$lib/components/SectionGrid.svelte";
 </script>
 
 <svelte:head>
   <title>Visualisation of sports sites in the Presnya</title>
 </svelte:head>
 
-<ImageGrid
-  cardsMaps={[
-    { image: "../../vis-presnya/11.png" },
-    { video: "../../vis-presnya/icons-slideshow.mp4" },
-  ]}
-/>
-<section>
-  <article>
+<figure>
+  <ImageGrid
+    cardsMaps={[
+      { image: "../../vis-presnya/11.png" },
+      { video: "../../vis-presnya/icons-slideshow.mp4" },
+    ]}
+  />
+</figure>
+
+<SectionGrid>
+  <article class="narrative">
     <Heading
       headingLevel={2}
       headingTitle="Visualisation of sports sites in the Presnya"
@@ -29,14 +33,14 @@
       paragraphContent="In 2022, I spent a couple of hours making an illustration of sports sites in the district and using public data identified around 64 sports sites:"
     />
   </article>
-</section>
+</SectionGrid>
 
 <figure>
   <img
     alt="Illustration of sports sites in the Presnya"
     src="../../vis-presnya/12.jpg"
   />
-  <aside>
+  <aside class="grid-container four-columns">
     <Factoid factoidNumber="32" factoidDescription="sports halls & gyms" />
     <Factoid factoidNumber="17" factoidDescription="workout grounds" />
     <Factoid factoidNumber="11" factoidDescription="sports fields" />
@@ -44,8 +48,8 @@
   </aside>
 </figure>
 
-<section>
-  <article>
+<SectionGrid>
+  <article class="narrative">
     <List
       listTitle="Approach"
       listDescription="I didn't want to use a map editor, so did most of the work from scratch:"
@@ -58,20 +62,19 @@
       ]}
     />
   </article>
-</section>
+</SectionGrid>
 
 <style>
-  aside {
+  .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: var(--gap-large);
-    row-gap: var(--gap-small);
+    gap: var(--gap-large);
   }
 
-  article {
-    display: grid;
-    gap: var(--gap-small);
-    row-gap: var(--gap-regular);
+  .four-columns {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .narrative {
     grid-area: auto / 1 / auto / 7;
   }
 

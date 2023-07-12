@@ -1,20 +1,21 @@
 <script lang="ts">
   import Heading from "$lib/components/Heading.svelte";
   import Paragraph from "$lib/components/Paragraph.svelte";
+  import SectionGrid from "$lib/components/SectionGrid.svelte";
 </script>
 
 <svelte:head>
   <title>Pocket puzzles</title>
 </svelte:head>
 
-<section>
-  <article id="intro">
+<SectionGrid>
+  <article class="narrative">
     <Heading headingTitle="Pocket puzzles" headingLevel={2} />
     <Paragraph
       paragraphContent="This is an ongoing experiment in design and development to create a collection of puzzles:"
     />
   </article>
-  <article id="gallery">
+  <figure class="centered-visual-wide">
     <img id="img-1" src="../../pocket-puzzles/1.png" alt="Pocket puzzles" />
     <div id="col-1">
       <div class="image-wrapper">
@@ -28,22 +29,30 @@
       <img id="img-4" src="../../pocket-puzzles/4.png" alt="Pocket puzzles" />
       <img id="img-5" src="../../pocket-puzzles/5.png" alt="Pocket puzzles" />
     </div>
-  </article>
-</section>
+  </figure>
+</SectionGrid>
 
 <style>
-  #intro {
-    display: grid;
-    align-items: end;
-    grid-area: 1 / 1 / auto / 7;
+  .narrative {
+    grid-area: auto / 1 / auto / 7;
   }
 
-  #gallery {
+  .centered-visual-wide {
+    grid-area: auto / 2 / auto / 8;
+  }
+
+  @media screen and (max-width: 1220px) {
+    .centered-visual-wide {
+      grid-area: auto / 1 / auto / 7;
+    }
+  }
+
+  figure {
+    margin: 0;
     display: grid;
     gap: var(--gap-small);
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, min-content);
-    grid-area: auto / 2 / auto / 8;
   }
 
   #col-1,
@@ -75,15 +84,5 @@
   .image-wrapper {
     display: flex;
     justify-content: start;
-  }
-
-  @media screen and (max-width: 1200px) {
-    #intro {
-      grid-area: 1 / 1 / auto / 7;
-    }
-
-    #gallery {
-      grid-area: auto / 1 / auto / 7;
-    }
   }
 </style>

@@ -1,13 +1,14 @@
 <script lang="ts">
   import CardsGrid from "$lib/components/CardsGrid.svelte";
+  import SectionGrid from "$lib/components/SectionGrid.svelte";
 </script>
 
 <svelte:head>
   <title>Genuary 2023</title>
 </svelte:head>
 
-<section>
-  <article>
+<SectionGrid>
+  <article class="visual">
     <CardsGrid
       cardsMaps={[
         { video: "../../genuary-2023/1.mp4" },
@@ -44,10 +45,10 @@
       ]}
     />
   </article>
-</section>
+</SectionGrid>
 
 <style>
-  article {
+  .visual {
     grid-area: auto / 1 / auto / -1;
   }
 </style>

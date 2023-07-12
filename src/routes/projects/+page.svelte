@@ -14,15 +14,13 @@
   <title>Projects</title>
 </svelte:head>
 
-<section>
-  {#if projects}
-    <HeadingWithSuper
-      title="Projects"
-      level={1}
-      superTitle={projects.length.toString()}
-    />
-  {/if}
-  {#if tableData}
-    <Table {tableData} />
-  {/if}
-</section>
+{#if projects}
+  <HeadingWithSuper
+    level={1}
+    title="Projects"
+    superTitle={projects.length.toString()}
+  />
+{/if}
+{#if tableData}
+  <Table {tableData} />
+{/if}
