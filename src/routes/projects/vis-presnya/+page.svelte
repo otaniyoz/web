@@ -19,7 +19,6 @@
     ]}
   />
 </figure>
-
 <SectionGrid>
   <article class="narrative">
     <Heading
@@ -34,7 +33,6 @@
     />
   </article>
 </SectionGrid>
-
 <figure>
   <img
     alt="Illustration of sports sites in the Presnya"
@@ -47,7 +45,6 @@
     <Factoid factoidNumber="4" factoidDescription="gardens & parks" />
   </aside>
 </figure>
-
 <SectionGrid>
   <article class="narrative">
     <List
@@ -80,6 +77,6 @@
 
   figure {
     margin: 0;
-    padding-bottom: var(--gap-large);
+    padding-bottom: var(--gap-xlarge);
   }
 </style>
