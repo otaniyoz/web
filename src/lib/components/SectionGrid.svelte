@@ -7,7 +7,7 @@
     display: grid;
     overflow: hidden;
     grid-template-columns: repeat(8, 1fr);
-    padding-bottom: var(--gap-large);
+    padding-bottom: var(--gap-xlarge);
   }
 
   @media screen and (max-width: 1200px) {

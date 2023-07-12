@@ -31,7 +31,7 @@
 
   header {
     position: sticky;
-    top: calc(- var(--gap-small));
+    top: var(--gap-small);
     padding-bottom: var(--gap-large);
   }
 

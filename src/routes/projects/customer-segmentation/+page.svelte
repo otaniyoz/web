@@ -86,9 +86,16 @@
   </figure>
 </SectionGrid>
 <SectionGrid>
+  <Heading headingTitle="Segments" headingLevel={3} />
+  <figure class="visual">
+    <img
+      alt="Bin plot of customer segments"
+      src="../../customer-segmentation/4.png"
+    />
+  </figure>
   <article class="narrative">
     <List
-      listTitle="Segments"
+      listTitle=""
       listDescription="I grouped customers into four segments based on their RFM scores:"
       listRows={[
         "Segment 1 had the best recency and frequency, and the second best monetary",
@@ -98,12 +105,6 @@
       ]}
     />
   </article>
-  <figure class="visual">
-    <img
-      alt="Bin plot of customer segments"
-      src="../../customer-segmentation/4.png"
-    />
-  </figure>
 </SectionGrid>
 
 <style>

@@ -55,7 +55,7 @@
 
   .card:nth-child(7n + 1) > .card-info-container > .card-title {
     font-size: var(--font-size-xlarge);
-    margin-left: -1vmin; /* to aligh horizontaly. */
+    margin-left: -1.2vmin; /* to aligh horizontaly. */
   }
 
   .card {

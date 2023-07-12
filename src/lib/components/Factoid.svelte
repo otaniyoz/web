@@ -24,6 +24,7 @@
     line-height: var(--line-height-small);
     font-weight: var(--font-weight-heavy);
     font-size: var(--font-size-xlarge);
+    margin-left: -1vmin; /* to aligh horizontaly. */
   }
 
   p {
