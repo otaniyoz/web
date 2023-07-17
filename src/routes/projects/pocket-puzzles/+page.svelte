@@ -10,7 +10,7 @@
 
 <SectionGrid>
   <article class="narrative">
-    <Heading headingTitle="Pocket puzzles" headingLevel={2} />
+    <Heading headingTitle="Pocket puzzles" headingLevel={1} />
     <Paragraph
       paragraphContent="This is an ongoing experiment in design and development to create a collection of puzzles:"
     />

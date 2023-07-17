@@ -12,7 +12,7 @@
   <article class="narrative">
     <Heading
       headingTitle="Pocket pack: a collection of utilities and games"
-      headingLevel={2}
+      headingLevel={1}
     />
     <Paragraph
       paragraphContent="In 2022, I designed and developed a collection of small utilies and games for personal use. Over time they grew into a SvelteKit app with dark and light themes, adaptive layout, and what-not. At some point even wanted to put the whole thing online, but didn't."

@@ -11,7 +11,7 @@
 
 <SectionGrid>
   <article class="narrative">
-    <Heading headingTitle="Customer segmentation" headingLevel={2} />
+    <Heading headingTitle="Customer segmentation" headingLevel={1} />
     <Paragraph
       paragraphContent="In 2023, I was tasked with identifying types of customers a company had. This was a broad task and I had a couple of hours to present the solution, so I focused on customer segmentation for marketing purposes based on the Recency-Frequency-Monetary (RFM) model and k-means as it is a simple and efficient solution."
     />

@@ -22,7 +22,7 @@
 <SectionGrid>
   <article class="narrative">
     <Heading
-      headingLevel={2}
+      headingLevel={1}
       headingTitle="Visualisation of sports sites in the Presnya"
     />
     <Paragraph
