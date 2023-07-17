@@ -16,8 +16,8 @@
 
 {#if data.post}
   <SectionGrid>
-    <div id="heading-wrapper">
-      <Heading headingTitle={data.post.title} headingLevel={2} />
+    <div class="heading-wrapper">
+      <Heading headingTitle={data.post.title} headingLevel={1} />
     </div>
     <article class="narrative">
       {#each data.post.content as paragraph}
@@ -34,17 +34,7 @@
     grid-area: auto / 1 / auto / 7;
   }
 
-  #heading-wrapper {
+  .heading-wrapper {
     grid-area: 1 / 1 / auto / 7;
-  }
-
-  @media screen and (min-width: 1200px) {
-    .narrative {
-      grid-area: auto / 4 / auto / 9;
-    }
-
-    #heading-wrapper {
-      grid-area: 1 / 1 / auto / 4;
-    }
   }
 </style>
