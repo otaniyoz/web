@@ -21,11 +21,11 @@
   h1 {
     padding: 0;
     margin-block: 0;
-    word-spacing: -0.1em;
+    word-spacing: -0.05em;
     margin-left: -0.5vmin;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.025em;
     color: var(--color-dark);
-    line-height: var(--line-height-small);
+    line-height: var(--line-height-regular);
     font-weight: var(--font-weight-heavy);
     font-size: var(--font-size-large);
   }
