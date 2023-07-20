@@ -2,7 +2,7 @@
   import notes from "../../data/notes.json";
   import parseDataForTable from "../../utils/parseDataForTable";
   import Table from "$lib/components/Table.svelte";
-  import HeadingWithSuper from "$lib/components/HeadingWithSuper.svelte";
+  import Heading from "$lib/components/Heading.svelte";
 
   const keys = ["title", "date"];
   const accentKeys = [keys[0]];
@@ -15,10 +15,10 @@
 </svelte:head>
 
 {#if notes}
-  <HeadingWithSuper
+  <Heading
     title="Notes"
     level={1}
-    superTitle={notes.length.toString()}
+    noteTitle={"(" + notes.length.toString() + ")"}
   />
 {/if}
 {#if tableData}

@@ -22,8 +22,8 @@
 <SectionGrid>
   <article class="narrative">
     <Heading
-      headingLevel={1}
-      headingTitle="Visualisation of sports sites in the Presnya"
+      level={1}
+      title="Visualisation of sports sites in the Presnya"
     />
     <Paragraph
       paragraphContent="The Presnensky district, also commonly referred to as the Presnya, is one of the central districts in Moscow. It's known for its recreational locations such as Patriarshy ponds."

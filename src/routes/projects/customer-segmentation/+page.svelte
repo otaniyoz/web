@@ -11,7 +11,7 @@
 
 <SectionGrid>
   <article class="narrative">
-    <Heading headingTitle="Customer segmentation" headingLevel={1} />
+    <Heading title="Customer segmentation" level={1} />
     <Paragraph
       paragraphContent="In 2023, I was tasked with identifying types of customers a company had. This was a broad task and I had a couple of hours to present the solution, so I focused on customer segmentation for marketing purposes based on the Recency-Frequency-Monetary (RFM) model and k-means as it is a simple and efficient solution."
     />
@@ -20,7 +20,7 @@
 
 <SectionGrid>
   <article class="narrative">
-    <Heading headingTitle="Exploration" headingLevel={3} />
+    <Heading title="Exploration" level={3} />
     <Paragraph
       paragraphContent="I looked over the data, removed duplicates, dropped values with too little information, and checked formatting."
     />
@@ -51,7 +51,7 @@
 </SectionGrid>
 <SectionGrid>
   <article class="narrative">
-    <Heading headingTitle="RFM analysis" headingLevel={3} />
+    <Heading title="RFM analysis" level={3} />
     <Paragraph
       paragraphContent="To perform RFM analysis, I calculated the number of days since the last purchase (recency), the number of purchases (frequency), and the amount of money spent (monetary value) for each user."
     />
@@ -70,7 +70,7 @@
 </SectionGrid>
 <SectionGrid>
   <article class="narrative">
-    <Heading headingTitle="K-means" headingLevel={3} />
+    <Heading title="K-means" level={3} />
     <Paragraph
       paragraphContent="For k-means, I did additional data proccessing: I removed outliers, standarised data, and found optimal number of clusters with the elbow method."
     />
@@ -86,7 +86,7 @@
   </figure>
 </SectionGrid>
 <SectionGrid>
-  <Heading headingTitle="Segments" headingLevel={3} />
+  <Heading title="Segments" level={3} />
   <figure class="visual">
     <img
       alt="Bin plot of customer segments"
@@ -95,7 +95,6 @@
   </figure>
   <article class="narrative">
     <List
-      listTitle=""
       listDescription="I grouped customers into four segments based on their RFM scores:"
       listRows={[
         "Segment 1 had the best recency and frequency, and the second best monetary",

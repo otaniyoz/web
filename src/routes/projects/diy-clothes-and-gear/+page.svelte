@@ -11,7 +11,7 @@
 
 <SectionGrid>
   <article class="narrative">
-    <Heading headingTitle="DIY clothes and gear" headingLevel={1} />
+    <Heading title="DIY clothes and gear" level={1} />
     <Paragraph
       paragraphContent="I try to patch and fix things if I can, and when I can't -- I try to repurpose them responsibly. Here are some examples:"
     />

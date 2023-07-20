@@ -11,8 +11,8 @@
 <SectionGrid>
   <article class="narrative">
     <Heading
-      headingTitle="Pocket pack: a collection of utilities and games"
-      headingLevel={1}
+      title="Pocket pack: a collection of utilities and games"
+      level={1}
     />
     <Paragraph
       paragraphContent="In 2022, I designed and developed a collection of small utilies and games for personal use. Over time they grew into a SvelteKit app with dark and light themes, adaptive layout, and what-not. At some point even wanted to put the whole thing online, but didn't."
@@ -21,7 +21,7 @@
 </SectionGrid>
 <SectionGrid>
   <article class="narrative">
-    <Heading headingTitle="Editor with improved typography" headingLevel={3} />
+    <Heading title="Editor with improved typography" level={3} />
     <Paragraph
       paragraphContent="It all started with the desire to have my text nicely formatted, so I wrote a utility to automatically improve typography in Russian and English texts, then added a GUI:"
     />
@@ -35,7 +35,7 @@
 </SectionGrid>
 <SectionGrid>
   <article class="narrative">
-    <Heading headingTitle="Tiles-based puzzles" headingLevel={3} />
+    <Heading title="Tiles-based puzzles" level={3} />
     <Paragraph
       paragraphContent="Then added some puzzles that I enjoy playing. They are based on flipping and sliding tiles. Everything is drawn with the Canvas API, parametric equations, and lots of trigonometry:"
     />
@@ -61,7 +61,7 @@
 </SectionGrid>
 <SectionGrid>
   <article class="narrative">
-    <Heading headingTitle="Step sequencer" headingLevel={3} />
+    <Heading title="Step sequencer" level={3} />
     <Paragraph
       paragraphContent="Afterwards I created a step sequencer so that I could listen to some music while writing nicely formatted texts or solving puzzles:"
     />
@@ -79,7 +79,7 @@
 </SectionGrid>
 <SectionGrid>
   <article class="narrative">
-    <Heading headingTitle="Concept redesign" headingLevel={3} />
+    <Heading title="Concept redesign" level={3} />
     <Paragraph
       paragraphContent="At some point wanted to put the app online, so started redesigning it in Figma. Even though I decided not to go through with this idea, I did finish some design mockups. Here they are:"
     />

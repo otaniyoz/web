@@ -17,7 +17,7 @@
 {#if data.post}
   <SectionGrid>
     <div class="heading-wrapper">
-      <Heading headingTitle={data.post.title} headingLevel={1} />
+      <Heading title={data.post.title} level={1} />
     </div>
     <article class="narrative">
       {#each data.post.content as paragraph}

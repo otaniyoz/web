@@ -10,9 +10,15 @@
 
 <SectionGrid>
   <article class="narrative">
-    <Heading headingTitle="Pocket puzzles" headingLevel={1} />
+    <Heading
+      title="Pocket puzzles"
+      level={1}
+      useInline={false}
+      noteLink="https://otaniyoz.github.io/pocket-puzzles/"
+      noteTitle="Play online"
+    />
     <Paragraph
-      paragraphContent="This is an ongoing experiment in design and development to create a collection of puzzles:"
+      paragraphContent="This is an ongoing experiment in design and development:"
     />
   </article>
   <figure class="centered-visual-wide">
@@ -21,13 +27,9 @@
       <div class="image-wrapper">
         <img id="img-2" src="../../pocket-puzzles/2.png" alt="Pocket puzzles" />
       </div>
-      <div class="image-wrapper">
-        <img id="img-3" src="../../pocket-puzzles/3.png" alt="Pocket puzzles" />
-      </div>
     </div>
     <div id="col-2">
       <img id="img-4" src="../../pocket-puzzles/4.png" alt="Pocket puzzles" />
-      <img id="img-5" src="../../pocket-puzzles/5.png" alt="Pocket puzzles" />
     </div>
   </figure>
 </SectionGrid>
@@ -71,8 +73,7 @@
     grid-area: 2 / 4 / 3 / 5;
   }
 
-  #img-2,
-  #img-3 {
+  #img-2 {
     object-fit: scale-down;
   }
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import HeadingWithSuper from "$lib/components/HeadingWithSuper.svelte";
+  import Heading from "$lib/components/Heading.svelte";
   import projects from "../../data/projects.json";
   import Table from "$lib/components/Table.svelte";
   import parseDataForTable from "../../utils/parseDataForTable";
@@ -15,10 +15,10 @@
 </svelte:head>
 
 {#if projects}
-  <HeadingWithSuper
+  <Heading
     level={1}
     title="Projects"
-    superTitle={projects.length.toString()}
+    noteTitle={"(" + projects.length.toString() + ")"}
   />
 {/if}
 {#if tableData}

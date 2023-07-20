@@ -4,8 +4,8 @@
 
   export let listRows: string[];
   export let showIndex: boolean = false;
-  export let listTitle: string | undefined;
-  export let listDescription: string | undefined;
+  export let listTitle: string = "";
+  export let listDescription: string = "";
 
   if (listTitle && listTitle.length) {
     listTitle = typographString(listTitle);
@@ -20,7 +20,7 @@
 
 <article>
   {#if listTitle}
-    <Heading headingTitle={listTitle} headingLevel={3} />
+    <Heading title={listTitle} level={3} />
   {/if}
   {#if listDescription}
     <p>

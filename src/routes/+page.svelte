@@ -1,5 +1,5 @@
 <script lang="ts">
-  import HeadingWithSuper from "$lib/components/HeadingWithSuper.svelte";
+  import Heading from "$lib/components/Heading.svelte";
   import Paragraph from "$lib/components/Paragraph.svelte";
   import SectionGrid from "$lib/components/SectionGrid.svelte";
 </script>
@@ -8,7 +8,7 @@
   <title>Web-home of Otaniyoz</title>
 </svelte:head>
 
-<HeadingWithSuper title="About" level={1} superTitle={"me"} />
+<Heading title="About" level={1} noteTitle={"(me)"}/>
 <figure>
   <img alt="Stylized photograph of a man" src="home-banner.jpg" />
 </figure>
