@@ -17,7 +17,7 @@
   {#if title.length && level === 1}
     <h1>
       {title}
-      {#if noteTitle.length}
+      {#if noteTitle[0].length}
         <div class="heading-links-container" class:inline={useInline}>
           {#each noteTitle as _, idx}
             <p>
