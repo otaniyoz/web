@@ -1,5 +1,12 @@
 [  
   {
+    "title": "Etudes in code",
+    "work": "Creative coding",
+    "date": "2023...",
+    "published": "true",
+    "link": "etudes"
+  },
+  {
     "title": "Pocket puzzles",
     "work": "Design, development",
     "date": "2023...",
