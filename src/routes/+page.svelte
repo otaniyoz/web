@@ -8,7 +8,7 @@
   <title>Web-home of Otaniyoz</title>
 </svelte:head>
 
-<Heading title="About" level={1} noteTitle={"(me)"}/>
+<Heading title="About" level={1} noteTitle={["(me)"]}/>
 <figure>
   <img alt="Stylized photograph of a man" src="home-banner.jpg" />
 </figure>

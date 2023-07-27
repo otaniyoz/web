@@ -14,8 +14,8 @@
       title="Pocket puzzles"
       level={1}
       useInline={false}
-      noteLink="https://otaniyoz.github.io/pocket-puzzles/"
-      noteTitle="Play online"
+      noteLink={["https://otaniyoz.github.io/pocket-puzzles/", "https://github.com/otaniyoz/pocket-puzzles"]}
+      noteTitle={["Play online", "See code on Github"]}
     />
     <Paragraph
       paragraphContent="This is an ongoing experiment in design and development:"

@@ -3,12 +3,14 @@
 
   export let level: number;
   export let title: string;
-  export let noteTitle: string = "";
-  export let noteLink: string = "";
+  export let noteTitle: string[] = [""];
+  export let noteLink: string[] = [""];
   export let useInline: boolean = true;
 
   title = typographString(title);
-  noteTitle = typographString(noteTitle);
+  for (let i = 0; i < noteTitle.length; i++) {
+    noteTitle[i] = typographString(noteTitle[i]);
+  }
 </script>
 
 <div class="heading-wrapper">
@@ -16,39 +18,51 @@
     <h1>
       {title}
       {#if noteTitle.length}
-        <p class:inline={useInline}>
-          {#if noteLink.length}
-            <a href={noteLink} target="_blank">{noteTitle}</a>
-          {:else}
-            {noteTitle}
-          {/if}
-        </p>
+        <div class="heading-links-container" class:inline={useInline}>
+          {#each noteTitle as _, idx}
+            <p>
+              {#if noteLink[idx].length}
+                <a href={noteLink[idx]} target="_blank">{noteTitle[idx]}</a>
+              {:else}
+                {noteTitle[idx]}
+              {/if}
+            </p>
+          {/each}
+        </div>
       {/if}
     </h1>
   {:else if title.length && level === 2}
     <h2>
       {title}
       {#if noteTitle.length}
-        <p class:inline={useInline}>
-          {#if noteLink.length}
-            <a href={noteLink} target="_blank">{noteTitle}</a>
-          {:else}
-            {noteTitle}
-          {/if}
-        </p>
+        <div class="heading-links-container" class:inline={useInline}>
+          {#each noteTitle as _, idx}
+            <p>
+              {#if noteLink[idx].length}
+                <a href={noteLink[idx]} target="_blank">{noteTitle[idx]}</a>
+              {:else}
+                {noteTitle[idx]}
+              {/if}
+            </p>
+          {/each}
+        </div>
       {/if}
     </h2>
   {:else if title.length && level === 3}
     <h3>
       {title}
       {#if noteTitle.length}
-        <p class:inline={useInline}>
-          {#if noteLink.length}
-            <a href={noteLink} target="_blank">{noteTitle}</a>
-          {:else}
-            {noteTitle}
-          {/if}
-        </p>
+        <div class="heading-links-container" class:inline={useInline}>
+          {#each noteTitle as _, idx}
+            <p>
+              {#if noteLink[idx].length}
+                <a href={noteLink[idx]} target="_blank">{noteTitle[idx]}</a>
+              {:else}
+                {noteTitle[idx]}
+              {/if}
+            </p>
+          {/each}
+        </div>
       {/if}
     </h3>
   {/if}
@@ -58,7 +72,6 @@
   p {
     margin-block: 0;
     margin-left: 0.35vmax;
-    vertical-align: top;
     word-spacing: normal;
     letter-spacing: normal;
     color: var(--color-dark);
@@ -95,14 +108,19 @@
     line-height: var(--line-height-large);
   }
   .inline {
-    display: inline;
+    display: inline-flex !important;
     margin-left: -0.95vmax;
   }
   .heading-wrapper {
     display: inline-flex;
     flex-flow: row nowrap;
   }
-
+  .heading-links-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    vertical-align: top;
+  }
   @media screen and (min-width: 1200px) {
     h1,
     h2,

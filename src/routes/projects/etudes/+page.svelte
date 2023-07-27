@@ -15,8 +15,8 @@
       title="Etudes in code"
       level={1}
       useInline={false}
-      noteTitle="See GIFs on Telegram"
-      noteLink="https://t.me/etudesincode"
+      noteTitle={["See GIFs on Telegram"]}
+      noteLink={["https://t.me/etudesincode"]}
     />
     <Paragraph
       paragraphContent="Etudes are small pieces of code I write as a coding practice. Here are some examples:"

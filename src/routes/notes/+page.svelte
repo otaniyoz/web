@@ -18,7 +18,7 @@
   <Heading
     title="Notes"
     level={1}
-    noteTitle={"(" + notes.length.toString() + ")"}
+    noteTitle={["(" + notes.length.toString() + ")"]}
   />
 {/if}
 {#if tableData}
