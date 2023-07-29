@@ -16,8 +16,6 @@
       paragraphContent="I try to patch and fix things if I can, and when I can't -- I try to repurpose them responsibly. Here are some examples:"
     />
   </article>
-</SectionGrid>
-<SectionGrid>
   <article class="visual">
     <CardsGrid
       cardsMaps={[

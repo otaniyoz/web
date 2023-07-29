@@ -22,8 +22,6 @@
       paragraphContent="Etudes are small pieces of code I write as a coding practice. Here are some examples:"
     />
   </article>
-</SectionGrid>
-<SectionGrid>
   <article class="visual">
     <CardsGrid
       cardsMaps={[
