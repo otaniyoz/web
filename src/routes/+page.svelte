@@ -15,7 +15,7 @@
 <SectionGrid>
   <div class="narrative">
     <Paragraph
-      paragraphContent="Hallo cyber-stranger. This is a web-home for Otaniyoz. Here you can find various projects and sporadic notes -- all on perhaps too far spread topics and in too different languages. But I might just as well be wrong, so don't take my word for it -- go and see for yourself. Or don't ¯\_(ツ)_/¯"
+      paragraphContent="Hallo, cyber-stranger. This is a web-home for Otaniyoz. Here you can find various projects and sporadic notes -- all on perhaps too far spread topics and in too different languages. But I might just as well be wrong, so don't take my word for it -- go and see for yourself. Or don't ¯\_(ツ)_/¯"
     />
   </div>
 </SectionGrid>
