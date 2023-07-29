@@ -34,7 +34,7 @@
   {:else if title.length && level === 2}
     <h2>
       {title}
-      {#if noteTitle.length}
+      {#if noteTitle[0].length}
         <div class="heading-links-container" class:inline={useInline}>
           {#each noteTitle as _, idx}
             <p>
@@ -51,7 +51,7 @@
   {:else if title.length && level === 3}
     <h3>
       {title}
-      {#if noteTitle.length}
+      {#if noteTitle[0].length}
         <div class="heading-links-container" class:inline={useInline}>
           {#each noteTitle as _, idx}
             <p>
