@@ -34,7 +34,7 @@
       >
         {rowIndex + 1}.
       </p>
-      <p class="list-item">
+      <p>
         {row}
       </p>
     </div>
@@ -52,21 +52,15 @@
 
   .row {
     display: flex;
-    flex-direction: row nowrap;
+    gap: var(--gap-small);
+    flex-flow: row nowrap;
   }
 
   .list-index {
-    grid-column: 1 / 3;
-    align-self: start;
-    justify-self: end;
     color: var(--color-dark);
     padding: 0 0 0 var(--gap-large);
     font-size: var(--font-size-regular);
     font-weight: var(--font-weight-regular);
-  }
-
-  .list-item {
-    grid-column: 3 / 7;
   }
 
   p {
