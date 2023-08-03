@@ -34,9 +34,6 @@
         {
           video: "../../etudes/03072023.mp4",
         },
-        {
-          video: "../../etudes/07052023.mp4",
-        },
       ]}
     />
   </article>
