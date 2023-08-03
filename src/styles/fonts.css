@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Noto Display';
+  font-kerning: normal;
+  src: url('/fonts/NotoSansDisplay-VariableFont_wdth\,wght.ttf');
+}
+
+@font-face {
+  font-family: 'Noto Serif';
+  font-kerning: normal;
+  src: url('/fonts/NotoSerif-Regular.ttf');
+}

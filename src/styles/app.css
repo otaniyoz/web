@@ -65,7 +65,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Noto Display';
   margin: var(--gap-small);
   background-color: var(--color-light);
 }

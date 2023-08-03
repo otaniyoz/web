@@ -29,7 +29,8 @@
 
 <style>
   .narrative {
-    font-family: serif;
+    font-family: 'Noto Serif';
+    font-kerning: normal;
     padding-bottom: var(--gap-large);
     grid-area: auto / 1 / auto / 7;
   }
