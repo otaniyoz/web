@@ -19,7 +19,7 @@
       noteLink={["https://t.me/etudesincode"]}
     />
     <Paragraph
-      paragraphContent="Etudes are small pieces of code I write as a coding practice. Here are some examples:"
+      paragraphContent="Etudes are small pieces of code I write sometimes. Here are some of them:"
     />
   </article>
   <article class="visual">
