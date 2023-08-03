@@ -78,9 +78,6 @@
     font-size: var(--font-size-regular);
     line-height: var(--line-height-large);
     padding-bottom: var(--gap-regular);
-  }
-  a,
-  p {
     font-family: 'Noto Sans Display Regular';
     font-weight: var(--font-weight-regular);
   }
