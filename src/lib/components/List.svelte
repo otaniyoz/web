@@ -52,13 +52,12 @@
 
   .row {
     display: flex;
-    gap: var(--gap-small);
     flex-flow: row nowrap;
   }
 
   .list-index {
     color: var(--color-dark);
-    padding: 0 0 0 var(--gap-large);
+    padding: 0 var(--gap-small) 0 var(--gap-large);
     font-size: var(--font-size-regular);
     font-weight: var(--font-weight-regular);
   }
