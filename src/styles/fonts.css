@@ -1,7 +1,13 @@
 @font-face {
-  font-family: 'Noto Display';
+  font-family: 'Noto Sans Display Bold';
   font-kerning: normal;
-  src: url('/fonts/NotoSansDisplay-VariableFont_wdth\,wght.ttf');
+  src: url('/fonts/NotoSansDisplay-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Noto Sans Display Regular';
+  font-kerning: normal;
+  src: url('/fonts/NotoSansDisplay-Regular.ttf');
 }
 
 @font-face {

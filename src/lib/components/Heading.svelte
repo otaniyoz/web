@@ -107,6 +107,11 @@
     font-size: var(--font-size-regular);
     line-height: var(--line-height-large);
   }
+  h1,
+  h2,
+  h3 {
+    font-family: 'Noto Sans Display Bold';
+  }
   .inline {
     display: inline-flex !important;
     margin-left: -0.95vmax;
