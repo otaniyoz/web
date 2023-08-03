@@ -112,6 +112,10 @@
   h3 {
     font-family: 'Noto Sans Display Bold';
   }
+  a {
+    font-family: 'Noto Sans Display Regular';
+    font-weight: var(--font-weight-regular);
+  }
   .inline {
     display: inline-flex !important;
     margin-left: -0.95vmax;
