@@ -76,9 +76,13 @@
     letter-spacing: normal;
     color: var(--color-dark);
     font-size: var(--font-size-regular);
-    font-weight: var(--font-weight-regular);
     line-height: var(--line-height-large);
     padding-bottom: var(--gap-regular);
+  }
+  a,
+  p {
+    font-family: 'Noto Sans Display Regular';
+    font-weight: var(--font-weight-regular);
   }
   h1 {
     padding: 0;
@@ -111,10 +115,6 @@
   h2,
   h3 {
     font-family: 'Noto Sans Display Bold';
-  }
-  a {
-    font-family: 'Noto Sans Display Regular';
-    font-weight: var(--font-weight-regular);
   }
   .inline {
     display: inline-flex !important;
