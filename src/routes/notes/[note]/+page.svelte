@@ -29,8 +29,7 @@
 
 <style>
   .narrative {
-    font-family: 'Noto Serif';
-    font-kerning: normal;
+    font-family:  "IBM Plex Serif";
     padding-bottom: var(--gap-large);
     grid-area: auto / 1 / auto / 7;
   }

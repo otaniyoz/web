@@ -1,17 +1,24 @@
 @font-face {
-  font-family: 'Noto Sans Display Bold';
+  font-family: "IBM Plex Serif";
   font-kerning: normal;
-  src: url('/fonts/NotoSansDisplay-Bold.ttf');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  src: url("/fonts/IBMPlexSerif-Regular.woff") format("woff");
 }
-
 @font-face {
-  font-family: 'Noto Sans Display Regular';
+  font-family: "IBM Plex Sans";
   font-kerning: normal;
-  src: url('/fonts/NotoSansDisplay-Regular.ttf');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+  src: url("/fonts/IBMPlexSans-Bold.woff") format("woff");
 }
-
 @font-face {
-  font-family: 'Noto Serif';
+  font-family: "IBM Plex Sans";
   font-kerning: normal;
-  src: url('/fonts/NotoSerif-Regular.ttf');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  src: url("/fonts/IBMPlexSans-Regular.woff") format("woff");
 }

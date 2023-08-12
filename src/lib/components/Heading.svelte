@@ -78,7 +78,7 @@
     font-size: var(--font-size-regular);
     line-height: var(--line-height-large);
     padding-bottom: var(--gap-regular);
-    font-family: 'Noto Sans Display Regular';
+    font-family: "IBM Plex Sans";
     font-weight: var(--font-weight-regular);
   }
   h1 {
@@ -111,7 +111,7 @@
   h1,
   h2,
   h3 {
-    font-family: 'Noto Sans Display Bold';
+    font-family: "IBM Plex Sans";
   }
   .inline {
     display: inline-flex !important;
