@@ -111,6 +111,7 @@
   h1,
   h2,
   h3 {
+    width: 100%;
     font-family: "IBM Plex Sans";
   }
   .inline {
@@ -118,13 +119,12 @@
     margin-left: -0.95vmax;
   }
   .heading-wrapper {
-    display: inline-flex;
-    flex-flow: row nowrap;
+    width: 100%;
   }
   .heading-links-container {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    gap: var(--gap-small);
     vertical-align: top;
   }
   @media screen and (min-width: 1200px) {
