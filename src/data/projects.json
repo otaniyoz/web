@@ -24,14 +24,14 @@
     "title": "Customer segmentation",
     "work": "Data analysis",
     "date": "2023",
-    "published": "true",
+    "published": "false",
     "link": "customer-segmentation"
   },
   {
     "title": "Genuary 2023",
     "work": "Creative coding",
     "date": "2023",
-    "published": "true",
+    "published": "false",
     "link": "genuary-2023"
   },
   {
@@ -52,14 +52,14 @@
     "title": "Concept landing page for a barrel of oil",
     "work": "Design",
     "date": "2022",
-    "published": "true",
+    "published": "false",
     "link": "oil-barrel"
   },
   {
     "title": "Pocket pack: a collection of utilities and games",
     "work": "Design, development",
     "date": "2022",
-    "published": "true",
+    "published": "false",
     "link": "pocket-pack"
   }
 ]
