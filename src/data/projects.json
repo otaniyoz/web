@@ -1,7 +1,7 @@
 [  
   {
     "title": "Etudes in code",
-    "work": "Creative coding",
+    "work": "Design, creative coding",
     "date": "2023...",
     "published": "true",
     "link": "etudes"
@@ -16,7 +16,7 @@
   {
     "title": "Image proccessing library in C",
     "work": "Development, computer vision",
-    "date": "2023...",
+    "date": "2023",
     "published": "false",
     "link": "image-c"
   },
@@ -28,11 +28,11 @@
     "link": "customer-segmentation"
   },
   {
-    "title": "Genuary 2023",
+    "title": "Genuary submissions",
     "work": "Creative coding",
-    "date": "2023",
-    "published": "false",
-    "link": "genuary-2023"
+    "date": "2023...",
+    "published": "true",
+    "link": "genuary"
   },
   {
     "title": "DIY clothes and gear",
@@ -49,11 +49,18 @@
     "link": "vis-presnya"
   },
   {
-    "title": "Concept landing page for a barrel of oil",
-    "work": "Design",
+    "title": "Landing page for a barrel of oil",
+    "work": "Design, concept",
     "date": "2022",
     "published": "true",
     "link": "oil-barrel"
+  },
+  {
+    "title": "Pocket notes",
+    "work": "Design, concept",
+    "date": "2022",
+    "published": "true",
+    "link": "pocket-notes"
   },
   {
     "title": "Pocket pack: a collection of utilities and games",
@@ -61,5 +68,5 @@
     "date": "2022",
     "published": "false",
     "link": "pocket-pack"
-  }
+  } 
 ]

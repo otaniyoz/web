@@ -7,32 +7,20 @@
 </script>
 
 <svelte:head>
-  <title>Concept landing page for a barrel of oil</title>
+  <title>Concept note-taking app</title>
 </svelte:head>
 
 <SectionGrid>
   <article class="narrative">
     <Heading
-      title="Landing page for a barrel of oil"
+      title="Pocket notes"
       level={1}
       useInline={false}
     />
     <Paragraph
-      paragraphContent="This is a concept landing page for a barrel of oil, an exercise in design. Originally made in 2022, it was later updated. Version immediately below is the updated version. Original work can be found at the bottom of the page."
+      paragraphContent="This is a concept note-taking app, an exercise in design. Originally made in 2022."
     />
   </article>
-</SectionGrid>
-<SectionGrid>
-  <article class="narrative">
-    <Heading
-      title="2023"
-      level={2}
-      useInline={false}
-    />
-  </article>
-  <figure class="no-margin centered-visual-wide">
-    <img alt="Landing page dark theme" src="../../oil-barrel/2023.jpg" />
-  </figure>
 </SectionGrid>
 <SectionGrid>
   <article class="narrative">
@@ -42,8 +30,12 @@
       useInline={false}
     />
   </article>
-  <figure class="no-margin centered-visual-wide">
-    <img alt="Landing page dark theme" src="../../oil-barrel/2022.jpg" />
+  <figure class="no-margin centered-visual-wide grid-container three-columns">
+    <img src="../../pocket-notes/home.png" alt="Pocket notes" />
+    <img src="../../pocket-notes/note-select.png" alt="Pocket notes" />
+    <img src="../../pocket-notes/note.png" alt="Pocket notes" />
+    <img src="../../pocket-notes/note-copy-select.png" alt="Pocket notes" />
+    <img src="../../pocket-notes/note-copy-success.png" alt="Pocket notes" />
   </figure>
 </SectionGrid>
 
@@ -60,6 +52,15 @@
     .centered-visual-wide {
       grid-area: auto / 1 / auto / 7;
     }
+  }
+
+  .three-columns {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-container {
+    display: grid;
+    gap: var(--gap-small);
   }
 
   .no-margin {

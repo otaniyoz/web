@@ -1,5 +1,4 @@
 <script lang="ts">
-  import List from "$lib/components/List.svelte";
   import Heading from "$lib/components/Heading.svelte";
   import Paragraph from "$lib/components/Paragraph.svelte";
   import SectionGrid from "$lib/components/SectionGrid.svelte";
@@ -55,11 +54,6 @@
     <Paragraph
       paragraphContent="In That tile, players need to identify a tile that stands out from other tiles on the grid by tapping on it."
     />
-  </article>
-</SectionGrid>
-<SectionGrid>
-  <article class="narrative">
-    <Paragraph paragraphContent="Pocket puzzles is built with HTML, CSS, and JavaScript using Canvas API. Each image is procedurally generated from the Lissajous curve. Canvas API is used to draw every tile and the grid of tiles. Each puzzle is a separate class." />
   </article>
 </SectionGrid>
 

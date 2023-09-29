@@ -35,6 +35,12 @@
         {
           video: "../../etudes/20230818.mp4",
         },
+        {
+          video: "../../etudes/20230904.mp4",
+        },
+        {
+          video: "../../etudes/20230908.mp4",
+        },
       ]}
     />
   </article>
@@ -50,11 +56,6 @@
         "it shouldn't last more than five seconds and weigh more than a few mbs",
       ]}
     />
-    <Paragraph paragraphContent="Right now, I mostly use Python's matplotlib, numpy, and scipy to draw frames."/>
-  </article>
-</SectionGrid>
-<SectionGrid>
-  <article class="narrative">
     <Paragraph paragraphContent="Etudes are different from code golfing: they should not optimise for shorter code-length at the cost of clarity and performance. They are also different from creative coding: etudes should try to maintain a healthy balance between code quality & performance and artistic vision."/>
     <Paragraph paragraphContent="I think, with these loose constraints, etudes are a healthier and a more enjoyable alternative to coding exercises and interview questions."/>
   </article>
