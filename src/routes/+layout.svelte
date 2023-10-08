@@ -33,7 +33,7 @@
   header {
     position: sticky;
     top: var(--gap-small);
-    padding-bottom: var(--gap-large);
+    padding-bottom: var(--gap-xxlarge);
   }
 
   li {
