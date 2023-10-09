@@ -68,5 +68,12 @@
     "date": "2022",
     "published": "false",
     "link": "pocket-pack"
-  } 
+  },
+  {
+    "title": "Pomes",
+    "work": "Poetry",
+    "date": "2021...",
+    "published": "true",
+    "link": "pomes"
+  }
 ]

@@ -1,8 +1,6 @@
 <script lang="ts">
-  import List from "$lib/components/List.svelte";
   import Heading from "$lib/components/Heading.svelte";
   import Paragraph from "$lib/components/Paragraph.svelte";
-  import CardsGrid from "$lib/components/CardsGrid.svelte";
   import SectionGrid from "$lib/components/SectionGrid.svelte";
 </script>
 
