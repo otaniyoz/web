@@ -21,8 +21,7 @@
       "Да и зачем они? Ведь всё важное в тебе.",
       "Зачем они тебе? Спроси себя и промолчи."
     ],
-    "published": "true",
-    "link": "silencium"
+    "published": "true"
   },
   {
     "title": "Winter haiku",
@@ -32,7 +31,6 @@
       "No birds around to pierce it,",
       "But there is sunlight."
     ],
-    "link": "winter-haiku",
     "published": "true"
   },
   {
@@ -50,8 +48,7 @@
       "Боюсь, что в 25 умру,",
       "Так и не узнав чего хочу."
     ],
-    "published": "true",
-    "link": "twenty-five"
+    "published": "true"
   },
   {
     "title": "Знак",
@@ -64,7 +61,6 @@
       "С обочины жизни оставленная неслышно лаять:",
       "'Спеши-спеши'."
     ],
-    "published": "true",
-    "link": "dog-sign"
+    "published": "true"
   }
 ]

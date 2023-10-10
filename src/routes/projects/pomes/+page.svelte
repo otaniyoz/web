@@ -20,18 +20,26 @@
 </SectionGrid>
 {#if pomes}
   {#each pomes as pome}
-    <SectionGrid>
-      <article class="pome-body">
-        <Heading title={pome.title} level={2} useInline={false} />
-        {#each pome.content as line}
-          <Paragraph paragraphContent={line} />
-        {/each}
-      </article>
-      <article class="pome-date">
-        <Paragraph paragraphContent={pome.date} />
-      </article>
-    </SectionGrid>
+    {#if pome.published === "true"}
+      <SectionGrid>
+        <article class="pome-body">
+          <Heading title={pome.title} level={2} useInline={false} />
+          {#each pome.content as line}
+            <Paragraph paragraphContent={line} />
+          {/each}
+        </article>
+        <article class="pome-date">
+          <Paragraph paragraphContent={pome.date} />
+        </article>
+      </SectionGrid>
+    {/if}
   {/each}
+{:else}
+  <SectionGrid>
+    <article class="narrative">
+      <Paragraph paragraphContent="No poems for you to see, eh" />
+    </article>
+  </SectionGrid>
 {/if}
 
 <style>
@@ -41,7 +49,7 @@
 
   .pome-body {
     grid-area: auto / 2 / auto / 8;
-    font-family:  "IBM Plex Serif";
+    font-family: "IBM Plex Serif";
     padding-bottom: var(--gap-large);
   }
 
