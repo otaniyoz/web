@@ -16,21 +16,9 @@
       useInline={false}
     />
     <Paragraph
-      paragraphContent="This is a concept landing page for a barrel of oil, an exercise in design. Originally made in 2022, it was later updated. Version immediately below is the updated version. Original work can be found at the bottom of the page."
+      paragraphContent="This is a concept landing page for a barrel of oil, an exercise in design. Originally made in 2022."
     />
   </article>
-</SectionGrid>
-<SectionGrid>
-  <article class="narrative">
-    <Heading
-      title="2023"
-      level={2}
-      useInline={false}
-    />
-  </article>
-  <figure class="no-margin centered-visual-wide">
-    <img alt="Landing page dark theme" src="../../oil-barrel/2023.jpg" />
-  </figure>
 </SectionGrid>
 <SectionGrid>
   <article class="narrative">
