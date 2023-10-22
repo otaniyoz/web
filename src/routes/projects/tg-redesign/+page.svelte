@@ -6,14 +6,29 @@
 </script>
 
 <svelte:head>
-  <title>Telegram Android app redesign concept</title>
+  <title>Redesigning Telegram's Android app</title>
 </svelte:head>
 
 <SectionGrid>
   <article class="narrative">
-    <Heading title="Telegram's app redesign" level={1} useInline={false} />
+    <Heading
+      title="Redesigning Telegram's Android app"
+      level={1}
+      useInline={false}
+    />
     <Paragraph
-      paragraphContent="This is a concept redesign for Telegram's Android app. It was made in around 48 hours over 10 days. The main goal was to update existing elements based on Material 3 guidelines, while maintaining app's core essence and lightweight feel. Along the way, I made some icons and rewrote some interface text. Everything was done in Figma using components, styles, variables, tokens, hands, eyes, a-a-and a brain!"
+      paragraphContent="This is a concept redesign for Telegram's Android app. It was made in around 48 hours over 10 days. The main goal was to update existing elements based on Material Design 3 guidelines, while maintaining app's core essence and lightweight feel. Along the way, I made some icons and rewrote some interface text. Everything was done in Figma using components, styles, variables, tokens, hands, eyes, a-a-and a brain!"
+    />
+  </article>
+</SectionGrid>
+<SectionGrid>
+  <article class="narrative">
+    <List
+      listTitle="To be clear:"
+      listDescription=""
+      listRows={[
+        "This is an unofficial redesign and is not affiliated with or endorsed by Telegram in any way.",
+      ]}
     />
   </article>
 </SectionGrid>
@@ -50,7 +65,7 @@
 <SectionGrid>
   <article class="narrative">
     <Paragraph
-      paragraphContent="Pressing FAB in the bottom navigation bar opens up a full-screen menu. Quick action buttons are represented by Material 3 outlined buttons in a flex-row with wrap. On scroll, they collapse into a scrollable no-wrap flex-row:"
+      paragraphContent="Pressing FAB in the bottom navigation bar opens up a full-screen menu. Quick action buttons are represented by Material Design 3 outlined buttons in a flex-row with wrap. On scroll, they collapse into a scrollable no-wrap flex-row:"
     />
   </article>
   <figure class="no-margin centered-visual-wide grid-container two-columns">
@@ -88,14 +103,16 @@
 <SectionGrid>
   <article class="narrative">
     <Paragraph
-      paragraphContent="Almost all interface elements are purposefuly based on Material 3 kit. However, due to Telegram's brain-wrinkling complexity and functionality, some elements had to be designed from scratch or from significantly modified system elements. For example, here some of the custom icons that were made either from scratch or by modifying default icons:"
+      paragraphContent="Almost all interface elements are purposefuly based on Material Design 3 kit. However, due to Telegram's brain-wrinkling complexity and functionality, some elements had to be designed from scratch or from significantly modified system elements. For example, here are some of the custom icons that were made either from scratch or by modifying default icons:"
     />
   </article>
-  <figure class="no-margin centered-visual-wide">
-    <img
-      src="../../tg-redesign/custom-icons-overview.png"
-      alt="Telegram Android app redesign concept"
-    />
+  <figure class="no-margin centered-visual-wide" id="icons-gif-container">
+    <video muted autoplay loop id="icons-gif"
+      ><source
+        src="../../tg-redesign/custom-icons.mp4"
+        type="video/mp4"
+      /></video
+    >
   </figure>
 </SectionGrid>
 <SectionGrid>
@@ -127,6 +144,15 @@
     }
   }
 
+  #icons-gif {
+    max-width: 320px;
+    aspect-ratio: 1 / 1;
+  }
+
+  #icons-gif-container {
+    text-align: center;
+  }
+
   .three-columns {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -142,5 +168,10 @@
 
   .no-margin {
     margin: 0;
+  }
+
+  img,
+  video {
+    object-fit: contain;
   }
 </style>

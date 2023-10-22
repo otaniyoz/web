@@ -1,10 +1,17 @@
 [  
   {
-    "title": "Telegram's app redesign",
+    "title": "Redesigning Telegram's Android app",
     "work": "Design, concept",
     "date": "2023",
     "published": "true",
     "link": "tg-redesign"
+  },
+  {
+    "title": "Redesigning Jep!",
+    "work": "Design, concept",
+    "date": "2023",
+    "published": "true",
+    "link": "jep-redesign"
   },
   {
     "title": "Etudes in code",

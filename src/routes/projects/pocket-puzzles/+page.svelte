@@ -84,4 +84,8 @@
   .no-margin {
     margin: 0;
   }
+
+  img {
+    object-fit: contain;
+  }
 </style>
