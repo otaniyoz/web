@@ -17,7 +17,7 @@
       useInline={false}
     />
     <Paragraph
-      paragraphContent="This is a concept redesign for Telegram's Android app. It was made in around 48 hours over 10 days. The main goal was to update existing elements based on Material Design 3 guidelines, while maintaining app's core essence and lightweight feel. Along the way, I made some icons and rewrote some interface text. Everything was done in Figma using components, styles, variables, tokens, hands, eyes, a-a-and a brain!"
+      paragraphContent="This is a concept redesign for Telegram's Android app. It was made in around 48 hours. The main goal was to update existing elements based on Material Design 3 guidelines, while maintaining app's core essence and lightweight feel. Along the way, I made some icons and rewrote some interface text. Everything was done in Figma using components, styles, variables, tokens, hands, eyes, a-a-and a brain!"
     />
   </article>
 </SectionGrid>

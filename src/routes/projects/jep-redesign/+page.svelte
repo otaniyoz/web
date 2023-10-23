@@ -13,7 +13,7 @@
   <article class="narrative">
     <Heading title="Redesigning Jep!" level={1} useInline={false} />
     <Paragraph
-      paragraphContent="This is a concept redesign for Jep! -- a multiplayer online trivia created by Claire Nord. Most of the work was done in 20 hours spread over a week. The main goal was to bring the interface up to date, while preserving core elements, scenarios, and game mechanics."
+      paragraphContent="This is a concept redesign for Jep! -- a multiplayer online trivia created by Claire Nord. Most of the work was done in 20 hours. The main goal was to bring the interface up to date, while preserving core elements, scenarios, and game mechanics."
     />
   </article>
 </SectionGrid>
