@@ -41,8 +41,8 @@
     pointer-events: none;
     background: rgba(242, 242, 245, 0.25);
     backdrop-filter: blur(var(--gap-xlarge));
-    -webkit-mask-image: linear-gradient(rgb(242, 242, 245) 15%, rgba(242, 242, 245, 0) 100%);
-    mask-image: linear-gradient(rgb(242, 242, 245) 15%, rgba(242, 242, 245, 0) 100%);
+    -webkit-mask-image: linear-gradient(rgb(242, 242, 245) 0%, rgba(242, 242, 245, 0.75) 50%, rgba(242, 242, 245, 0) 100%);
+    mask-image: linear-gradient(rgb(242, 242, 245) 0%, rgba(242, 242, 245, 0.75) 50%, rgba(242, 242, 245, 0) 100%);
   }
 
   main {
