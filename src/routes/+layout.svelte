@@ -3,18 +3,19 @@
   import "../styles/fonts.css";
   import Paragraph from "$lib/components/Paragraph.svelte";
   import { base } from "$app/paths";
+  import { page } from "$app/stores";
 </script>
 
 <header>
   <div id="backdrop" />
   <nav>
     <ul>
-      <li><a href={base}>About</a></li>
+      <li><a href={base} class:orange-text={$page.url.pathname.endsWith(base)}>About</a></li>
       <li class="second">
-        <a href="{base}/projects">Projects</a>
+        <a href="{base}/projects" class:orange-text={$page.url.pathname.includes("projects")}>Projects</a>
       </li>
       <li class="text-right third">
-        <a href="{base}/notes">Notes</a>
+        <a href="{base}/notes" class:orange-text={$page.url.pathname.includes("notes")}>Notes</a>
       </li>
     </ul>
   </nav>
@@ -23,10 +24,7 @@
   <slot />
 </main>
 <footer>
-  <article class="footer-text">
-    <Paragraph paragraphContent="Created by Otaniyoz in 2023" />
-    <Paragraph paragraphContent="ここにいてもいいから" />
-  </article>
+  <Paragraph paragraphContent="Created by Otaniyoz in 2023" />
   <article class="footer-image">
     <img id="suriken" src="{base}/favicon.png" alt="Suriken" class="rotating" />
   </article>
@@ -84,8 +82,8 @@
     grid-template-columns: repeat(8, 1fr);
   }
 
-  .footer-text {
-    grid-column: 1 / -2;
+  .orange-text {
+    color: var(--color-orange);
   }
 
   #suriken {
@@ -95,8 +93,9 @@
   }
 
   .footer-image {
-    text-align: right;
+    margin-top: auto;
     overflow: hidden;
+    text-align: right;
     grid-column: -2 / -1;
   }
 
