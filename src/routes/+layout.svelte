@@ -10,12 +10,24 @@
   <div id="backdrop" />
   <nav>
     <ul>
-      <li><a href={base} class:orange-text={$page.url.pathname.endsWith(base)}>About</a></li>
+      <li>
+        <a
+          href={base}
+          class:orange-text={$page.url.pathname.endsWith(base + "/")}>About</a
+        >
+      </li>
       <li class="second">
-        <a href="{base}/projects" class:orange-text={$page.url.pathname.includes("projects")}>Projects</a>
+        <a
+          href="{base}/projects"
+          class:orange-text={$page.url.pathname.includes("projects")}
+          >Projects</a
+        >
       </li>
       <li class="text-right third">
-        <a href="{base}/notes" class:orange-text={$page.url.pathname.includes("notes")}>Notes</a>
+        <a
+          href="{base}/notes"
+          class:orange-text={$page.url.pathname.includes("notes")}>Notes</a
+        >
       </li>
     </ul>
   </nav>
@@ -39,8 +51,16 @@
     pointer-events: none;
     background: rgba(242, 242, 245, 0.25);
     backdrop-filter: blur(var(--gap-xlarge));
-    -webkit-mask-image: linear-gradient(rgb(242, 242, 245) 0%, rgba(242, 242, 245, 0.75) 50%, rgba(242, 242, 245, 0) 100%);
-    mask-image: linear-gradient(rgb(242, 242, 245) 0%, rgba(242, 242, 245, 0.75) 50%, rgba(242, 242, 245, 0) 100%);
+    -webkit-mask-image: linear-gradient(
+      rgb(242, 242, 245) 0%,
+      rgba(242, 242, 245, 0.75) 50%,
+      rgba(242, 242, 245, 0) 100%
+    );
+    mask-image: linear-gradient(
+      rgb(242, 242, 245) 0%,
+      rgba(242, 242, 245, 0.75) 50%,
+      rgba(242, 242, 245, 0) 100%
+    );
   }
 
   main {
@@ -74,7 +94,7 @@
   }
 
   ul {
-    padding: 0; 
+    padding: 0;
     display: grid;
     margin-block: 0;
     list-style: none;
