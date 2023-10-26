@@ -3,6 +3,7 @@
   import Heading from "$lib/components/Heading.svelte";
   import Paragraph from "$lib/components/Paragraph.svelte";
   import SectionGrid from "$lib/components/SectionGrid.svelte";
+  import typographString from "../../../utils/typographString";
   import type { NoteContentType } from "$lib/types";
 
   export let data: NoteContentType;
@@ -17,7 +18,7 @@
 {#if data.post}
   <SectionGrid>
     <div class="heading-wrapper">
-      <Heading title={data.post.title} level={1} />
+      <Heading level={1}>{typographString(data.post.title)}</Heading>
     </div>
     <article class="narrative">
       {#each data.post.content as paragraph}
@@ -29,7 +30,7 @@
 
 <style>
   .narrative {
-    font-family:  "IBM Plex Serif";
+    font-family: "IBM Plex Serif";
     padding-bottom: var(--gap-large);
     grid-area: auto / 1 / auto / 7;
   }

@@ -11,60 +11,58 @@
   }
 </script>
 
-<div class="heading-wrapper">
-  {#if level === 1}
-    <h1>
-      <slot />
-      {#if noteTitle[0].length}
-        <div class="heading-links-container" class:inline={useInline}>
-          {#each noteTitle as _, idx}
-            <p>
-              {#if noteLink[idx].length}
-                <a href={noteLink[idx]} target="_blank">{noteTitle[idx]}</a>
-              {:else}
-                {noteTitle[idx]}
-              {/if}
-            </p>
-          {/each}
-        </div>
-      {/if}
-    </h1>
-  {:else if level === 2}
-    <h2>
-      <slot /> 
-      {#if noteTitle[0].length}
-        <div class="heading-links-container" class:inline={useInline}>
-          {#each noteTitle as _, idx}
-            <p>
-              {#if noteLink[idx].length}
-                <a href={noteLink[idx]} target="_blank">{noteTitle[idx]}</a>
-              {:else}
-                {noteTitle[idx]}
-              {/if}
-            </p>
-          {/each}
-        </div>
-      {/if}
-    </h2>
-  {:else if level === 3}
-    <h3>
-      <slot />
-      {#if noteTitle[0].length}
-        <div class="heading-links-container" class:inline={useInline}>
-          {#each noteTitle as _, idx}
-            <p>
-              {#if noteLink[idx].length}
-                <a href={noteLink[idx]} target="_blank">{noteTitle[idx]}</a>
-              {:else}
-                {noteTitle[idx]}
-              {/if}
-            </p>
-          {/each}
-        </div>
-      {/if}
-    </h3>
-  {/if}
-</div>
+{#if level === 1}
+  <h1>
+    <slot />
+    {#if noteTitle[0].length}
+      <div class="heading-links-container" class:inline={useInline}>
+        {#each noteTitle as _, idx}
+          <p>
+            {#if noteLink[idx].length}
+              <a href={noteLink[idx]} target="_blank">{noteTitle[idx]}</a>
+            {:else}
+              {noteTitle[idx]}
+            {/if}
+          </p>
+        {/each}
+      </div>
+    {/if}
+  </h1>
+{:else if level === 2}
+  <h2>
+    <slot />
+    {#if noteTitle[0].length}
+      <div class="heading-links-container" class:inline={useInline}>
+        {#each noteTitle as _, idx}
+          <p>
+            {#if noteLink[idx].length}
+              <a href={noteLink[idx]} target="_blank">{noteTitle[idx]}</a>
+            {:else}
+              {noteTitle[idx]}
+            {/if}
+          </p>
+        {/each}
+      </div>
+    {/if}
+  </h2>
+{:else if level === 3}
+  <h3>
+    <slot />
+    {#if noteTitle[0].length}
+      <div class="heading-links-container" class:inline={useInline}>
+        {#each noteTitle as _, idx}
+          <p>
+            {#if noteLink[idx].length}
+              <a href={noteLink[idx]} target="_blank">{noteTitle[idx]}</a>
+            {:else}
+              {noteTitle[idx]}
+            {/if}
+          </p>
+        {/each}
+      </div>
+    {/if}
+  </h3>
+{/if}
 
 <style>
   p {
@@ -115,9 +113,6 @@
   .inline {
     display: inline-flex !important;
     margin-left: -0.95vmax;
-  }
-  .heading-wrapper {
-    width: 100%;
   }
   .heading-links-container {
     display: flex;
