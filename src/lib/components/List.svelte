@@ -20,7 +20,9 @@
 
 <article>
   {#if listTitle}
-    <Heading title={listTitle} level={3} />
+    <Heading level={3}>
+      {typographString(listTitle)}</Heading
+    >
   {/if}
   {#if listDescription}
     <p>
