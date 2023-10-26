@@ -4,14 +4,14 @@
   export let href: string;
   export let text: string;
   export let target = "_blank";
-  export let externalLink: boolean;
+  export let outside: boolean;
 
   if (text && text.length) {
     text = typographString(text);
   }
 </script>
 
-{#if externalLink}
+{#if outside}
   <a {href} {target}>{text}</a>↗
 {:else}
   <a {href} {target}>{text}</a>
@@ -20,10 +20,10 @@
 <style>
   a {
     padding: 0;
+    font-size: inherit;
     font-weight: inherit;
     text-decoration: none;
     color: var(--color-dark);
-    font-size: var(--font-size-regular);
     border-bottom: 1px solid var(--color-dark);
   }
 

@@ -1,7 +1,6 @@
 <script lang="ts">
-  import Heading from "$lib/components/Heading.svelte";
-  import Paragraph from "$lib/components/Paragraph.svelte";
-  import SectionGrid from "$lib/components/SectionGrid.svelte";
+  import Link from "$lib/components/Link.svelte";
+  import { base } from "$app/paths";
 </script>
 
 <svelte:head>
@@ -9,20 +8,20 @@
 </svelte:head>
 
 <h1>
-  Hallo, cyber-stranger. This is a web-home for <img
-    alt="Stylized photograph of a man"
-    src="home-banner.jpg"
-  /> Otaniyoz. A place for various projects and sporadic notes. All on, perhaps,
-  too far spread topics and in too different languages. But I might be wrong about
-  it, so don't take my word for it — go and see for yourself. Or don't
+   Hallo, cyber-stranger. This is a web-home for <img alt="Illustration of a man" src="home-banner.jpg" /> Otaniyoz. A place for <Link href="{base}/projects" text="various projects" outside={false} /> and <Link href="{base}/notes" text="sporadic notes" outside={false} />. All on, perhaps, too far spread topics and in too different languages. But I might be wrong, so don't take my word for it — go and see for yourself <img alt="Skull with beaming eye-sockets" src="skull.png" id="skull" />. Or don't
 </h1>
 
 <style>
+  #skull {
+    height: calc(0.8*var(--line-height-regular));
+    vertical-align: sub;
+  }
+
   img {
-    aspect-ratio: 1 / 1;
     display: inline-block;
     vertical-align: text-bottom;
-    width: var(--line-height-regular);
+    height: var(--line-height-regular);
+    width: auto;
   }
 
   h1 {
