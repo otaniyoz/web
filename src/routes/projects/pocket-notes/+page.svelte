@@ -2,6 +2,7 @@
   import Heading from "$lib/components/Heading.svelte";
   import Paragraph from "$lib/components/Paragraph.svelte";
   import SectionGrid from "$lib/components/SectionGrid.svelte";
+  import typographString from "../../../utils/typographString";
 </script>
 
 <svelte:head>
@@ -10,11 +11,9 @@
 
 <SectionGrid>
   <article class="narrative">
-    <Heading
-      title="Pocket notes"
-      level={1}
-      useInline={false}
-    />
+    <Heading level={1} useInline={false}>
+      {typographString("Pocket notes")}
+    </Heading>
     <Paragraph
       paragraphContent="This is a concept note-taking app, an exercise in design. Originally made in 2022."
     />
@@ -22,11 +21,7 @@
 </SectionGrid>
 <SectionGrid>
   <article class="narrative">
-    <Heading
-      title="2022"
-      level={2}
-      useInline={false}
-    />
+    <Heading level={2} useInline={false}>2022</Heading>
   </article>
   <figure class="no-margin centered-visual-wide grid-container three-columns">
     <img src="../../pocket-notes/home.png" alt="Pocket notes" />

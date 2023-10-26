@@ -4,6 +4,7 @@
   import Paragraph from "$lib/components/Paragraph.svelte";
   import CardsGrid from "$lib/components/CardsGrid.svelte";
   import SectionGrid from "$lib/components/SectionGrid.svelte";
+  import typographString from "../../../utils/typographString";
 </script>
 
 <svelte:head>
@@ -13,12 +14,16 @@
 <SectionGrid>
   <article class="narrative">
     <Heading
-      title="Etudes in code"
       level={1}
       useInline={false}
       noteTitle={["See GIFs on Telegram", "See code on Github"]}
-      noteLink={["https://t.me/etudesincode", "https://github.com/otaniyoz/etudes"]}
-    />
+      noteLink={[
+        "https://t.me/etudesincode",
+        "https://github.com/otaniyoz/etudes",
+      ]}
+    >
+      {typographString("Etudes in code")}
+    </Heading>
     <Paragraph
       paragraphContent="Etudes are small pieces of code with minimal dependecies that create self-contained creative animations:"
     />
@@ -56,8 +61,12 @@
         "it shouldn't last more than five seconds and weigh more than a few mbs",
       ]}
     />
-    <Paragraph paragraphContent="Etudes are different from code golfing: they should not optimise for shorter code-length at the cost of clarity and performance. They are also different from creative coding: etudes should try to maintain a healthy balance between code quality & performance and artistic vision."/>
-    <Paragraph paragraphContent="I think, with these loose constraints, etudes are a healthier and a more enjoyable alternative to coding exercises and interview questions."/>
+    <Paragraph
+      paragraphContent="Etudes are different from code golfing: they should not optimise for shorter code-length at the cost of clarity and performance. They are also different from creative coding: etudes should try to maintain a healthy balance between code quality & performance and artistic vision."
+    />
+    <Paragraph
+      paragraphContent="I think, with these loose constraints, etudes are a healthier and a more enjoyable alternative to coding exercises and interview questions."
+    />
   </article>
 </SectionGrid>
 

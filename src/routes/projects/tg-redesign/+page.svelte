@@ -3,6 +3,7 @@
   import Heading from "$lib/components/Heading.svelte";
   import Paragraph from "$lib/components/Paragraph.svelte";
   import SectionGrid from "$lib/components/SectionGrid.svelte";
+  import typographString from "../../../utils/typographString";
 </script>
 
 <svelte:head>
@@ -11,11 +12,9 @@
 
 <SectionGrid>
   <article class="narrative">
-    <Heading
-      title="Redesigning Telegram's Android app"
-      level={1}
-      useInline={false}
-    />
+    <Heading level={1} useInline={false}>
+      {typographString("Redesigning Telegram's Android app")}
+    </Heading>
     <Paragraph
       paragraphContent="This is a concept redesign for Telegram's Android app. It was made in around 48 hours. The main goal was to update existing elements based on Material Design 3 guidelines, while maintaining app's core essence and lightweight feel. Along the way, I made some icons and rewrote some interface text. Everything was done in Figma using components, styles, variables, tokens, hands, eyes, a-a-and a brain!"
     />

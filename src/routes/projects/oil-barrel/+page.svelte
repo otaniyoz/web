@@ -2,6 +2,7 @@
   import Heading from "$lib/components/Heading.svelte";
   import Paragraph from "$lib/components/Paragraph.svelte";
   import SectionGrid from "$lib/components/SectionGrid.svelte";
+  import typographString from "../../../utils/typographString";
 </script>
 
 <svelte:head>
@@ -10,11 +11,9 @@
 
 <SectionGrid>
   <article class="narrative">
-    <Heading
-      title="Landing page for a barrel of oil"
-      level={1}
-      useInline={false}
-    />
+    <Heading level={1} useInline={false}>
+      {typographString("Landing page for a barrel of oil")}
+    </Heading>
     <Paragraph
       paragraphContent="This is a concept landing page for a barrel of oil, an exercise in design. Originally made in 2022."
     />
@@ -22,11 +21,7 @@
 </SectionGrid>
 <SectionGrid>
   <article class="narrative">
-    <Heading
-      title="2022"
-      level={2}
-      useInline={false}
-    />
+    <Heading level={2} useInline={false}>2022</Heading>
   </article>
   <figure class="no-margin centered-visual-wide">
     <img alt="Landing page dark theme" src="../../oil-barrel/2022.jpg" />

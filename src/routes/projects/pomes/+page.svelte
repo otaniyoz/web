@@ -2,7 +2,7 @@
   import Heading from "$lib/components/Heading.svelte";
   import Paragraph from "$lib/components/Paragraph.svelte";
   import SectionGrid from "$lib/components/SectionGrid.svelte";
-
+  import typographString from "../../../utils/typographString";
   import pomes from "../../../data/pomes.json";
 </script>
 
@@ -12,7 +12,7 @@
 
 <SectionGrid>
   <article class="narrative">
-    <Heading title="Pomes" level={1} useInline={false} />
+    <Heading level={1} useInline={false}>Pomes</Heading>
     <Paragraph
       paragraphContent="Sometimes I write poems, a term used here quite carelessly I should say, here are some of them, from latest to oldest:"
     />
@@ -23,7 +23,9 @@
     {#if pome.published === "true"}
       <SectionGrid>
         <article class="pome-body">
-          <Heading title={pome.title} level={2} useInline={false} />
+          <Heading level={2} useInline={false}>
+            {typographString(pome.title)}</Heading
+          >
           {#each pome.content as line}
             <Paragraph paragraphContent={line} />
           {/each}

@@ -2,6 +2,7 @@
   import Heading from "$lib/components/Heading.svelte";
   import Paragraph from "$lib/components/Paragraph.svelte";
   import SectionGrid from "$lib/components/SectionGrid.svelte";
+  import typographString from "../../../utils/typographString";
 </script>
 
 <svelte:head>
@@ -11,7 +12,6 @@
 <SectionGrid>
   <article class="narrative">
     <Heading
-      title="Pocket puzzles"
       level={1}
       useInline={false}
       noteLink={[
@@ -19,7 +19,9 @@
         "https://github.com/otaniyoz/pocket-puzzles",
       ]}
       noteTitle={["Play online", "See code on Github"]}
-    />
+    >
+      {typographString("Pocket puzzles")}
+    </Heading>
     <Paragraph
       paragraphContent="Pocket puzzles is a collection of puzzles designed to fit in a pocket: easy to start playing, easy to put away."
     />
@@ -35,7 +37,9 @@
     />
   </article>
   <article class="narrative">
-    <Paragraph paragraphContent="Right now, there are three puzzles. Each puzzle has three levels of difficulty and a scoring system based on the number of moves made." />
+    <Paragraph
+      paragraphContent="Right now, there are three puzzles. Each puzzle has three levels of difficulty and a scoring system based on the number of moves made."
+    />
   </article>
   <figure class="no-margin centered-visual-wide grid-container three-columns">
     <img src="../../pocket-puzzles/pp-s.png" alt="Pocket puzzles" />

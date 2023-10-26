@@ -3,6 +3,7 @@
   import Paragraph from "$lib/components/Paragraph.svelte";
   import CardsGrid from "$lib/components/CardsGrid.svelte";
   import SectionGrid from "$lib/components/SectionGrid.svelte";
+  import typographString from "../../../utils/typographString";
 </script>
 
 <svelte:head>
@@ -11,7 +12,7 @@
 
 <SectionGrid>
   <article class="narrative">
-    <Heading title="DIY clothes and gear" level={1} />
+    <Heading level={1}>{typographString("DIY clothes and gear")}</Heading>
     <Paragraph
       paragraphContent="I try to patch and fix things, if I can't -- I try to repurpose them responsibly:"
     />

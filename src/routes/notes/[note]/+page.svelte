@@ -17,10 +17,8 @@
 
 {#if data.post}
   <SectionGrid>
-    <div class="heading-wrapper">
-      <Heading level={1}>{typographString(data.post.title)}</Heading>
-    </div>
     <article class="narrative">
+      <Heading level={1}>{typographString(data.post.title)}</Heading>
       {#each data.post.content as paragraph}
         <Paragraph paragraphContent={paragraph} />
       {/each}
@@ -33,9 +31,5 @@
     font-family: "IBM Plex Serif";
     padding-bottom: var(--gap-large);
     grid-area: auto / 1 / auto / 7;
-  }
-
-  .heading-wrapper {
-    grid-area: 1 / 1 / auto / 7;
   }
 </style>

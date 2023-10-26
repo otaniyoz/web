@@ -3,6 +3,7 @@
   import Heading from "$lib/components/Heading.svelte";
   import Paragraph from "$lib/components/Paragraph.svelte";
   import SectionGrid from "$lib/components/SectionGrid.svelte";
+  import typographString from "../../../utils/typographString";
 </script>
 
 <svelte:head>
@@ -11,7 +12,9 @@
 
 <SectionGrid>
   <article class="narrative">
-    <Heading title="Redesigning Jep!" level={1} useInline={false} />
+    <Heading level={1} useInline={false}
+      >{typographString("Redesigning Jep!")}</Heading
+    >
     <Paragraph
       paragraphContent="This is a concept redesign for Jep! -- a multiplayer online trivia created by Claire Nord. Most of the work was done in 20 hours. The main goal was to bring the interface up to date, while preserving core elements, scenarios, and game mechanics."
     />

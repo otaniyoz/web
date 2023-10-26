@@ -3,6 +3,7 @@
   import SectionGrid from "$lib/components/SectionGrid.svelte";
   import Heading from "$lib/components/Heading.svelte";
   import Paragraph from "$lib/components/Paragraph.svelte";
+  import typographString from "../../../utils/typographString";
 </script>
 
 <svelte:head>
@@ -11,11 +12,9 @@
 
 <SectionGrid>
   <article class="narrative">
-    <Heading
-      title="Genuary submissions"
-      level={1}
-      useInline={false}
-    />
+    <Heading level={1} useInline={false}>
+      {typographString("Genuary submissions")}
+    </Heading>
     <Paragraph
       paragraphContent="Genuary is a month-long challenge in generative art. It takes place every year in January and requires participants to create an artwork on a given topic for every day of the month. Below are my attempts at the challenge."
     />
@@ -23,11 +22,7 @@
 </SectionGrid>
 <SectionGrid>
   <article class="narrative">
-    <Heading
-      title="2023"
-      level={2}
-      useInline={false}
-    />
+    <Heading level={2} useInline={false}>2023</Heading>
   </article>
   <article class="visual">
     <CardsGrid

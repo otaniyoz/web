@@ -5,6 +5,7 @@
   import Paragraph from "$lib/components/Paragraph.svelte";
   import Heading from "$lib/components/Heading.svelte";
   import SectionGrid from "$lib/components/SectionGrid.svelte";
+  import typographString from "../../../utils/typographString";
 </script>
 
 <svelte:head>
@@ -21,10 +22,9 @@
 </figure>
 <SectionGrid>
   <article class="narrative">
-    <Heading
-      level={1}
-      title="Visualisation of sports sites in the Presnya"
-    />
+    <Heading level={1}>
+      {typographString("Visualisation of sports sites in the Presnya")}
+    </Heading>
     <Paragraph
       paragraphContent="The Presnensky district, also commonly referred to as the Presnya, is one of the central districts in Moscow. It's known for its recreational locations such as Patriarshy ponds."
     />
