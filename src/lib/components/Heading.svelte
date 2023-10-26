@@ -2,21 +2,19 @@
   import typographString from "../../utils/typographString";
 
   export let level: number;
-  export let title: string;
   export let noteTitle: string[] = [""];
   export let noteLink: string[] = [""];
   export let useInline: boolean = true;
 
-  title = typographString(title);
   for (let i = 0; i < noteTitle.length; i++) {
     noteTitle[i] = typographString(noteTitle[i]);
   }
 </script>
 
 <div class="heading-wrapper">
-  {#if title.length && level === 1}
+  {#if level === 1}
     <h1>
-      {title}
+      <slot />
       {#if noteTitle[0].length}
         <div class="heading-links-container" class:inline={useInline}>
           {#each noteTitle as _, idx}
@@ -31,9 +29,9 @@
         </div>
       {/if}
     </h1>
-  {:else if title.length && level === 2}
+  {:else if level === 2}
     <h2>
-      {title}
+      <slot /> 
       {#if noteTitle[0].length}
         <div class="heading-links-container" class:inline={useInline}>
           {#each noteTitle as _, idx}
@@ -48,9 +46,9 @@
         </div>
       {/if}
     </h2>
-  {:else if title.length && level === 3}
+  {:else if level === 3}
     <h3>
-      {title}
+      <slot />
       {#if noteTitle[0].length}
         <div class="heading-links-container" class:inline={useInline}>
           {#each noteTitle as _, idx}
