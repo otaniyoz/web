@@ -8,32 +8,46 @@
   <title>Web-home of Otaniyoz</title>
 </svelte:head>
 
-<Heading title="About" level={1} noteTitle={["(me)"]}/>
-<figure>
-  <img alt="Stylized photograph of a man" src="home-banner.jpg" />
-</figure>
-<SectionGrid>
-  <div class="narrative">
-    <Paragraph
-      paragraphContent="Hallo, cyber-stranger. This is a web-home for Otaniyoz. Here you can find various projects and sporadic notes -- all on perhaps too far spread topics and in too different languages. But I might just as well be wrong, so don't take my word for it -- go and see for yourself. Or don't ¯\_(ツ)_/¯"
-    />
-  </div>
-</SectionGrid>
+<h1>
+  Hallo, cyber-stranger. This is a web-home for <img
+    alt="Stylized photograph of a man"
+    src="home-banner.jpg"
+  /> Otaniyoz. A place for various projects and sporadic notes. All on, perhaps,
+  too far spread topics and in too different languages. But I might be wrong about
+  it, so don't take my word for it — go and see for yourself. Or don't
+</h1>
 
 <style>
- .narrative {
-    grid-area: auto / 1 / auto / 7;
+  img {
+    aspect-ratio: 1 / 1;
+    display: inline-block;
+    vertical-align: text-bottom;
+    width: var(--line-height-regular);
   }
 
-  figure {
-    margin: 0;
-    aspect-ratio: 1 / 1.25;
-    padding-bottom: var(--gap-regular);
+  h1 {
+    padding: 0;
+    margin-block: 0;
+    word-spacing: -0.05em;
+    margin-left: -0.2vmax;
+    letter-spacing: -0.025em;
+    color: var(--color-dark);
+    line-height: var(--line-height-regular);
+    font-weight: var(--font-weight-heavy);
+    font-size: var(--font-size-large);
   }
 
   @media screen and (min-width: 1200px) {
-    figure {
-      aspect-ratio: 2 / 1;
+    h1 {
+      hyphens: auto;
+      margin-left: -0.35vmax;
+      padding-bottom: var(--gap-xlarge);
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    h1 {
+      padding-bottom: var(--gap-xlarge);
     }
   }
 </style>
