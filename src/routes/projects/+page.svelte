@@ -14,13 +14,9 @@
   <title>Projects</title>
 </svelte:head>
 
-{#if projects}
-  <Heading
-    level={1}
-    title="Projects"
-    noteTitle={["(" + projects.length.toString() + ")"]}
-  />
-{/if}
-{#if tableData}
+{#if projects && tableData}
+  <Heading level={1}>{projects.length.toString()} projects</Heading>
   <Table {tableData} />
+{:else}
+  <Heading level={1}>No projects</Heading>
 {/if}
