@@ -17,6 +17,8 @@
       "This is a concept note-taking app, an exercise in design. Originally made in 2022."
     )}
   </p>
+</SectionGrid>
+<SectionGrid>
   <Heading classes="grid-col17" level={2} useInline={false}>2022</Heading>
   <figure class="no-margin centered-visual grid regular-gap three-columns">
     <img src="../../pocket-notes/home.png" alt="Pocket notes" />

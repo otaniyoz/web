@@ -9,41 +9,18 @@
 </svelte:head>
 
 <SectionGrid>
-  <article class="narrative">
-    <Heading level={1} useInline={false}>
-      {typographString("Landing page for a barrel of oil")}
-    </Heading>
-    <p>
-      This is a concept landing page for a barrel of oil, an exercise in design.
-      Originally made in 2022.
-    </p>
-  </article>
+  <Heading classes="grid-col17" level={1} useInline={false}>
+    {typographString("Landing page for a barrel of oil")}
+  </Heading>
+  <p class="grid-col17">
+    {typographString("This is a concept landing page for a barrel of oil, an exercise in design. Originally made in 2022.")}
+  </p>
 </SectionGrid>
 <SectionGrid>
-  <article class="narrative">
-    <Heading level={2} useInline={false}>2022</Heading>
-  </article>
-  <figure class="no-margin centered-visual-wide">
-    <img alt="Landing page dark theme" src="../../oil-barrel/2022.jpg" />
-  </figure>
+  <Heading classes="grid-col17" level={2} useInline={false}>2022</Heading>
+  <img
+    class="centered-visual"
+    alt="Landing page dark theme"
+    src="../../oil-barrel/2022.jpg"
+  />
 </SectionGrid>
-
-<style>
-  .narrative {
-    grid-area: auto / 1 / auto / 7;
-  }
-
-  .centered-visual-wide {
-    grid-area: auto / 2 / auto / 8;
-  }
-
-  @media screen and (max-width: 1220px) {
-    .centered-visual-wide {
-      grid-area: auto / 1 / auto / 7;
-    }
-  }
-
-  .no-margin {
-    margin: 0;
-  }
-</style>
