@@ -28,13 +28,6 @@
     "link": "pocket-puzzles"
   },
   {
-    "title": "Image proccessing library in C",
-    "work": "Development, computer vision",
-    "date": "2023",
-    "published": "false",
-    "link": "image-c"
-  },
-  {
     "title": "Genuary submissions",
     "work": "Creative coding",
     "date": "2023...",
@@ -68,13 +61,6 @@
     "date": "2022",
     "published": "true",
     "link": "pocket-notes"
-  },
-  {
-    "title": "Pocket pack: a collection of utilities and games",
-    "work": "Design, development",
-    "date": "2022",
-    "published": "false",
-    "link": "pocket-pack"
   },
   {
     "title": "Pomes",
