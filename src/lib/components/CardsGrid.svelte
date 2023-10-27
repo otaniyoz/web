@@ -3,9 +3,10 @@
   import type { CardMapType } from "$lib/types";
 
   export let cardsMaps: CardMapType[];
+  export let classes: string = "";
 </script>
 
-<div class="cards-grid">
+<div class="cards-grid {classes}">
   {#each cardsMaps as cardMap}
     <figure class="card">
       {#if cardMap.image && cardMap.image.length}

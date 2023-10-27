@@ -10,41 +10,34 @@
 </svelte:head>
 
 <SectionGrid>
-  <article class="narrative">
-    <Heading level={1}>{typographString("DIY clothes and gear")}</Heading>
-    <p>
-      {typographString("I try to patch and fix things, if I can't -- I try to repurpose them responsibly:")}
-    </p>
-  </article>
-  <article class="visual">
-    <CardsGrid
-      cardsMaps={[
-        {
-          title: "Pullover",
-          description: "handmade from a fleece blanket",
-          image: "../../diy-clothes-and-gear/pullover.jpg",
-        },
-        {
-          title: "Bucket hat",
-          description: "handmade from a shirt",
-          image: "../../diy-clothes-and-gear/hat.jpg",
-        },
-        {
-          title: "Tool pouch",
-          description: "handmade from a zip sweater",
-          image: "../../diy-clothes-and-gear/pouch.jpg",
-        },
-      ]}
-    />
-  </article>
+  <Heading classes="grid-col17" level={1}
+    >{typographString("DIY clothes and gear")}</Heading
+  >
+  <p class="grid-col17">
+    {typographString(
+      "I try to patch and fix things, if I can't -- I try to repurpose them responsibly:"
+    )}
+  </p>
 </SectionGrid>
-
-<style>
-  .narrative {
-    grid-area: auto / 1 / auto / 7;
-  }
-
-  .visual {
-    grid-area: auto / 1 / auto / -1;
-  }
-</style>
+<SectionGrid>
+  <CardsGrid
+    classes="grid-col-all"
+    cardsMaps={[
+      {
+        title: "Pullover",
+        description: "handmade from a fleece blanket",
+        image: "../../diy-clothes-and-gear/pullover.jpg",
+      },
+      {
+        title: "Bucket hat",
+        description: "handmade from a shirt",
+        image: "../../diy-clothes-and-gear/hat.jpg",
+      },
+      {
+        title: "Tool pouch",
+        description: "handmade from a zip sweater",
+        image: "../../diy-clothes-and-gear/pouch.jpg",
+      },
+    ]}
+  />
+</SectionGrid>

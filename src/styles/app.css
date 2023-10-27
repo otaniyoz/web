@@ -4,7 +4,6 @@ img {
   width: 100%;
   max-width: 100%;
   background-color: var(--color-light);
-  padding-bottom: var(--gap-large);
 }
 
 .sans-serif {
@@ -78,7 +77,6 @@ img {
 .three-columns {
   grid-template-columns: repeat(3, 1fr);
 }
-
 
 .grid-col-all {
   grid-column: 1 / -1;
