@@ -16,19 +16,11 @@
 
 {#if data.post}
   <SectionGrid>
-    <article class="narrative">
-      <Heading level={1}>{typographString(data.post.title)}</Heading>
-      {#each data.post.content as paragraph}
-        <p>{typographString(paragraph)}</p>
-      {/each}
-    </article>
+    <Heading classes="grid-col17" level={1}
+      >{typographString(data.post.title)}</Heading
+    >
+    {#each data.post.content as paragraph}
+      <p class="grid-col17 serif">{typographString(paragraph)}</p>
+    {/each}
   </SectionGrid>
 {/if}
-
-<style>
-  .narrative {
-    font-family: "IBM Plex Serif";
-    padding-bottom: var(--gap-large);
-    grid-area: auto / 1 / auto / 7;
-  }
-</style>
