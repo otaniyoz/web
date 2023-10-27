@@ -36,7 +36,9 @@
   <slot />
 </main>
 <footer>
-  <p>{typographString("Created by Otaniyoz in 2023")}</p>
+  <p class="grid-col13 grid-row34">Created by</p>
+  <p class="second grid-row34">Otaniyoz</p>
+  <p class="third grid-row34">in 2023</p>
 </footer>
 
 <style>
@@ -69,6 +71,7 @@
     display: grid;
     margin-top: var(--gap-xxlarge);
     grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     padding: var(--gap-xlarge) var(--gap-small);
   }
 
