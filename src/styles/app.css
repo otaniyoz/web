@@ -1,5 +1,10 @@
 @import "variables.css";
 
+figure {
+  margin: 0;
+  padding-bottom: var(--gap-large);
+}
+
 img {
   width: 100%;
   max-width: 100%;
@@ -73,9 +78,12 @@ img {
   grid-template-columns: repeat(2, 1fr);
 }
 
-
 .three-columns {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.four-columns {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .grid-row12 {

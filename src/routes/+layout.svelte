@@ -38,7 +38,7 @@
 <footer>
   <p class="grid-col13 grid-row34">Created by</p>
   <p class="second grid-row34">Otaniyoz</p>
-  <p class="third grid-row34">in 2023</p>
+  <p class="third grid-row34 text-right">in 2023</p>
 </footer>
 
 <style>
