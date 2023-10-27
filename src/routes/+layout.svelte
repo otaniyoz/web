@@ -73,7 +73,6 @@
     margin-top: var(--gap-xxlarge);
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(8, 1fr);
-    border-top: 1px solid var(--color-dark);
     padding: var(--gap-xlarge) var(--gap-small);
   }
 
