@@ -1,5 +1,12 @@
 @import "variables.css";
 
+img {
+  width: 100%;
+  max-width: 100%;
+  background-color: var(--color-light);
+  padding-bottom: var(--gap-large);
+}
+
 .sans-serif {
   font-family: "IBM Plex Sans";
 }
@@ -66,6 +73,12 @@
 .two-columns {
   grid-template-columns: repeat(2, 1fr);
 }
+
+
+.three-columns {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 
 .grid-col-all {
   grid-column: 1 / -1;

@@ -9,21 +9,16 @@
 </svelte:head>
 
 <SectionGrid>
-  <article class="narrative">
-    <Heading level={1} useInline={false}>
-      {typographString("Pocket notes")}
-    </Heading>
-    <p>
-      This is a concept note-taking app, an exercise in design. Originally made
-      in 2022.
-    </p>
-  </article>
-</SectionGrid>
-<SectionGrid>
-  <article class="narrative">
-    <Heading level={2} useInline={false}>2022</Heading>
-  </article>
-  <figure class="no-margin centered-visual-wide grid-container three-columns">
+  <Heading classes="grid-col17" level={1} useInline={false}>
+    {typographString("Pocket notes")}
+  </Heading>
+  <p class="grid-col17">
+    {typographString(
+      "This is a concept note-taking app, an exercise in design. Originally made in 2022."
+    )}
+  </p>
+  <Heading classes="grid-col17" level={2} useInline={false}>2022</Heading>
+  <figure class="no-margin centered-visual grid regular-gap three-columns">
     <img src="../../pocket-notes/home.png" alt="Pocket notes" />
     <img src="../../pocket-notes/note-select.png" alt="Pocket notes" />
     <img src="../../pocket-notes/note.png" alt="Pocket notes" />
@@ -31,32 +26,3 @@
     <img src="../../pocket-notes/note-copy-success.png" alt="Pocket notes" />
   </figure>
 </SectionGrid>
-
-<style>
-  .narrative {
-    grid-area: auto / 1 / auto / 7;
-  }
-
-  .centered-visual-wide {
-    grid-area: auto / 2 / auto / 8;
-  }
-
-  @media screen and (max-width: 1220px) {
-    .centered-visual-wide {
-      grid-area: auto / 1 / auto / 7;
-    }
-  }
-
-  .three-columns {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .grid-container {
-    display: grid;
-    gap: var(--gap-small);
-  }
-
-  .no-margin {
-    margin: 0;
-  }
-</style>
