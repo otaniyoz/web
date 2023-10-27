@@ -4,15 +4,13 @@
   export let classes: string = "";
 </script>
 
-<slot name="sup" />
-<img {src} {alt} class={classes} />
-<slot name="sub" />
+  <img {src} {alt} class={classes} />
 
 <style>
   img {
     width: 100%;
-    height: 100%;
     max-width: 100%;
     background-color: var(--color-light);
+    padding-bottom: var(--gap-large);
   }
 </style>

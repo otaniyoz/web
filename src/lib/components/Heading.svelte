@@ -5,9 +5,9 @@
   export let useInline: boolean = true;
 </script>
 
-<div class="heading-container">
+<div class="heading-container {classes}">
   {#if level === 1}
-    <h1 class="large-text {classes}"><slot /></h1>
+    <h1 class="large-text"><slot /></h1>
   {:else if level === 2}
     <h2><slot /></h2>
   {:else if level === 3}

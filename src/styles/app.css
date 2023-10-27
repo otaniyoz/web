@@ -1,26 +1,69 @@
 @import "variables.css";
 
+.no-bottom-padding {
+  padding-bottom: 0;
+}
+
+.small-bottom-padding {
+  padding-bottom: var(--gap-small);
+}
+
+.grid {
+  display: grid;
+}
+
+.small-gap {
+  gap: var(--gap-small);
+}
+
+
+.regular-gap {
+  gap: var(--gap-regular);
+}
+
+.centered-visual {
+  grid-area: auto / 2 / auto / 8;
+}
+
+@media screen and (max-width: 1220px) {
+  .centered-visual {
+    grid-area: auto / 1 / auto / 7;
+  }
+}
+
+.object-contain {
+  object-fit: contain;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.two-columns {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .grid-col-all {
   grid-column: 1 / -1;
 }
 
 .grid-col14 {
-  grid-row: auto;
   grid-column: 1 / span 4;
 }
 
 .grid-col13 {
-  grid-row: auto;
   grid-column: 1 / span 3;
 }
 
 .grid-col12 {
-  grid-row: auto;
   grid-column: 1 / span 2;
 }
 
 .grid-col48 {
-  grid-row: auto;
   grid-column: 4 / span 4;
 }
 
@@ -28,21 +71,23 @@
   grid-column: 4 / 5;
 }
 
+.grid-col17 {
+  grid-column: 1 / 7;
+}
+
 .grid-col67 {
   grid-column: 6 / 7;
 }
 
 .grid-col23 {
-  grid-area: auto / 2 / auto / 5;
+  grid-column: 2 / 5;
 }
 
 .grid-col22 {
-  grid-row: auto;
   grid-column: 3 / span 2;
 }
 
 .grid-col32 {
-  grid-row: auto;
   grid-column: 3 / span 2;
 }
 

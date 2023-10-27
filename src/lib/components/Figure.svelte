@@ -9,6 +9,6 @@
 <style>
   figure {
     margin: 0;
-    padding-bottom: var(--gap-xlarge);
+    padding-bottom: var(--gap-large);
   }
 </style>
