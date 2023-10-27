@@ -1,7 +1,6 @@
 <script lang="ts">
   import { page } from "$app/stores";
   import Heading from "$lib/components/Heading.svelte";
-  import Paragraph from "$lib/components/Paragraph.svelte";
   import SectionGrid from "$lib/components/SectionGrid.svelte";
   import typographString from "../../../utils/typographString";
   import type { NoteContentType } from "$lib/types";
@@ -20,7 +19,7 @@
     <article class="narrative">
       <Heading level={1}>{typographString(data.post.title)}</Heading>
       {#each data.post.content as paragraph}
-        <Paragraph paragraphContent={paragraph} />
+        <p>{typographString(paragraph)}</p>
       {/each}
     </article>
   </SectionGrid>

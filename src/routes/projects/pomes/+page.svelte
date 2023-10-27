@@ -1,6 +1,5 @@
 <script lang="ts">
   import Heading from "$lib/components/Heading.svelte";
-  import Paragraph from "$lib/components/Paragraph.svelte";
   import SectionGrid from "$lib/components/SectionGrid.svelte";
   import typographString from "../../../utils/typographString";
   import pomes from "../../../data/pomes.json";
@@ -13,9 +12,11 @@
 <SectionGrid>
   <article class="narrative">
     <Heading level={1} useInline={false}>Pomes</Heading>
-    <Paragraph
-      paragraphContent="Sometimes I write poems, a term used here quite carelessly I should say, here are some of them, from latest to oldest:"
-    />
+    <p>
+      {typographString(
+        "Sometimes I write poems, a term used here quite carelessly I should say, here are some of them, from latest to oldest:"
+      )}
+    </p>
   </article>
 </SectionGrid>
 {#if pomes}
@@ -27,11 +28,9 @@
             {typographString(pome.title)}</Heading
           >
           {#each pome.content as line}
-            <Paragraph paragraphContent={line} />
+            <p>{typographString(line)}</p>
           {/each}
-        </article>
-        <article class="pome-date">
-          <Paragraph paragraphContent={pome.date} />
+          <p class="pome-date">{typographString(pome.date)}</p>
         </article>
       </SectionGrid>
     {/if}
@@ -39,7 +38,7 @@
 {:else}
   <SectionGrid>
     <article class="narrative">
-      <Paragraph paragraphContent="No poems for you to see, eh" />
+      <p>No poems</p>
     </article>
   </SectionGrid>
 {/if}
@@ -56,6 +55,7 @@
   }
 
   .pome-date {
+    font-family: "IBM Plex Sans";
     grid-area: auto / 2 / auto / 8;
     padding-bottom: var(--gap-xlarge);
   }

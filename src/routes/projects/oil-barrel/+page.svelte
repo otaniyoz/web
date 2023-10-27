@@ -1,6 +1,5 @@
 <script lang="ts">
   import Heading from "$lib/components/Heading.svelte";
-  import Paragraph from "$lib/components/Paragraph.svelte";
   import SectionGrid from "$lib/components/SectionGrid.svelte";
   import typographString from "../../../utils/typographString";
 </script>
@@ -14,9 +13,10 @@
     <Heading level={1} useInline={false}>
       {typographString("Landing page for a barrel of oil")}
     </Heading>
-    <Paragraph
-      paragraphContent="This is a concept landing page for a barrel of oil, an exercise in design. Originally made in 2022."
-    />
+    <p>
+      This is a concept landing page for a barrel of oil, an exercise in design.
+      Originally made in 2022.
+    </p>
   </article>
 </SectionGrid>
 <SectionGrid>

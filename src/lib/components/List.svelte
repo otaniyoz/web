@@ -1,34 +1,18 @@
 <script lang="ts">
-  import Heading from "./Heading.svelte";
   import typographString from "../../utils/typographString";
 
   export let listRows: string[];
+  export let classes: string = "";
   export let showIndex: boolean = false;
-  export let listTitle: string = "";
-  export let listDescription: string = "";
 
-  if (listTitle && listTitle.length) {
-    listTitle = typographString(listTitle);
-  }
-  if (listDescription && listDescription.length) {
-    listDescription = typographString(listDescription);
-  }
   for (let i = 0; i < listRows.length; i++) {
     listRows[i] = typographString(listRows[i]);
   }
 </script>
 
-<article>
-  {#if listTitle}
-    <Heading level={3}>
-      {typographString(listTitle)}</Heading
-    >
-  {/if}
-  {#if listDescription}
-    <p>
-      {listDescription}
-    </p>
-  {/if}
+<div class={classes}>
+  <slot name="title" />
+  <slot name="description" />
   {#each listRows as row, rowIndex}
     <div class="row">
       <p
@@ -41,7 +25,7 @@
       </p>
     </div>
   {/each}
-</article>
+</div>
 
 <style>
   .visually-hidden {

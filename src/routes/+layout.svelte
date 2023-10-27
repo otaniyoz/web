@@ -1,9 +1,9 @@
 <script>
   import "../styles/app.css";
   import "../styles/fonts.css";
-  import Paragraph from "$lib/components/Paragraph.svelte";
   import { base } from "$app/paths";
   import { page } from "$app/stores";
+  import typographString from "../utils/typographString";
 </script>
 
 <header>
@@ -36,10 +36,10 @@
   <slot />
 </main>
 <footer>
-  <Paragraph paragraphContent="Created by Otaniyoz in 2023" />
-  <article class="footer-image">
+  <p>{typographString("Created by Otaniyoz in 2023")}</p>
+  <div class="footer-image">
     <img id="suriken" src="{base}/favicon.png" alt="Suriken" class="rotating" />
-  </article>
+  </div>
 </footer>
 
 <style>
@@ -100,10 +100,6 @@
     list-style: none;
     padding-inline: 0;
     grid-template-columns: repeat(8, 1fr);
-  }
-
-  .orange-text {
-    color: var(--color-orange);
   }
 
   #suriken {

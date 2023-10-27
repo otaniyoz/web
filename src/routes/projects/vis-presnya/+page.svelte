@@ -2,7 +2,6 @@
   import List from "$lib/components/List.svelte";
   import Factoid from "$lib/components/Factoid.svelte";
   import ImageGrid from "$lib/components/CardsGrid.svelte";
-  import Paragraph from "$lib/components/Paragraph.svelte";
   import Heading from "$lib/components/Heading.svelte";
   import SectionGrid from "$lib/components/SectionGrid.svelte";
   import typographString from "../../../utils/typographString";
@@ -25,12 +24,16 @@
     <Heading level={1}>
       {typographString("Visualisation of sports sites in the Presnya")}
     </Heading>
-    <Paragraph
-      paragraphContent="The Presnensky district, also commonly referred to as the Presnya, is one of the central districts in Moscow. It's known for its recreational locations such as Patriarshy ponds."
-    />
-    <Paragraph
-      paragraphContent="In 2022, I spent a couple of hours making an illustration of sports sites in the district and using public data identified around 64 sports sites:"
-    />
+    <p>
+      {typographString(
+        "The Presnensky district, also commonly referred to as the Presnya, is one of the central districts in Moscow. It's known for its recreational locations such as Patriarshy ponds."
+      )}
+    </p>
+    <p>
+      {typographString(
+        "In 2022, I spent a couple of hours making an illustration of sports sites in the district and using public data identified around 64 sports sites:"
+      )}
+    </p>
   </article>
 </SectionGrid>
 <figure>
@@ -48,8 +51,6 @@
 <SectionGrid>
   <article class="narrative">
     <List
-      listTitle="Approach"
-      listDescription="I didn't want to use a map editor, so did most of the work from scratch:"
       showIndex={true}
       listRows={[
         "Downloaded data from OSM: due to the hard limit of 50k points per export, had to do it in batches and stitch all pieces together later;",
@@ -57,7 +58,14 @@
         "Plotted data: because of Python's matplotlib, had to code the Mercator projection to get an accurate representation of locations;",
         "Exported plots to Figma: combined different layers, improved visuals, and checked data by hand.",
       ]}
-    />
+    >
+      <Heading slot="title" level={2}>Approach</Heading>
+      <p slot="description">
+        {typographString(
+          "I didn't want to use a map editor, so did most of the work from scratch:"
+        )}
+      </p>
+    </List>
   </article>
 </SectionGrid>
 
