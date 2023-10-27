@@ -1,5 +1,13 @@
 @import "variables.css";
 
+.sans-serif {
+  font-family: "IBM Plex Sans";
+}
+
+.serif {
+  font-family: "IBM Plex Serif";
+}
+
 .no-bottom-padding {
   padding-bottom: 0;
 }
@@ -10,6 +18,14 @@
 
 .small-bottom-padding {
   padding-bottom: var(--gap-small);
+}
+
+.large-bottom-padding {
+  padding-bottom: var(--gap-large);
+}
+
+.regular-top-padding {
+  padding-top: var(--gap-regular);
 }
 
 .grid {
