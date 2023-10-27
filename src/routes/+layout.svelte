@@ -8,7 +8,7 @@
 
 <header>
   <div id="backdrop" />
-  <nav>
+  <nav class="small-padding">
     <ul>
       <li>
         <a
@@ -37,9 +37,6 @@
 </main>
 <footer>
   <p>{typographString("Created by Otaniyoz in 2023")}</p>
-  <div class="footer-image">
-    <img id="suriken" src="{base}/favicon.png" alt="Suriken" class="rotating" />
-  </div>
 </footer>
 
 <style>
@@ -71,7 +68,6 @@
   footer {
     display: grid;
     margin-top: var(--gap-xxlarge);
-    grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(8, 1fr);
     padding: var(--gap-xlarge) var(--gap-small);
   }
@@ -88,10 +84,6 @@
     line-height: var(--line-height-small);
   }
 
-  nav {
-    padding: var(--gap-small);
-  }
-
   ul {
     padding: 0;
     display: grid;
@@ -99,32 +91,6 @@
     list-style: none;
     padding-inline: 0;
     grid-template-columns: repeat(8, 1fr);
-  }
-
-  #suriken {
-    max-width: 48px;
-    max-height: 48px;
-    aspect-ratio: 1 / 1;
-  }
-
-  .footer-image {
-    margin-top: auto;
-    overflow: hidden;
-    text-align: right;
-    grid-column: -2 / -1;
-  }
-
-  @keyframes continuous-rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-  .rotating {
-    animation: continuous-rotation 5s linear infinite;
   }
 
   .second {
@@ -136,10 +102,7 @@
   }
 
   @media screen and (max-width: 1200px) {
-    ul {
-      grid-template-columns: repeat(6, 1fr);
-    }
-
+    ul,
     footer {
       grid-template-columns: repeat(6, 1fr);
     }

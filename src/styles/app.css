@@ -4,6 +4,10 @@
   padding-bottom: 0;
 }
 
+.small-padding {
+  padding: var(--gap-small);
+}
+
 .small-bottom-padding {
   padding-bottom: var(--gap-small);
 }
