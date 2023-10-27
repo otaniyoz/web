@@ -52,6 +52,7 @@
   h3 {
     width: 100%;
     font-family: "IBM Plex Sans";
+    padding-top: var(--gap-large);
   }
   .inline {
     display: inline-flex !important;
