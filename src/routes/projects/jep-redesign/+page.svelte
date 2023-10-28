@@ -18,8 +18,6 @@
       "This is a concept redesign for Jep! -- a multiplayer online trivia created by Claire Nord. Most of the work was done in 20 hours. The main goal was to bring the interface up to date, while preserving core elements, scenarios, and game mechanics."
     )}
   </p>
-</SectionGrid>
-<SectionGrid>
   <List
     classes="grid-col17"
     listRows={[
@@ -28,8 +26,6 @@
   >
     <Heading slot="title" level={3}>To be clear:</Heading>
   </List>
-</SectionGrid>
-<SectionGrid>
   <p class="grid-col17">
     {typographString(
       "Jep! is an homage to the American panel show Jeopardy. All the core elements of the show were meticulously replicated, even the sounds and animations! The idea is admirable and execution is top-notch. However, Jeopardy was designed for tv screen, in the 80s; trying to one-to-one map its design to modern web is bound to run into problems, especially on devices with smaller screens. This redesign addressed some of such problems."
@@ -82,11 +78,12 @@
       "To maximise the density of useful information, I created player cards. These player cards were later adapted and implemented in Jep!, like so:"
     )}
   </p>
-  <img
-    class="centered-visual"
-    src="../../jep-redesign/player_card.png"
-    alt="Redesigning Jep!"
-  />
+  <figure class="centered-visual">
+    <img
+      src="../../jep-redesign/player_card.png"
+      alt="Redesigning Jep!"
+    />
+  </figure>
   <p class="grid-col17">
     {typographString(
       "Buzz-in interface was redesigned to minimize layout changes between game states:"

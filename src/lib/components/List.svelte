@@ -10,7 +10,7 @@
   }
 </script>
 
-<div class={classes}>
+<figure class={classes}>
   <slot name="title" />
   <slot name="description" />
   {#each listRows as row, rowIndex}
@@ -25,7 +25,7 @@
       </p>
     </div>
   {/each}
-</div>
+</figure>
 
 <style>
   .visually-hidden {
