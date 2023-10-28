@@ -9,7 +9,7 @@
 </svelte:head>
 
 <Heading level={1}>
-  Hallo, cyber-stranger. This is a web-home for <img
+  Hallo, cyber-stranger. →This← is a web-home for <img
     alt="Illustration of a man"
     src="home-banner.jpg"
   />
@@ -24,7 +24,12 @@
   <img alt="Skull with beaming eye-sockets" src="skull.png" id="skull" />. Or
   don't
   <div id="suriken-container">
-    <img id="suriken" src="{base}/favicon.png" alt="Rotating suriken" class="rotating" />
+    <img
+      id="suriken"
+      src="{base}/favicon.png"
+      alt="Rotating suriken"
+      class="rotating"
+    />
   </div>
 </Heading>
 
