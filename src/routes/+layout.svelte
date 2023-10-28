@@ -3,7 +3,6 @@
   import "../styles/fonts.css";
   import { base } from "$app/paths";
   import { page } from "$app/stores";
-  import typographString from "../utils/typographString";
 </script>
 
 <header>
