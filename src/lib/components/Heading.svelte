@@ -62,7 +62,6 @@
     display: flex;
     flex-flow: row nowrap;
     gap: var(--gap-regular);
-    vertical-align: top;
     margin-left: 0.2vmax;
   }
   .heading-container {

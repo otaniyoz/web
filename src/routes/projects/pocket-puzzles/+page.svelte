@@ -52,8 +52,6 @@
     <img src="../../pocket-puzzles/pp-p.png" alt="Pocket puzzles" />
     <img src="../../pocket-puzzles/pp-tt.png" alt="Pocket puzzles" />
   </figure>
-</SectionGrid>
-<SectionGrid>
   <p class="grid-col17">
     {typographString(
       "In Slide!, players need to restore a shuffled image to its initial state. On tap, tile moves to a free slot if possible."
