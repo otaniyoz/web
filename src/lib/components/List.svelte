@@ -15,11 +15,11 @@
   <slot name="description" />
   {#each listRows as row, rowIndex}
     <div class="row">
-      <p
-        class="list-index {showIndex ? 'visually-visible' : 'visually-hidden'}"
-      >
-        {rowIndex + 1}.
-      </p>
+      {#if showIndex}
+        <p class="list-index">
+          {rowIndex + 1}.
+        </p>
+      {/if}
       <p>
         {row}
       </p>
@@ -28,31 +28,21 @@
 </figure>
 
 <style>
-  .visually-hidden {
-    visibility: hidden;
-  }
-
-  .visually-visible {
-    visibility: visible;
-  }
-
   .row {
     display: flex;
     flex-flow: row nowrap;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: calc(1 * 8 * 100% / 6 / 8);
   }
 
   .list-index {
-    color: var(--color-dark);
-    padding: 0 var(--gap-small) 0 var(--gap-large);
-    font-size: var(--font-size-regular);
-    font-weight: var(--font-weight-regular);
+    padding-right: var(--gap-small);
   }
 
-  p {
-    margin-block: 0;
-    color: var(--color-dark);
-    font-size: var(--font-size-regular);
-    line-height: var(--line-height-large);
-    padding-bottom: var(--gap-regular);
+  @media screen and (max-width: 1200px) {
+    .row {
+      padding-left: calc(1 * 100% / 6);
+    }
   }
 </style>

@@ -22,6 +22,9 @@
         <tr>
           {#each row as column, columnIndex}
             <td
+              class:title={tableData.tableAccents[
+                numColumns * rowIndex + columnIndex
+              ]}
               ><p
                 class:accent={tableData.tableAccents[
                   numColumns * rowIndex + columnIndex
@@ -48,6 +51,16 @@
 </figure>
 
 <style>
+  .title {
+    width: calc(5 * 100% / 8); /* 5 / 8 */
+  }
+
+  @media screen and (max-width: 1200px) {
+    .title {
+      width: calc(3 * 100% / 6); /* 3 / 6 */
+    }
+  }
+
   p {
     hyphens: auto;
     margin-block: 0;
