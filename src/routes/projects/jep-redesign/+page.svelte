@@ -1,7 +1,6 @@
 <script lang="ts">
   import List from "$lib/components/List.svelte";
   import Figure from "$lib/components/Figure.svelte";
-  import Image from "$lib/components/Image.svelte";
   import Heading from "$lib/components/Heading.svelte";
   import SectionGrid from "$lib/components/SectionGrid.svelte";
   import typographString from "../../../utils/typographString";
@@ -40,26 +39,20 @@
   <Figure classes="centered-visual grid regular-gap two-columns">
     <div>
       <p class="no-bottom-padding">Before</p>
-      <Image
+      <img
         src="../../jep-redesign/original_home_desktop.png"
         alt="Redesigning Jep!"
       />
     </div>
     <div>
       <p class="no-bottom-padding">After</p>
-      <Image src="../../jep-redesign/home_desktop.png" alt="Redesigning Jep!" />
+      <img src="../../jep-redesign/home_desktop.png" alt="Redesigning Jep!" />
     </div>
-    <div>
-      <p class="no-bottom-padding">Before</p>
-      <Image
-        src="../../jep-redesign/original_help_desktop.png"
-        alt="Redesigning Jep!"
-      />
-    </div>
-    <div>
-      <p class="no-bottom-padding">After</p>
-      <Image src="../../jep-redesign/help_desktop.png" alt="Redesigning Jep!" />
-    </div>
+    <img
+      src="../../jep-redesign/original_help_desktop.png"
+      alt="Redesigning Jep!"
+    />
+    <img src="../../jep-redesign/help_desktop.png" alt="Redesigning Jep!" />
   </Figure>
   <p class="grid-col17">
     {typographString(
@@ -67,8 +60,8 @@
     )}
   </p>
   <Figure classes="centered-visual grid regular-gap two-columns">
-    <Image src="../../jep-redesign/home_mobile.png" alt="Redesigning Jep!" />
-    <Image src="../../jep-redesign/help_mobile.png" alt="Redesigning Jep!" />
+    <img src="../../jep-redesign/home_mobile.png" alt="Redesigning Jep!" />
+    <img src="../../jep-redesign/help_mobile.png" alt="Redesigning Jep!" />
   </Figure>
   <p class="grid-col17">
     {typographString(
@@ -78,14 +71,11 @@
   <Figure classes="centered-visual grid regular-gap two-columns">
     <div>
       <p class="no-bottom-padding">Before</p>
-      <Image
-        src="../../jep-redesign/original_room.png"
-        alt="redesigning jep!"
-      />
+      <img src="../../jep-redesign/original_room.png" alt="redesigning jep!" />
     </div>
     <div>
       <p class="no-bottom-padding">After</p>
-      <Image src="../../jep-redesign/room.png" alt="redesigning jep!" />
+      <img src="../../jep-redesign/room.png" alt="redesigning jep!" />
     </div>
   </Figure>
   <p class="grid-col17">
@@ -93,8 +83,8 @@
       "To maximise the density of useful information, I created player cards. These player cards were later adapted and implemented in Jep!, like so:"
     )}
   </p>
-  <Image
-    classes="centered-visual"
+  <img
+    class="centered-visual"
     src="../../jep-redesign/player_card.png"
     alt="Redesigning Jep!"
   />
@@ -106,14 +96,14 @@
   <Figure classes="centered-visual grid regular-gap two-columns">
     <div>
       <p class="no-bottom-padding">Before</p>
-      <Image
+      <img
         src="../../jep-redesign/original_buzzin.png"
         alt="Redesigning Jep!"
       />
     </div>
     <div>
       <p class="no-bottom-padding">After</p>
-      <Image src="../../jep-redesign/buzzin.png" alt="Redesigning Jep!" />
+      <img src="../../jep-redesign/buzzin.png" alt="Redesigning Jep!" />
     </div>
   </Figure>
   <p class="grid-col17">
@@ -121,8 +111,8 @@
       "While at it, I also made a logo. It is based on the world map, because Jep! is an online group party game; to fit the whole world in a square I used the Mercator projection:"
     )}
   </p>
-  <Image
-    classes="centered-visual"
+  <img
+    class="centered-visual"
     src="../../jep-redesign/logo.png"
     alt="Redesigning Jep!"
   />
