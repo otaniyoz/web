@@ -12,8 +12,7 @@
   Hallo, cyber-stranger. →This← is a web-home for <img
     alt="Illustration of a man"
     src="home-banner.jpg"
-  />
-  Otaniyoz. A place for <Link
+  />Otaniyoz. A place for <Link
     href="{base}/projects"
     classes="large-text"
     outside={false}>various projects</Link

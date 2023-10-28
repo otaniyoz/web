@@ -39,6 +39,10 @@
     color: inherit;
   }
 
+  .card-description {
+    line-height: var(--line-height-small);
+  }
+
   .card-title {
     line-height: var(--line-height-small);
     font-weight: var(--font-weight-heavy);
