@@ -24,34 +24,27 @@
             <p class="card-title">{cardMap.title}</p>
           {/if}
           {#if cardMap.description && cardMap.description.length}
-            <p class="card-description">{typographString(cardMap.description)}</p>
+            <p class="card-description">
+              {typographString(cardMap.description)}
+            </p>
           {/if}
         </div>
       {/if}
-      </figure>
+    </figure>
   {/each}
 </div>
 
 <style>
+  p {
+    color: inherit;
+  }
+
   .card-title {
-    color: var(--color-orange);
     line-height: var(--line-height-small);
     font-weight: var(--font-weight-heavy);
     font-size: var(--font-size-medium);
     padding-bottom: var(--gap-regular);
     margin-left: -0.5vmin; /* to aligh horizontaly. */
-  }
-
-  p {
-    hyphens: auto;
-    margin-block: 0;
-    color: var(--color-dark);
-    font-size: var(--font-size-regular);
-    line-height: var(--line-height-regular);
-  }
-
-  .card-description {
-    color: var(--color-orange);
   }
 
   .card:nth-child(7n + 1) > .card-info-container > .card-title {
@@ -66,7 +59,6 @@
     align-items: end;
     justify-items: start;
     aspect-ratio: 1 / 1;
-    color: var(--color-dark);
   }
 
   .card > * {

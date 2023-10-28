@@ -21,7 +21,7 @@
 </SectionGrid>
 <SectionGrid>
   <CardsGrid
-    classes="grid-col-all"
+    classes="grid-col-all orange-text"
     cardsMaps={[
       {
         title: "Pullover",
