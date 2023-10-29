@@ -1,7 +1,6 @@
 <script lang="ts">
   import List from "$lib/components/List.svelte";
   import Heading from "$lib/components/Heading.svelte";
-  import SectionGrid from "$lib/components/SectionGrid.svelte";
   import typographString from "../../../utils/typographString";
 </script>
 
@@ -9,7 +8,7 @@
   <title>Redesigning Telegram's Android app</title>
 </svelte:head>
 
-<SectionGrid>
+<section>
   <Heading classes="grid-col17" level={1} useInline={false}>
     {typographString("Redesigning Telegram's Android app")}
   </Heading>
@@ -47,8 +46,8 @@
       alt="Chat list view redesign"
     />
   </figure>
-</SectionGrid>
-<SectionGrid>
+</section>
+<section>
   <p class="grid-col17">
     {typographString(
       "Animated ad banners maintain informative nature of currently used text-based ads while introducing colourful look in the spirit of Telegram's inherent playfulness. They also adapt to different container sizes making them more versatile:"
@@ -57,8 +56,8 @@
   <figure class="centered-visual">
     <img src="../../tg-redesign/ad-banners.png" alt="Chat list view redesign" />
   </figure>
-</SectionGrid>
-<SectionGrid>
+</section>
+<section>
   <p class="grid-col17">
     {typographString(
       "Pressing FAB in the bottom navigation bar opens up a full-screen menu. Quick action buttons are represented by Material Design 3 outlined buttons in a flex-row with wrap. On scroll, they collapse into a scrollable no-wrap flex-row:"
@@ -74,8 +73,8 @@
       alt="Chat list view redesign"
     />
   </figure>
-</SectionGrid>
-<SectionGrid>
+</section>
+<section>
   <p class="grid-col17">
     {typographString(
       "User profiles including channel and group info-pages were updated using the aforementioned principles and components:"
@@ -95,8 +94,8 @@
       alt="Telegram Android app redesign concept"
     />
   </figure>
-</SectionGrid>
-<SectionGrid>
+</section>
+<section>
   <p class="grid-col17">
     {typographString(
       "Almost all interface elements are purposefuly based on Material Design 3 kit. However, due to Telegram's brain-wrinkling complexity and functionality, some elements had to be designed from scratch or from significantly modified system elements. For example, here are some of the custom icons that were made either from scratch or by modifying default icons:"
@@ -110,8 +109,8 @@
       /></video
     >
   </figure>
-</SectionGrid>
-<SectionGrid>
+</section>
+<section>
   <p class="grid-col17">
     {typographString(
       "In toto, more than 50 screens were designed to cover different component states, user perspectives, and various scenarios:"
@@ -123,7 +122,7 @@
       alt="Telegram Android app redesign concept"
     />
   </figure>
-</SectionGrid>
+</section>
 
 <style>
   #icons-gif {

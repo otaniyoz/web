@@ -63,11 +63,6 @@
 
   p {
     hyphens: auto;
-    margin-block: 0;
-    color: var(--color-dark);
-    font-size: var(--font-size-regular);
-    line-height: var(--line-height-large);
-    padding-bottom: var(--gap-regular);
   }
 
   figure {

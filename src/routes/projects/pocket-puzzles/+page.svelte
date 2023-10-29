@@ -1,7 +1,6 @@
 <script lang="ts">
   import Link from "$lib/components/Link.svelte";
   import Heading from "$lib/components/Heading.svelte";
-  import SectionGrid from "$lib/components/SectionGrid.svelte";
   import typographString from "../../../utils/typographString";
 </script>
 
@@ -9,7 +8,7 @@
   <title>Pocket puzzles</title>
 </svelte:head>
 
-<SectionGrid>
+<section>
   <Heading classes="grid-col17" level={1} useInline={false} sub={true}>
     {typographString("Pocket puzzles")}
     <Link
@@ -35,8 +34,8 @@
     src="../../pocket-puzzles/pp.png"
     alt="Pocket puzzles"
   />
-</SectionGrid>
-<SectionGrid>
+</section>
+<section>
   <p class="grid-col17">
     {typographString(
       "This is an experiment with the main goal of designing a low-effort game that can be enjoyed in a queue or on a short break from coding without inducing stress due to performance and standings or desire to play just one more round."
@@ -67,4 +66,4 @@
       "In That tile, players need to identify a tile that stands out from other tiles on the grid by tapping on it."
     )}
   </p>
-</SectionGrid>
+</section>

@@ -1,6 +1,5 @@
 <script lang="ts">
   import CardsGrid from "$lib/components/CardsGrid.svelte";
-  import SectionGrid from "$lib/components/SectionGrid.svelte";
   import Heading from "$lib/components/Heading.svelte";
   import typographString from "../../../utils/typographString";
 </script>
@@ -9,7 +8,7 @@
   <title>Genuary submissions</title>
 </svelte:head>
 
-<SectionGrid>
+<section>
   <Heading classes="grid-col17" level={1} useInline={false}>
     {typographString("Genuary submissions")}
   </Heading>
@@ -18,8 +17,8 @@
       "Genuary is a month-long challenge in generative art. It takes place every year in January and requires participants to create an artwork on a given topic for every day of the month. Below are my attempts at the challenge."
     )}
   </p>
-</SectionGrid>
-<SectionGrid>
+</section>
+<section>
   <Heading classes="grid-col17" level={2} useInline={false}>2023</Heading>
   <CardsGrid
     classes="grid-col-all"
@@ -57,4 +56,4 @@
       { video: "../../genuary/20230131.mp4" },
     ]}
   />
-</SectionGrid>
+</section>

@@ -1,7 +1,6 @@
 <script lang="ts">
   import List from "$lib/components/List.svelte";
   import Heading from "$lib/components/Heading.svelte";
-  import SectionGrid from "$lib/components/SectionGrid.svelte";
   import typographString from "../../../utils/typographString";
 </script>
 
@@ -9,7 +8,7 @@
   <title>Redesigning Jep!</title>
 </svelte:head>
 
-<SectionGrid>
+<section>
   <Heading level={1} classes="grid-col17" useInline={false}
     >{typographString("Redesigning Jep!")}</Heading
   >
@@ -112,4 +111,4 @@
     src="../../jep-redesign/logo.png"
     alt="Redesigning Jep!"
   />
-</SectionGrid>
+</section>

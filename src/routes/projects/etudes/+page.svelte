@@ -3,7 +3,6 @@
   import Link from "$lib/components/Link.svelte";
   import Heading from "$lib/components/Heading.svelte";
   import CardsGrid from "$lib/components/CardsGrid.svelte";
-  import SectionGrid from "$lib/components/SectionGrid.svelte";
   import typographString from "../../../utils/typographString";
 </script>
 
@@ -11,7 +10,7 @@
   <title>Etudes in code</title>
 </svelte:head>
 
-<SectionGrid>
+<section>
   <Heading classes="grid-col17" level={1} useInline={false} sub={true}>
     {typographString("Etudes in code")}
     <Link
@@ -52,8 +51,8 @@
       },
     ]}
   />
-</SectionGrid>
-<SectionGrid>
+</section>
+<section>
   <List
     classes="grid-col17"
     listRows={[
@@ -79,4 +78,4 @@
       "I think, with these loose constraints, etudes are a healthier and a more enjoyable alternative to coding exercises and interview questions."
     )}
   </p>
-</SectionGrid>
+</section>

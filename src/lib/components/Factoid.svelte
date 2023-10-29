@@ -1,6 +1,7 @@
 <script lang="ts">
   import typographString from "../../utils/typographString";
 
+  export let classes = "";
   export let factoidNumber: string;
   export let factoidDescription: string | undefined;
 
@@ -10,7 +11,7 @@
   }
 </script>
 
-<article>
+<article class={classes}>
   <p class="factoid-number">
     {factoidNumber}
   </p>
@@ -28,10 +29,6 @@
   }
 
   p {
-    margin-block: 0;
-    color: var(--color-orange);
-    font-size: var(--font-size-regular);
-    line-height: var(--line-height-large);
-    padding-bottom: var(--gap-regular);
+    color: inherit;
   }
 </style>

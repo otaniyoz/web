@@ -1,7 +1,6 @@
 <script lang="ts">
   import Heading from "$lib/components/Heading.svelte";
   import CardsGrid from "$lib/components/CardsGrid.svelte";
-  import SectionGrid from "$lib/components/SectionGrid.svelte";
   import typographString from "../../../utils/typographString";
 </script>
 
@@ -9,7 +8,7 @@
   <title>DIY clothes and gear</title>
 </svelte:head>
 
-<SectionGrid>
+<section>
   <Heading classes="grid-col17" level={1}
     >{typographString("DIY clothes and gear")}</Heading
   >
@@ -18,8 +17,8 @@
       "I try to patch and fix things, if I can't -- I try to repurpose them responsibly:"
     )}
   </p>
-</SectionGrid>
-<SectionGrid>
+</section>
+<section>
   <CardsGrid
     classes="grid-col-all orange-text"
     cardsMaps={[
@@ -40,4 +39,4 @@
       },
     ]}
   />
-</SectionGrid>
+</section>

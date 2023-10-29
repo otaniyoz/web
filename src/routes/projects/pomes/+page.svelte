@@ -1,6 +1,5 @@
 <script lang="ts">
   import Heading from "$lib/components/Heading.svelte";
-  import SectionGrid from "$lib/components/SectionGrid.svelte";
   import typographString from "../../../utils/typographString";
   import pomes from "../../../data/pomes.json";
 </script>
@@ -9,18 +8,18 @@
   <title>Pomes</title>
 </svelte:head>
 
-<SectionGrid>
+<section>
   <Heading classes="grid-col17" level={1} useInline={false}>Pomes</Heading>
   <p class="grid-col17">
     {typographString(
       "Sometimes I write poems, a term used here quite carelessly I should say, here are some of them, from latest to oldest:"
     )}
   </p>
-</SectionGrid>
+</section>
 {#if pomes}
   {#each pomes as pome}
     {#if pome.published === "true"}
-      <SectionGrid>
+      <section>
         <Heading classes="centered-visual" level={2} useInline={false}>
           {typographString(pome.title)}</Heading
         >
@@ -30,11 +29,11 @@
         <p class="large-bottom-padding regular-top-padding centered-visual">
           {typographString(pome.date)}
         </p>
-      </SectionGrid>
+      </section>
     {/if}
   {/each}
 {:else}
-  <SectionGrid>
+  <section>
     <p class="grid-col17">No poems</p>
-  </SectionGrid>
+  </section>
 {/if}

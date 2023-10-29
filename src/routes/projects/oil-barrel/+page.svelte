@@ -1,6 +1,5 @@
 <script lang="ts">
   import Heading from "$lib/components/Heading.svelte";
-  import SectionGrid from "$lib/components/SectionGrid.svelte";
   import typographString from "../../../utils/typographString";
 </script>
 
@@ -8,19 +7,19 @@
   <title>Concept landing page for a barrel of oil</title>
 </svelte:head>
 
-<SectionGrid>
+<section>
   <Heading classes="grid-col17" level={1} useInline={false}>
     {typographString("Landing page for a barrel of oil")}
   </Heading>
   <p class="grid-col17">
     {typographString("This is a concept landing page for a barrel of oil, an exercise in design. Originally made in 2022.")}
   </p>
-</SectionGrid>
-<SectionGrid>
+</section>
+<section>
   <Heading classes="grid-col17" level={2} useInline={false}>2022</Heading>
   <img
     class="centered-visual"
     alt="Landing page dark theme"
     src="../../oil-barrel/2022.jpg"
   />
-</SectionGrid>
+</section>
