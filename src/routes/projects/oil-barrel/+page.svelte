@@ -12,14 +12,14 @@
     {typographString("Landing page for a barrel of oil")}
   </Heading>
   <p class="grid-col17">
-    {typographString("This is a concept landing page for a barrel of oil, an exercise in design. Originally made in 2022.")}
+    {typographString(
+      "This is a concept landing page for a barrel of oil, an exercise in design. Originally made in 2022."
+    )}
   </p>
 </section>
 <section>
   <Heading classes="grid-col17" level={2} useInline={false}>2022</Heading>
-  <img
-    class="centered-visual"
-    alt="Landing page dark theme"
-    src="../../oil-barrel/2022.jpg"
-  />
+  <figure class="centered-visual">
+    <img alt="Landing page dark theme" src="../../oil-barrel/2022.jpg" />
+  </figure>
 </section>

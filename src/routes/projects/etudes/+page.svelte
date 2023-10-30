@@ -51,8 +51,6 @@
       },
     ]}
   />
-</section>
-<section>
   <List
     classes="grid-col17"
     listRows={[

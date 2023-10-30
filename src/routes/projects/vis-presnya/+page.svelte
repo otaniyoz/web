@@ -1,7 +1,7 @@
 <script lang="ts">
   import List from "$lib/components/List.svelte";
   import Factoid from "$lib/components/Factoid.svelte";
-  import ImageGrid from "$lib/components/CardsGrid.svelte";
+  import CardsGrid from "$lib/components/CardsGrid.svelte";
   import Heading from "$lib/components/Heading.svelte";
   import typographString from "../../../utils/typographString";
 </script>
@@ -10,13 +10,14 @@
   <title>Visualisation of sports sites in the Presnya</title>
 </svelte:head>
 
-<ImageGrid
-  cardsMaps={[
-    { image: "../../vis-presnya/11.png" },
-    { video: "../../vis-presnya/icons-slideshow.mp4" },
-  ]}
-/>
 <section>
+  <CardsGrid
+    classes="grid-col-all"
+    cardsMaps={[
+      { image: "../../vis-presnya/11.png" },
+      { video: "../../vis-presnya/icons-slideshow.mp4" },
+    ]}
+  />
   <Heading classes="grid-col17" level={1}>
     {typographString("Visualisation of sports sites in the Presnya")}
   </Heading>
@@ -30,20 +31,18 @@
       "In 2022, I spent a couple of hours making an illustration of sports sites in the district and using public data identified around 64 sports sites:"
     )}
   </p>
-</section>
-<figure>
-  <img
-    alt="Illustration of sports sites in the Presnya"
-    src="../../vis-presnya/12.jpg"
-  />
-  <aside class="grid large-gap four-columns">
+  <figure class="centered-visual">
+    <img
+      alt="Illustration of sports sites in the Presnya"
+      src="../../vis-presnya/12.jpg"
+    />
+  </figure>
+  <article class="centered-visual grid large-gap four-columns">
     <Factoid factoidNumber="32" factoidDescription="sports halls & gyms" />
     <Factoid factoidNumber="17" factoidDescription="workout grounds" />
     <Factoid factoidNumber="11" factoidDescription="sports fields" />
     <Factoid factoidNumber="4" factoidDescription="gardens & parks" />
-  </aside>
-</figure>
-<section>
+  </article>
   <List
     classes="grid-col17"
     showIndex={true}

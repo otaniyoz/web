@@ -17,8 +17,6 @@
       "I try to patch and fix things, if I can't -- I try to repurpose them responsibly:"
     )}
   </p>
-</section>
-<section>
   <CardsGrid
     classes="grid-col-all orange-color"
     cardsMaps={[
