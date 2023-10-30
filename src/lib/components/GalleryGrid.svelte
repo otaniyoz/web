@@ -5,7 +5,7 @@
   $: selectedImageIndex = 0;
 </script>
 
-<article>
+<figure>
   <div id="selected-image">
     <img src={images[selectedImageIndex]} alt={alts[selectedImageIndex]} />
   </div>
@@ -21,7 +21,7 @@
       </div>
     {/each}
   </aside>
-</article>
+</figure>
 
 <style>
   article {

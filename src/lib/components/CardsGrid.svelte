@@ -6,9 +6,9 @@
   export let classes: string = "";
 </script>
 
-<div class="cards-grid {classes}">
+<figure class="cards-grid {classes}">
   {#each cardsMaps as cardMap}
-    <figure class="card">
+    <div class="card">
       {#if cardMap.image && cardMap.image.length}
         <img alt="Card cover" src={cardMap.image} class="card-media" />
       {:else if cardMap.video && cardMap.video.length}
@@ -30,9 +30,9 @@
           {/if}
         </div>
       {/if}
-    </figure>
+    </div>
   {/each}
-</div>
+</figure>
 
 <style>
   p {
