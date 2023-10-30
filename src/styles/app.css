@@ -15,7 +15,8 @@
 
 figure {
   margin: 0;
-  padding-bottom: var(--gap-large);
+  padding-bottom: var(--gap-xxlarge);
+  padding-top: var(--gap-regular);
 }
 
 img {

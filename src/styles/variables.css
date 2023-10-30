@@ -29,7 +29,8 @@
   --gap-regular: 1vmax;
   --gap-large: 2vmax;
   --gap-xlarge: 2.5vmax;
-  --gap-xxlarge: 4.5vmax;
+  --gap-xxlarge: 3.5vmax;
+  --gap-xxxlarge: 4.5vmax;
 
   --footer-height: 80px;
 }

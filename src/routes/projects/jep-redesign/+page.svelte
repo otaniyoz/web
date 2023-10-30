@@ -106,9 +106,11 @@
       "While at it, I also made a logo. It is based on the world map, because Jep! is an online group party game; to fit the whole world in a square I used the Mercator projection:"
     )}
   </p>
+
+  <figure class="centered-visual">
   <img
-    class="centered-visual"
     src="../../jep-redesign/logo.png"
     alt="Redesigning Jep!"
   />
+  </figure>
 </section>
