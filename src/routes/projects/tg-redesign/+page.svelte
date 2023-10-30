@@ -23,7 +23,7 @@
       "This is an unofficial redesign and is not affiliated with or endorsed by Telegram in any way.",
     ]}
   >
-    <Heading slot="title" level={3}>To be clear:</Heading>
+    <Heading classes="heavy-weight" slot="title" level={3}>To be clear:</Heading>
   </List>
   <List
     classes="grid-col17"

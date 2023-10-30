@@ -44,8 +44,8 @@
   }
 
   .card-title {
+    font-weight: inherit;
     line-height: var(--line-height-small);
-    font-weight: var(--font-weight-heavy);
     font-size: var(--font-size-medium);
     padding-bottom: var(--gap-regular);
     margin-left: -0.5vmin; /* to aligh horizontaly. */
@@ -53,7 +53,7 @@
 
   .card:nth-child(7n + 1) > .card-info-container > .card-title {
     font-size: var(--font-size-xlarge);
-    margin-left: -1.2vmin; /* to aligh horizontaly. */
+    margin-left: -1vw; /* to aligh horizontaly. */
   }
 
   .card {

@@ -19,16 +19,13 @@
   <table>
     <tbody>
       {#each tableData.tableRows as row, rowIndex}
-        <tr>
+        <tr class:grey-color={!tableData.tableLinks[numColumns * rowIndex]}>
           {#each row as column, columnIndex}
             <td
               class:title={tableData.tableAccents[
                 numColumns * rowIndex + columnIndex
               ]}
               ><p
-                class:accent={tableData.tableAccents[
-                  numColumns * rowIndex + columnIndex
-                ]}
                 class:text-right={tableData.tableColumns[columnIndex] ===
                   "date"}
               >

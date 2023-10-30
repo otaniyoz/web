@@ -1,12 +1,13 @@
 :root {
   --color-dark: rgb(21, 21, 22);
+  --color-grey: rgb(110, 110, 110);
   --color-light: rgb(245, 245, 242);
   --color-cyan: rgb(138, 232, 253);
   --color-blue: rgb(97, 112, 163);
   --color-green: rgb(79, 250, 122);
   --color-pink: rgb(255, 120, 199);
   --color-purple: rgb(189, 145, 247);
-  --color-orange: rgb(255, 77, 0); 
+  --color-orange: rgb(255, 69, 0); 
   --color-red: rgb(255, 84, 84); 
   --color-yellow: rgb(240, 250, 138);
 

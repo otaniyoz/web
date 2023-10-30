@@ -20,7 +20,7 @@
 </section>
 <section>
   <CardsGrid
-    classes="grid-col-all orange-text"
+    classes="grid-col-all orange-color"
     cardsMaps={[
       {
         title: "Pullover",

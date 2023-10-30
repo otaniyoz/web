@@ -14,10 +14,12 @@
     src="home-banner.jpg"
   />Otaniyoz. A place for <Link
     href="{base}/projects"
-    classes="large-text"
+    classes="large-size xregular-line-height"
     outside={false}>various projects</Link
-  > and <Link href="{base}/notes" classes="large-text" outside={false}
-    >sporadic notes</Link
+  > and <Link
+    href="{base}/notes"
+    classes="large-size xregular-line-height"
+    outside={false}>sporadic notes</Link
   >. All on, perhaps, too far spread topics and in too different languages. But
   I might be wrong, so don't take my word for it — go and see for yourself
   <img alt="Skull with beaming eye-sockets" src="skull.png" id="skull" />. Or

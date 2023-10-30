@@ -23,7 +23,7 @@
       "This is an unofficial redesign and is not affiliated with Jep! in any way. However, some of the presented ideas were actually implemented, more on this later.",
     ]}
   >
-    <Heading slot="title" level={3}>To be clear:</Heading>
+    <Heading classes="heavy-weight" slot="title" level={3}>To be clear:</Heading>
   </List>
   <p class="grid-col17">
     {typographString(
@@ -106,7 +106,6 @@
       "While at it, I also made a logo. It is based on the world map, because Jep! is an online group party game; to fit the whole world in a square I used the Mercator projection:"
     )}
   </p>
-
   <figure class="centered-visual">
   <img
     src="../../jep-redesign/logo.png"

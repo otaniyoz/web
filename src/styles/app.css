@@ -180,6 +180,7 @@ img {
 
 body {
   margin: 0;
+  color: var(--color-dark);
   font-family: "IBM Plex Sans";
   background-color: var(--color-light);
 }
@@ -204,8 +205,8 @@ a:hover {
 }
 
 p {
+  color: inherit;
   margin-block: 0;
-  color: var(--color-dark);
   font-size: var(--font-size-regular);
   line-height: var(--line-height-large);
   padding-bottom: var(--gap-regular);
@@ -223,6 +224,10 @@ p {
   font-size: var(--font-size-regular);
 }
 
+.medium-size {
+  font-size: var(--font-size-medium);
+}
+
 .large-size {
   font-size: var(--font-size-large);
 }
@@ -233,6 +238,10 @@ p {
   font-size: var(--font-size-large);
 }
 
+.xregular-line-height {
+  line-height: var(--line-height-xregular);
+}
+
 .regular-line-height {
   line-height: var(--line-height-regular);
 }
@@ -241,6 +250,14 @@ p {
   line-height: var(--line-height-large);
 }
 
-.orange-text {
+.orange-color {
   color: var(--color-orange);
+}
+
+.grey-color {
+  color: var(--color-grey);
+}
+
+.dark-color {
+  color: var(--color-dark);
 }
