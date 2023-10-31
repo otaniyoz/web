@@ -40,7 +40,7 @@
   }
 
   .card-description {
-    line-height: var(--line-height-small);
+    line-height: var(--line-height-regular);
   }
 
   .card-title {
