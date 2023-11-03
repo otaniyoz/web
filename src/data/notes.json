@@ -23,15 +23,6 @@
     "link": "yambuya"
   },
   {
-    "title": "Про 'Миф о Сизифе'",
-    "date": "Декабрь 2021",
-    "content": [
-      ""
-    ],
-    "published": "false",
-    "link": "sisyphus"
-  },
-  {
     "title": "On shifting the deckchairs",
     "date": "November 2021",
     "content": [
@@ -41,14 +32,5 @@
     ],
     "published": "true",
     "link": "shifting-deckchairs"
-  },
-  {
-    "title": "Про 'Петровыx в гриппе' и вязальщиц",
-    "date": "Ноябрь 2021",
-    "content": [
-      ""
-    ],
-    "published": "false",
-    "link": "petroffs-flu"
   }
 ]

@@ -12,21 +12,21 @@
       <li>
         <a
           href={base}
-          class:accented-bottom-border={$page.url.pathname.endsWith(base + "/")}
+          class:grey-color={!$page.url.pathname.endsWith(base + "/")}
           >About</a
         >
       </li>
       <li class="second">
         <a
           href="{base}/projects"
-          class:accented-bottom-border={$page.url.pathname.includes("projects")}
+          class:grey-color={!$page.url.pathname.includes("projects")}
           >Projects</a
         >
       </li>
       <li class="text-right third">
         <a
           href="{base}/notes"
-          class:accented-bottom-border={$page.url.pathname.includes("notes")}
+          class:grey-color={!$page.url.pathname.includes("notes")}
           >Notes</a
         >
       </li>
@@ -99,15 +99,6 @@
     list-style: none;
     padding-inline: 0;
     grid-template-columns: repeat(8, 1fr);
-  }
-
-  .accented-bottom-border {
-    border-bottom: 1px solid var(--color-orange);
-    background: linear-gradient(
-      360deg,
-      rgba(255, 69, 0, 0.75) 24%,
-      rgba(255, 69, 0, 0) 0%
-    );
   }
 
   .second {

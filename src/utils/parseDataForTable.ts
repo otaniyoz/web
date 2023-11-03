@@ -8,14 +8,15 @@ export default function parseDataForTable(data: NoteType[] | ProjectType[], keys
   for (let i = 0; i < data.length; i++) {
     let row: string[] = [];
     let json: NoteType | ProjectType = data[i];
+    if (json.published === "false") { continue; }
     for (let j = 0; j < keys.length; j++) {
       let kj = keys[j];
       row.push(json[kj]);
       accents.push(
-        accentKeys.indexOf(kj) !== -1 && json.published === "true" ? "true" : ""
+        accentKeys.indexOf(kj) !== -1 ? "true" : ""
       );
       links.push(
-        linkKeys.indexOf(kj) !== -1 && json.published === "true"
+        linkKeys.indexOf(kj) !== -1
           ? json["link"]
           : ""
       );
