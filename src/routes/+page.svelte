@@ -58,7 +58,9 @@
   }
 
   #suriken-container {
+    z-index: -100;
     overflow: hidden;
+    position: relative;
     display: inline-block;
     vertical-align: bottom;
   }
