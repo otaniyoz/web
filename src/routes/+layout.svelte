@@ -12,21 +12,28 @@
       <li>
         <a
           href={base}
-          class:grey-color={!$page.url.pathname.endsWith(base + "/")}
+          class:grey-color={$page.url.pathname.endsWith(base + "/")}
           >About</a
+        >
+      </li>
+      <li>
+        <a
+          href="{base}/pomes"
+          class:grey-color={$page.url.pathname.includes("pomes")}
+          >Pomes</a
         >
       </li>
       <li class="second">
         <a
           href="{base}/projects"
-          class:grey-color={!$page.url.pathname.includes("projects")}
+          class:grey-color={$page.url.pathname.includes("projects")}
           >Projects</a
         >
       </li>
-      <li class="text-right third">
+      <li class="third text-right">
         <a
           href="{base}/notes"
-          class:grey-color={!$page.url.pathname.includes("notes")}
+          class:grey-color={$page.url.pathname.includes("notes")}
           >Notes</a
         >
       </li>

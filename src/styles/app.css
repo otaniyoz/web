@@ -256,6 +256,7 @@ p {
 
 .grey-color {
   color: var(--color-grey);
+  border-color: var(--color-grey);
 }
 
 .dark-color {

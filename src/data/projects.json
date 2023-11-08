@@ -70,12 +70,5 @@
     "published": "true",
     "cover": "../../pocket-notes/home.png",
     "link": "pocket-notes"
-  },
-  {
-    "title": "Pomes",
-    "work": "Poetry",
-    "date": "2021...",
-    "published": "true",
-    "link": "pomes"
   }
 ]

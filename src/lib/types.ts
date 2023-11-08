@@ -25,7 +25,8 @@ export type NoteType = {
 export type NoteContentType = { 
   post: {
     title: string; 
-    content: string[] 
+    content: string[]; 
+    date: string;
   }
 };
 

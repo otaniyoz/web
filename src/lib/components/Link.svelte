@@ -14,9 +14,11 @@
 <style>
   a {
     padding: 0;
+    color: inherit;
     text-decoration: none;
-    color: var(--color-dark);
-    border-bottom: 1px solid var(--color-dark);
+    border-bottom-width: 1px; 
+    border-bottom-style: solid;
+    border-bottom-color: inherit;
   }
 
   a:hover {

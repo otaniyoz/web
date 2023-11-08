@@ -9,14 +9,26 @@
 </svelte:head>
 
 <Heading level={1}>
-  Hallo, cyber-stranger. →This← is a web-home for <img
-    alt="Illustration of a man"
-    src="home-banner.jpg"
-  />Otaniyoz. A place for <Link
+  Hallo, cyber-stranger. →This← is a <div id="suriken-container">
+    <img
+      id="suriken"
+      src="{base}/favicon.png"
+      alt="Rotating suriken"
+      class="rotating"
+    />
+  </div>web-home for <img alt="Illustration of a man" src="home-banner.jpg" />Otaniyoz.
+  A place for <Link
+    target="_self"
+    href="{base}/pomes"
+    classes="large-size xregular-line-height"
+    outside={false}>pomes</Link
+  >, <Link
+    target="_self"
     href="{base}/projects"
     classes="large-size xregular-line-height"
     outside={false}>various projects</Link
-  > and <Link
+  >, and <Link
+    target="_self"
     href="{base}/notes"
     classes="large-size xregular-line-height"
     outside={false}>sporadic notes</Link
@@ -24,14 +36,6 @@
   I might be wrong, so don't take my word for it — go and see for yourself
   <img alt="Skull with beaming eye-sockets" src="skull.png" id="skull" />. Or
   don't
-  <div id="suriken-container">
-    <img
-      id="suriken"
-      src="{base}/favicon.png"
-      alt="Rotating suriken"
-      class="rotating"
-    />
-  </div>
 </Heading>
 
 <style>
