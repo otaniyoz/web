@@ -44,6 +44,7 @@
 
   #ot {
     width: auto;
+    z-index: -100;
     vertical-align: middle;
     height: calc(0.6*var(--line-height-regular));
     position: relative;
