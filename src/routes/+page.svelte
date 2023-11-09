@@ -44,16 +44,15 @@
 
   #ot {
     width: auto;
-    display: inline-block;
     vertical-align: middle;
     height: calc(0.6*var(--line-height-regular));
-    left: 0.5em;
     position: relative;
     margin-top: 0.5vmax;
+    left: 0.5em;
   }
 
   #ot-container {
-    display: inline;
+    display: inline-block;
     margin-left: -0.8vmax;
   }
 

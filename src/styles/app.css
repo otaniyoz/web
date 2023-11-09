@@ -1,17 +1,25 @@
 @import "variables.css";
 
+section {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(6, 1fr);
+  padding-bottom: var(--gap-xlarge);
+}
+
+.centered-visual {
+  grid-area: auto / 1 / auto / 7;
+}
+
+@media screen and (min-width: 1220px) {
   section {
-    display: grid;
-    overflow: hidden;
     grid-template-columns: repeat(8, 1fr);
-    padding-bottom: var(--gap-xlarge);
   }
 
-  @media screen and (max-width: 1200px) {
-    section {
-      grid-template-columns: repeat(6, 1fr);
-    }
+  .centered-visual {
+    grid-area: auto / 2 / auto / 8;
   }
+}
 
 figure {
   margin: 0;
@@ -60,23 +68,12 @@ img {
   gap: var(--gap-small);
 }
 
-
 .regular-gap {
   gap: var(--gap-regular);
 }
 
 .large-gap {
   gap: var(--gap-large);
-}
-
-.centered-visual {
-  grid-area: auto / 2 / auto / 8;
-}
-
-@media screen and (max-width: 1220px) {
-  .centered-visual {
-    grid-area: auto / 1 / auto / 7;
-  }
 }
 
 .object-contain {
