@@ -16,8 +16,7 @@
       alt="Rotating suriken"
       class="rotating"
     />
-  </div>web-home for <img alt="Illustration of a man" src="home-banner.jpg" />Otaniyoz.
-  A place for <Link
+  </div>web-home for<div id="ot-container"><img id="ot" alt="Illustration of a man" src="ot.png" />Otaniyoz.</div> A quiet place for <Link
     target="_self"
     href="{base}/pomes"
     classes="large-size xregular-line-height"
@@ -32,29 +31,36 @@
     href="{base}/notes"
     classes="large-size xregular-line-height"
     outside={false}>sporadic notes</Link
-  >. All on, perhaps, too far spread topics and in too different languages. But
-  I might be wrong, so don't take my word for it — go and see for yourself
-  <img alt="Skull with beaming eye-sockets" src="skull.png" id="skull" />. Or
-  don't
+  >. All on, perhaps, too far spread topics and in too different languages. But I might be wrong, so don’t take my word for it — go and see for yourself. Or don’t
 </Heading>
 
 <style>
   img {
+    width: auto;
     display: inline-block;
     vertical-align: text-bottom;
     height: var(--line-height-regular);
-    width: auto;
   }
 
-  #skull {
-    height: calc(0.8 * var(--line-height-regular));
-    vertical-align: sub;
+  #ot {
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    height: calc(0.6*var(--line-height-regular));
+    left: 0.5em;
+    position: relative;
+    margin-top: 0.5vmax;
+  }
+
+  #ot-container {
+    display: inline;
+    margin-left: -0.8vmax;
   }
 
   #suriken {
+    aspect-ratio: 1 / 1;
     max-width: var(--line-height-regular);
     max-height: var(--line-height-regular);
-    aspect-ratio: 1 / 1;
   }
 
   #suriken-container {

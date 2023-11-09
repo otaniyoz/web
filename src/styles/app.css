@@ -22,7 +22,6 @@ figure {
 img {
   width: 100%;
   max-width: 100%;
-  background-color: var(--color-light);
 }
 
 .sans-serif {
@@ -188,7 +187,6 @@ body {
 video {
   max-width: 100%;
   object-fit: cover;
-  background-color: var(--color-light);
 }
 
 a {
