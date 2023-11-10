@@ -29,9 +29,20 @@ export default function typographString(s: string): string {
 		['\u2060{1,}', ''],
 		// remove spaces before selected punctuation marks.
 		['[ ]+([.,!?":;])', '$1'],
-		// MISC: replace three dots with ellipsis
-		// linked to the previous word with a no-break.
+		// MISC: 
+		// -- replace three dots with ellipsis linked to the previous word with a no-break.
 		['[.]{3}', '\u2060\u2026'],
+		// -- spell out digits 0...9
+		['([0]{1})( [a-z]+)', 'zero$2'],
+		['([1]{1})( [a-z]+)', 'one$2'],
+		['([2]{1})( [a-z]+)', 'two$2'],
+		['([3]{1})( [a-z]+)', 'three$2'],
+		['([4]{1})( [a-z]+)', 'four$2'],
+		['([5]{1})( [a-z]+)', 'five$2'],
+		['([6]{1})( [a-z]+)', 'six$2'],
+		['([7]{1})( [a-z]+)', 'seven$2'],
+		['([8]{1})( [a-z]+)', 'eight$2'],
+		['([9]{1})( [a-z]+)', 'nine$2'],
 		// EM-DASH: replace two consequetive hyphens with an em-dash
 		// linked to the preceeding word by a non-breaking space
 		// and followed a regular space.
@@ -70,20 +81,17 @@ export default function typographString(s: string): string {
 		["([ ]?|^)'([^']+)'", '$1\u2060\u2018\u2060$2\u2060\u2019'],
 	]);
 
-	const compiledRules = new Map();
-	// choose between russian or english rules
-	let rules = russianRules;
-	if (/[\P{Cyrillic}]/.test(s)) {
-		rules = englishRules;
-	}
-	// compile rules
+	// choose between russian or english rules by determing if most characters are cyrillic
+	const m = new RegExp('[\u0430-\u044f]', 'gi');
+	const rules = (s.match(m) !== null && s.match(m)?.length > s.length / 2) ? russianRules : englishRules; 
+	// compile rules and apply regex
   for (const [k, v] of rules) {
 		const r = new RegExp(k, 'gi');
-		compiledRules.set(r, v);
+		s = s.replace(r, v);
 	}
-	// apply regex
-	for (const [k, v] of compiledRules) {
-		s = s.replace(k, v);
+	// this should handle capitalisation in headings and such for now
+ 	if (!s.includes('.')) {
+		s = s.charAt(0).toUpperCase() + s.slice(1);
 	}
   return s;
 }

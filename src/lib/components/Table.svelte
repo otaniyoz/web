@@ -3,16 +3,7 @@
   import type { TableType } from "$lib/types";
 
   export let tableData: TableType;
-
-  const numRows: number = tableData.tableRows.length;
   const numColumns: number = tableData.tableRows[0].length;
-
-  for (let i = 0; i < numColumns; i++) {
-    tableData.tableColumns[i] = typographString(tableData.tableColumns[i]);
-    for (let j = 0; j < numRows; j++) {
-      tableData.tableRows[j][i] = typographString(tableData.tableRows[j][i]);
-    }
-  }
 </script>
 
 <figure>
@@ -33,10 +24,10 @@
                   <a
                     href={tableData.tableLinks[
                       numColumns * rowIndex + columnIndex
-                    ]}>{column}</a
+                    ]}>{typographString(column)}</a
                   >
                 {:else}
-                  {column}
+                  {typographString(column)}
                 {/if}
               </p></td
             >
