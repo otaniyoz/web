@@ -15,7 +15,7 @@
 
 {#if data.post}
   <section>
-    <Heading classes="centered-visual" level={2} useInline={false}>
+    <Heading classes="centered-visual" level={1} useInline={false}>
       {typographString(data.post.title)}</Heading
     >
     {#each data.post.content as line}
