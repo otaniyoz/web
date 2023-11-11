@@ -59,16 +59,17 @@
 
   #suriken {
     aspect-ratio: 1 / 1;
-    max-width: var(--line-height-regular);
-    max-height: var(--line-height-regular);
+    max-width: calc(0.9*var(--line-height-regular));
+    max-height: calc(0.9*var(--line-height-regular));
+    vertical-align: middle;
   }
 
   #suriken-container {
     z-index: -100;
-    overflow: hidden;
+    overflow: visible;
     position: relative;
     display: inline-block;
-    vertical-align: bottom;
+    max-height: calc(0.9*var(--line-height-regular));
   }
 
   @keyframes continuous-rotation {

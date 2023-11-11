@@ -19,7 +19,7 @@
       >{typographString(data.post.title)}</Heading
     >
     {#each data.post.content as paragraph}
-      <p class="grid-col17 serif">{typographString(paragraph)}</p>
+      <p class="grid-col17 serif font-normal font-kern font-no-ligs">{typographString(paragraph)}</p>
     {/each}
   </section>
 {/if}

@@ -18,10 +18,10 @@
     <Heading classes="centered-visual" level={1} useInline={false}>
       {typographString(data.post.title)}</Heading
     >
-    {#each data.post.content as line}
-      <p class="centered-visual serif">{typographString(line)}</p>
+    {#each data.post.content as line, idx}
+      <p class="{(idx%2!==0)?'xlarge-left-padding':''} centered-visual serif font-normal font-kern font-no-ligs">{typographString(line)}</p>
     {/each}
-    <p class="large-bottom-padding regular-top-padding centered-visual">
+    <p class="large-bottom-padding regular-top-padding centered-visual font-normal font-kern font-no-ligs">
       {typographString(data.post.date)}
     </p>
   </section>

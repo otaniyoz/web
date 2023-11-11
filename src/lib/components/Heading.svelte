@@ -7,11 +7,11 @@
 
 <div class="heading-container {classes}">
   {#if level === 1}
-    <h1 class="large-size xregular-line-height"><slot /></h1>
+    <h1 class="large-size xregular-line-height font-norm font-kern font-no-ligs"><slot /></h1>
   {:else if level === 2}
-    <h2 class="medium-size regular-line-height"><slot /></h2>
+    <h2 class="medium-size regular-line-height font-norm font-kern font-no-ligs"><slot /></h2>
   {:else if level === 3}
-    <h3 class="regular-size large-line-height"><slot /></h3>
+    <h3 class="regular-size large-line-height font-norm font-kern font-no-ligs"><slot /></h3>
   {/if}
   {#if sub}
     <div class="sub-container" class:inline={useInline}>
