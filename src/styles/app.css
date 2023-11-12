@@ -12,10 +12,6 @@
   font-kerning: normal;
 }
 
-.font-swap {
-  font-display: swap;
-}
-
 section {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
