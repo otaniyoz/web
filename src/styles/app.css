@@ -229,6 +229,7 @@ a:hover {
 p {
   color: inherit;
   margin-block: 0;
+  min-height: var(--line-height-small);
   font-size: var(--font-size-regular);
   line-height: var(--line-height-large);
   padding-bottom: var(--gap-regular);
