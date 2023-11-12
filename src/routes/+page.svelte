@@ -48,7 +48,7 @@
     vertical-align: middle;
     height: calc(0.6*var(--line-height-regular));
     position: relative;
-    margin-top: 0.5vmax;
+    margin-top: 0.65vmax;
     left: 0.5em;
   }
 

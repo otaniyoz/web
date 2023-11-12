@@ -26,7 +26,7 @@
   h1 {
     padding: 0;
     word-spacing: -0.05em;
-    margin-left: -0.2vmax;
+    margin-left: -0.4vmax;
     letter-spacing: -0.025em;
   }
   h2 {
@@ -59,7 +59,7 @@
   }
   @media screen and (min-width: 1200px) {
     h1 {
-      margin-left: -0.35vmax;
+      margin-left: -0.6vmax;
     }
   }
 </style>

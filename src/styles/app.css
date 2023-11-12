@@ -18,7 +18,6 @@
 
 section {
   display: grid;
-  overflow: hidden;
   grid-template-columns: repeat(6, 1fr);
   padding-bottom: var(--gap-xlarge);
 }
@@ -193,7 +192,7 @@ img {
 }
 
 .text-center {
-  text-align: justify;
+  text-align: center;
 }
 
 .text-right {
