@@ -4,10 +4,6 @@
   export let listRows: string[];
   export let classes: string = "";
   export let showIndex: boolean = false;
-
-  for (let i = 0; i < listRows.length; i++) {
-    listRows[i] = typographString(listRows[i]);
-  }
 </script>
 
 <figure class={classes}>
@@ -16,7 +12,7 @@
   {#each listRows as row, rowIndex}
     <div class="row">
       {#if showIndex}<p class="list-index">{rowIndex + 1}.</p>{/if}
-      <p>{row}</p>
+      <p>{typographString(row)}</p>
     </div>
   {/each}
 </figure>
