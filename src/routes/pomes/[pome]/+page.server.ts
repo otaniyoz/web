@@ -15,5 +15,5 @@ export function load({ params }): NoteContentType {
       }; 
     }
   }
-  throw error(404, 'Not found');
+  throw error(404, "The pome you tried to access is " + params.pome + ", but it doesn’t exist");
 }

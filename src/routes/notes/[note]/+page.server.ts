@@ -14,5 +14,5 @@ export function load({ params }): NoteContentType {
       }; 
     }
   }
-  throw error(404, 'Not found');
+  throw error(404, "The note you tried to access is " + params.note + ", but it doesn’t exist");
 }
