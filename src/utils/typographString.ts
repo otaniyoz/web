@@ -6,9 +6,12 @@ export default function typographString(s: string): string {
 		[' {2,}', ' '],
 		['\u2060{1,}', ''],
 		['[ ]+([.,!?":;])', '$1'],
-		['[.]{3}', '\u2060\u2026'],
+		['[.]{3}', '\u2060.\u2060.\u2060.\u2060'],
 		['[ ]?[-]{2}[ ]?', '\u00A0\u2014 '],
-		['([0-9]+)([ ]?[-][ ]?)([0-9]+[ ]?)(?!=)', '$1\u2012$3'],
+		['([0-9]+)([ ]?[-][ ]?)([0-9]+[ ]?)(?!=)', '$1\u2060.\u2060.\u2060.\u2060$3'],
+    ['[$]{1}([0-9]+(\.[0-9]+)?)', '$1\u200A\u2060\$'],
+    ['([0-9]+(\.[0-9]+)?)[$]{1}', '$1\u200A\u2060\$'],
+    ['([0-9]+(\.[0-9]+)?)[%]{1}', '$1\u200A\u2060\%'],
 		['([0-9]+)([ ]?[-][ ]?)([0-9]+)([ ]?[=]+[ ]?)([0-9]+)', '$1\u00A0\u2212\u00A0$3\u00A0\=\u00A0$5'],
 		['([0-9]+)([ ]?[+][ ]?)([0-9]+)([ ]?[=]+[ ]?)([0-9]+)', '$1\u00A0\u002B\u00A0$3\u00A0=\u00A0$5'],
 		['(?![0-9]+[ ]?)([-][ ]?)(?=[0-9]+[ ]?)(?!=)', '\u2212'],
@@ -30,29 +33,30 @@ export default function typographString(s: string): string {
 		// remove spaces before selected punctuation marks.
 		['[ ]+([.,!?":;])', '$1'],
 		// MISC: 
-		// -- replace three dots with ellipsis linked to the previous word with a no-break.
-		['[.]{3}', '\u2060\u2026'],
+		// -- replace three dots with three dots padded with no-breaks.
+		['[.]{3}', '\u2060.\u2060.\u2060.\u2060'],
 		// -- spell out digits 0...9
-		['([ ]+)([0]{1})( [a-z]+)', '$1zero$3'],
-		['^([0]{1})( [a-z]+)', 'zero$2'],
-		['([ ]+)([1]{1})( [a-z]+)', '$1one$3'],
-		['^([1]{1})( [a-z]+)', 'one$2'],
-		['([ ]+)([2]{1})( [a-z]+)', '$1two$3'],
-		['^([2]{1})( [a-z]+)', 'two$2'],
-		['([ ]+)([3]{1})( [a-z]+)', '$1three$3'],
-		['^([3]{1})( [a-z]+)', 'three$2'],
-		['([ ]+)([4]{1})( [a-z]+)', '$1four$3'],
-		['^([4]{1})( [a-z]+)', 'four$2'],
-		['([ ]+)([5]{1})( [a-z]+)', '$1five$3'],
-		['^([5]{1})( [a-z]+)', 'five$2'],
-		['([ ]+)([6]{1})( [a-z]+)', '$1six$3'],
-		['^([6]{1})( [a-z]+)', 'six$2'],
-		['([ ]+)([7]{1})( [a-z]+)', '$1seven$3'],
-		['^([7]{1})( [a-z]+)', 'seven$2'],
-		['([ ]+)([8]{1})( [a-z]+)', '$1eight$3'],
-		['^([8]{1})( [a-z]+)', 'eight$2'],
-		['([ ]+)([9]{1})( [a-z]+)', '$1nine$3'],
-		['^([9]{1})( [a-z]+)', 'nine$2'],
+		// TODO: doesn't account for numeric range, e.g. 0...9
+		['([ ]+)([0]{1})( [a-z.,]+)', '$1zero$3'],
+		['^([0]{1})( [a-z.,]+)', 'zero$2'],
+		['([ ]+)([1]{1})( [a-z.,]+)', '$1one$3'],
+		['^([1]{1})( [a-z.,]+)', 'one$2'],
+		['([ ]+)([2]{1})( [a-z.,]+)', '$1two$3'],
+		['^([2]{1})( [a-z.,]+)', 'two$2'],
+		['([ ]+)([3]{1})( [a-z.,]+)', '$1three$3'],
+		['^([3]{1})( [a-z.,]+)', 'three$2'],
+		['([ ]+)([4]{1})( [a-z.,]+)', '$1four$3'],
+		['^([4]{1})( [a-z.,]+)', 'four$2'],
+		['([ ]+)([5]{1})( [a-z.,]+)', '$1five$3'],
+		['^([5]{1})( [a-z.,]+)', 'five$2'],
+		['([ ]+)([6]{1})( [a-z.,]+)', '$1six$3'],
+		['^([6]{1})( [a-z.,]+)', 'six$2'],
+		['([ ]+)([7]{1})( [a-z.,]+)', '$1seven$3'],
+		['^([7]{1})( [a-z.,]+)', 'seven$2'],
+		['([ ]+)([8]{1})( [a-z.,]+)', '$1eight$3'],
+		['^([8]{1})( [a-z.,]+)', 'eight$2'],
+		['([ ]+)([9]{1})( [a-z.,]+)', '$1nine$3'],
+		['^([9]{1})( [a-z.,]+)', 'nine$2'],
 		// EM-DASH: replace two consequetive hyphens with an em-dash
 		// linked to the preceeding word by a non-breaking space
 		// and followed a regular space.
@@ -62,7 +66,15 @@ export default function typographString(s: string): string {
 		// not followed by an equality sign with an en-dash
 		// enclosed in no-breaks without spaces.
 		// TODO: unicode groups do not work for some reason.
-		['([0-9]+)([ ]?[-][ ]?)([0-9]+[ ]?)(?!=)', '$1\u2012$3'],
+		['([0-9]+)([ ]?[-][ ]?)([0-9]+[ ]?)(?!=)', '$1\u2060.\u2060.\u2060.\u2060$3'],
+		// CURRENCY SIGN:
+		// 100$ -> 100 ⁠$
+		// $100 -> 100 ⁠$
+    ['[$]{1}([0-9]+(\.[0-9]+)?)', '$1\u200A\u2060\$'],
+    ['([0-9]+(\.[0-9]+)?)[$]{1}', '$1\u200A\u2060\$'],
+		// PER CENT SIGN:
+		// 100% -> 100 ⁠%
+    ['([0-9]+(\.[0-9]+)?)[%]{1}', '$1\u200A\u2060\%'],
 		// MINUS (EQUATIONS AND NEGATIVE NUMBERS)
 		// replace a hyphen inside an equation with a unicode minus,
 		// remove whitespace between parts of the equation,

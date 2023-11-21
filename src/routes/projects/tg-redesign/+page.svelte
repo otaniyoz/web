@@ -39,12 +39,13 @@
       )}
     </p>
   </List>
-  <figure class="centered-visual grid small-gap two-columns">
-    <img src="../../tg-redesign/chat-list.png" alt="Chat list view redesign" />
-    <img
-      src="../../tg-redesign/chat-list-on-scroll.png"
-      alt="Chat list view redesign"
-    />
+  <figure class="centered-visual grid no-gap two-columns">
+    <div class="regular-right-padding">
+      <img src="../../tg-redesign/chat-list.png" alt="Chat list view redesign" />
+    </div>
+    <div class="regular-right-padding">
+      <img src="../../tg-redesign/chat-list-on-scroll.png" alt="Chat list view redesign" />
+    </div>
   </figure>
   <p class="grid-col17">
     {typographString(
@@ -59,34 +60,29 @@
       "Pressing FAB in the bottom navigation bar opens up a full-screen menu. Quick action buttons are represented by Material Design 3 outlined buttons in a flex-row with wrap. On scroll, they collapse into a scrollable no-wrap flex-row:"
     )}
   </p>
-  <figure class="centered-visual grid small-gap two-columns">
-    <img
-      src="../../tg-redesign/quick-actions-view.png"
-      alt="Chat list view redesign"
-    />
-    <img
-      src="../../tg-redesign/quick-actions-view-on-scroll.png"
-      alt="Chat list view redesign"
-    />
+  <figure class="centered-visual grid no-gap two-columns">
+    <div class="regular-right-padding">
+      <img src="../../tg-redesign/quick-actions-view.png" alt="Chat list view redesign" />
+    </div>
+    <div class="regular-right-padding">
+      <img src="../../tg-redesign/quick-actions-view-on-scroll.png" alt="Chat list view redesign" />
+    </div>
   </figure>
   <p class="grid-col17">
     {typographString(
       "User profiles including channel and group info-pages were updated using the aforementioned principles and components:"
     )}
   </p>
-  <figure class="centered-visual grid small-gap three-columns">
-    <img
-      src="../../tg-redesign/user-info.png"
-      alt="Telegram Android app redesign concept"
-    />
-    <img
-      src="../../tg-redesign/user-info-on-scroll.png"
-      alt="Telegram Android app redesign concept"
-    />
-    <img
-      src="../../tg-redesign/user-info-collapsed.png"
-      alt="Telegram Android app redesign concept"
-    />
+  <figure class="centered-visual grid no-gap three-columns">
+    <div class="regular-right-padding">
+      <img src="../../tg-redesign/user-info.png" alt="Telegram Android app redesign concept" />
+    </div>
+    <div class="regular-right-padding">
+      <img src="../../tg-redesign/user-info-on-scroll.png" alt="Telegram Android app redesign concept" />
+    </div>
+    <div class="regular-right-padding">
+      <img src="../../tg-redesign/user-info-collapsed.png" alt="Telegram Android app redesign concept" />
+    </div>
   </figure>
   <p class="grid-col17">
     {typographString(
@@ -94,12 +90,7 @@
     )}
   </p>
   <figure class="centered-visual" id="icons-gif-container">
-    <video muted autoplay loop id="icons-gif"
-      ><source
-        src="../../tg-redesign/custom-icons.mp4"
-        type="video/mp4"
-      /></video
-    >
+    <video muted autoplay loop id="icons-gif"><source src="../../tg-redesign/custom-icons.mp4" type="video/mp4" /></video>
   </figure>
   <p class="grid-col17">
     {typographString(
@@ -107,10 +98,7 @@
     )}
   </p>
   <figure class="centered-visual">
-    <img
-      src="../../tg-redesign/screens-overview.png"
-      alt="Telegram Android app redesign concept"
-    />
+    <img src="../../tg-redesign/screens-overview.png" alt="Telegram Android app redesign concept" />
   </figure>
 </section>
 

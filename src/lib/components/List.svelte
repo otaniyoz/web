@@ -15,14 +15,8 @@
   <slot name="description" />
   {#each listRows as row, rowIndex}
     <div class="row">
-      {#if showIndex}
-        <p class="list-index">
-          {rowIndex + 1}.
-        </p>
-      {/if}
-      <p>
-        {row}
-      </p>
+      {#if showIndex}<p class="list-index">{rowIndex + 1}.</p>{/if}
+      <p>{row}</p>
     </div>
   {/each}
 </figure>
@@ -35,11 +29,9 @@
     padding-bottom: 0;
     padding-left: calc(1 * 8 * 100% / 6 / 8);
   }
-
   .list-index {
     padding-right: var(--gap-small);
   }
-
   @media screen and (max-width: 1200px) {
     .row {
       padding-left: calc(1 * 100% / 6);

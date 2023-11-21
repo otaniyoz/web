@@ -87,8 +87,16 @@ img {
   padding-top: var(--gap-regular);
 }
 
+.regular-right-padding {
+  padding-right: var(--gap-regular);
+}
+
 .grid {
   display: grid;
+}
+
+.no-gap {
+  gap: 0;
 }
 
 .small-gap {
@@ -181,6 +189,10 @@ img {
 
 .grid-col32 {
   grid-column: 3 / span 2;
+}
+
+.grid-col37 {
+  grid-column: 4 / 7;
 }
 
 .accent {

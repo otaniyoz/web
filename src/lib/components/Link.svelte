@@ -6,7 +6,7 @@
 </script>
 
 {#if outside}
-  <a {href} {target} class={classes}><slot />↗</a>
+  <a {href} {target} class={classes}><slot /> ↗</a>
 {:else}
   <a {href} {target} class={classes}><slot /></a>
 {/if}
@@ -20,7 +20,6 @@
     border-bottom-style: solid;
     border-bottom-color: inherit;
   }
-
   a:hover {
     border-bottom: 1px solid var(--color-orange);
   }
