@@ -1,18 +1,11 @@
-import notes from "../../../data/notes.json";
 import { error } from '@sveltejs/kit';
 import type { NoteContentType } from "$lib/types";
 
-export function load({ params }): NoteContentType {
-  for (let i = 0; i < notes.length; i++) {
-    let note = notes[i];
-    if (params.note === note.link && note.published === 'true') {
-      return {
-        post: {
-          title: note.title, 
-          content: note.content
-        }
-      }; 
-    }
+export async function load({ params }): NoteContentType {
+  try {
+    const note = await import(`../../../data/${params.note}.note?raw`);
+    return { post: {title: note.default.split('\n')[1], content: note.default.split('\n').slice(2) } };
+  } catch {
+    throw error(404, 'The note you tried to access is ' + params.note + ', but it doesn’t exist');
   }
-  throw error(404, "The note you tried to access is " + params.note + ", but it doesn’t exist");
 }

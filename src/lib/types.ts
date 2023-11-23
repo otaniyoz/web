@@ -16,9 +16,7 @@ export type ProjectType = {
 
 export type NoteType = { 
   title: string; 
-  content: string[] 
   date: string;
-  published: string;
   link: string;
 };
 

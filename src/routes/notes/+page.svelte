@@ -1,9 +1,20 @@
 <script lang="ts">
+  import type { NoteType } from "$lib/types";
   import Table from "$lib/components/Table.svelte";
   import Heading from "$lib/components/Heading.svelte";
-  import notes from "../../data/notes.json";
   import typographString from "../../utils/typographString";
   import parseDataForTable from "../../utils/parseDataForTable";
+
+  const notes: NoteType[] = [];
+  const rawNotes = import.meta.glob('/src/data/*.note', { as: 'raw', eager: true });
+  for (const path in rawNotes) {
+    const noteContent = rawNotes[path];
+    notes.push({ 
+      date: noteContent.split('\n')[0], 
+      title: noteContent.split('\n')[1], 
+      link: path.split('/')[3].replace('.note', '')
+    });
+  }
 
   const keys = ["title", "date"];
   const accentKeys = [keys[0]];

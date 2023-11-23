@@ -1,9 +1,20 @@
 <script lang="ts">
+  import type { NoteType } from "$lib/types";
   import Table from "$lib/components/Table.svelte";
   import Heading from "$lib/components/Heading.svelte";
-  import pomes from "../../data/pomes.json";
   import parseDataForTable from "../../utils/parseDataForTable";
   import typographString from "../../utils/typographString";
+
+  const pomes: NoteType[] = [];
+  const rawPomes = import.meta.glob('/src/data/*.pome', { as: 'raw', eager: true });
+  for (const path in rawPomes) {
+    const pomeContent = rawPomes[path];
+    pomes.push({ 
+      date: pomeContent.split('\n')[0], 
+      title: pomeContent.split('\n')[1], 
+      link: path.split('/')[3].replace('.pome', '')
+    });
+  }
 
   const keys = ["title", "date"];
   const accentKeys = [keys[0]];

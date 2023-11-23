@@ -1,19 +1,11 @@
-import pomes from "../../../data/pomes.json";
 import { error } from '@sveltejs/kit';
 import type { NoteContentType } from "$lib/types";
 
-export function load({ params }): NoteContentType {
-  for (let i = 0; i < pomes.length; i++) {
-    let pome = pomes[i];
-    if (params.pome === pome.link && pome.published === 'true') {
-      return {
-        post: {
-          title: pome.title, 
-          content: pome.content,
-          date: pome.date
-        }
-      }; 
-    }
+export async function load({ params }): NoteContentType {
+  try {
+    const pome = await import(`../../../data/${params.pome}.pome?raw`);
+    return { post: {title: pome.default.split('\n')[1], content: pome.default.split('\n').slice(2), date: pome.default.split('\n')[0] } };
+  } catch {
+    throw error(404, 'The pome you tried to access is ' + params.pome + ', but it doesn’t exist');
   }
-  throw error(404, "The pome you tried to access is " + params.pome + ", but it doesn’t exist");
 }
