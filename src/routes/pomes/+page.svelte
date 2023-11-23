@@ -16,10 +16,12 @@
     });
   }
 
+  let sortedPomes = pomes.sort(((a, b) => new Date(b.date) - new Date(a.date)));
+
   const keys = ["title", "date"];
   const accentKeys = [keys[0]];
   const linkKeys = [keys[0]];
-  const tableData = parseDataForTable(pomes, keys, accentKeys, linkKeys);
+  const tableData = parseDataForTable(sortedPomes, keys, accentKeys, linkKeys);
 </script>
 
 <svelte:head>

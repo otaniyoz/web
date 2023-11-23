@@ -16,10 +16,12 @@
     });
   }
 
+  let sortedNotes = notes.sort(((a, b) => new Date(b.date) - new Date(a.date)));
+
   const keys = ["title", "date"];
   const accentKeys = [keys[0]];
   const linkKeys = [keys[0]];
-  const tableData = parseDataForTable(notes, keys, accentKeys, linkKeys);
+  const tableData = parseDataForTable(sortedNotes, keys, accentKeys, linkKeys);
 </script>
 
 <svelte:head>
