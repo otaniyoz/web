@@ -1,47 +1,28 @@
 <script lang="ts">
-  import type { NoteType } from "$lib/types";
   import { base } from "$app/paths";
+  import { page } from "$app/stores";
   import Link from "$lib/components/Link.svelte";
   import Table from "$lib/components/Table.svelte";
   import Heading from "$lib/components/Heading.svelte";
   import typographString from "../../../utils/typographString";
   import parseDataForTable from "../../../utils/parseDataForTable";
 
-  const notes: NoteType[] = [];
-  const allCategories: string[] = ['All'];
-  const rawNotes = import.meta.glob('/src/data/*.note', { as: 'raw', eager: true });
-  for (const path in rawNotes) {
-    const noteContent = rawNotes[path];
-    noteContent.split('\n')[2].split(',').forEach(element => {
-      if (!allCategories.includes(element)) {
-        allCategories.push(element);
-      }
-    });
-    notes.push({ 
-      date: noteContent.split('\n')[0], 
-      title: noteContent.split('\n')[1], 
-      categories: noteContent.split('\n')[2], 
-      link: `${base}/notes/${path.split('/')[3].replace('.note', '')}`
-    });
-  }
-
-  let sortedNotes = notes.sort(((a, b) => new Date(b.date) - new Date(a.date)));
-
+  export let data;
   const keys = ['title', 'categories', 'date'];
   const accentKeys = [keys[0]];
   const linkKeys = [keys[0]];
-  const tableData = parseDataForTable(sortedNotes, keys, accentKeys, linkKeys);
+  const tableData = parseDataForTable($page.data.notes, keys, accentKeys, linkKeys);
 </script>
 
 <svelte:head>
   <title>Notes</title>
 </svelte:head>
 
-{#if notes && tableData}
+{#if $page.data.notes && tableData}
   <Heading level={1}>
-    {typographString(sortedNotes.length.toString() + ((sortedNotes.length === 1)?' note':' notes'))}
+    {typographString($page.data.notes.length.toString() + (($page.data.notes.length === 1)?' note':' notes'))}
     <svelte:fragment slot='subtitles'>
-      {#each allCategories as category}
+      {#each $page.data.categories as category}
         <Link classes='{(category==='All')?'grey-color':''} regular-weight regular-size large-line-height regular-right-margin' href='{base}/notes/{category.toLowerCase()}' outside={false} target='_self'>{category}</Link>
       {/each}
     </svelte:fragment>
