@@ -12,8 +12,8 @@
   <Heading classes="grid-col17" level={1} useInline={false}>
     {typographString("Pocket puzzles")}
     <svelte:fragment slot="subtitles">
-      <Link classes="regular-weight regular-size" href="https://otaniyoz.github.io/pocket-puzzles"outside={false}>Play online</Link>
-      <Link classes="regular-weight regular-size" href="https://github.com/otaniyoz/pocket-puzzles" outside={true}>See code on Github</Link>
+      <Link classes="regular-weight regular-size regular-right-margin" href="https://otaniyoz.github.io/pocket-puzzles"outside={false}>Play online</Link>
+      <Link classes="regular-weight regular-size regular-right-margin" href="https://github.com/otaniyoz/pocket-puzzles" outside={true}>See code on Github</Link>
     </svelte:fragment>
   </Heading>
   <p class="grid-col17">{typographString("Pocket puzzles is a collection of puzzles designed to fit in a pocket: easy to start playing, easy to put away.")}</p>

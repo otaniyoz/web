@@ -32,7 +32,7 @@
       </li>
       <li class="third text-right">
         <a
-          href="{base}/notes"
+          href="{base}/notes/all"
           class:grey-color={$page.url.pathname.includes("notes")}
           >Notes</a
         >

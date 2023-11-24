@@ -17,6 +17,7 @@ export type ProjectType = {
 export type NoteType = { 
   title: string; 
   date: string;
+  categories: string;
   link: string;
 };
 

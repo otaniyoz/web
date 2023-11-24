@@ -91,6 +91,10 @@ img {
   padding-right: var(--gap-regular);
 }
 
+.regular-right-margin {
+  margin-right: var(--gap-regular);
+}
+
 .grid {
   display: grid;
 }
@@ -290,8 +294,8 @@ p {
 }
 
 .grey-color {
-  color: var(--color-grey);
-  border-color: var(--color-grey);
+  color: var(--color-grey) !important;
+  border-color: var(--color-grey) !important;
 }
 
 .dark-color {

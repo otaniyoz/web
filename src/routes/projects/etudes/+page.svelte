@@ -14,8 +14,8 @@
   <Heading classes="grid-col17" level={1} useInline={false}>
     {typographString("Etudes in code")}
     <svelte:fragment slot="subtitles">
-      <Link classes="regular-weight regular-size large-line-height" href="https://t.me/etudesincode" outside={true}>See GIFs on Telegram</Link>
-      <Link classes="regular-weight regular-size large-line-height" href="https://github.com/otaniyoz/etudes" outside={true}>See code on Github</Link>
+      <Link classes="regular-weight regular-size large-line-height regular-right-margin" href="https://t.me/etudesincode" outside={true}>See GIFs on Telegram</Link>
+      <Link classes="regular-weight regular-size large-line-height regular-right-margin" href="https://github.com/otaniyoz/etudes" outside={true}>See code on Github</Link>
     </svelte:fragment>
   </Heading>
   <p class="grid-col17">{typographString("Etudes are small pieces of code with minimal dependecies that create self-contained creative animations:")}</p>
