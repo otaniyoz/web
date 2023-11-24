@@ -12,6 +12,7 @@
     pomes.push({ 
       date: pomeContent.split('\n')[0], 
       title: pomeContent.split('\n')[1], 
+      categories: '',
       link: path.split('/')[3].replace('.pome', '')
     });
   }
