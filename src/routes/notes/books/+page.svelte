@@ -14,7 +14,7 @@
 </script>
 
 <svelte:head>
-  <title>Notes</title>
+  <title>Book notes</title>
 </svelte:head>
 
 {#if $page.data.notes && tableData}
