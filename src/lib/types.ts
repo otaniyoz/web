@@ -10,7 +10,6 @@ export type ProjectType = {
   title: string;
   work: string;
   date: string;
-  published: string;
   link: string;
 }
 

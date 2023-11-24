@@ -16,7 +16,7 @@
 </svelte:head>
 
 {#if projects && tableData}
-  <Heading level={1}>{typographString(projects.length.toString() + ' projects')}</Heading>
+  <Heading level={1}>{typographString(projects.length.toString() + ((projects.length === 1)?' project':' projects'))}</Heading>
   <Table {tableData} />
 {:else}
   <Heading level={1}>No projects</Heading>

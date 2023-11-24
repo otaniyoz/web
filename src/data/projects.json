@@ -1,74 +1,62 @@
 [  
   {
+    "title": "Editorial policy",
+    "work": "Writing",
+    "date": "2023...",
+    "link": "editorial-policy-en"
+  },
+  {
     "title": "Redesigning Telegram's Android app",
-    "work": "Design, concept",
+    "work": "Interface design, concept",
     "date": "2023",
-    "published": "true",
-    "cover": "../../tg-redesign/screens-overview.png",
     "link": "tg-redesign"
   },
   {
     "title": "Redesigning Jep!",
-    "work": "Design, concept",
+    "work": "Interface design, concept",
     "date": "2023",
-    "published": "true",
-    "cover": "../../jep-redesign/home_desktop.png",
     "link": "jep-redesign"
   },
   {
     "title": "Etudes in code",
-    "work": "Design, creative coding",
+    "work": "Motion design, creative coding",
     "date": "2023...",
-    "published": "true",
-    "cover": "../../etudes/20230818.mp4",
     "link": "etudes"
   },
   {
     "title": "Pocket puzzles",
-    "work": "Design, development",
+    "work": "Interface design, development",
     "date": "2023...",
-    "published": "true",
-    "cover": "../../pocket-puzzles/pp.png",
     "link": "pocket-puzzles"
   },
   {
     "title": "Genuary submissions",
     "work": "Creative coding",
     "date": "2023...",
-    "published": "true",
-    "cover": "../../genuary/20230127.mp4",
     "link": "genuary"
   },
   {
     "title": "DIY clothes and gear",
-    "work": "Design, sewing",
+    "work": "Sewing",
     "date": "2022...",
-    "published": "true",
-    "cover": "../../diy-clothes-and-gear/pullover.jpg",
     "link": "diy-clothes-and-gear"
   },
   {
     "title": "Visualisation of sports sites in the Presnya",
-    "work": "Design, data visualisation",
+    "work": "Data visualisation",
     "date": "2022",
-    "published": "true",
-    "cover": "../../vis-presnya/11.png",
     "link": "vis-presnya"
   },
   {
     "title": "Landing page for a barrel of oil",
-    "work": "Design, concept",
+    "work": "Concept",
     "date": "2022",
-    "published": "true",
-    "cover": "../../oil-barrel/2022.jpg",
     "link": "oil-barrel"
   },
   {
     "title": "Pocket notes",
-    "work": "Design, concept",
+    "work": "Interface design, concept",
     "date": "2022",
-    "published": "true",
-    "cover": "../../pocket-notes/home.png",
     "link": "pocket-notes"
   }
 ]
