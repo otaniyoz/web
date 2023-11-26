@@ -7,7 +7,6 @@
   import typographString from "../../../utils/typographString";
   import parseDataForTable from "../../../utils/parseDataForTable";
 
-  export let data;
   const keys = ['title', 'categories', 'date'];
   const accentKeys = [keys[0]];
   const linkKeys = [keys[0]];
