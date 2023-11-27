@@ -9,7 +9,7 @@
 </svelte:head>
 
 <Heading level={1}>
-  Hallo, cyber-stranger. →This← is a <div id="suriken-container"><img id="suriken" src="{base}/favicon.png" alt="Rotating suriken" class="rotating" /></div>web-home for<div id="ot-container"><img id="ot" alt="Illustration of a man" src="ot.png" />Otaniyoz.</div> A quiet place for <Link target="_self" href="{base}/pomes" classes="large-size xregular-line-height" outside={false}>pomes</Link>, <Link target="_self" href="{base}/projects" classes="large-size xregular-line-height" outside={false}>various projects</Link>, and <Link target="_self" href="{base}/notes" classes="large-size xregular-line-height" outside={false}>sporadic notes</Link>. All on, perhaps, too far spread topics and in too different languages. But I might be wrong, so don’t take my word for it — go and see for yourself. Or don’t
+  Hallo, cyber-stranger. →This← is a <div id="suriken-container"><img id="suriken" src="{base}/favicon.png" alt="Rotating suriken" class="rotating" /></div>web-home for<div id="ot-container"><img id="ot" alt="Illustration of a man" src="ot.png" />Otaniyoz.</div> A quiet place for <Link target="_self" href="{base}/pomes" classes="large-size xregular-line-height" outside={false}>pomes</Link>, <Link target="_self" href="{base}/projects" classes="large-size xregular-line-height" outside={false}>various projects</Link>, and <Link target="_self" href="{base}/notes/all" classes="large-size xregular-line-height" outside={false}>sporadic notes</Link>. All on, perhaps, too far spread topics and in too different languages. But I might be wrong, so don’t take my word for it — go and see for yourself. Or don’t
 </Heading>
 
 <style>
