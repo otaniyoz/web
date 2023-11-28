@@ -104,8 +104,9 @@ export default function typographString(s: string): string {
 	]);
 
 	// choose between russian or english rules by determing if most characters are cyrillic
-	const m = new RegExp('[\u0430-\u044f]', 'gi');
-	const rules = (s.match(m) !== null && s.match(m).length > s.length / 2) ? russianRules : englishRules; 
+	const cyrillicTemplate = new RegExp('[\u0430-\u044f]', 'gi');
+	const matched = s.match(cyrillicTemplate);
+	const rules = (matched !== null && matched !== undefined && matched?.length > s.length / 2) ? russianRules : englishRules; 
 	// compile rules and apply regex
   for (const [k, v] of rules) {
 		const r = new RegExp(k, 'gi');
