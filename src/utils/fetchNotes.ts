@@ -2,9 +2,9 @@ import { base } from "$app/paths";
 import parseDate from "./parseDate";
 import type { NoteType } from "$lib/types";
 
-export default async function fetchNotes({category=''}) {
+export default async function fetchNotes({category='all'}) {
   const notes: NoteType[] = [];
-  const allCategories: string[] = ['All'];
+  const allCategories: string[] = [];
   const rawNotes = await import.meta.glob('/src/data/*.note', { as: 'raw', eager: true });
   for (const path in rawNotes) {
     const noteContent = rawNotes[path].split('\n');
@@ -17,12 +17,11 @@ export default async function fetchNotes({category=''}) {
       date: noteContent[0], 
       title: noteContent[1], 
       categories: noteContent[2], 
-      link: `${base}/notes/${path.split('/')[3].replace('.note', '')}`
+      link: `${base}/notes/${category}/${path.split('/')[3].replace('.note', '')}`
     });
   }
   let sortedNotes = notes.sort((a, b) => new Date(parseDate(a.date.toLowerCase())) - new Date(parseDate(b.date.toLowerCase())));
-  if (allCategories.includes(category)) {
-    sortedNotes = sortedNotes.filter(note => note.categories.includes(category));
-  }
-  return {notes: sortedNotes, categories: allCategories};
+  sortedNotes = sortedNotes.filter(note => note.categories.includes(category));
+  let sortedCategories = allCategories.sort((a, b) => a.localeCompare(b));
+  return {notes: sortedNotes, categories: sortedCategories};
 } 

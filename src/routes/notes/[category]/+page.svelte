@@ -14,19 +14,21 @@
 </script>
 
 <svelte:head>
-  <title>Thoughts</title>
+  <title>Notes</title>
 </svelte:head>
 
 {#if $page.data.notes && tableData}
-  <Heading level={1}>
-    {typographString($page.data.notes.length.toString() + (($page.data.notes.length === 1)?' note':' notes'))}
-    <svelte:fragment slot='subtitles'>
-      {#each $page.data.categories as category}
-        <Link classes='{(category==='Thoughts')?'grey-color':''} regular-weight regular-size large-line-height regular-right-margin' href='{base}/notes/{category.toLowerCase()}' outside={false} target='_self'>{category}</Link>
-      {/each}
-    </svelte:fragment>
-  </Heading>
-  <Table {tableData} />
+  <section>
+    <Heading level={1} classes="grid-col17">
+      {typographString($page.data.notes.length.toString() + (($page.data.notes.length === 1)?' note':' notes'))}
+      <svelte:fragment slot='subtitles'>
+        {#each $page.data.categories as category}
+          <Link classes='{(category===$page.params.category)?'grey-color':''} regular-weight regular-size large-line-height regular-right-margin' href='{base}/notes/{category}' outside={false} target='_self'>{typographString(category)}</Link>
+        {/each}
+      </svelte:fragment>
+    </Heading>
+    <Table {tableData} />
+  </section>
 {:else}
   <Heading level={1}>No notes</Heading>
 {/if}

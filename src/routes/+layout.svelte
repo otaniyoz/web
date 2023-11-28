@@ -25,7 +25,7 @@
       </li>
       <li class="second">
         <a
-          href="{base}/projects"
+          href="{base}/projects/all"
           class:grey-color={$page.url.pathname.includes("projects")}
           >Projects</a
         >

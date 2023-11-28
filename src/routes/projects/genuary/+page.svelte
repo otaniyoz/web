@@ -9,14 +9,8 @@
 </svelte:head>
 
 <section>
-  <Heading classes="grid-col17" level={1} useInline={false}>
-    {typographString("Genuary submissions")}
-  </Heading>
-  <p class="grid-col17">
-    {typographString(
-      "Genuary is a month-long challenge in generative art. It takes place every year in January and requires participants to create an artwork on a given topic for every day of the month. Below are my attempts at the challenge."
-    )}
-  </p>
+  <Heading classes="grid-col17" level={1} useInline={false}>{typographString("Genuary submissions")}</Heading>
+  <p class="grid-col17">{typographString("Genuary is a month-long challenge in generative art. It takes place every year in January and requires participants to create an artwork on a given topic for every day of the month. Below are my attempts at the challenge.")}</p>
 </section>
 <section>
   <Heading classes="grid-col17" level={2} useInline={false}>2023</Heading>

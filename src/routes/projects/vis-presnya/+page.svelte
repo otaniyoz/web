@@ -18,24 +18,11 @@
       { video: "../../vis-presnya/icons-slideshow.mp4" },
     ]}
   />
-  <Heading classes="grid-col17" level={1}>
-    {typographString("Visualisation of sports sites in the Presnya")}
-  </Heading>
-  <p class="grid-col17">
-    {typographString(
-      "The Presnensky district, also commonly referred to as the Presnya, is one of the central districts in Moscow. It's known for its recreational locations such as Patriarshy ponds."
-    )}
-  </p>
-  <p class="grid-col17">
-    {typographString(
-      "In 2022, I spent a couple of hours making an illustration of sports sites in the district and using public data identified around 64 sports sites:"
-    )}
-  </p>
+  <Heading classes="grid-col17" level={1}>{typographString("Visualisation of sports sites in the Presnya")}</Heading>
+  <p class="grid-col17">{typographString("The Presnensky district, also commonly referred to as the Presnya, is one of the central districts in Moscow. It's known for its recreational locations such as Patriarshy ponds.")}</p>
+  <p class="grid-col17">{typographString("In 2022, I spent a couple of hours making an illustration of sports sites in the district and using public data identified around 64 sports sites:")}</p>
   <figure class="centered-visual">
-    <img
-      alt="Illustration of sports sites in the Presnya"
-      src="../../vis-presnya/12.jpg"
-    />
+    <img alt="Illustration of sports sites in the Presnya" src="../../vis-presnya/12.jpg" />
   </figure>
   <article class="centered-visual grid large-gap four-columns">
     <Factoid factoidNumber="32" factoidDescription="sports halls & gyms" />
@@ -54,10 +41,6 @@
     ]}
   >
     <Heading slot="title" level={2}>Approach</Heading>
-    <p slot="description">
-      {typographString(
-        "I didn't want to use a map editor, so did most of the work from scratch:"
-      )}
-    </p>
+    <p slot="description">{typographString("I didn't want to use a map editor, so did most of the work from scratch:")}</p>
   </List>
 </section>
