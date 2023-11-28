@@ -18,7 +18,7 @@
       </li>
       <li>
         <a
-          href="{base}/pomes"
+          href="{base}/pomes/all"
           class:grey-color={$page.url.pathname.includes("pomes")}
           >Pomes</a
         >
