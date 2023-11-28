@@ -1,7 +1,5 @@
-<script lang="ts">
-  import Heading from "$lib/components/Heading.svelte";
-</script>
+<svelte:head><title>This page intentionally left blank</title></svelte:head>
 
-<svelte:head><title>Projects</title></svelte:head>
-
-<Heading level={1}>This page intentionally left blank</Heading>
+<section>
+<p class='grid-col17'>This page intentionally left blank</p>
+</section>

@@ -1,9 +1,9 @@
 import { base } from "$app/paths";
 import parseDate from "./parseDate";
-import type { ProjectType } from "$lib/types";
+import type { NoteType } from "$lib/types";
 
 export default async function fetchProjects({category='all'}) {
-  const projects: ProjectType[] = [];
+  const projects: NoteType[] = [];
   const allCategories: string[] = [];
   const rawProjects = await import.meta.glob('/src/data/*.project', { as: 'raw', eager: true });
   for (const path in rawProjects) {

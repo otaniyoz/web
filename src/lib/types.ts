@@ -6,13 +6,6 @@ export type CardMapType = {
   video?: string;
 };
 
-export type ProjectType = {
-  title: string;
-  work: string;
-  date: string;
-  link: string;
-}
-
 export type NoteType = { 
   title: string; 
   date: string;
