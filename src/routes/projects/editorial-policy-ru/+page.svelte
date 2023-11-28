@@ -67,7 +67,7 @@
     </div>
     <div class="regular-right-padding">
       <p class="heavy-weight small-bottom-padding">Хорошо</p>
-      <p>{typographString("18:30 по всемирному времени")}</p>
+      <p>{typographString("12:30 по всемирному времени")}</p>
     </div>
   </figure>
 </section>
