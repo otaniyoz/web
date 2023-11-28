@@ -14,6 +14,6 @@ export default async function fetchPomes() {
       link: `${base}/pomes/${path.split('/')[3].replace('.pome', '')}`
     });
   }
-  let sortedNotes = notes.sort((a, b) => new Date(parseDate(a.date.toLowerCase())) - new Date(parseDate(b.date.toLowerCase())));
+  let sortedNotes = notes.sort((a, b) => new Date(parseDate(b.date.toLowerCase())) - new Date(parseDate(a.date.toLowerCase())));
   return { fetched: sortedNotes };
 } 

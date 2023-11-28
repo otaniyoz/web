@@ -20,7 +20,7 @@ export default async function fetchNotes({category='all'}) {
       link: `${base}/notes/${category}/${path.split('/')[3].replace('.note', '')}`
     });
   }
-  let sortedNotes = notes.sort((a, b) => new Date(parseDate(a.date.toLowerCase())) - new Date(parseDate(b.date.toLowerCase())));
+  let sortedNotes = notes.sort((a, b) => new Date(parseDate(b.date.toLowerCase())) - new Date(parseDate(a.date.toLowerCase())));
   sortedNotes = sortedNotes.filter(note => note.categories.includes(category));
   let sortedCategories = allCategories.sort((a, b) => a.localeCompare(b));
   return {notes: sortedNotes, categories: sortedCategories};

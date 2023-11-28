@@ -20,7 +20,7 @@ export default async function fetchProjects({category='all'}) {
       link: `${base}/projects/${path.split('/')[3].replace('.project', '')}`
     });
   }
-  let sortedProjects = projects.sort((a, b) => new Date(parseDate(a.date.toLowerCase())) - new Date(parseDate(b.date.toLowerCase())));
+  let sortedProjects = projects.sort((a, b) => new Date(b.date) - new Date(a.date));
   sortedProjects = sortedProjects.filter(project => project.categories.includes(category));
   let sortedCategories = allCategories.sort((a, b) => a.localeCompare(b));
   return {projects: sortedProjects, categories: sortedCategories};

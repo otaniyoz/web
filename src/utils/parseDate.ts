@@ -1,17 +1,17 @@
 export default function parseDate(s: string): string {
   const dateMap = {
-    '00': ['january', 'январь'],
-    '01': ['february', 'февраль'],
-    '02': ['march', 'март'],
-    '03': ['april', 'апрель'],
-    '04': ['may', 'май'],
-    '05': ['june', 'июнь'],
-    '06': ['july', 'июль'],
-    '07': ['august', 'август'],
-    '08': ['september', 'сентябрь'],
-    '09': ['october', 'октябрь'],
-    '10': ['november', 'ноябрь'],
-    '11': ['december', 'декабрь']
+    '01': ['january', 'январь'],
+    '02': ['february', 'февраль'],
+    '03': ['march', 'март'],
+    '04': ['april', 'апрель'],
+    '05': ['may', 'май'],
+    '06': ['june', 'июнь'],
+    '07': ['july', 'июль'],
+    '08': ['august', 'август'],
+    '09': ['september', 'сентябрь'],
+    '10': ['october', 'октябрь'],
+    '11': ['november', 'ноябрь'],
+    '12': ['december', 'декабрь']
   };
   const m = s.split(' ')[0];
   for (const k in dateMap) {
