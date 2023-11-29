@@ -10,8 +10,8 @@
   <slot name="description" />
   {#each listRows as row, rowIndex}
     <div class="row">
-      {#if showIndex}<p class="list-index">{rowIndex + 1}.</p>{/if}
-      <p>{typographString(row)}</p>
+      {#if showIndex}<p class="list-index sans-serif">{rowIndex + 1}.</p>{/if}
+      <p class='sans-serif'>{typographString(row)}</p>
     </div>
   {/each}
 </figure>

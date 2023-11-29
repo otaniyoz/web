@@ -12,19 +12,17 @@
       {#if cardMap.image && cardMap.image.length}
         <img alt="Card cover" src={cardMap.image} class="card-media" />
       {:else if cardMap.video && cardMap.video.length}
-        <video class="card-media" muted autoplay loop
-          ><source src={cardMap.video} type="video/mp4" /></video
-        >
+        <video class="card-media" muted autoplay loop><source src={cardMap.video} type="video/mp4" /></video>
       {/if}
       {#if cardMap.title}
         <div class="card-info-container">
           {#if cardMap.link && cardMap.link.length}
-            <p class="card-title"><a href={cardMap.link}>{cardMap.title}</a></p>
+            <p class="card-title sans-serif"><a href={cardMap.link}>{cardMap.title}</a></p>
           {:else if cardMap.title && cardMap.title.length}
-            <p class="card-title">{cardMap.title}</p>
+            <p class="card-title sans-serif">{cardMap.title}</p>
           {/if}
           {#if cardMap.description && cardMap.description.length}
-            <p class="card-description">
+            <p class="card-description sans-serif">
               {typographString(cardMap.description)}
             </p>
           {/if}
@@ -35,14 +33,9 @@
 </figure>
 
 <style>
-  p {
-    color: inherit;
-  }
-
   .card-description {
     line-height: var(--line-height-regular);
   }
-
   .card-title {
     font-weight: inherit;
     line-height: var(--line-height-small);
@@ -50,12 +43,10 @@
     padding-bottom: var(--gap-regular);
     margin-left: -0.5vmin; /* to aligh horizontaly. */
   }
-
   .card:nth-child(7n + 1) > .card-info-container > .card-title {
     font-size: var(--font-size-xlarge);
     margin-left: -1vw; /* to aligh horizontaly. */
   }
-
   .card {
     margin: 0;
     padding: 0;
@@ -64,28 +55,23 @@
     justify-items: start;
     aspect-ratio: 1 / 1;
   }
-
   .card > * {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
-
   .card:nth-child(7n + 1) {
     grid-row: span 2;
     grid-column: span 2;
   }
-
   .card-media {
     height: 100%;
     aspect-ratio: 1 / 1;
   }
-
   .cards-grid {
     display: grid;
     gap: var(--gap-small);
     grid-template-columns: repeat(2, 1fr);
   }
-
   @media screen and (min-width: 1200px) {
     .cards-grid {
       grid-template-columns: repeat(4, 1fr);

@@ -38,6 +38,7 @@
     }
   }
   p {
+    font-family: "IBM Plex Sans";
     hyphens: auto;
   }
   figure {

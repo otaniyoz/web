@@ -12,23 +12,19 @@
 </script>
 
 <article class={classes}>
-  <p class="factoid-number">
+  <p class="factoid-number sans-serif">
     {factoidNumber}
   </p>
   {#if factoidDescription}
-    <p>{factoidDescription}</p>
+    <p class='sans-serif'>{factoidDescription}</p>
   {/if}
 </article>
 
 <style>
   .factoid-number {
     line-height: var(--line-height-small);
-    font-weight: var(--font-weight-heavy);
+    font-weight: var(--font-weight-regular);
     font-size: var(--font-size-xlarge);
-    margin-left: -1vmin; /* to aligh horizontaly. */
-  }
-
-  p {
-    color: inherit;
+    margin-left: -1.8vmin; /* to aligh horizontaly. */
   }
 </style>

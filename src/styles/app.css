@@ -249,6 +249,7 @@ p {
   font-size: var(--font-size-regular);
   line-height: var(--line-height-large);
   padding-bottom: var(--gap-regular);
+  font-family: "IBM Plex Serif";
 }
 
 .regular-weight {
