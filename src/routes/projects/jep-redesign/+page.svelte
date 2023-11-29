@@ -11,11 +11,7 @@
 <section>
   <Heading level={1} classes="grid-col17">{typographString("Redesigning Jep!")}</Heading>
   <p class="grid-col17">{typographString("This is a concept redesign for Jep! -- a multiplayer online trivia created by Claire Nord. Most of the work was done in 20 hours. The main goal was to bring the interface up to date, while preserving core elements, scenarios, and game mechanics.")}</p>
-  <List
-    classes="grid-col17"
-    listRows={["This is an unofficial redesign and is not affiliated with Jep! in any way."]}>
-    <Heading classes="heavy-weight" slot="title" level={3}>To be clear:</Heading>
-  </List>
+  <List classes="grid-col17" listRows={["To be clear: This redesign is not affiliated with Jep! in any way."]}></List>
   <p class="grid-col17">{typographString("Jep! is an homage to the American panel show Jeopardy. All the core elements of the show were meticulously replicated, even the sounds and animations! The idea is admirable and execution is top-notch. However, Jeopardy was designed for tv screen, in the 80s; trying to one-to-one map its design to modern web is bound to run into problems, especially on devices with smaller screens. This redesign addressed some of such problems.")}</p>
   <figure class="centered-visual grid no-gap two-columns">
     <div class="regular-right-padding">

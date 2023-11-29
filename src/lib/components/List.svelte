@@ -7,7 +7,6 @@
 </script>
 
 <figure class={classes}>
-  <slot name="title" />
   <slot name="description" />
   {#each listRows as row, rowIndex}
     <div class="row">

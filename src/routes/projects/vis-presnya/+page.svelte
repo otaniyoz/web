@@ -30,6 +30,9 @@
     <Factoid factoidNumber="11" factoidDescription="sports fields" />
     <Factoid factoidNumber="4" factoidDescription="gardens & parks" />
   </article>
+</section>
+<section>
+  <Heading classes="grid-col17" level={2}>Approach</Heading>
   <List
     classes="grid-col17"
     showIndex={true}
@@ -40,7 +43,6 @@
       "Exported plots to Figma: combined different layers, improved visuals, and checked data by hand.",
     ]}
   >
-    <Heading slot="title" level={2}>Approach</Heading>
     <p slot="description">{typographString("I didn't want to use a map editor, so did most of the work from scratch:")}</p>
   </List>
 </section>
