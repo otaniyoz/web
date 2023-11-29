@@ -8,11 +8,11 @@
 </svelte:head>
 
 <section>
-  <Heading classes="grid-col17" level={1} useInline={false}>{typographString("Pocket notes")}</Heading>
+  <Heading classes="grid-col17" level={1}>{typographString("Pocket notes")}</Heading>
   <p class="grid-col17">{typographString("This is a concept note-taking app, an exercise in design. Originally made in 2022.")}</p>
 </section>
 <section>
-  <Heading classes="grid-col17" level={2} useInline={false}>2022</Heading>
+  <Heading classes="grid-col17" level={2}>2022</Heading>
   <figure class="no-margin centered-visual grid no-gap three-columns">
     <div class="regular-right-padding">
       <img src="../../pocket-notes/home.png" alt="Pocket notes" />

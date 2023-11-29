@@ -8,7 +8,7 @@
 
 {#if $page.data.post}
   <section>
-    <Heading classes="centered-visual" level={1} useInline={false}>{typographString($page.data.post.title)}</Heading>
+    <Heading classes="centered-visual" level={1}>{typographString($page.data.post.title)}</Heading>
     {#each $page.data.post.content as line, idx}
       <p class="{(idx%2!==0)?'xlarge-left-padding':''} centered-visual serif font-normal font-kern font-no-ligs">{typographString(line)}</p>
     {/each}

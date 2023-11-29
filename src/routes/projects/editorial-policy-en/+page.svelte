@@ -10,7 +10,7 @@
 </svelte:head>
 
 <section>
-  <Heading classes="grid-col17" level={1} useInline={false}>
+  <Heading classes="grid-col17" level={1}>
     Editorial policy
     <svelte:fragment slot="subtitles">
       <Link classes="regular-weight regular-size large-line-height" href="{base}/projects/editorial-policy-ru" outside={false}>Editorial policy in russian</Link>
@@ -19,7 +19,7 @@
   <p class="grid-col17">{typographString("This is a living collection of stylistic guidelines and conventions I use in most cases. Edge cases are resolved with common sense.")}</p>
 </section>
 <section>
-  <Heading classes="grid-col17" level={2} useInline={false}>Use British English</Heading>
+  <Heading classes="grid-col17" level={2}>Use British English</Heading>
   <figure class="grid-col17 grid no-gap two-columns">
     <div class="regular-right-padding">
       <p class="heavy-weight small-bottom-padding">Bad</p>
@@ -34,7 +34,7 @@
   </figure>
 </section>
 <section>
-  <Heading classes="grid-col17" level={2} useInline={false}>
+  <Heading classes="grid-col17" level={2}>
     {typographString("Use International System of Units")} 
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
@@ -52,7 +52,7 @@
   <p class="grid-col17">{typographString("Notable exceptions: litre.")}</p>
 </section>
 <section>
-  <Heading classes="grid-col17" level={2} useInline={false}>
+  <Heading classes="grid-col17" level={2}>
     Use 24 hour time 
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
@@ -69,7 +69,7 @@
   </figure>
 </section>
 <section>
-  <Heading classes="grid-col17" level={2} useInline={false}>
+  <Heading classes="grid-col17" level={2}>
     {typographString("Use Coordinated Universal Time to specify time zones")}
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
@@ -86,7 +86,7 @@
   </figure>
 </section>
 <section>
-  <Heading classes="grid-col17" level={2} useInline={false}>
+  <Heading classes="grid-col17" level={2}>
     Use Oxford comma
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
@@ -101,7 +101,7 @@
   </figure>
 </section>
 <section>
-  <Heading classes="grid-col17" level={2} useInline={false}>
+  <Heading classes="grid-col17" level={2}>
     {typographString("Don't use roman numerals")} 
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
@@ -116,7 +116,7 @@
   </figure>
 </section>
 <section>
-  <Heading classes="grid-col17" level={2} useInline={false}>
+  <Heading classes="grid-col17" level={2}>
     {typographString("Use the ellipsis only for numeric ranges and breaks in quotes")}
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
@@ -133,7 +133,7 @@
   </figure>
 </section>
 <section>
-  <Heading classes="grid-col17" level={2} useInline={false}>
+  <Heading classes="grid-col17" level={2}>
     {typographString("Write single digit numbers as words")}
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
@@ -148,7 +148,7 @@
   </figure>
 </section>
 <section>
-  <Heading classes="grid-col17" level={2} useInline={false}>
+  <Heading classes="grid-col17" level={2}>
     {typographString("Don't capitalise days of the week and months")}
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
@@ -165,7 +165,7 @@
   </figure>
 </section>
 <section>
-  <Heading classes="grid-col17" level={2} useInline={false}>
+  <Heading classes="grid-col17" level={2}>
     {typographString("Currency sign goes after value and is separated with no-break hair space")} 
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
@@ -182,7 +182,7 @@
   </figure>
 </section>
 <section>
-  <Heading classes="grid-col17" level={2} useInline={false}>
+  <Heading classes="grid-col17" level={2}>
     {typographString("Use common sense to punctuate quotes")}
   </Heading>
 </section>

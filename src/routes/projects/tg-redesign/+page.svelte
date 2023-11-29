@@ -9,7 +9,7 @@
 </svelte:head>
 
 <section>
-  <Heading classes="grid-col17" level={1} useInline={false}>{typographString("Redesigning Telegram's Android app")}</Heading>
+  <Heading classes="grid-col17" level={1}>{typographString("Redesigning Telegram's Android app")}</Heading>
   <p class="grid-col17">{typographString("This is a concept redesign for Telegram's Android app. It was made in around 48 hours. The main goal was to update existing elements based on Material Design 3 guidelines, while maintaining app's core essence and lightweight feel. Along the way, I made some icons and rewrote some interface text. Everything was done in Figma using components, styles, variables, tokens, hands, eyes, a-a-and a brain!")}</p>
   <List
     classes="grid-col17"

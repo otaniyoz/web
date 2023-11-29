@@ -11,7 +11,7 @@
 </svelte:head>
 
 <section>
-  <Heading classes="grid-col17" level={1} useInline={false}>
+  <Heading classes="grid-col17" level={1}>
     {typographString("Etudes in code")}
     <svelte:fragment slot="subtitles">
       <Link classes="regular-weight regular-size large-line-height regular-right-margin" href="https://t.me/etudesincode" outside={true}>See GIFs on Telegram</Link>

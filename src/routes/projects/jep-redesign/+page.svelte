@@ -9,7 +9,7 @@
 </svelte:head>
 
 <section>
-  <Heading level={1} classes="grid-col17" useInline={false}>{typographString("Redesigning Jep!")}</Heading>
+  <Heading level={1} classes="grid-col17">{typographString("Redesigning Jep!")}</Heading>
   <p class="grid-col17">{typographString("This is a concept redesign for Jep! -- a multiplayer online trivia created by Claire Nord. Most of the work was done in 20 hours. The main goal was to bring the interface up to date, while preserving core elements, scenarios, and game mechanics.")}</p>
   <List
     classes="grid-col17"

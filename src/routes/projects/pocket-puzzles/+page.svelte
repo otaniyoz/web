@@ -9,7 +9,7 @@
 </svelte:head>
 
 <section>
-  <Heading classes="grid-col17" level={1} useInline={false}>
+  <Heading classes="grid-col17" level={1}>
     {typographString("Pocket puzzles")}
     <svelte:fragment slot="subtitles">
       <Link classes="regular-weight regular-size regular-right-margin" href="https://otaniyoz.github.io/pocket-puzzles"outside={false}>Play online</Link>

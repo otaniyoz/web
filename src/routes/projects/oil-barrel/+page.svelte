@@ -8,7 +8,7 @@
 </svelte:head>
 
 <section>
-  <Heading classes="grid-col17" level={1} useInline={false}>
+  <Heading classes="grid-col17" level={1}>
     {typographString("Landing page for a barrel of oil")}
   </Heading>
   <p class="grid-col17">
@@ -18,7 +18,7 @@
   </p>
 </section>
 <section>
-  <Heading classes="grid-col17" level={2} useInline={false}>2022</Heading>
+  <Heading classes="grid-col17" level={2}>2022</Heading>
   <figure class="centered-visual">
     <img alt="Landing page dark theme" src="../../oil-barrel/2022.jpg" />
   </figure>

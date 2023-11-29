@@ -10,7 +10,7 @@
 </svelte:head>
 
 <section>
-  <Heading classes="grid-col17" level={1} useInline={false}>
+  <Heading classes="grid-col17" level={1}>
     Редполитика
     <svelte:fragment slot="subtitles">
       <Link classes="regular-weight regular-size large-line-height" href="{base}/projects/editorial-policy-en" outside={false}>Редполитика для английского</Link>
@@ -19,7 +19,7 @@
   <p class="grid-col17">{typographString("Живой набор стилистических рекоммендаций, которыми я пользуюсь в большинстве случаев. Для спорных случаев есть здравый смысл.")}</p>
 </section>
 <section>
-  <Heading classes="grid-col17" level={2} useInline={false}>{typographString("Говорить и писать на одном языке за раз")}</Heading>
+  <Heading classes="grid-col17" level={2}>{typographString("Говорить и писать на одном языке за раз")}</Heading>
   <figure class="grid-col17 grid no-gap two-columns">
     <div class="regular-right-padding">
       <p class="heavy-weight small-bottom-padding">Плохо</p>
@@ -37,12 +37,12 @@
   <p class="grid-col17">{typographString("Известные исключения: технические тексты, этот сайт, и реп.")}</p>
 </section>
 <section>
-  <Heading classes="grid-col17" level={2} useInline={false}>Писать без висяков</Heading>
+  <Heading classes="grid-col17" level={2}>Писать без висяков</Heading>
   <p class="grid-col17">{typographString("Предлоги, союзы, и частицы меньше четырёх букв отбиваются неразрывным пробелом от следующего слова.")}</p>
   <p class="grid-col17">{typographString("Известные исключения: теснота.")}</p>
 </section>
 <section>
-  <Heading classes="grid-col17" level={2} useInline={false}>
+  <Heading classes="grid-col17" level={2}>
     {typographString("Всегда писать букву ё")}
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
@@ -59,7 +59,7 @@
   </figure>
 </section>
 <section>
-  <Heading classes="grid-col17" level={2} useInline={false}>{typographString("Использовать Всемирное координированное время для часовых поясов")}</Heading>
+  <Heading classes="grid-col17" level={2}>{typographString("Использовать Всемирное координированное время для часовых поясов")}</Heading>
   <figure class="grid-col17 grid no-gap two-columns">
     <div class="regular-right-padding">
       <p class="heavy-weight small-bottom-padding">Плохо</p>
@@ -72,7 +72,7 @@
   </figure>
 </section>
 <section>
-  <Heading classes="grid-col17" level={2} useInline={false}>
+  <Heading classes="grid-col17" level={2}>
     {typographString("Не использовать римские числа")} 
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
@@ -87,7 +87,7 @@
   </figure>
 </section>
 <section>
-  <Heading classes="grid-col17" level={2} useInline={false}>{typographString("Использовать многоточие только для численных отрезков и разрывов в цитатах")}</Heading>
+  <Heading classes="grid-col17" level={2}>{typographString("Использовать многоточие только для численных отрезков и разрывов в цитатах")}</Heading>
   <figure class="grid-col17 grid no-gap two-columns">
     <div class="regular-right-padding">
       <p class="heavy-weight small-bottom-padding">Плохо</p>
@@ -102,7 +102,7 @@
   </figure>
 </section>
 <section>
-  <Heading classes="grid-col17" level={2} useInline={false}>
+  <Heading classes="grid-col17" level={2}>
     {typographString("Числа до 10 писать словами")}
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
@@ -117,7 +117,7 @@
   </figure>
 </section>
 <section>
-  <Heading classes="grid-col17" level={2} useInline={false}>
+  <Heading classes="grid-col17" level={2}>
     {typographString("Писать дни недели и месяцы с маленькой буквы")}
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
@@ -134,7 +134,7 @@
   </figure>
 </section>
 <section>
-  <Heading classes="grid-col17" level={2} useInline={false}>
+  <Heading classes="grid-col17" level={2}>
     {typographString("Знаки валют и процента идут после числа и отбиваются неразрывным пробелом-волоском")} 
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
