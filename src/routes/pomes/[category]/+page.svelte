@@ -27,5 +27,5 @@
     <Table {tableData} />
   </section>
 {:else}
-  <Heading level={1}>No notes</Heading>
+  <Heading level={1}>No pomes</Heading>
 {/if}
