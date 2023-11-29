@@ -22,12 +22,12 @@
   <Heading classes="grid-col17" level={2}>Use British English</Heading>
   <figure class="grid-col17 grid no-gap two-columns">
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Bad</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Bad</p>
       <p>Color</p>
       <p>Center</p>
     </div>
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Good</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Good</p>
       <p>Colour</p>
       <p>Centre</p>
     </div>
@@ -39,12 +39,12 @@
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Bad</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Bad</p>
       <p>10 inches</p>
       <p>1 mile</p>
     </div>
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Good</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Good</p>
       <p>25 centimeters</p>
       <p>1.61 kilometers</p>
     </div>
@@ -57,12 +57,12 @@
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Bad</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Bad</p>
       <p>2:30PM</p>
       <p>7:15AM</p>
     </div>
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Good</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Good</p>
       <p>{typographString("14:30")}</p>
       <p>{typographString("7:15")}</p>
     </div>
@@ -74,12 +74,12 @@
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Bad</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Bad</p>
       <p>9:30, Dubai time</p>
       <p>8AM PST</p>
     </div>
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Good</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Good</p>
       <p>{typographString("9:30 UTC+4")}</p>
       <p>{typographString("8:00 UTC-8")}</p>
     </div>
@@ -91,11 +91,11 @@
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Bad</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Bad</p>
       <p>{typographString("Biscuits, marmalade and tea")}</p>
     </div>
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Good</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Good</p>
       <p>{typographString("Biscuits, marmalade, and tea")}</p>
     </div>
   </figure>
@@ -106,11 +106,11 @@
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Bad</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Bad</p>
       <p>I, II, III, IV, V, VI...</p>
     </div>
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Good</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Good</p>
       <p>{typographString("1, 2, 3, 4, 5, 6...")}</p>
     </div>
   </figure>
@@ -121,12 +121,12 @@
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Bad</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Bad</p>
       <p>2010-2012</p>
       <p>To be continued...</p>
     </div>
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Good</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Good</p>
       <p>{typographString("2010...2012")}</p>
       <p>{typographString("To be continued")}</p>
     </div>
@@ -138,11 +138,11 @@
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Bad</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Bad</p>
       <p>3 days before friday</p>
     </div>
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Good</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Good</p>
       <p>{typographString("Three days before friday")}</p>
     </div>
   </figure>
@@ -153,12 +153,12 @@
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Bad</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Bad</p>
       <p>Her flight is on Tuesday</p>
       <p>Last edited on 30 October 2023</p>
     </div>
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Good</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Good</p>
       <p>{typographString("Her flight is on tuesday")}</p>
       <p>{typographString("Last edited on 30 october 2023")}</p>
     </div>
@@ -170,12 +170,12 @@
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Bad</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Bad</p>
       <p>$100</p>
       <p>9.99$</p>
     </div>
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Good</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Good</p>
       <p>{typographString("$100")}</p>
       <p>{typographString("9.99$")}</p>
     </div>

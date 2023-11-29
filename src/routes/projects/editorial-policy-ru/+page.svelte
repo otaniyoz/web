@@ -22,13 +22,13 @@
   <Heading classes="grid-col17" level={2}>{typographString("Говорить и писать на одном языке за раз")}</Heading>
   <figure class="grid-col17 grid no-gap two-columns">
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Плохо</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Плохо</p>
       <p>Она отправила SMS</p>
       <p>Оставьте ваш email и мы напишем</p>
       <p>В этом апдейте мы пофиксили дарк мод</p>
     </div>
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Хорошо</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Хорошо</p>
       <p>Она отправила смс</p>
       <p>{typographString("Оставьте вашу электропочту и мы напишем")}</p>
       <p>{typographString("В этом обновлении мы исправили ошибки в тёмной теме")}</p>
@@ -47,12 +47,12 @@
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Плохо</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Плохо</p>
       <p>Тeмные дни</p>
       <p>Чeрная дыра</p>
     </div>
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Хорошо</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Хорошо</p>
       <p>{typographString("Тёмные дни")}</p>
       <p>{typographString("Чёрная дыра")}</p>
     </div>
@@ -62,11 +62,11 @@
   <Heading classes="grid-col17" level={2}>{typographString("Использовать Всемирное координированное время для часовых поясов")}</Heading>
   <figure class="grid-col17 grid no-gap two-columns">
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Плохо</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Плохо</p>
       <p>15:30 по москве</p>
     </div>
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Хорошо</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Хорошо</p>
       <p>{typographString("12:30 по всемирному времени")}</p>
     </div>
   </figure>
@@ -77,11 +77,11 @@
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Плохо</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Плохо</p>
       <p>{typographString("Люди в XIX веке говорили: 'Среда заела'")}</p>
     </div>
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Хорошо</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Хорошо</p>
       <p>{typographString("Люди в 19-ом веке говорили: 'Среда заела'")}</p>
     </div>
   </figure>
@@ -90,28 +90,26 @@
   <Heading classes="grid-col17" level={2}>{typographString("Использовать многоточие только для численных отрезков и разрывов в цитатах")}</Heading>
   <figure class="grid-col17 grid no-gap two-columns">
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Плохо</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Плохо</p>
       <p>2010-2012</p>
       <p>Продолжение следует...</p>
     </div>
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Хорошо</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Хорошо</p>
       <p>{typographString("2010...2012")}</p>
       <p>{typographString("Продолжение следует")}</p>
     </div>
   </figure>
 </section>
 <section>
-  <Heading classes="grid-col17" level={2}>
-    {typographString("Числа до 10 писать словами")}
-  </Heading>
+  <Heading classes="grid-col17" level={2}>{typographString("Числа до 10 писать словами")}</Heading>
   <figure class="grid-col17 grid no-gap two-columns">
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Плохо</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Плохо</p>
       <p>0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11...</p>
     </div>
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Хорошо</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Хорошо</p>
       <p>{typographString("Ноль, один, два, три, четыре, пять, шесть, семь, восемь, девять, 10, 11...")}</p>
     </div>
   </figure>
@@ -122,12 +120,12 @@
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Плохо</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Плохо</p>
       <p>Она улетает во Вторник</p>
       <p>Опубликовано 30 Октября 2023</p>
     </div>
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Хорошо</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Хорошо</p>
       <p>{typographString("Она улетает во вторник")}</p>
       <p>{typographString("Опубликовано 30 октября 2023")}</p>
     </div>
@@ -139,13 +137,13 @@
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Плохо</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Плохо</p>
       <p>$100</p>
       <p>9.99$</p>
       <p>25%</p>
     </div>
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Хорошо</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Хорошо</p>
       <p>{typographString('$100')}</p>
       <p>{typographString('9.99$')}</p>
       <p>{typographString('25%')}</p>

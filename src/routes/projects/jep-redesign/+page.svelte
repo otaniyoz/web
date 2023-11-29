@@ -15,12 +15,12 @@
   <p class="grid-col17">{typographString("Jep! is an homage to the American panel show Jeopardy. All the core elements of the show were meticulously replicated, even the sounds and animations! The idea is admirable and execution is top-notch. However, Jeopardy was designed for tv screen, in the 80s; trying to one-to-one map its design to modern web is bound to run into problems, especially on devices with smaller screens. This redesign addressed some of such problems.")}</p>
   <figure class="centered-visual grid no-gap two-columns">
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Bad</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Bad</p>
       <img src="../../jep-redesign/original_home_desktop.png" alt="Redesigning Jep!" />
       <img src="../../jep-redesign/original_help_desktop.png" alt="Redesigning Jep!" />
     </div>
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Good</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Good</p>
       <img src="../../jep-redesign/home_desktop.png" alt="Redesigning Jep!" />
       <img src="../../jep-redesign/help_desktop.png" alt="Redesigning Jep!" />
     </div>
@@ -37,22 +37,22 @@
   <p class="grid-col17">{typographString("The core element of the game is a board. I remade the board to make it easily fit any screen dimension, while minimizing scrolling and noise.")}</p>
   <figure class="centered-visual grid no-gap two-columns">
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Bad</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Bad</p>
       <img src="../../jep-redesign/original_room.png" alt="redesigning jep!" />
     </div>
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Good</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Good</p>
       <img src="../../jep-redesign/room.png" alt="redesigning jep!" />
     </div>
   </figure>
   <p class="grid-col17">{typographString("Buzz-in interface was redesigned to minimize layout changes between game states:")}</p>
   <figure class="centered-visual grid no-gap two-columns">
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Bad</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Bad</p>
       <img src="../../jep-redesign/original_buzzin.png" alt="Redesigning Jep!" />
     </div>
     <div class="regular-right-padding">
-      <p class="heavy-weight small-bottom-padding">Good</p>
+      <p class="heavy-weight small-bottom-padding sans-serif">Good</p>
       <img src="../../jep-redesign/buzzin.png" alt="Redesigning Jep!" />
     </div>
   </figure>
