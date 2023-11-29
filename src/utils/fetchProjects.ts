@@ -19,7 +19,6 @@ export default async function fetchProjects({category='all'}) {
       categories: projectContent[2], 
       link: `${base}/projects/${path.split('/')[3].replace('.project', '')}`
     });
-    console.log();
   }
   // https://stackoverflow.com/a/60688789
   let sortedProjects = projects.sort((a, b) => new Date(parseDate(b.date)).valueOf() - new Date(parseDate(a.date)).valueOf());
