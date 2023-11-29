@@ -1,7 +1,6 @@
 <script lang="ts">
   export let level: number;
   export let classes: string = "";
-  export let useInline: boolean = true;
 </script>
 
 <div class="heading-container {classes}">
@@ -13,8 +12,9 @@
     <h3 class="regular-size large-line-height font-norm font-kern font-no-ligs"><slot /></h3>
   {/if}
   {#if $$slots.subtitles}
-    <slot name="subtitles" class="sub-container {(useInline)?'inline':''}">
-    </slot>
+    <div class="sub-container">
+      <slot name="subtitles"></slot>
+    </div>
   {/if}
 </div>
 
@@ -40,14 +40,10 @@
     font-family: "IBM Plex Sans";
     padding-top: var(--gap-large);
   }
-  .inline {
-    display: inline-flex !important;
-    margin-left: -0.95vmax;
-  }
   .sub-container {
     display: flex;
-    flex-flow: row nowrap;
-    gap: var(--gap-regular);
+    flex-flow: row wrap;
+    row-gap: var(--gap-small);
     margin-left: 0.2vmax;
   }
   .heading-container {

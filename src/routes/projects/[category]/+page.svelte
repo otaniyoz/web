@@ -19,21 +19,14 @@
   <section>
     <Heading level={1} classes="grid-col17">
       {typographString($page.data.projects.length.toString() + (($page.data.projects.length === 1)?' project':' projects'))}
-      <div id='project-categories' slot='subtitles'>
+      <svelte:fragment slot='subtitles'>
         {#each $page.data.categories as category}
           <Link classes='{(category===$page.params.category.replace('-', ' '))?'grey-color':''} regular-weight regular-size large-line-height regular-right-margin' href='{base}/projects/{category.replace(' ', '-')}' outside={false} target='_self'>{typographString(category)}</Link>
         {/each}
-      </div>
+      </svelte:fragment>
     </Heading>
     <Table {tableData} />
   </section>
 {:else}
   <Heading level={1}>No projects</Heading>
 {/if}
-
-<style>
-  #project-categories {
-    display: flex;
-    flex-flow: row wrap;
-  }
-</style>
