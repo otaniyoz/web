@@ -12,6 +12,6 @@
     {#each $page.data.post.content as line, idx}
       <p class="{(idx%2!==0)?'xlarge-left-padding':''} centered-visual serif font-normal font-kern font-no-ligs">{typographString(line)}</p>
     {/each}
-    <p class="large-bottom-padding regular-top-padding centered-visual font-normal font-kern font-no-ligs">{typographString($page.data.post.date)}</p>
+    <p class="large-bottom-padding regular-top-padding centered-visual font-normal font-kern font-no-ligs sans-serif">{typographString($page.data.post.date)}</p>
   </section>
 {/if}
