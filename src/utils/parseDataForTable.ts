@@ -10,7 +10,8 @@ export default function parseDataForTable(data: NoteType[], keys: string[], acce
     let json: NoteType = data[i];
     for (let j = 0; j < keys.length; j++) {
       let kj = keys[j];
-      row.push(json[kj]);
+      // https://stackoverflow.com/a/69198602
+      row.push(json[kj as keyof NoteType]);
       accents.push(accentKeys.indexOf(kj) !== -1 ? "true" : "");
       links.push(linkKeys.indexOf(kj) !== -1 ? json["link"] : "");
     }

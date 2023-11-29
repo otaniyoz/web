@@ -20,7 +20,8 @@ export default async function fetchPomes({category='all'}) {
       link: `${base}/pomes/${category}/${path.split('/')[3].replace('.pome', '')}`
     });
   }
-  let sortedNotes = notes.sort((a, b) => new Date(parseDate(b.date.toLowerCase())) - new Date(parseDate(a.date.toLowerCase())));
+  // https://stackoverflow.com/a/60688789
+  let sortedNotes = notes.sort((a, b) => new Date(parseDate(b.date.toLowerCase())).valueOf() - new Date(parseDate(a.date.toLowerCase())).valueOf());
   sortedNotes = sortedNotes.filter(note => note.categories.includes(category));
   let sortedCategories = allCategories.sort((a, b) => a.localeCompare(b));
   return {notes: sortedNotes, categories: sortedCategories};
