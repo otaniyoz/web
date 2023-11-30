@@ -69,4 +69,15 @@
   tr:hover > td > p > a:hover {
     border-bottom: 1px solid var(--color-orange);
   }
+  a {
+    padding: 0;
+    color: inherit;
+    text-decoration: none;
+    border-bottom-width: 1px; 
+    border-bottom-style: solid;
+    border-bottom-color: inherit;
+  }
+  a:hover {
+    border-bottom: 1px solid var(--color-orange);
+  }
 </style>

@@ -13,7 +13,7 @@
   <Heading classes="grid-col17" level={1}>
     Редполитика
     <svelte:fragment slot="subtitles">
-      <Link classes="regular-weight regular-size large-line-height" href="{base}/projects/editorial-policy-en" outside={false}>Редполитика для английского</Link>
+      <Link classes="regular-weight regular-size large-line-height" href="{base}/projects/editorial-policy-en" >Редполитика для английского</Link>
     </svelte:fragment>
   </Heading>
   <p class="grid-col17">{typographString("Живой набор стилистических рекоммендаций, которыми я пользуюсь в большинстве случаев. Для спорных случаев есть здравый смысл.")}</p>

@@ -13,7 +13,7 @@
   <Heading classes="grid-col17" level={1}>
     Editorial policy
     <svelte:fragment slot="subtitles">
-      <Link classes="regular-weight regular-size large-line-height" href="{base}/projects/editorial-policy-ru" outside={false}>Editorial policy in russian</Link>
+      <Link classes="regular-weight regular-size large-line-height" href="{base}/projects/editorial-policy-ru" >Editorial policy in russian</Link>
     </svelte:fragment>
   </Heading>
   <p class="grid-col17">{typographString("This is a living collection of stylistic guidelines and conventions I use in most cases. Edge cases are resolved with common sense.")}</p>

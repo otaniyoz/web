@@ -21,7 +21,7 @@
       {typographString($page.data.projects.length.toString() + (($page.data.projects.length === 1)?' project':' projects'))}
       <svelte:fragment slot='subtitles'>
         {#each $page.data.categories as category}
-          <Link classes='{(category===$page.params.category.replace('-', ' '))?'grey-color':''} regular-weight regular-size large-line-height regular-right-margin' href='{base}/projects/{category.replace(' ', '-')}' outside={false} target='_self'>{typographString(category)}</Link>
+          <Link classes='{(category===$page.params.category.replace('-', ' '))?'grey-color':''} regular-weight regular-size large-line-height regular-right-margin' href='{base}/projects/{category.replace(' ', '-')}'  target='_self'>{typographString(category)}</Link>
         {/each}
       </svelte:fragment>
     </Heading>

@@ -3,39 +3,23 @@
   import "../styles/fonts.css";
   import { base } from "$app/paths";
   import { page } from "$app/stores";
+  import Link from "$lib/components/Link.svelte";
 </script>
 
 <header>
-  <div id="backdrop" />
   <nav>
     <ul>
       <li>
-        <a
-          href={base}
-          class:grey-color={$page.url.pathname.endsWith(base + "/")}
-          >About</a
-        >
+        <Link href={base} classes={($page.url.pathname.endsWith(base + "/"))?'grey-color':''}>About</Link>
       </li>
       <li>
-        <a
-          href="{base}/pomes/all"
-          class:grey-color={$page.url.pathname.includes("pomes")}
-          >Pomes</a
-        >
+        <Link href="{base}/pomes/all" classes={($page.url.pathname.includes("pomes"))?'grey-color':''}>Pomes</Link>
       </li>
       <li class="second">
-        <a
-          href="{base}/projects/all"
-          class:grey-color={$page.url.pathname.includes("projects")}
-          >Projects</a
-        >
+        <Link href="{base}/projects/all" classes={($page.url.pathname.includes("projects"))?'grey-color':''}>Projects</Link>
       </li>
       <li class="third text-right">
-        <a
-          href="{base}/notes/all"
-          class:grey-color={$page.url.pathname.includes("notes")}
-          >Notes</a
-        >
+        <Link href="{base}/notes/all" classes={($page.url.pathname.includes("notes"))?'grey-color':''}>Notes</Link>
       </li>
     </ul>
   </nav>
@@ -50,35 +34,13 @@
 </footer>
 
 <style>
-  #backdrop {
-    width: 100%;
-    height: 100%;
-    z-index: -100;
-    position: absolute;
-    pointer-events: none;
-    background: rgba(242, 242, 245, 0.25);
-    backdrop-filter: blur(var(--gap-xlarge));
-    -webkit-mask-image: linear-gradient(
-      rgb(242, 242, 245) 0%,
-      rgba(242, 242, 245, 0.75) 50%,
-      rgba(242, 242, 245, 0) 100%
-    );
-    mask-image: linear-gradient(
-      rgb(242, 242, 245) 0%,
-      rgba(242, 242, 245, 0.75) 50%,
-      rgba(242, 242, 245, 0) 100%
-    );
-  }
-
   nav {
     padding: var(--gap-small) var(--gap-regular);
   }
-
   main {
     padding: var(--gap-small) var(--gap-regular);
     min-height: calc(100vh - var(--footer-height));
   }
-
   footer {
     display: grid;
     margin-top: var(--gap-xxlarge);
@@ -86,19 +48,17 @@
     grid-template-rows: repeat(3, 1fr);
     padding: var(--gap-xlarge) var(--gap-regular);
   }
-
   header {
-    top: 0;
-    position: sticky;
     padding-bottom: var(--gap-xxlarge);
   }
-
   li {
     padding: 0;
-    font-weight: var(--font-weight-regular);
-    line-height: var(--line-height-small);
+    color: inherit;
+    min-height: var(--line-height-small);
+    font-size: var(--font-size-regular);
+    line-height: var(--line-height-large);
+    padding-bottom: var(--gap-regular);
   }
-
   ul {
     padding: 0;
     display: grid;
@@ -107,25 +67,20 @@
     padding-inline: 0;
     grid-template-columns: repeat(8, 1fr);
   }
-
   .second {
     grid-column: 6 / 7;
   }
-
   .third {
     grid-column: 8 / 9;
   }
-
   @media screen and (max-width: 1200px) {
     ul,
     footer {
       grid-template-columns: repeat(6, 1fr);
     }
-
     .second {
       grid-column: 4 / 5;
     }
-
     .third {
       grid-column: 6 / 7;
     }
