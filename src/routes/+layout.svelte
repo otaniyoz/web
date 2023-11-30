@@ -10,16 +10,16 @@
   <nav>
     <ul>
       <li>
-        <Link href={base} classes={($page.url.pathname.endsWith(base + "/"))?'grey-color':''}>About</Link>
+        <Link href={base} target='_self' classes={($page.url.pathname.endsWith(base + "/"))?'grey-color':''}>About</Link>
       </li>
       <li>
-        <Link href="{base}/pomes/all" classes={($page.url.pathname.includes("pomes"))?'grey-color':''}>Pomes</Link>
+        <Link href="{base}/pomes/all" target='_self' classes={($page.url.pathname.includes("pomes"))?'grey-color':''}>Pomes</Link>
       </li>
       <li class="second">
-        <Link href="{base}/projects/all" classes={($page.url.pathname.includes("projects"))?'grey-color':''}>Projects</Link>
+        <Link href="{base}/projects/all" target='_self' classes={($page.url.pathname.includes("projects"))?'grey-color':''}>Projects</Link>
       </li>
       <li class="third text-right">
-        <Link href="{base}/notes/all" classes={($page.url.pathname.includes("notes"))?'grey-color':''}>Notes</Link>
+        <Link href="{base}/notes/all" target='_self' classes={($page.url.pathname.includes("notes"))?'grey-color':''}>Notes</Link>
       </li>
     </ul>
   </nav>
