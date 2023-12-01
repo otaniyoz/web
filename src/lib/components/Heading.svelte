@@ -44,7 +44,6 @@
     display: flex;
     flex-flow: row wrap;
     row-gap: var(--gap-small);
-    margin-left: 0.2vmax;
   }
   .heading-container {
     hyphens: auto;
