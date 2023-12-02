@@ -16,7 +16,7 @@
       <Link classes="regular-weight regular-size large-line-height" href="{base}/projects/editorial-policy-en" >Редполитика для английского</Link>
     </svelte:fragment>
   </Heading>
-  <p class="grid-col17">{typographString("Живой набор стилистических рекоммендаций, которыми я пользуюсь в большинстве случаев. Для спорных случаев есть здравый смысл.")}</p>
+  <p class="grid-col17">{typographString("Живой набор стилистических рекомендаций для большинства случаев. Для спорных случаев есть здравый смысл.")}</p>
 </section>
 <section>
   <Heading classes="grid-col17" level={2}>{typographString("Говорить и писать на одном языке за раз")}</Heading>
