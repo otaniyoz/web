@@ -16,7 +16,7 @@
       <Link classes="regular-weight regular-size large-line-height" href="{base}/projects/editorial-policy-ru" >Editorial policy in russian</Link>
     </svelte:fragment>
   </Heading>
-  <p class="grid-col17">{typographString("This is a living collection of stylistic guidelines for most cases. Edge cases are resolved with common sense.")}</p>
+  <p class="grid-col17">{typographString("This is a living collection of stylistic guidelines. Edge cases are resolved with common sense.")}</p>
 </section>
 <section>
   <Heading classes="grid-col17" level={2}>Use British English</Heading>
