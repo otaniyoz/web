@@ -152,6 +152,6 @@
 </section>
 <section>
   <Heading classes="grid-col17" level={2}>
-    {typographString("Делать списки однороднымм")} 
+    {typographString("Делать списки однородными")} 
   </Heading>
 </section>
