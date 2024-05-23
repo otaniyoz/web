@@ -82,7 +82,7 @@
     </div>
     <div class="regular-right-padding">
       <p class="heavy-weight small-bottom-padding sans-serif">Хорошо</p>
-      <p>{typographString("Люди в 19-ом веке говорили: 'Среда заела'")}</p>
+      <p>{typographString("Люди в 19-м веке говорили: 'Среда заела'")}</p>
     </div>
   </figure>
 </section>
@@ -133,7 +133,7 @@
 </section>
 <section>
   <Heading classes="grid-col17" level={2}>
-    {typographString("Знаки валют и процента идут после числа и отбиваются неразрывным пробелом-волоском")} 
+    {typographString("Знаки валют и процента ставить после числа и отбивать неразрывным пробелом-волоском")} 
   </Heading>
   <figure class="grid-col17 grid no-gap two-columns">
     <div class="regular-right-padding">
@@ -149,4 +149,9 @@
       <p>{typographString('25%')}</p>
     </div>
   </figure>
+</section>
+<section>
+  <Heading classes="grid-col17" level={2}>
+    {typographString("Делать списки однороднымм")} 
+  </Heading>
 </section>
