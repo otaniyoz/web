@@ -64,11 +64,9 @@
     color: var(--color-light);
   }
   tr:hover > td > p > a {
-    transition: 0.75s;
     text-decoration-color: var(--color-light);
   }
   tr:hover > td > p > a:hover {
-    transition: 0s;
     text-decoration-color: var(--color-orange);
   }
   a {
