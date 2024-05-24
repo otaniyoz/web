@@ -72,12 +72,11 @@
   a {
     padding: 0;
     color: inherit;
-    text-decoration: none;
-    border-bottom-width: 1px; 
-    border-bottom-style: solid;
-    border-bottom-color: inherit;
+    text-decoration-thickness: 0.5px;
+    text-decoration-color: inherit;
+    text-underline-offset: 20%;
   }
   a:hover {
-    border-bottom: 1px solid var(--color-orange);
+    text-decoration-color: var(--color-orange);
   }
 </style>
