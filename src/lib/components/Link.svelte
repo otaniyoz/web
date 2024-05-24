@@ -15,11 +15,13 @@
   a {
     padding: 0;
     color: inherit;
+    transition: 0.75s;
     text-decoration-thickness: 0.5px;
     text-decoration-color: inherit;
     text-underline-offset: 20%;
   }
   a:hover {
+    transition: 0s;
     text-decoration-color: var(--color-orange);
   }
   .link-arrow {
