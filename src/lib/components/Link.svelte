@@ -18,7 +18,7 @@
     transition: 0.75s;
     text-decoration-thickness: 0.5px;
     text-decoration-color: inherit;
-    text-underline-offset: 20%;
+    text-underline-offset: 25%;
   }
   a:hover {
     transition: 0s;

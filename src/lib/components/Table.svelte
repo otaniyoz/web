@@ -74,7 +74,7 @@
     color: inherit;
     text-decoration-thickness: 0.5px;
     text-decoration-color: inherit;
-    text-underline-offset: 20%;
+    text-underline-offset: 25%;
   }
   a:hover {
     text-decoration-color: var(--color-orange);
