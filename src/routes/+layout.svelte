@@ -10,7 +10,7 @@
   <nav>
     <ul>
       <li>
-        O—Z
+        O — Z
       </li>
       <li>
         <Link href="{base}/pomes/all" target='_self' classes={($page.url.pathname.includes("pomes"))?'grey-color':''}>Pomes</Link>
