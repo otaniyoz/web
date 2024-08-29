@@ -113,6 +113,7 @@ a.note-title {
 img,
 video {
   width: 100%;
+  object-fit: cover;
   aspect-ratio: auto;
 }
 main {
