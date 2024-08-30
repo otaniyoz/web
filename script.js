@@ -17,10 +17,21 @@ window.onload = () => {
     scheduleFrame(start);
   }
 
+  // checks if at least some part of the element is visible
+  function isInView(element) {
+    const rect = element.getBoundingClientRect();
+    return (rect.top >= 0 || rect.left >= 0 
+        || rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) 
+        || rect.right <= (window.innerWidth || document.documentElement.clientWidth));
+  }
+
   function animateScroll() {
     if (scrolling) {
-      for (let rotatedElement of scrollRotated) {
-        rotatedElement.style.transform = `rotate(${window.pageYOffset}deg)`;
+      const windowPageYOffset = window.pageYOffset;
+      for (let element of scrollRotated) {
+        if (isInView(element)) {
+          element.style.transform = `rotate(${windowPageYOffset}deg)`;
+        }
       }
     }
     scrolling = false;
