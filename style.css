@@ -17,8 +17,6 @@
   src: url('static/fonts/IBMPlexSans-Regular.woff') format('woff');
 }
 :root {
-/*  color-scheme: light dark;*/
-  
   --text-main: #151516;
   --text-accent-main: #FB0001;
   --text-accent-secondary: #0172C3;
@@ -50,8 +48,7 @@ figure {
   padding: 0;
 }
 body {
-/*  overflow-x: hidden;*/
-  padding: 1vmin 1vmax;
+  padding: 1vmin 2vw;
   color: var(--text-main);
   font-family: "IBM Plex Sans";
   font-size: var(--font-size-small);
@@ -81,6 +78,7 @@ a:hover .link-arrow {
   25%, 100% { transform: rotate(360deg); }
 }
 h2 {
+  font-weight: 400;
   line-height: 1.15em;
   font-size: var(--font-size-medium);
 }
@@ -92,9 +90,6 @@ p {
   font-family: "IBM Plex Serif";
   font-size: var(--font-size-regular);
 }
-p.illustration-caption {
-  margin-bottom: 0;
-}
 nav {
   margin-bottom: 4vmax;
 }
@@ -103,12 +98,6 @@ nav > a {
   min-width: 40px;
   margin-right: 1vmin;
   display: inline-block;
-  font-size: var(--font-size-small);
-}
-p.project-caption,
-a.pome-title,
-a.note-title {
-  text-decoration: none !important;
 }
 img,
 video {
@@ -129,6 +118,19 @@ figure {
   margin-bottom: 2vmax;
   justify-content: space-around;
 }
+article > figure {
+  margin-bottom: 0;
+}
+.dark-back {
+  background: var(--text-main);
+}
+.inside {
+  position: absolute;
+  transition: 0.1s transform cubic-bezier(0.25, 0, 0, 0.25);
+}
+.eyes-wrapper {
+  padding: 0 6vmax;
+}
 .half-width {
   width: 100%;
   max-width: calc(50% - 1vmax);
@@ -136,10 +138,14 @@ figure {
 .third-width {
   max-width: 33.3%;
 }
+.intro-container {
+  align-content: end;
+}
+.list-item,
 .project-caption,
-.illustration-caption,
-.list-item {
-  font-family: "IBM Plex Sans";
+.illustration-caption {
+  font-family: inherit;
+  font-size: var(--font-size-small);
 }
 .list-item {
   margin-left: calc(100% / 12);
@@ -163,8 +169,14 @@ span.note-preview {
 .cols-4 {
   grid-column: span 4;
 }
+.cols-5 {
+  grid-column: span 5;
+}
 .cols-6 {
   grid-column: span 6;
+}
+.cols-7 {
+  grid-column: span 7;
 }
 .cols-8 {
   grid-column: span 8;
@@ -179,7 +191,7 @@ span.note-preview {
   grid-column: span 12;
 }
 .illustration {
-  overflow: visible;
+  overflow: hidden;
   aspect-ratio: auto;
 }
 .scroll-rotated {
@@ -202,20 +214,18 @@ a.secondary {
 .illustration-caption {
   color: var(--text-secondary);
 }
-.illustration-caption,
-.project-caption {
-  font-size: var(--font-size-small);
+.illustration-caption span,
+.project-caption span {
+  font-weight: 700;
 }
 .project-thumbnail {
   margin-bottom: var(--gap-regular);
 }
 @media screen and (max-width: 450px) {
   .cols-2,
-  .cols-3,
   .cols-4,
   .cols-6,
   .cols-8,
-  .cols-9,
   .cols-10,
   .cols-12 {
     grid-column: span 12;

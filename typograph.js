@@ -1,8 +1,6 @@
 'use strict';
 window.onload = () => {
   function typograph(node) {
-    // if (typeof s !== 'string' || !s.length) return "";
-
     const russianRules = new Map([
       ['^[ ]+|[ ]+$', ''],
       [' {2,}', ' '],
@@ -120,7 +118,6 @@ window.onload = () => {
       s = s.charAt(0).toUpperCase() + s.slice(1);
     }
     node.textContent = s
-    // return s;
   }
 
   const nodes = document.getElementsByClassName('typograph');
