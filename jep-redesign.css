@@ -17,17 +17,12 @@
   src: url('static/fonts/IBMPlexSans-Regular.woff') format('woff');
 }
 :root {
-  color-scheme: light dark;
-
-  --light-text-main: #151516;
+  --text-main: #151516;
   --text-accent-main: #FB0001;
   --text-accent-secondary: #0172C3;
   --text-secondary: #888888;
-  --light-background-main: #ffffff; 
+  --background-main: #ffcc00; 
   --background-secondary: #ffffffdd;
-
-  --dark-text-main: #ffffff; 
-  --dark-background-main: #151516; 
 
   --font-size-xlarge: clamp(2.5rem, 10vw + 1rem, 9rem);
   --font-size-large: clamp(2rem, 7.4vw + 1rem, 9rem);
@@ -36,12 +31,6 @@
   --font-size-xregular: clamp(0.95rem, 3vw + 1rem, 4rem);
   --font-size-regular: clamp(0.85rem, 2vmax, 2rem);
   --font-size-small: clamp(0.6rem, 1vmin + 0.6rem, 2rem);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-scheme: dark;
-  }
 }
 
 *,
@@ -61,26 +50,10 @@ figure {
 body {
   padding: 1vmin 4vw;
   padding-bottom: 2vmax;
+  color: var(--text-main);
   font-family: "IBM Plex Sans";
   font-size: var(--font-size-small);
-  color:  light-dark(var(--light-text-main), var(--dark-text-main));
-  background: light-dark(var(--light-background-main), var(--dark-background-main));
-}
-.inside {
-  fill: var(--light-text-main);
-}
-.flower rect {
-  fill: light-dark(var(--light-text-main), var(--dark-text-main));
-}
-.suriken path {
-  fill: light-dark(var(--light-text-main), var(--dark-text-main));
-}
-.suriken circle {
-  fill: light-dark(var(--light-background-main), var(--dark-background-main));
-}
-svg.flower {
-  width: 100%;
-  max-width: 8vmin;
+  background: var(--background-main);
 }
 a {
   color: inherit;
@@ -92,19 +65,6 @@ a {
 a:hover {
   transition: 0s;
   text-decoration-color: var(--text-accent-main);
-}
-.link-arrow {
-  display: inline-block;
-  animation: rotate 3.2s ease-in-out 0.25s infinite;
-  animation-play-state: paused;
-}
-a:hover .link-arrow {
-  color: var(--text-accent-main);
-  animation-play-state: running;
-}
-@keyframes rotate {
-  0% { transform: rotate(0deg); }
-  25%, 100% { transform: rotate(360deg); }
 }
 h2 {
   font-weight: 400;
@@ -147,29 +107,9 @@ figure {
   margin-bottom: 2vmax;
   justify-content: space-around;
 }
-article > figure {
-  margin-bottom: 0;
-  align-items: baseline;
-}
-.dark-back {
-  background: var(--light-text-main);
-}
-.inside {
-  position: absolute;
-  transition: 0.1s transform cubic-bezier(0.25, 0, 0, 0.25);
-}
-.eyes-wrapper {
-  padding: 0 6vmax;
-}
 .half-width {
   width: 100%;
   max-width: calc(50% - 1vmax);
-}
-.third-width {
-  max-width: calc(100%/3 - 2vmax);
-}
-.intro-container {
-  align-content: end;
 }
 .list-item,
 .project-caption,
@@ -177,66 +117,15 @@ article > figure {
   font-family: inherit;
   font-size: var(--font-size-small);
 }
-.cols-2 {
-  grid-column: span 2;
-}
-.cols-3 {
-  grid-column: span 3;
-}
-.cols-4 {
-  grid-column: span 4;
-}
-.cols-5 {
-  grid-column: span 5;
-}
-.cols-6 {
-  grid-column: span 6;
-}
-.cols-7 {
-  grid-column: span 7;
-}
-.cols-8 {
-  grid-column: span 8;
-}
-.cols-9 {
-  grid-column: span 9;
-}
-.cols-10 {
-  grid-column: span 10;
+.list-item {
+  margin-left: calc(100% / 12);
 }
 .cols-12 {
   grid-column: span 12;
 }
-.illustration {
-  overflow: hidden;
-  aspect-ratio: auto;
-}
-.scroll-rotated {
-  z-index: -12;
-  position: relative;
-}
-a.secondary {
-  color: var(--text-secondary);
-}
-.pome-title,
-.note-title {
-  line-height: 1.15em;
-  font-size: var(--font-size-medium);
-}
-.pome > p,
-.note > p {
-  font-family: "IBM Plex Serif";
-  font-size: var(--font-size-regular);
-}
 .illustration-caption {
+  margin-bottom: 0;
   color: var(--text-secondary);
-}
-.illustration-caption span,
-.project-caption span {
-  font-weight: 700;
-}
-.project-thumbnail {
-  margin-bottom: var(--gap-regular);
 }
 @media screen and (max-width: 450px) {
   .cols-2,

@@ -17,12 +17,10 @@ window.onload = () => {
     scheduleFrame(start);
   }
 
-  // checks if at least some part of the element is visible
+  // checks if at least some part of the element is visible. THIS IS NOT EXHAUSTIVE OKAY
   function isInView(element) {
     const rect = element.getBoundingClientRect();
-    return (rect.top >= 0 || rect.left >= 0 
-      || rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) 
-      || rect.right <= (window.innerWidth || document.documentElement.clientWidth));
+    return (rect.top >= 0 || rect.bottom >= 0);
   }
 
   function animateScroll() {
@@ -31,6 +29,11 @@ window.onload = () => {
       for (let element of scrollRotated) {
         if (isInView(element)) {
           element.style.transform = `rotate(${windowPageYOffset}deg)`;
+        }
+      }
+      for (let element of scrollSkewed) {
+        if (isInView(element)) {
+          element.style.transform = `skew(${0.035*windowPageYOffset}deg, ${0.025*windowPageYOffset}deg) translate(-${0.05*windowPageYOffset}px, ${0.02*windowPageYOffset}px)`;
         }
       }
     }
@@ -52,11 +55,11 @@ window.onload = () => {
 
   const fps = 60;
   let timer = null;
-
   let scrolling = false;
   let animationController = true;
   const eyes = document.getElementById('eyes');
   const scrollRotated = document.getElementsByClassName('scroll-rotated');
+  const scrollSkewed = document.getElementsByClassName('scroll-skewed');
   animationInterval(1000 / fps, animationController, animateScroll);
   window.addEventListener('scroll', () => { scrolling = true; });
   eyes.addEventListener('mousemove', animateEyes);
