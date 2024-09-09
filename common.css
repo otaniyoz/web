@@ -1,0 +1,130 @@
+*,
+html {
+  box-sizing: border-box;
+}
+a,
+p,
+h1,
+h2,
+h3,
+body,
+figure {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 1vmin 4vw;
+  padding-bottom: 2vmax;
+  color: var(--text-main);
+  font-family: "IBM Plex Sans";
+  font-size: var(--font-size-small);
+  background: var(--background-main);
+}
+a {
+  color: inherit;
+  transition: 0.65s;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--text-secondary);
+}
+a:hover {
+  transition: 0;
+  text-decoration-color: var(--text-accent-main);
+}
+p {
+  margin-block: 0;
+  min-height: 0.9em;
+  line-height: 1.25em;
+  margin-bottom: 1vmax;
+  font-family: "IBM Plex Serif";
+  font-size: var(--font-size-regular);
+}
+h2 {
+  font-weight: 400;
+  line-height: 1.15em;
+  font-size: var(--font-size-medium);
+}
+nav {
+  margin-bottom: 4vmax;
+}
+nav > a {
+  height: 100%;
+  min-width: 40px;
+  margin-right: 1vmin;
+  display: inline-block;
+}
+img,
+video {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: auto;
+}
+main {
+  display: grid;
+  gap: 2vmax 1vmax;
+  margin-bottom: 8vmax;
+  grid-template-columns: repeat(12, 1fr);
+}
+figure {
+  display: grid;
+  gap: 1vmin 1vmax;
+  margin-bottom: 2vmax;
+}
+.two-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.three-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.list-item,
+.project-caption,
+.illustration-caption {
+  font-family: inherit;
+  font-size: var(--font-size-small);
+}
+.list-item {
+  margin-left: calc(100% / 12);
+}
+.illustration-caption {
+  color: var(--text-secondary);
+}
+.cols-2 {
+  grid-column: span 2;
+}
+.cols-3 {
+  grid-column: span 3;
+}
+.cols-4 {
+  grid-column: span 4;
+}
+.cols-5 {
+  grid-column: span 5;
+}
+.cols-6 {
+  grid-column: span 6;
+}
+.cols-7 {
+  grid-column: span 7;
+}
+.cols-8 {
+  grid-column: span 8;
+}
+.cols-9 {
+  grid-column: span 9;
+}
+.cols-10 {
+  grid-column: span 10;
+}
+.cols-12 {
+  grid-column: span 12;
+}
+@media screen and (max-width: 450px) {
+  .cols-2,
+  .cols-4,
+  .cols-6,
+  .cols-8,
+  .cols-10,
+  .cols-12 {
+    grid-column: span 12;
+  }
+}
