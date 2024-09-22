@@ -52,13 +52,7 @@ article > figure {
   position: absolute;
   fill: var(--light-text-main);
   transition: 0.1s transform cubic-bezier(0.25, 0, 0, 0.25);
-}
-.eyes-wrapper {
-  padding: 0 6vmax;
-}
-.intro-container {
-  align-content: end;
-}
+} 
 .illustration {
   overflow: hidden;
   aspect-ratio: auto;

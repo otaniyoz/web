@@ -3,7 +3,7 @@
 @import url('variables.css');
 
 :root {
-  --background-main: #c7c1ce; 
+  --background-main: #c7c1ce;
 }
 
 @media screen and (max-width: 450px) {

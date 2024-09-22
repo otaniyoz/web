@@ -12,8 +12,8 @@
   --font-size-xlarge: clamp(2.5rem, 10vw + 1rem, 9rem);
   --font-size-large: clamp(2rem, 7.4vw + 1rem, 9rem);
   --font-size-xmedium: clamp(1.5rem, 5vw + 1rem, 8rem);
-  --font-size-medium: clamp(1rem, 3vw + 1rem, 6rem);
-  --font-size-xregular: clamp(0.95rem, 3vw + 1rem, 4rem);
-  --font-size-regular: clamp(0.85rem, 2vmax, 2rem);
+  --font-size-medium: clamp(1rem, 3vmax + 1rem, 6rem);
+  --font-size-xregular: clamp(0.95rem, 2vmax + 1rem, 4rem);
+  --font-size-regular: clamp(0.85rem, 1.75vmax, 2rem);
   --font-size-small: clamp(0.6rem, 1vmin + 0.6rem, 2rem);
 }

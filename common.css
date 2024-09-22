@@ -12,11 +12,19 @@ figure {
   margin: 0;
   padding: 0;
 }
+p,
+h1,
+h2,
+h3,
+.narrow {
+  max-width: 768px;
+}
 body {
+  min-height: 100vh;
   padding: 1vmin 4vw;
   padding-bottom: 2vmax;
-  color: var(--text-main);
   font-family: "IBM Plex Sans";
+  color: var(--light-text-main);
   font-size: var(--font-size-small);
   background: var(--background-main);
 }
@@ -40,8 +48,9 @@ p {
   font-size: var(--font-size-regular);
 }
 h2 {
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.15em;
+  margin-left: -0.075em;
   font-size: var(--font-size-medium);
 }
 nav {
@@ -68,6 +77,7 @@ main {
 figure {
   display: grid;
   gap: 1vmin 1vmax;
+  margin-inline: auto;
   margin-bottom: 2vmax;
 }
 .two-cols {
@@ -79,14 +89,11 @@ figure {
 .list-item,
 .project-caption,
 .illustration-caption {
-  font-family: inherit;
+  font-family: "IBM Plex Sans";
   font-size: var(--font-size-small);
 }
 .list-item {
   margin-left: calc(100% / 12);
-}
-.illustration-caption {
-  color: var(--text-secondary);
 }
 .cols-2 {
   grid-column: span 2;
