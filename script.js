@@ -32,4 +32,19 @@ window.onload = () => {
   const scrollRotated = document.getElementsByClassName('scroll-rotated');
   window.addEventListener('scroll', animateScroll);
   eyes.addEventListener('mousemove', animateEyes);
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const lazyImage = entry.target;
+        lazyImage.src = `${lazyImage.dataset.src}`;
+        io.unobserve(lazyImage);
+      }
+    });
+  }, {root: null, threshold: 0.01});
+
+  const lazyImages = document.querySelectorAll('.lazy');
+  for (const lazyImage of lazyImages) {
+    io.observe(lazyImage);
+  }
 };

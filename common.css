@@ -65,8 +65,9 @@ nav > a {
 img,
 video {
   width: 100%;
+  min-width: 25%;
   object-fit: cover;
-  aspect-ratio: auto;
+  aspect-ratio: 1 / 1 auto;
 }
 main {
   display: grid;
