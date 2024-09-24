@@ -27,12 +27,42 @@ window.onload = () => {
     insides[1].style.transform = `translate(${dx}px, ${dy}px)`;
   }
 
+  function resize() {
+    drawBellyCover();
+  }
+
+  function drawBellyCover() {
+    const distance = 17;
+    const threshold = 27;
+    const scale = bellyCanvas.parentNode.offsetWidth / bellyPlaceholder.width;
+    bellyCanvas.width = scale * bellyPlaceholder.width;
+    bellyCanvas.height = scale * bellyPlaceholder.height;
+    bellyCtx.drawImage(bellyPlaceholder, 0, 0, bellyCanvas.width, bellyCanvas.height);
+    const data = bellyCtx.getImageData(0, 0, bellyCanvas.width, bellyCanvas.height).data;
+    bellyCtx.clearRect(0, 0, bellyCanvas.width, bellyCanvas.height);
+    bellyCtx.strokeStyle = 'rgba(248, 248, 248, 0.2)';
+    for (let i = 0; i < bellyCanvas.width; i++) {
+      for (let j = 0; j < bellyCanvas.height; j++) {
+        if (data[4.0 * (i + j * bellyCanvas.width)] > threshold) {
+          const x = i - (distance * (2 * Math.random() - 1)) | 0;
+          const y = j - (distance * (2 * Math.random() - 1)) | 0;
+          if (data[4.0 * (x + y * bellyCanvas.width)] > threshold || Math.random() < threshold / 100) {
+            bellyCtx.beginPath();
+            bellyCtx.moveTo(i, j);
+            bellyCtx.lineTo(x, y);
+            bellyCtx.stroke();
+          }
+        }
+      }
+    }
+  }
+
   let scrolling = false;
   const eyes = document.getElementById('eyes');
   const scrollRotated = document.getElementsByClassName('scroll-rotated');
-  window.addEventListener('scroll', animateScroll);
-  eyes.addEventListener('mousemove', animateEyes);
-
+  const bellyPlaceholder = document.getElementById('belly-canvas-placeholder');
+  const bellyCanvas = document.getElementById('belly-canvas');
+  const bellyCtx = bellyCanvas.getContext('2d', { alpha: 'false' });
   const io = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -47,4 +77,8 @@ window.onload = () => {
   for (const lazyImage of lazyImages) {
     io.observe(lazyImage);
   }
+  window.addEventListener('scroll', animateScroll);
+  window.addEventListener('resize', resize);
+  eyes.addEventListener('mousemove', animateEyes);
+  drawBellyCover();
 };

@@ -12,6 +12,20 @@
   }
 }
 
+#belly-canvas,
+#belly-canvas-placeholder {
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+  background-color: #111111;
+}
+.canvas-wrapper {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+}
+canvas {
+  z-index: 12;
+}
 body {
   color: light-dark(var(--light-text-main), var(--dark-text-main));
   background: light-dark(var(--light-background-main), var(--dark-background-main));
@@ -22,8 +36,7 @@ body {
 .suriken circle {
   fill: light-dark(var(--light-background-main), var(--dark-background-main));
 }
-a:hover > img,
-a:hover > video {
+a:hover {
   filter: brightness(0.75);
   transition: 0.1s transform cubic-bezier(0.25, 0, 0, 0.25);
 }
