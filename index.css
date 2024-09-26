@@ -16,7 +16,7 @@
 #belly-canvas-placeholder {
   grid-row: 1 / 1;
   grid-column: 1 / 1;
-  background-color: #111111;
+  background: light-dark(var(--light-background-main), var(--dark-background-main));
 }
 .canvas-wrapper {
   display: grid;

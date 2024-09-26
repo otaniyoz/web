@@ -40,8 +40,9 @@ window.onload = () => {
     bellyCtx.drawImage(bellyPlaceholder, 0, 0, bellyCanvas.width, bellyCanvas.height);
     const data = bellyCtx.getImageData(0, 0, bellyCanvas.width, bellyCanvas.height).data;
     bellyCtx.clearRect(0, 0, bellyCanvas.width, bellyCanvas.height);
-    bellyCtx.strokeStyle = 'rgba(248, 248, 248, 0.2)';
+    bellyCtx.strokeStyle = window.getComputedStyle(document.body).color;
     for (let i = 0; i < bellyCanvas.width; i++) {
+      bellyCtx.globalAlpha = 0.25;
       for (let j = 0; j < bellyCanvas.height; j++) {
         if (data[4.0 * (i + j * bellyCanvas.width)] > threshold) {
           const x = i - (distance * (2 * Math.random() - 1)) | 0;
@@ -57,12 +58,11 @@ window.onload = () => {
     }
   }
 
-  let scrolling = false;
   const eyes = document.getElementById('eyes');
   const scrollRotated = document.getElementsByClassName('scroll-rotated');
   const bellyPlaceholder = document.getElementById('belly-canvas-placeholder');
   const bellyCanvas = document.getElementById('belly-canvas');
-  const bellyCtx = bellyCanvas.getContext('2d', { alpha: 'false' });
+  const bellyCtx = bellyCanvas.getContext('2d', { alpha: true, willReadFrequently: true });
   const io = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
