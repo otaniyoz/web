@@ -53,6 +53,13 @@ h2 {
   margin-left: -0.075em;
   font-size: var(--font-size-medium);
 }
+h3 {
+  font-weight: 700;
+  line-height: 1.15em;
+  margin-left: -0.05em;
+  margin-bottom: 0.5em;
+  font-size: var(--font-size-xregular);
+}
 nav {
   margin-bottom: 4vmax;
 }
@@ -66,8 +73,13 @@ img,
 video {
   width: 100%;
   min-width: 25%;
+  max-height: 100%;
   object-fit: cover;
   aspect-ratio: 1 / 1 auto;
+}
+.project > img,
+.project > a > img {
+  max-height: 512px;
 }
 main {
   display: grid;
