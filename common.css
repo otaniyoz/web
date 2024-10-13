@@ -27,8 +27,11 @@ body {
   color: var(--light-text-main);
   font-size: var(--font-size-small);
   background: var(--background-main);
+  hanging-punctuation: first allow-end last;
 }
 a {
+  --text-secondary: #a1a1a145;
+
   color: inherit;
   transition: 0.65s;
   text-underline-offset: 0.2em;
@@ -42,8 +45,8 @@ a:hover {
 p {
   margin-block: 0;
   min-height: 0.9em;
-  line-height: 1.25em;
-  margin-bottom: 1vmax;
+  line-height: 1.15em;
+  margin-bottom: 1.15em;
   font-family: "IBM Plex Serif";
   font-size: var(--font-size-regular);
 }
@@ -77,14 +80,10 @@ video {
   object-fit: cover;
   aspect-ratio: 1 / 1 auto;
 }
-.project > img,
-.project > a > img {
-  max-height: 512px;
-}
 main {
   display: grid;
   gap: 2vmax 1vmax;
-  margin-bottom: 8vmax;
+  margin-bottom: 0 auto 8vmax;
   grid-template-columns: repeat(12, 1fr);
 }
 figure {
@@ -92,6 +91,9 @@ figure {
   gap: 1vmin 1vmax;
   margin-inline: auto;
   margin-bottom: 2vmax;
+}
+.secondary {
+  color: var(--text-secondary);
 }
 .two-cols {
   grid-template-columns: repeat(2, 1fr);
@@ -140,9 +142,11 @@ figure {
 }
 @media screen and (max-width: 450px) {
   .cols-2,
+  .cols-3,
   .cols-4,
   .cols-6,
   .cols-8,
+  .cols-9,
   .cols-10,
   .cols-12 {
     grid-column: span 12;

@@ -31,10 +31,19 @@ window.onload = () => {
     drawBellyCover();
   }
 
+  function scaleCanvas(canvas, context, width, height) {
+    const ratio = window.devicePixelRatio || 1;
+    canvas.width = width * ratio;
+    canvas.height = height * ratio;
+    canvas.style.width = width + 'px';
+    canvas.style.height = height + 'px';
+    context.scale(ratio, ratio)
+  }
+
   function drawBellyCover() {
-    const distance = 17;
     const threshold = 27;
     const scale = bellyCanvas.parentNode.offsetWidth / bellyPlaceholder.width;
+    scaleCanvas(bellyCanvas, bellyCtx, bellyCanvas.parentNode.offsetWidth, bellyCanvas.parentNode.offsetWidth);
     bellyCanvas.width = scale * bellyPlaceholder.width;
     bellyCanvas.height = scale * bellyPlaceholder.height;
     bellyCtx.drawImage(bellyPlaceholder, 0, 0, bellyCanvas.width, bellyCanvas.height);
@@ -43,6 +52,7 @@ window.onload = () => {
     bellyCtx.strokeStyle = window.getComputedStyle(document.body).color;
     for (let i = 0; i < bellyCanvas.width; i++) {
       bellyCtx.globalAlpha = 0.25;
+      const distance = 17 * Math.random() + 1;
       for (let j = 0; j < bellyCanvas.height; j++) {
         if (data[4.0 * (i + j * bellyCanvas.width)] > threshold) {
           const x = i - (distance * (2 * Math.random() - 1)) | 0;
@@ -58,7 +68,7 @@ window.onload = () => {
     }
   }
 
-  const eyes = document.getElementById('eyes');
+  // const eyes = document.getElementById('eyes');
   const scrollRotated = document.getElementsByClassName('scroll-rotated');
   const bellyPlaceholder = document.getElementById('belly-canvas-placeholder');
   const bellyCanvas = document.getElementById('belly-canvas');
@@ -79,6 +89,6 @@ window.onload = () => {
   }
   window.addEventListener('scroll', animateScroll);
   window.addEventListener('resize', resize);
-  eyes.addEventListener('mousemove', animateEyes);
+  // eyes.addEventListener('mousemove', animateEyes);
   drawBellyCover();
 };

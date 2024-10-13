@@ -16,6 +16,7 @@
   <header>
     <nav class="main-navigation">
       <a href="/web">Web-home of Otaniyoz</a>
+      <a href="notes.html">Notes</a>
     </nav>
   </header>
   <main class="alaska">
@@ -50,19 +51,22 @@
       <p>The main page consists of blocks, each with a clear function. The blocks contain cards with integration methods, features, or reviews. Whenever possible, the cards provide comprehensive information on the topic, otherwise they lead to such information.</p>
       <p>To convey care for the user, banners and cards with offerings of help are scattered throughout the page:</p> 
       <figure class="three-cols narrow">
-        <img class="cols-1" src="static/exa-redesign/promo.png" alt="Redesigning Exa's website" />
-        <img class="cols-1" src="static/exa-redesign/banner.png" alt="Redesigning Exa's website" />
-        <img class="cols-1" src="static/exa-redesign/chat.png" alt="Redesigning Exa's website" />
+        <img class="cols-1" src="static/exa-redesign/help-card.png" alt="Redesigning Exa's website" />
+        <img class="cols-1" src="static/exa-redesign/challenge-card.png" alt="Redesigning Exa's website" />
+        <img class="cols-1" src="static/exa-redesign/questions-card.png" alt="Redesigning Exa's website" />
       </figure>
       <p>Website adapts nicely to small screens:</p>
-      <figure class="four-cols narrow">
-        <img class="cols-1" src="static/exa-redesign/use-cases-mobile.jpg" alt="Redesigning Exa's website" />
-        <img class="cols-1" src="static/exa-redesign/features-mobile.jpg" alt="Redesigning Exa's website" />
-        <img class="cols-1" src="static/exa-redesign/reviews-mobile.jpg" alt="Redesigning Exa's website" />
-        <img class="cols-1" src="static/exa-redesign/footer-mobile.jpg" alt="Redesigning Exa's website" />
-      </figure>
+      <div class="scrollable-gallery-wrapper">
+        <div class="scrollable-gallery-curtain"></div>
+        <figure class="scrollable-gallery">
+          <img class="cols-1" src="static/exa-redesign/use-cases-mobile.jpg" alt="Redesigning Exa's website" />
+          <img class="cols-1" src="static/exa-redesign/features-mobile.jpg" alt="Redesigning Exa's website" />
+          <img class="cols-1" src="static/exa-redesign/reviews-mobile.jpg" alt="Redesigning Exa's website" />
+          <img class="cols-1" src="static/exa-redesign/footer-mobile.jpg" alt="Redesigning Exa's website" />
+        </figure>
+      </div>
       <p>A combination of illustrations and icons is used to accompany text on the page.</p>
-      <p>While the whole page was made with vanilla HTML and CSS, the illustrations were made and animated with Blender and Three.js. As such, to account for disabled Javascript or reduced animation, there are static placeholders:</p> 
+      <p>I sketched out the overall direction in Figma, then went to design the whole thing in code as it is the best way to design webpages. While the whole page was made with vanilla HTML and CSS, the illustrations were made and animated with Blender and Three.js. As such, to account for disabled Javascript or reduced animation, there are static placeholders:</p> 
       <figure class="three-cols narrow">
         <img class="cols-1" src="static/exa-redesign/pillar.png" alt="Redesigning Exa's website" />
         <img class="cols-1" src="static/exa-redesign/rag.png" alt="Redesigning Exa's website" />
@@ -78,7 +82,7 @@
       </figure>
       <p>Similar to the pillar, strings are 3d so that they can animated in code. Three.js, for instance, natively supports this sort of objects without the need for Blender meshes.</p>
       <p>Icons:</p>
-      <figure class="three-cols icons narrow">
+      <figure class="icons-container icons narrow">
         <img src="static/exa-redesign/search.png" alt="Redesigning Exa's website" />
         <img src="static/exa-redesign/api.png" alt="Redesigning Exa's website" />
         <img src="static/exa-redesign/sources.png" alt="Redesigning Exa's website" />

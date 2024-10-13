@@ -73,9 +73,6 @@ article > figure {
   z-index: -12;
   position: relative;
 }
-a.secondary {
-  color: var(--text-secondary);
-}
 .pome-title,
 .note-title {
   line-height: 1.15em;
