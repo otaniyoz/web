@@ -30,34 +30,30 @@ window.onload = () => {
   function resize() {
     drawBellyCover();
   }
-
-  function scaleCanvas(canvas, context, width, height) {
-    const ratio = window.devicePixelRatio || 1;
-    canvas.width = width * ratio;
-    canvas.height = height * ratio;
-    canvas.style.width = width + 'px';
-    canvas.style.height = height + 'px';
-    context.scale(ratio, ratio)
-  }
-
   function drawBellyCover() {
     const threshold = 27;
-    const scale = bellyCanvas.parentNode.offsetWidth / bellyPlaceholder.width;
-    scaleCanvas(bellyCanvas, bellyCtx, bellyCanvas.parentNode.offsetWidth, bellyCanvas.parentNode.offsetWidth);
-    bellyCanvas.width = scale * bellyPlaceholder.width;
-    bellyCanvas.height = scale * bellyPlaceholder.height;
+    const rect = bellyPlaceholder.getBoundingClientRect();
+    const ratio = window.devicePixelRatio || 2;
+    
+    bellyCanvas.width = rect.width * ratio;
+    bellyCanvas.height = rect.height * ratio;
+    bellyCanvas.style.width = rect.width + 'px';
+    bellyCanvas.style.height = rect.height + 'px';
+    bellyCtx.imageSmoothingEnabled = false;
+    // bellyCtx.scale(ratio, ratio);
+
     bellyCtx.drawImage(bellyPlaceholder, 0, 0, bellyCanvas.width, bellyCanvas.height);
     const data = bellyCtx.getImageData(0, 0, bellyCanvas.width, bellyCanvas.height).data;
     bellyCtx.clearRect(0, 0, bellyCanvas.width, bellyCanvas.height);
     bellyCtx.strokeStyle = window.getComputedStyle(document.body).color;
     for (let i = 0; i < bellyCanvas.width; i++) {
       bellyCtx.globalAlpha = 0.25;
-      const distance = 17 * Math.random() + 1;
+      const distance = ratio * threshold * Math.random() + 1;
       for (let j = 0; j < bellyCanvas.height; j++) {
-        if (data[4.0 * (i + j * bellyCanvas.width)] > threshold) {
+        if (data[4 * (i + j * bellyCanvas.width)] > threshold) {
           const x = i - (distance * (2 * Math.random() - 1)) | 0;
           const y = j - (distance * (2 * Math.random() - 1)) | 0;
-          if (data[4.0 * (x + y * bellyCanvas.width)] > threshold || Math.random() < threshold / 100) {
+          if (data[4 * (x + y * bellyCanvas.width)] > threshold || Math.random() < threshold / 100) {
             bellyCtx.beginPath();
             bellyCtx.moveTo(i, j);
             bellyCtx.lineTo(x, y);
