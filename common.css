@@ -4,7 +4,6 @@ html {
 }
 a,
 p,
-h1,
 h2,
 h3,
 body,
@@ -13,7 +12,6 @@ figure {
   padding: 0;
 }
 p,
-h1,
 h2,
 h3,
 .narrow {
@@ -30,8 +28,8 @@ body {
   hanging-punctuation: first allow-end last;
 }
 a {
-  --text-secondary: #a1a1a145;
-
+  --text-secondary: #a1a1a180;
+  
   color: inherit;
   transition: 0.65s;
   text-underline-offset: 0.2em;
@@ -50,15 +48,16 @@ p {
   font-family: "IBM Plex Serif";
   font-size: var(--font-size-regular);
 }
-h2 {
+h2,
+h3 {
   font-weight: 700;
   line-height: 1.15em;
+}
+h2 {
   margin-left: -0.075em;
   font-size: var(--font-size-medium);
 }
 h3 {
-  font-weight: 700;
-  line-height: 1.15em;
   margin-left: -0.05em;
   margin-bottom: 0.5em;
   font-size: var(--font-size-xregular);
