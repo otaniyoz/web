@@ -91,6 +91,9 @@ figure {
   margin-inline: auto;
   margin-bottom: 2vmax;
 }
+footer {
+  margin-top: 10vmax;
+}
 .secondary {
   color: var(--text-secondary);
 }

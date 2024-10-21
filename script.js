@@ -69,20 +69,6 @@ window.onload = () => {
   const bellyPlaceholder = document.getElementById('belly-canvas-placeholder');
   const bellyCanvas = document.getElementById('belly-canvas');
   const bellyCtx = bellyCanvas.getContext('2d', { alpha: true, willReadFrequently: true });
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const lazyImage = entry.target;
-        lazyImage.src = `${lazyImage.dataset.src}`;
-        io.unobserve(lazyImage);
-      }
-    });
-  }, {root: null, threshold: 0.01});
-
-  const lazyImages = document.querySelectorAll('.lazy');
-  for (const lazyImage of lazyImages) {
-    io.observe(lazyImage);
-  }
   window.addEventListener('scroll', animateScroll);
   window.addEventListener('resize', resize);
   // eyes.addEventListener('mousemove', animateEyes);
