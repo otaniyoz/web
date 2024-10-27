@@ -1,18 +1,18 @@
 @font-face {
-  font-family: 'IBM Plex Serif';
+  font-family: 'Merriweather';
   font-weight: 400;
   font-display: swap;
-  src: url('static/fonts/IBMPlexSerif-Regular.woff') format('woff');
+  src: url('static/fonts/merriweather-regular.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'IBM Plex Sans';
+  font-family: 'Inter';
   font-weight: 700;
   font-display: swap;
-  src: url('static/fonts/IBMPlexSans-Bold.woff') format('woff');
+  src: url('static/fonts/InterDisplay-Bold.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'IBM Plex Sans';
+  font-family: 'Inter';
   font-weight: 400;
   font-display: swap;
-  src: url('static/fonts/IBMPlexSans-Regular.woff') format('woff');
+  src: url('static/fonts/InterDisplay-Regular.woff2') format('woff2');
 }

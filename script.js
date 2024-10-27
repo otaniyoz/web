@@ -27,11 +27,11 @@ window.onload = () => {
     insides[1].style.transform = `translate(${dx}px, ${dy}px)`;
   }
 
-  function resize() {
-    drawBellyCover();
-  }
   function drawBellyCover() {
     const threshold = 27;
+    const bellyPlaceholder = document.getElementById('belly-canvas-placeholder');
+    const bellyCanvas = document.getElementById('belly-canvas');
+    const bellyCtx = bellyCanvas.getContext('2d', { alpha: true, willReadFrequently: true });
     const rect = bellyPlaceholder.getBoundingClientRect();
     const ratio = window.devicePixelRatio || 2;
     
@@ -40,7 +40,6 @@ window.onload = () => {
     bellyCanvas.style.width = rect.width + 'px';
     bellyCanvas.style.height = rect.height + 'px';
     bellyCtx.imageSmoothingEnabled = false;
-    // bellyCtx.scale(ratio, ratio);
 
     bellyCtx.drawImage(bellyPlaceholder, 0, 0, bellyCanvas.width, bellyCanvas.height);
     const data = bellyCtx.getImageData(0, 0, bellyCanvas.width, bellyCanvas.height).data;
@@ -64,13 +63,8 @@ window.onload = () => {
     }
   }
 
-  // const eyes = document.getElementById('eyes');
   const scrollRotated = document.getElementsByClassName('scroll-rotated');
-  const bellyPlaceholder = document.getElementById('belly-canvas-placeholder');
-  const bellyCanvas = document.getElementById('belly-canvas');
-  const bellyCtx = bellyCanvas.getContext('2d', { alpha: true, willReadFrequently: true });
   window.addEventListener('scroll', animateScroll);
-  window.addEventListener('resize', resize);
-  // eyes.addEventListener('mousemove', animateEyes);
+  window.addEventListener('resize', drawBellyCover);
   drawBellyCover();
 };

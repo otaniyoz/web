@@ -12,8 +12,8 @@
   }
 }
 
-#belly-canvas,
-#belly-canvas-placeholder {
+.canvas,
+.canvas-placeholder {
   grid-row: 1 / 1;
   grid-column: 1 / 1;
   background: light-dark(var(--light-background-main), var(--dark-background-main));
@@ -82,7 +82,7 @@ article > figure {
 }
 .pome > p,
 .note > p {
-  font-family: "IBM Plex Serif";
+  font-family: 'Merriweather';
   font-size: var(--font-size-regular);
 }
 .illustration-caption {

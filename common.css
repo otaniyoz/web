@@ -21,11 +21,10 @@ body {
   min-height: 100vh;
   padding: 1vmin 4vw;
   padding-bottom: 2vmax;
-  font-family: "IBM Plex Sans";
+  font-family: 'Inter';
   color: var(--light-text-main);
   font-size: var(--font-size-small);
   background: var(--background-main);
-  hanging-punctuation: first allow-end last;
 }
 a {
   --text-secondary: #a1a1a180;
@@ -43,23 +42,24 @@ a:hover {
 p {
   margin-block: 0;
   min-height: 0.9em;
-  line-height: 1.15em;
+  line-height: 1.25em;
   margin-bottom: 1.15em;
-  font-family: "IBM Plex Serif";
+  font-family: 'Merriweather';
   font-size: var(--font-size-regular);
 }
 h2,
 h3 {
   font-weight: 700;
-  line-height: 1.15em;
+  line-height: 0.9em;
 }
 h2 {
-  margin-left: -0.075em;
+  margin-left: -0.05em;
+  margin-bottom: 0.25em;
   font-size: var(--font-size-medium);
 }
 h3 {
-  margin-left: -0.05em;
-  margin-bottom: 0.5em;
+  margin-left: -0.025em;
+  margin-bottom: 0.25em;
   font-size: var(--font-size-xregular);
 }
 nav {
@@ -106,7 +106,7 @@ footer {
 .list-item,
 .project-caption,
 .illustration-caption {
-  font-family: "IBM Plex Sans";
+  font-family: 'Inter';
   font-size: var(--font-size-small);
 }
 .list-item {
