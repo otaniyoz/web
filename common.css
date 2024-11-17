@@ -53,7 +53,7 @@ h3 {
   line-height: 0.95em;
 }
 h2 {
-  margin-left: -0.05em;
+  margin-left: -0.025em;
   margin-bottom: 0.25em;
   font-size: var(--font-size-medium);
 }
@@ -82,7 +82,7 @@ video {
 main {
   display: grid;
   gap: 2vmax 1vmax;
-  margin-bottom: 0 auto 8vmax;
+  margin: 0 auto 8vmax;
   grid-template-columns: repeat(12, 1fr);
 }
 figure {
@@ -102,6 +102,9 @@ footer {
 }
 .three-cols {
   grid-template-columns: repeat(3, 1fr);
+}
+.four-cols {
+  grid-template-columns: repeat(4, 1fr);
 }
 .list-item,
 .project-caption,
