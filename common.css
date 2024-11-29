@@ -89,7 +89,7 @@ figure {
   display: grid;
   gap: 1vmin 1vmax;
   margin-inline: auto;
-  margin-bottom: 2vmax;
+  margin-bottom: 4vmax;
 }
 footer {
   margin-top: 10vmax;
