@@ -27,8 +27,6 @@ body {
   background: var(--background-main);
 }
 a {
-  --text-secondary: #a1a1a180;
-  
   color: inherit;
   transition: 0.65s;
   text-underline-offset: 0.2em;
