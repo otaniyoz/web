@@ -1,0 +1,62 @@
+@import url('fonts.css');
+@import url('common.css');
+@import url('variables.css');
+
+:root {
+  --background-main: #254bf1;
+}
+
+body {
+  color: #ffffff;
+}
+figure {
+  gap: 1vmax;
+}
+
+.illustration-caption {
+  margin-bottom: 0;
+}
+
+.cols-1 {
+  grid-column: span 1;
+}
+
+.icons-container {
+  grid-template-columns: repeat(9, 1fr);
+}
+.desktop-full-screenshot {
+  object-position: top;
+  aspect-ratio: 1024 / 6280;
+  max-height: calc(100% * (1024px / 100%));
+}
+.scrollable-gallery-wrapper {
+  position: relative;
+}
+.scrollable-gallery-curtain {
+  background: linear-gradient(270deg, #254bf1, transparent);
+  position: absolute;
+  height: 100%;
+  width: 32px;
+  right: 0;
+}
+.scrollable-gallery {
+  display: flex;
+  overflow-x: auto;
+  flex-flow: row nowrap;
+  scrollbar-width: none;
+}
+.scrollable-gallery > img {
+  flex: 1 0 220px;
+}
+
+@media screen and (max-width: 450px) {
+  .icons-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .cols-1 {
+    grid-column: span 12;
+  }
+  .icons {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
