@@ -1,70 +1,41 @@
 'use strict';
 window.onload = () => {
-  // checks if at least some part of the element is visible. THIS IS NOT EXHAUSTIVE OKAY
-  function isInView(element) {
-    const rect = element.getBoundingClientRect();
-    return (rect.top >= 0 || rect.bottom >= 0);
-  }
-
-  function animateScroll() {
-    for (let element of scrollRotated) {
-      if (isInView(element)) {
-        element.style.transform = `rotate(${window.pageYOffset}deg)`;
-      }
-    }
-  }
-
-  function animateEyes(event) {
-    const pointerY = event.offsetY;
-    const rect = eyes.getBoundingClientRect();
-    const pointerX = event.clientX - eyes.offsetLeft;
-    const insides = document.getElementsByClassName('inside');
-    const outsides = document.getElementsByClassName('outside');
-    const rect1 = outsides[0].getBoundingClientRect();
-    const dy = (rect1.height / rect.height) * pointerY - rect1.height / 2;
-    const dx = (rect1.width / rect.width) * pointerX - rect1.width / 2;
-    insides[0].style.transform = `translate(${dx}px, ${dy}px)`;
-    insides[1].style.transform = `translate(${dx}px, ${dy}px)`;
-  }
-
   function drawBellyCover() {
     const threshold = 27;
-    const bellyPlaceholder = document.getElementById('belly-canvas-placeholder');
-    const bellyCanvas = document.getElementById('belly-canvas');
-    const bellyCtx = bellyCanvas.getContext('2d', { alpha: true, willReadFrequently: true });
-    const rect = bellyPlaceholder.getBoundingClientRect();
+    const canvas = document.getElementById('belly-canvas');
+    const placeholder = document.getElementById('belly-canvas-placeholder');
+    const ctx = canvas.getContext('2d', { alpha: true, willReadFrequently: true });
+    const parentWidth = canvas.parentElement.clientWidth;
+    const parentHeight = canvas.parentElement.clientHeight;
+    const length = parentWidth < parentHeight ? parentWidth : parentHeight;
     const ratio = window.devicePixelRatio || 2;
     
-    bellyCanvas.width = rect.width * ratio;
-    bellyCanvas.height = rect.height * ratio;
-    bellyCanvas.style.width = rect.width + 'px';
-    bellyCanvas.style.height = rect.height + 'px';
-    bellyCtx.imageSmoothingEnabled = false;
+    canvas.height = canvas.width = length * ratio;
+    canvas.style.height = canvas.style.width = canvas.height + 'px';
 
-    bellyCtx.drawImage(bellyPlaceholder, 0, 0, bellyCanvas.width, bellyCanvas.height);
-    const data = bellyCtx.getImageData(0, 0, bellyCanvas.width, bellyCanvas.height).data;
-    bellyCtx.clearRect(0, 0, bellyCanvas.width, bellyCanvas.height);
-    bellyCtx.strokeStyle = window.getComputedStyle(document.body).color;
-    for (let i = 0; i < bellyCanvas.width; i++) {
-      bellyCtx.globalAlpha = 0.25;
-      const distance = ratio * threshold * Math.random() + 1;
-      for (let j = 0; j < bellyCanvas.height; j++) {
-        if (data[4 * (i + j * bellyCanvas.width)] > threshold) {
+    ctx.drawImage(placeholder, 0, 0, canvas.width, canvas.height);
+    const data = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.strokeStyle = window.getComputedStyle(document.body).color;
+    for (let i = 0; i < canvas.width; i++) {
+      ctx.globalAlpha = 0.25;
+      const distance = 0.5 * ratio * threshold * Math.random() + 1;
+      for (let j = 0; j < canvas.height; j++) {
+        if (data[4 * (i + j * canvas.width)] > threshold) {
           const x = i - (distance * (2 * Math.random() - 1)) | 0;
           const y = j - (distance * (2 * Math.random() - 1)) | 0;
-          if (data[4 * (x + y * bellyCanvas.width)] > threshold || Math.random() < threshold / 100) {
-            bellyCtx.beginPath();
-            bellyCtx.moveTo(i, j);
-            bellyCtx.lineTo(x, y);
-            bellyCtx.stroke();
+          if (data[4 * (x + y * canvas.width)] > threshold || Math.random() < threshold / 100) {
+            ctx.beginPath();
+            ctx.moveTo(i, j);
+            ctx.lineTo(x, y);
+            ctx.stroke();
           }
         }
       }
     }
   }
 
-  const scrollRotated = document.getElementsByClassName('scroll-rotated');
-  window.addEventListener('scroll', animateScroll);
+
   window.addEventListener('resize', drawBellyCover);
   drawBellyCover();
 };
