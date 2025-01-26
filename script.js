@@ -11,7 +11,7 @@ window.onload = () => {
     const ratio = window.devicePixelRatio || 2;
     
     canvas.height = canvas.width = length * ratio;
-    canvas.style.height = canvas.style.width = canvas.height + 'px';
+    canvas.style.height = canvas.style.width = length + 'px';
 
     ctx.drawImage(placeholder, 0, 0, canvas.width, canvas.height);
     const data = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
