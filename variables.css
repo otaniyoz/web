@@ -1,13 +1,10 @@
 :root {
-  --light-text-main: #151516;
+  --text-main: #151516;
   --text-accent-main: #FB0001;
   --text-accent-secondary: #0172C3;
   --text-secondary: #808080;
-  --light-background-main: #ffffff; 
+  --background-main: #ffffff; 
   --background-secondary: #ffffffdd;
-
-  --dark-text-main: #ffffff; 
-  --dark-background-main: #151516; 
 
   --font-size-xlarge: clamp(2.5rem, 10vw + 1rem, 9rem);
   --font-size-large: clamp(2rem, 7.4vw + 1rem, 9rem);

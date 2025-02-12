@@ -2,20 +2,6 @@
 @import url('common.css');
 @import url('variables.css');
 
-:root {
-  --background-main: #fb0001;
-}
-
-body {
-  color: #000000;
-}
 figure {
   gap: 1vmax;
-}
-a {
-  --text-secondary: #000000;
-}
-a:hover {
-  --text-accent-main: #27a5ff;
-  text-decoration-color: var(--text-accent-main);
 }

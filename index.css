@@ -2,21 +2,11 @@
 @import url('common.css');
 @import url('variables.css');
 
-:root {
-  color-scheme: light dark;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-scheme: dark;
-  }
-}
-
 .canvas,
 .canvas-placeholder {
   grid-row: 1 / 1;
   grid-column: 1 / 1;
-  background: light-dark(var(--light-background-main), var(--dark-background-main));
+  background: var(--background-main);
 }
 .canvas-wrapper {
   display: grid;
@@ -29,14 +19,8 @@ canvas {
   z-index: 12;
 }
 body {
-  color: light-dark(var(--light-text-main), var(--dark-text-main));
-  background: light-dark(var(--light-background-main), var(--dark-background-main));
-}
-.suriken path {
-  fill: light-dark(var(--light-text-main), var(--dark-text-main));
-}
-.suriken circle {
-  fill: light-dark(var(--light-background-main), var(--dark-background-main));
+  color: var(--text-main);
+  background: var(--background-main);
 }
 a:hover {
   filter: brightness(0.75);
@@ -60,11 +44,11 @@ article > figure {
   align-items: baseline;
 }
 .dark-back {
-  background: var(--light-text-main);
+  background: var(--text-main);
 }
 .inside {
   position: absolute;
-  fill: var(--light-text-main);
+  fill: var(--text-main);
   transition: 0.1s transform cubic-bezier(0.25, 0, 0, 0.25);
 } 
 .illustration {
