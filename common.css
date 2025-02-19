@@ -72,10 +72,8 @@ nav > a {
 img,
 video {
   width: 100%;
-  min-width: 25%;
-  max-height: 100%;
+  position: relative;
   object-fit: cover;
-  aspect-ratio: 1 / 1 auto;
 }
 main {
   display: grid;
@@ -91,6 +89,10 @@ figure {
 }
 footer {
   margin-top: 10vmax;
+}
+.desktop-image-container {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
 }
 .secondary {
   color: var(--text-secondary);
