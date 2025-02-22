@@ -21,7 +21,7 @@ body {
   min-height: 100vh;
   padding: 1vmin 4vw;
   padding-bottom: 2vmax;
-  font-family: 'Inter';
+  font-family: 'Andika';
   color: var(--light-text-main);
   font-size: var(--font-size-small);
   background: var(--background-main);
@@ -108,7 +108,7 @@ footer {
 .list-item,
 .project-caption,
 .illustration-caption {
-  font-family: 'Inter';
+  font-family: 'Andika';
   font-size: var(--font-size-small);
 }
 .list-item {
