@@ -56,7 +56,6 @@ svg > .rotating {
 }
 .pome > p,
 .note > p {
-  font-family: 'Merriweather';
   font-size: var(--font-size-regular);
 }
 .illustration-caption {

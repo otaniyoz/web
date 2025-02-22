@@ -42,7 +42,6 @@ p {
   min-height: 0.9em;
   line-height: 1.25em;
   margin-bottom: 1.25em;
-  font-family: 'Merriweather';
   font-size: var(--font-size-regular);
 }
 h2,
