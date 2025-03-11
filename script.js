@@ -6,6 +6,8 @@ window.onload = () => {
   }
 
   function animateScroll() {
+    if (!scrolling.length && !scrollRotated.length) return;
+    
     const scale = 0.25;
     const windowPageYOffset = window.pageYOffset;
     for (let element of scrolling) {
@@ -21,5 +23,5 @@ window.onload = () => {
 
   const scrolling = document.getElementsByClassName('scrolling');
   const scrollRotated = document.getElementsByClassName('scroll-rotated');
-  window.addEventListener('scroll', animateScroll);
+  document.addEventListener('scroll', animateScroll);
 };

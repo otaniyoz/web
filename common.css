@@ -1,3 +1,7 @@
+:root {
+  --parallaxScrollHeight: 640px;
+}
+
 *,
 html {
   box-sizing: border-box;
@@ -89,9 +93,28 @@ figure {
 footer {
   margin-top: 10vmax;
 }
+.square {
+  aspect-ratio: 1 / 1;
+}
 .desktop-image-container {
   aspect-ratio: 16 / 10;
-  overflow: hidden;
+}
+.parallax {
+  display: grid;
+  overflow: clip;
+  grid-template-areas: 'stack';
+}
+.parallax > img {
+  will-change: transform;
+}
+.parallax > * {
+  grid-area: stack;
+  animation: parallax linear both;
+  animation-timeline: scroll();
+  animation-range: 0 var(--parallaxScrollHeight);
+}
+.murals-parallax {
+  --parallaxSpeed: -40;
 }
 .secondary {
   color: var(--text-secondary);
@@ -143,6 +166,11 @@ footer {
 }
 .cols-12 {
   grid-column: span 12;
+}
+@keyframes parallax {
+  to {
+    transform: translateY(calc(var(--parallaxSpeed) * 2px));
+  }
 }
 @media screen and (max-width: 450px) {
   .cols-2,
