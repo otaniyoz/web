@@ -8,7 +8,7 @@ window.onload = () => {
   function animateScroll() {
     if (!scrolling.length && !scrollRotated.length) return;
     
-    const scale = 0.25;
+    const scale = 0.2;
     const windowPageYOffset = window.pageYOffset;
     for (let element of scrolling) {
       const maxScroll = Math.min((element.height - element.parentElement.offsetHeight) / scale, element.height);
