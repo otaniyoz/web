@@ -1,6 +1,6 @@
-@import url('fonts.css');
-@import url('common.css');
-@import url('variables.css');
+@import url('styles/fonts.css');
+@import url('styles/common.css');
+@import url('styles/variables.css');
 
 body {
   color: var(--text-main);

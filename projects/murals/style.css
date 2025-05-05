@@ -1,0 +1,7 @@
+@import url('../../styles/fonts.css');
+@import url('../../styles/common.css');
+@import url('../../styles/variables.css');
+
+figure {
+  gap: 1vmax;
+}
