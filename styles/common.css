@@ -23,8 +23,7 @@ h3,
 }
 body {
   min-height: 100vh;
-  padding: 1vmin 8vw;
-  padding-bottom: 2vmax;
+  padding: 16px;
   font-family: 'Inter';
   color: var(--light-text-main);
   font-size: var(--font-size-small);
@@ -191,6 +190,7 @@ footer {
   .cols-2,
   .cols-3,
   .cols-4,
+  .cols-5,
   .cols-6,
   .cols-8,
   .cols-9,
