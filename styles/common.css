@@ -141,7 +141,7 @@ footer {
 .list-item,
 .project-caption,
 .illustration-caption {
-  font-family: 'Andika';
+  font-family: 'Inter';
   font-size: var(--font-size-small);
 }
 .list-item {

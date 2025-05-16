@@ -49,9 +49,6 @@ svg > .rotating {
   z-index: -12;
   position: relative;
 }
-.murals-parallax {
-  --parallaxSpeed: -40;
-}
 .pome-title,
 .note-title {
   line-height: 1.15em;
