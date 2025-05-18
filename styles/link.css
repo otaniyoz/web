@@ -1,0 +1,31 @@
+a {
+  color: inherit;
+  transition: 0.65s;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--text-secondary);
+}
+a:hover {
+  transition: 0;
+  text-decoration-color: var(--text-accent-main);
+}
+.external-link {
+  display: inline-block;
+  animation: rotate 1.2s ease-in-out 0.25s infinite;
+  animation-play-state: paused;
+}
+.external-link:after {
+  content: " ↗"
+}
+a:hover .external-link {
+  color: var(--text-accent-main);
+  animation-play-state: running;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

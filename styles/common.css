@@ -1,7 +1,3 @@
-:root {
-  --parallaxScrollHeight: 640px;
-}
-
 *,
 html {
   box-sizing: border-box;
@@ -28,17 +24,6 @@ body {
   color: var(--light-text-main);
   font-size: var(--font-size-small);
   background: var(--background-main);
-}
-a {
-  color: inherit;
-  transition: 0.65s;
-  text-underline-offset: 0.2em;
-  text-decoration-thickness: 1px;
-  text-decoration-color: var(--text-secondary);
-}
-a:hover {
-  transition: 0;
-  text-decoration-color: var(--text-accent-main);
 }
 p {
   margin-block: 0;
@@ -98,21 +83,7 @@ footer {
 }
 .desktop-image-container {
   aspect-ratio: 16 / 10;
-  overflow: hidden;
-}
-.parallax {
-  display: grid;
-  overflow: clip;
-  grid-template-areas: 'stack';
-}
-.parallax > img {
-  will-change: transform;
-}
-.parallax > * {
-  grid-area: stack;
-  animation: parallax linear both;
-  animation-timeline: scroll();
-  animation-range: 0 var(--parallaxScrollHeight);
+  contain: paint;
 }
 .secondary {
   color: var(--text-secondary);
@@ -177,12 +148,8 @@ footer {
 .cols-12 {
   grid-column: span 12;
 }
-@keyframes parallax {
-  to {
-    transform: translateY(calc(var(--parallaxSpeed) * 2px));
-  }
-}
-@media screen and (max-width: 450px) {
+
+@media screen and (max-width:  479px) {
   body {
     padding: 1vmin 4vw;
   }
@@ -196,5 +163,18 @@ footer {
   .cols-9,
   .cols-10 {
     grid-column: 1 / -1;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .cols-2,
+  .cols-3,
+  .cols-4,
+  .cols-5,
+  .cols-6,
+  .cols-8,
+  .cols-9,
+  .cols-10 {
+    grid-column: span 6;
   }
 }

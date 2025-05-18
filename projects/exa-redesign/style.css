@@ -1,5 +1,6 @@
 @import url('../../styles/fonts.css');
 @import url('../../styles/common.css');
+@import url('../../styles/link.css');
 @import url('../../styles/variables.css');
 
 :root {
@@ -48,7 +49,7 @@ figure {
   flex: 1 0 220px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   .icons-container {
     grid-template-columns: repeat(3, 1fr);
   }
