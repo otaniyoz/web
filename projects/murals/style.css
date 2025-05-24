@@ -1,7 +1,13 @@
 @import url('../../styles/fonts.css');
 @import url('../../styles/common.css');
+@import url('../../styles/link.css');
 @import url('../../styles/variables.css');
 
-figure {
-  gap: 1vmax;
+.content-container {
+  display: grid;
+  gap: 1vmin 1vmax;
+}
+
+.murals-screens {
+  height: fit-content;
 }

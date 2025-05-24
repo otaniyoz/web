@@ -3,7 +3,7 @@ a {
   transition: 0.65s;
   text-underline-offset: 0.2em;
   text-decoration-thickness: 1px;
-  text-decoration-color: var(--text-secondary);
+  text-decoration-color: inherit;
 }
 a:hover {
   transition: 0;
@@ -15,7 +15,7 @@ a:hover {
   animation-play-state: paused;
 }
 .external-link:after {
-  content: " ↗"
+  content: " ↗";
 }
 a:hover .external-link {
   color: var(--text-accent-main);

@@ -1,0 +1,42 @@
+@import url('../../styles/fonts.css');
+@import url('../../styles/common.css');
+@import url('../../styles/link.css');
+@import url('../../styles/variables.css');
+
+body {
+  --background-main: #005b98;
+  --light-text-main: #fff;
+}
+
+.scrolling-element {
+  will-change: translate;
+  animation: scroll-element 1s linear forwards;
+  animation-timeline: scroll();
+}
+
+.scrollable-gallery-wrapper {
+  position: relative;
+  contain: paint;
+}
+.scrollable-gallery {
+  display: flex;
+  overflow-x: visible;
+  flex-flow: row nowrap;
+  scrollbar-width: none;
+}
+.scrollable-gallery > * {
+  min-width: 25%;
+}
+
+.grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 1vmax;
+  z-index: 12;
+}
+
+@keyframes scroll-element {
+  0% { translate: 0; }
+  100% { translate: -350% 0; }
+}
