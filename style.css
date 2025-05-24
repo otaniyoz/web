@@ -56,5 +56,5 @@ svg > .rotating {
 
 .murals-cover {
   --parallaxSpeed: -40;
-  --parallaxDistance: 400px;
+  --parallaxDistance: 600px;
 }

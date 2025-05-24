@@ -160,6 +160,10 @@ footer {
   grid-column: span 12;
 }
 
+.device-frame {
+  fill: #d0d0d050;
+}
+
 @media screen and (max-width:  479px) {
   body {
     padding: 1vmin 4vw;

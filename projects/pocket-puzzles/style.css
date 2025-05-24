@@ -4,8 +4,8 @@
 @import url('../../styles/variables.css');
 
 body {
-  --background-main: #65D157;
-  --light-text-main: #fff;
+  --background-main: #f8a300;
+  --light-text-main: #111;
 }
 
 .content-container {
@@ -184,10 +184,6 @@ body {
 .eight-by-eight {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
-}
-
-.device-container {
-  fill: #d0d0d050;
 }
 
 @keyframes rotate-element {
