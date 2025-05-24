@@ -9,7 +9,6 @@ body {
 }
 
 .scrolling-element {
-  will-change: translate;
   animation: scroll-element 1s linear forwards;
   animation-timeline: scroll();
 }
@@ -37,6 +36,6 @@ body {
 }
 
 @keyframes scroll-element {
-  0% { translate: 0; }
-  100% { translate: -350% 0; }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-350%); }
 }

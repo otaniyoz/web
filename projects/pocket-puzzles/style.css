@@ -112,7 +112,6 @@ body {
 }
 
 .rotating-element {
-  will-change: rotate;
   transform-origin: center;
   animation: rotate-element 1s linear forwards;
   animation-timeline: scroll();
@@ -127,7 +126,6 @@ body {
 }
 
 .scrolling-element {
-  will-change: translate;
   animation: scroll-element 1s linear forwards;
   animation-timeline: scroll();
 }
@@ -147,7 +145,6 @@ body {
 }
 
 .fadeining-element {
-  will-change: opacity;
   animation: fadein-element 1s linear forwards;
   animation-timeline: view();
 }
@@ -194,13 +191,13 @@ body {
 }
 
 @keyframes rotate-element {
-  0% { rotate: 0deg; }
-  100% { rotate: calc(var(--rotation-speed, 1) * 360deg); }
+  0% { transform: rotateZ(0deg); }
+  100% { transform: rotateZ(calc(var(--rotation-speed, 1) * 360deg)); }
 }
 
 @keyframes scroll-element {
-  0% { translate: 0; }
-  100% { translate: -500% 0; }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-500%); }
 }
 
 @keyframes fadein-element {
