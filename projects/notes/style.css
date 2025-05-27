@@ -1,24 +1,5 @@
-@import url('../../styles/fonts.css');
-@import url('../../styles/common.css');
-@import url('../../styles/link.css');
 @import url('../../styles/variables.css');
-
-.heading-wrapper {
-  grid-column: span 12;
-}
-.heading-link {
-  display: inline-block;
-  margin-right: 1vmin;
-}
-.heading-links-wrapper {
-  grid-column: span 12;
-}
-.poem {
-  margin-bottom: 4vmax;
-}
-
-@media screen and (max-width: 450px) {
-  .cols-2 {
-    grid-column: span 2;
-  }
-}
+@import url('../../styles/fonts.css');
+@import url('../../styles/core.css');
+@import url('../../styles/link.css');
+@import url('../../styles/carousel.css');

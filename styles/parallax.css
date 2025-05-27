@@ -2,14 +2,15 @@
   position: relative;
   contain: paint;
 }
-.parallax-image {
-  animation: parallax linear both;
+
+.y-parallax-image {
+  animation: y-parallax-animation linear both;
   animation-timeline: scroll();
   animation-range: 0 var(--parallaxDistance, 1);
-  will-change: transform;
   position: fixed;
 }
-@keyframes parallax {
+
+@keyframes y-parallax-animation {
   to {
     transform: translateY(calc(var(--parallaxSpeed, 1) * 1.5px));
   }

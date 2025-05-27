@@ -1,0 +1,19 @@
+.z-rotation-scroll,
+.z-rotation-infinite {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: z-rotation-animation var(--rotation-duration, 1s) ease-in-out 0.2s forwards;
+}
+
+.z-rotation-scroll {
+  animation-timeline: scroll();
+}
+
+.z-rotation-infinite {
+  animation-iteration-count: infinite;
+}
+
+@keyframes z-rotation-animation {
+  0% { transform: rotateZ(0deg); }
+  100% { transform: rotateZ(calc(var(--rotation-speed, 1) * 360deg)); }
+}

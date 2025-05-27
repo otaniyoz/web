@@ -1,16 +1,16 @@
 :root {
-  --text-main: #151516;
-  --text-accent-main: #FB0001;
-  --text-accent-secondary: #0172C3;
-  --text-secondary: #808080;
-  --background-main: #ffffff; 
-  --background-secondary: #ffffffdd;
+  --text-main: rgb(1, 15, 25);
+  --text-secondary: rgb(150, 150, 150);
+  --accent-main: rgb(15, 145, 200);
+  --accent-secondary: rgb(225, 225, 0);
+  --background-main: rgb(250, 250, 250); 
+  --background-secondary: rgb(225, 225, 225);
 
-  --font-size-xlarge: clamp(2.5rem, 10vw + 1rem, 9rem);
-  --font-size-large: clamp(2rem, 7.4vw + 1rem, 9rem);
-  --font-size-xmedium: clamp(1.5rem, 5vw + 1rem, 8rem);
-  --font-size-medium: clamp(1rem, 3vmax + 1rem, 6rem);
-  --font-size-xregular: clamp(0.95rem, 2vmax + 1rem, 4rem);
-  --font-size-regular: clamp(0.85rem, 1.75vmax, 2rem);
-  --font-size-small: clamp(0.6rem, 1vmin + 0.6rem, 2rem);
+  --font-size-xlarge: clamp(3.5rem, 0.75rem + 5lvw, 4.5rem); 
+  --font-size-large: clamp(2.5rem, 0.75rem + 3lvw, 3.5rem); 
+  --font-size-medium: clamp(1.5rem, 0.75rem + 2lvw, 2.5rem); 
+  --font-size-regular: clamp(1.25rem, 0.5rem + 1lvw, 1.5rem); 
+  --font-size-small: 1rem;
+
+  --x-translation-distance: -250%;
 }

@@ -1,7 +1,12 @@
 @import url('../../styles/fonts.css');
-@import url('../../styles/common.css');
-@import url('../../styles/link.css');
 @import url('../../styles/variables.css');
+@import url('../../styles/core.css');
+@import url('../../styles/link.css');
+@import url('../../styles/grid.css');
+@import url('../../styles/carousel.css');
+@import url('../../styles/x-translation.css');
+@import url('../../styles/z-rotation.css');
+@import url('../../styles/fade-in.css');
 
 body {
   --background-main: #f8a300;
@@ -9,8 +14,6 @@ body {
 }
 
 .content-container {
-  display: grid;
-  gap: 1vmin 1vmax;
   align-items: start;
 }
 
@@ -30,8 +33,8 @@ body {
 }
 
 .pointer {
-  width: 20%;
-  height: 20%;
+  width: 32px;
+  height: 32px;
   position: absolute;
   background: url('images/cursor--1.svg');
   background-repeat:no-repeat;
@@ -111,12 +114,6 @@ body {
   grid-template-columns: repeat(7, 1fr);
 }
 
-.rotating-element {
-  transform-origin: center;
-  animation: rotate-element 1s linear forwards;
-  animation-timeline: scroll();
-}
-
 .rotating-fast {
   --rotation-speed: 2;
 }
@@ -125,50 +122,16 @@ body {
   --rotation-speed: 4;
 }
 
-.scrolling-element {
-  animation: scroll-element 1s linear forwards;
-  animation-timeline: scroll();
-}
-
-.scrollable-gallery-wrapper {
-  position: relative;
-  contain: paint;
-}
-.scrollable-gallery {
-  display: flex;
-  overflow-x: visible;
-  flex-flow: row nowrap;
-  scrollbar-width: none;
-}
-.scrollable-gallery > * {
-  min-width: 25%;
-}
-
-.fadeining-element {
-  animation: fadein-element 1s linear forwards;
-  animation-timeline: view();
-}
-
-.stack {
-  display: grid;
-  grid-template-areas: stack;
-}
-
-.stack > * {
-  grid-area: stack;
-}
-
-.grid {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  z-index: 12;
-}
-
 .grid-cell {
   width: 100%;
   height: 100%;
   border: 1px solid #111;
+}
+
+.four-by-four,
+.six-by-six,
+.eight-by-eight {
+  z-index: 12;
 }
 
 .four-by-four {
@@ -186,21 +149,6 @@ body {
   grid-template-rows: repeat(8, 1fr);
 }
 
-@keyframes rotate-element {
-  0% { transform: rotateZ(0deg); }
-  100% { transform: rotateZ(calc(var(--rotation-speed, 1) * 360deg)); }
-}
-
-@keyframes scroll-element {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-500%); }
-}
-
-@keyframes fadein-element {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
 @media screen and (max-width: 479px) {
   .tiles-container {
     grid-template-columns: repeat(2, 1fr);
@@ -208,11 +156,12 @@ body {
   .canvas-screen-container {
     grid-column: 1 / -1;
   }
+}
+@media screen and (max-width: 768px) {
   .content-container {
-    gap: 2vmax;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media (hover: none) and (pointer: coarse) {
   .pointer {
     background: url('images/touch--1.svg');

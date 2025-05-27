@@ -14,16 +14,16 @@
 </head>
 
 <body>
-  <header>
+  <header class="column-padding regular page-header">
     <nav class="main-navigation">
-      <a href="/web">Web-home of Otaniyoz</a>
+      <a href="/web" class="link">Web-home of Otaniyoz</a>
     </nav>
   </header>
   <main class="alaska" data-remove-leading-spaces="false" data-remove-trailing-spaces="false">
-    <section class="cols-12">
-      <h1><a href="https://otaniyoz.github.io/pocket-puzzles/">Pocket puzzles</a>: simple puzzles, tough play</h1>
-      <div class="scrollable-gallery-wrapper">
-        <figure class="scrollable-gallery scrolling-element">
+    <div class="row-margin small">
+      <h1 class="column-padding regular narrative heading-1"><a class="link" href="https://otaniyoz.github.io/pocket-puzzles/">Pocket puzzles</a>: simple puzzles, tough play</h1>
+      <div class="carousel-wrapper">
+        <figure class="illustration carousel x-translation">
           <svg class="device-frame" viewBox="0 0 261 566">
             <g clip-path="url(#viewport)">
               <rect width="261" height="61" />
@@ -122,9 +122,11 @@
           </svg>
         </figure>
       </div>
-      <figure class="twelve-cols">
-        <p class="cols-4">This is a collection of puzzles created as a low-effort way to keep some basic skills in shape - logic, memory, and reaction. They are designed to be easily playable and can be played with one hand, on almost any device, and even offline.</p>
-        <svg class="cols-8 device-frame" viewBox="0 0 820 532">
+    </div>
+    <div class="row-margin large">
+      <figure class="column-padding regular illustration grid regular-gap twelve-cols">
+        <p class="narrative paragraph cols-3">This is a collection of puzzles created as a low-effort way to keep logic, memory, and reaction in shape. They are designed to be easily playable and can be played with one hand, on almost any device, and even offline.</p>
+        <svg class="cols-9 device-frame" viewBox="0 0 820 532">
           <g clip-path="url(#viewport-desktop)">
             <rect width="820" height="39"/>
             <rect x="15" y="13" width="14" height="14" rx="7"/>
@@ -139,48 +141,48 @@
           </defs>
         </svg>
       </figure>
-    </section>
-    <section class="cols-12">
-      <h3>There are three puzzles</h3>
-      <figure class="twelve-cols">
-        <p class="cols-3">In <i>Slide</i>, you slide the shuffled tiles into proper   positions to restore the original image.</p>
-        <div class="cols-9 four-cols content-container">
+    </div>
+    <div class="row-margin large">
+      <h2 class="column-padding regular narrative heading-2">There are three puzzles</h2>
+      <figure class="row-margin column-padding regular illustration grid regular-gap twelve-cols">
+        <p class="narrative paragraph cols-3">In <i>Slide</i>, you slide the shuffled tiles into proper   positions to restore the original image.</p>
+        <div class="cols-9 grid four-cols regular-gap content-container">
           <div class="canvas-screen-container">
             <div class="pointer-container">
               <img class="canvas-screen" src="images/slide_1.webp" />
               <span class="pointer slide-pointer-1"></span>
             </div>
-            <p class="illustration-caption">1. Inspect the board and identify which tiles seem to be out of place.</p>
+            <p class="caption">1. Inspect the board and identify which tiles seem to be out of place.</p>
           </div>
           <div class="canvas-screen-container">
             <div class="pointer-container">
               <img class="canvas-screen" src="images/slide_2.webp" />
               <span class="pointer slide-pointer-2"></span>
             </div>
-            <p class="illustration-caption">2. Get the pieces in the correct order by sliding one tile at a time.</p>
+            <p class="caption">2. Get the pieces in the correct order by sliding one tile at a time.</p>
           </div>
           <div class="canvas-screen-container">
             <div class="pointer-container">
               <img class="canvas-screen" src="images/slide_3.webp" />
               <span class="pointer slide-pointer-3"></span>
             </div>
-            <p class="illustration-caption">3. Slide the tiles around until all are placed correctly.</p>
+            <p class="caption">3. Slide the tiles around until all are placed correctly.</p>
           </div>
           <div class="canvas-screen-container">
             <img class="canvas-screen" src="images/slide_4.webp" />
-            <p class="illustration-caption">4. There are no limits. Press stop to see solution.</p>
+            <p class="caption">4. There are no limits. Press stop to see solution.</p>
           </div>
         </div>
       </figure>
-      <figure class="twelve-cols">
-        <p class="cols-3">In <i>Pairs</i>, you find matching tiles in the grid.</p>
-        <div class="cols-9 four-cols content-container">
+      <figure class="row-margin column-padding regular illustration grid regular-gap twelve-cols">
+        <p class="narrative paragraph cols-3">In <i>Pairs</i>, you find matching tiles in the grid.</p>
+        <div class="cols-9 grid four-cols regular-gap content-container">
           <div class="canvas-screen-container">
             <div class="pointer-container">
               <img class="canvas-screen" src="images/pairs_0.webp" />
               <span class="pointer pairs-pointer-0"></span>
             </div>
-            <p class="illustration-caption">1. Try to find matching pairs by flipping tiles.</p>
+            <p class="caption">1. Try to find matching pairs by flipping tiles.</p>
           </div>
           <div class="canvas-screen-container">
             <div class="pointer-container">
@@ -190,7 +192,7 @@
               <span class="pointer pairs-pointer-3"></span>
               <span class="pointer pairs-pointer-4"></span>
             </div>
-            <p class="illustration-caption">2. If the tiles do not match, they are flipped back after one second.</p>
+            <p class="caption">2. If the tiles do not match, they are flipped back after one second.</p>
           </div>
           <div class="canvas-screen-container">
             <div class="pointer-container">
@@ -198,186 +200,192 @@
               <span class="pointer pairs-pointer-5"></span>
               <span class="pointer pairs-pointer-6"></span>
             </div>
-            <p class="illustration-caption">3. Use your memory to try and match all pairs.</p>
+            <p class="caption">3. Use your memory to try and match all pairs.</p>
           </div>
           <div class="canvas-screen-container">
             <img class="canvas-screen" src="images/pairs_3.webp" />
-            <p class="illustration-caption">4. Flip all tiles or press stop to see the solution.</p>
+            <p class="caption">4. Flip all tiles or press stop to see the solution.</p>
           </div>
         </div>
       </figure>
-      <figure class="twelve-cols">
-        <p class="cols-3">In <i>That</i>, you tap the tile that stands out from the rest before a second ends.</p>
-        <div class="cols-9 four-cols content-container">
+      <figure class="column-padding regular illustration grid regular-gap twelve-cols">
+        <p class="narrative paragraph cols-3">In <i>That</i>, you tap the tile that stands out from the rest before a second ends.</p>
+        <div class="cols-9 grid four-cols content-container regular-gap">
           <div class="canvas-screen-container">
             <img class="canvas-screen" src="images/that_0.webp" />
-            <p class="illustration-caption">1. Quickly scan the grid of tiles that appears on the screen.</p>
+            <p class="caption">1. Quickly scan the grid of tiles that appears on the screen.</p>
           </div>
           <div class="canvas-screen-container">
             <div class="pointer-container">
               <img class="canvas-screen" src="images/that_1.webp" />
               <span class="pointer that-pointer-1"></span>
             </div>
-            <p class="illustration-caption">2. Tap the tile that looks different from the rest.</p>
+            <p class="caption">2. Tap the tile that looks different from the rest.</p>
           </div>
           <div class="canvas-screen-container">
             <img class="canvas-screen" src="images/that_0.webp" />
-            <p class="illustration-caption">3. You only have one second before a new grid appears.</p>
+            <p class="caption">3. You only have one second before a new grid appears.</p>
           </div>
           <div class="canvas-screen-container">
             <div class="pointer-container">
               <img class="canvas-screen" src="images/that_2.webp" />
               <span class="pointer that-pointer-2"></span>
             </div>
-            <p class="illustration-caption">4. Play as long as you like or stop the game.</p>
+            <p class="caption">4. Play as long as you like or stop the game.</p>
           </div>
         </div>
       </figure>
-    </section>
-    <section class="cols-12">
-      <h3>One board</h3>
-      <p>Puzzles share the main element of the game - a common board with dynamic grid, where the number of rows and columns increases proportionally to difficulty:</p>
-      <figure class="three-cols">
-        <div class="stack">
-          <div class="four-by-four grid fadeining-element">
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
+    </div>
+    <div class="row-margin large">
+      <h2 class="column-padding regular narrative heading-2">One board</h2>
+      <p class="narrative column-padding regular paragraph">Puzzles share the main element of the game - a common board with dynamic grid, where the number of rows and columns increases proportionally to difficulty:</p>
+      <figure class="column-padding regular illustration grid regular-gap three-cols">
+        <div>
+          <div class="grid stack">
+            <div class="four-by-four grid fade-in-view">
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+            </div>
+            <img loading="lazy" src="images/slide_easy.webp" alt="Pocket puzzles" />
           </div>
-          <img loading="lazy" src="images/slide_easy.webp" alt="Pocket puzzles" />
+          <p class="caption">Low difficulty</p> 
         </div>
-        <div class="stack">
-          <div class="six-by-six grid fadeining-element">
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
+        <div>
+          <div class="grid stack">
+            <div class="six-by-six grid fade-in-view">
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+            </div>
+            <img loading="lazy" src="images/slide_okay.webp" alt="Pocket puzzles" />
           </div>
-          <img loading="lazy" src="images/slide_okay.webp" alt="Pocket puzzles" />
+          <p class="caption">Medium difficulty</p> 
         </div>
-        <div class="stack">
-          <div class="eight-by-eight grid fadeining-element">
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
-            <div class="grid-cell"></div>
+        <div>
+          <div class="grid stack">
+            <div class="eight-by-eight grid fade-in-view">
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+              <div class="grid-cell"></div>
+            </div>
+            <img loading="lazy" src="images/slide_hard.webp" alt="Pocket puzzles" />
           </div>
-          <img loading="lazy" src="images/slide_hard.webp" alt="Pocket puzzles" />
+          <p class="caption">High difficulty</p> 
         </div>
-        <p class="illustration-caption">Low difficulty</p> 
-        <p class="illustration-caption">Medium difficulty</p> 
-        <p class="illustration-caption">High difficulty</p> 
       </figure>
-    </section>
-    <section class="cols-12">
-      <h3>Three sounds</h3>
-      <p>Sound effects provide feedback during the game. They were created by manipulating heavy-weight paper and bubble wrap ASMR-close to the microphone. Then they were chopped, filtered, and sped up; their volume and sound duration was normalised.</p> 
-      <figure class="twelve-cols">
+    </div>
+    <div class="row-margin large">
+      <h2 class="column-padding regular heading-2">Three sounds</h2>
+      <p class="column-padding regular narrative paragraph">Sound effects provide feedback during the game. They were created by manipulating heavy-weight paper and bubble wrap ASMR-close to the microphone. Then they were chopped, filtered, and sped up; their volume and sound duration was normalised.</p> 
+      <figure class="column-padding regular illustration grid regular-gap twelve-cols">
         <div id="sound-container-1" class="sound-container cols-4">
           <img loading="lazy" src="images/paper_1.webp" alt="Pocket puzzles" />
           <audio id="paper-1" src="sounds/0.mp3"></audio>
@@ -391,11 +399,11 @@
           <audio id="bubble-wrap" src="sounds/2.mp3"></audio>
         </div>
       </figure>
-    </section>
-    <section class="cols-12">
-      <h3>Many tiles</h3>
-      <figure class="tiles-container">
-        <p class="cols-2">At most, 32 distinct tiles are displayed at a given time. These patterns are picked from a pool of various designs.</p>
+    </div>
+    <div class="row-margin large">
+      <h2 class="column-padding regular heading-2">Many tiles</h2>
+      <figure class="column-padding regular illustration grid regular-gap tiles-container">
+        <p class="narrative paragraph cols-2">At most, 32 distinct tiles are displayed at a given time. These patterns are picked from a pool of various designs.</p>
         <img loading="lazy" src="images/9.svg" alt="Pocket puzzles" />
         <img loading="lazy" src="images/38.svg" alt="Pocket puzzles" />
         <svg viewBox="0 0 128 128">
@@ -416,7 +424,7 @@
             <path d="M123.732 123.696C123.732 123.696 56.9293 128.272 79.7521 93.9393C100.728 62.3845 123.732 123.696 123.732 123.696Z" fill="#65D157"/>
             <path fill-rule="evenodd" clip-rule="evenodd" d="M79.6666 94.274C79.6666 94.274 89.6952 104.264 97.1251 109.816C105.006 115.704 119.4 121.732 119.4 121.732C119.4 121.732 103.966 116.665 95.5007 110.898C87.8392 105.679 77.5007 95.8984 77.5007 95.8984L79.6666 94.274Z" fill="#FBF8EF"/>
             <path d="M122.649 97.1962C122.649 97.1962 77.9612 103.331 91.703 79.5839C104.333 57.7579 122.649 97.1962 122.649 97.1962Z" fill="#65D157"/>
-            <g mask="url(#mask0_2793_57)" class="rotating-element rotating-fast">
+            <g mask="url(#mask0_2793_57)" class="z-rotation-scroll rotating-fast">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M93.2455 79.5545C93.2455 79.5545 101.3 84.6784 106.501 87.8984C111.35 90.901 118.972 95.501 118.972 95.501C118.972 95.501 110.914 91.6436 105.894 88.8984C100.559 85.9802 92.501 80.9524 92.501 80.9524L93.2455 79.5545Z" fill="#FBF8EF"/>
               <path d="M73.7879 15.5C72.2953 10.7508 69.2661 7 64.2879 7C59.3096 7 56.0617 10.6875 54.7879 15.5C50.2881 32.5 64.2879 63 64.2879 63C64.2879 63 79.2878 33 73.7879 15.5Z" fill="#63BCE5" stroke="#FBF8EF"/>
               <path d="M55.2121 110.5C56.7047 115.249 59.7339 119 64.7121 119C69.6904 119 72.9383 115.312 74.2121 110.5C78.7119 93.5 64.7121 63 64.7121 63C64.7121 63 49.7122 93 55.2121 110.5Z" fill="#63BCE5" stroke="#FBF8EF"/>
@@ -454,7 +462,7 @@
           <path d="M123.5 4.5V20.793L107.207 4.5H123.5Z" fill="#65D157" stroke="#65D157"/>
           <path d="M20.793 4.5L4.5 20.793V4.5H20.793Z" fill="#65D157" stroke="#65D157"/>
           <path d="M20.793 123.5H4.5V107.207L20.793 123.5Z" fill="#65D157" stroke="#65D157"/>
-          <g class="rotating-element rotating-fast">
+          <g class="z-rotation-scroll rotating-fast">
             <path d="M62.2539 54.6572C65.0196 54.6572 68.0793 55.7621 70.4121 57.6123C72.6744 59.4066 74.3098 61.9516 74.2568 64.9336L74.2461 65.2236C73.9598 70.51 69.7366 74.8222 64.1699 74.8223C58.6276 74.8223 54.0928 70.5349 54.0928 65.1963C54.0928 62.6077 54.7007 59.9927 56.0244 58.0088C57.3609 56.006 59.4247 54.6574 62.2539 54.6572Z" fill="#F8A300" stroke="#FBF8EF"/>
             <path d="M59.5593 52.7411C58.6211 52.3512 57.8056 51.4815 57.0989 50.4727C55.6841 48.4532 54.488 45.5376 53.573 43.6572L53.1919 42.9003C52.8068 42.1592 52.4116 41.4623 52.0276 40.779C51.5185 39.873 51.0268 38.9874 50.6203 38.0818C49.7995 36.2529 49.3235 34.3284 49.6943 31.8663L49.7592 31.4672C50.1015 29.4792 50.7565 27.6131 51.9627 26.2115C53.2675 24.6953 55.1718 23.7746 57.855 23.7746C59.5983 23.7747 60.6789 24.5197 61.6474 25.1695C62.5486 25.7741 63.3542 26.2983 64.6105 26.3303H64.8688C66.16 26.2953 66.9163 25.7464 67.7821 25.1184C68.6017 24.524 69.5151 23.8633 70.971 23.7829L71.27 23.7753C74.2559 23.7753 76.3349 24.6949 77.7334 26.2612C79.0284 27.7117 79.6877 29.6595 80.0101 31.771L80.0709 32.195C80.3731 34.5069 79.8275 36.3578 78.9985 38.1357C78.5878 39.0163 78.1017 39.8913 77.6181 40.7852C77.2531 41.4601 76.8861 42.1521 76.5402 42.8865L76.2018 43.6365C75.4169 45.4621 74.2313 48.3634 72.7719 50.414C72.0455 51.4347 71.2029 52.3163 70.246 52.7177C69.757 52.9227 69.2348 53.0039 68.6923 52.9096C68.1521 52.8157 67.6254 52.5539 67.1158 52.1273L66.959 51.9871C66.6097 51.6554 66.3734 51.2827 66.2395 50.8753C66.088 50.4143 66.0768 49.9383 66.1435 49.4715C66.274 48.5586 66.7206 47.5915 67.1365 46.701C67.5688 45.7754 67.9743 44.919 68.1336 44.1253C68.2872 43.36 68.1976 42.7252 67.7048 42.1774L67.3637 41.8155C67.0351 41.4852 66.7384 41.2468 66.4246 41.0794C66.0162 40.8616 65.5451 40.7452 64.8819 40.7452C64.2169 40.7452 63.7428 40.86 63.3337 41.0766C63.0204 41.2426 62.7244 41.4798 62.3994 41.8107L62.0631 42.1732C61.5665 42.7368 61.4779 43.3824 61.6316 44.1502C61.7909 44.9462 62.1962 45.8008 62.628 46.7224C63.0434 47.609 63.4907 48.5703 63.621 49.4791C63.6877 49.9442 63.6755 50.4189 63.5236 50.8788C63.3703 51.3429 63.0841 51.7622 62.648 52.1273L62.4574 52.2792C62.0109 52.6156 61.5547 52.8284 61.0895 52.9152C60.5543 53.0149 60.04 52.9409 59.5593 52.7411Z" fill="#F8A300" stroke="#FBF8EF"/>
             <path d="M74.0052 58.6442C74.0332 57.6287 74.5532 56.5557 75.2419 55.5347C76.6208 53.4905 78.9147 51.3296 80.3427 49.8018L80.9114 49.1828C83.6702 46.1339 85.2497 43.7643 89.8908 41.9792L90.2788 41.8377C92.2255 41.1734 94.2269 41.1228 96.0017 41.828C97.7844 42.5364 99.2833 43.9864 100.253 46.2215L100.44 46.6791C101.064 48.3068 100.756 49.5825 100.496 50.7195C100.254 51.7774 100.053 52.7173 100.473 53.9018L100.566 54.1429C101.061 55.336 101.844 55.8455 102.741 56.429C103.589 56.9813 104.533 57.5975 105.13 58.9281L105.244 59.2046C106.311 61.9868 106.246 64.3496 105.312 66.2644C104.441 68.0495 102.85 69.3747 100.888 70.2814L100.491 70.4573C98.3137 71.3794 96.4157 71.5354 94.5012 71.4407C93.5519 71.3937 92.5917 71.2847 91.6042 71.1785C90.8599 71.0984 90.0947 71.0197 89.2879 70.9665L88.4662 70.9222C86.4806 70.8432 83.3471 70.7753 80.9098 70.1471C79.6967 69.8344 78.5718 69.3634 77.8543 68.6137C77.4878 68.2306 77.225 67.772 77.1187 67.2318C77.0129 66.6938 77.0687 66.1083 77.2846 65.4797L77.3593 65.2831C77.5439 64.8382 77.8073 64.4841 78.1396 64.2131C78.5158 63.9066 78.9563 63.7257 79.416 63.6208C80.3151 63.4156 81.3779 63.4863 82.3583 63.5557C83.3773 63.6278 84.3222 63.6998 85.1202 63.5642C85.8899 63.4335 86.4504 63.1226 86.7854 62.4662L87.0011 62.0181C87.1919 61.593 87.3082 61.2307 87.3521 60.8777C87.4092 60.4184 87.3491 59.9368 87.1116 59.3177C86.8735 58.6968 86.5965 58.2952 86.2477 57.9909C85.9805 57.7577 85.653 57.5663 85.2278 57.3814L84.7688 57.1973C84.0648 56.9354 83.4302 57.0839 82.7684 57.5024C82.0823 57.9362 81.4295 58.6206 80.7236 59.3539C80.0447 60.0592 79.3073 60.8211 78.5055 61.2683C78.0951 61.4971 77.6475 61.6558 77.1638 61.6787C76.6755 61.7017 76.1815 61.5846 75.6845 61.3083L75.4744 61.1847C75.0004 60.8883 74.6383 60.5385 74.3907 60.1353C74.1059 59.6713 73.9908 59.1646 74.0052 58.6442Z" fill="#F8A300" stroke="#FBF8EF"/>
@@ -473,7 +481,7 @@
         <img loading="lazy" src="images/1.svg" alt="Pocket puzzles" />
         <img loading="lazy" src="images/32.svg" alt="Pocket puzzles" />
         <img loading="lazy" src="images/4.svg" alt="Pocket puzzles" />
-        <p class="cols-2">Designs are inspired by Barcelona's panots and traditional decorative ceramic tiles. Some tiles are based on vintage pattern designs.</p>
+        <p class="narrative paragraph cols-2">Designs are inspired by Barcelona's panots and traditional decorative ceramic tiles. Some tiles are based on vintage pattern designs.</p>
         <img loading="lazy" src="images/35.svg" alt="Pocket puzzles" />
         <img loading="lazy" src="images/8.svg" alt="Pocket puzzles" />
         <img loading="lazy" src="images/0.svg" alt="Pocket puzzles" />
@@ -493,7 +501,7 @@
           <path d="M106 4H124V22L106 4Z" fill="#65D157"/>
           <path d="M22 4H4V22L22 4Z" fill="#65D157"/>
           <path d="M22 124H4V106L22 124Z" fill="#65D157"/>
-          <g class="rotating-element">
+          <g class="z-rotation-scroll">
             <path d="M78.1045 53.1338C79.3674 52.5844 80.8555 52.4205 82.4824 52.5332L83.1006 52.5889C86.222 52.9295 89.7982 54.215 93.2207 55.8076L93.9033 56.1299C97.3027 57.7604 100.508 59.6558 102.911 61.1777L103.828 61.7646C104.699 62.3289 105.43 62.8204 105.979 63.1973L106.546 63.5889L107.133 63.999L106.547 64.4092L105.979 64.8008C105.43 65.1778 104.699 65.669 103.828 66.2334L102.911 66.8213C100.508 68.343 97.3027 70.2377 93.9033 71.8682L93.2207 72.1904C89.7981 73.7829 86.2221 75.0685 83.1006 75.4092L82.4824 75.4648C80.8555 75.5775 79.3674 75.4136 78.1045 74.8643C76.9098 74.3445 75.9407 73.4896 75.2578 72.252L75.125 71.999C73.7279 69.2046 73.0293 66.6017 73.0293 63.999C73.0293 61.3961 73.7279 58.7933 75.125 55.999L75.2578 55.7461C75.9407 54.5086 76.9099 53.6535 78.1045 53.1338Z" fill="#F8A300" stroke="#FBF8EF"/>
             <path d="M46.3687 52.5049C47.7609 52.4681 49.0389 52.653 50.144 53.1338C51.4182 53.6882 52.4352 54.6244 53.1226 55.999L53.3765 56.5205C54.6045 59.1185 55.2183 61.5589 55.2183 63.999C55.2183 66.4392 54.6045 68.8795 53.3765 71.4775L53.1226 71.999C52.4352 73.3737 51.4182 74.3098 50.144 74.8643C49.0389 75.3451 47.7609 75.5308 46.3687 75.4941L45.7651 75.4648C42.707 75.2529 39.1536 74.0537 35.7134 72.5049L35.0269 72.1904C31.8324 70.7044 28.7717 68.9508 26.3394 67.4482L25.3364 66.8213C24.6957 66.4155 24.1123 66.0359 23.5972 65.6953L22.2681 64.8018C22.0499 64.6521 21.8605 64.5201 21.7017 64.4092L21.1147 64L21.7007 63.5898L22.2681 63.1973L23.5972 62.3027C24.1122 61.9622 24.6959 61.5833 25.3364 61.1777L26.3394 60.5508C28.7718 59.048 31.8323 57.2939 35.0269 55.8076L35.7134 55.4932C39.1536 53.9446 42.707 52.7451 45.7651 52.5332L46.3687 52.5049Z" fill="#F8A300" stroke="#FBF8EF"/>
             <path d="M64.4092 21.7139L64.8018 22.2803L65.6953 23.6094C66.0358 24.1244 66.4147 24.7081 66.8203 25.3486H66.8213C68.4444 27.912 70.4919 31.3884 72.1904 35.0391L72.5049 35.7256C74.0535 39.1658 75.2529 42.7192 75.4648 45.7773L75.4941 46.3809C75.5308 47.7731 75.3451 49.0511 74.8643 50.1562C74.3445 51.3507 73.4894 52.3192 72.252 53.002L71.999 53.1348C69.2047 54.5319 66.6018 55.2305 63.999 55.2305C61.5589 55.2305 59.1185 54.6167 56.5205 53.3887L55.999 53.1348C54.6244 52.4474 53.6882 51.4304 53.1338 50.1562C52.5843 48.8932 52.4204 47.4045 52.5332 45.7773L52.5889 45.1592C52.9296 42.0378 54.215 38.4615 55.8076 35.0391L56.1299 34.3574C57.5431 31.4109 59.1553 28.6105 60.5508 26.3516L61.1777 25.3486C61.9892 24.0671 62.6949 23.0133 63.1973 22.2803L63.5889 21.7139L63.999 21.126L64.4092 21.7139Z" fill="#F8A300" stroke="#FBF8EF"/>
@@ -509,7 +517,7 @@
         <svg viewBox="0 0 128 128">
           <g clip-path="url(#clip0_2802_147)">
             <path d="M128 0H0V128H128V0Z" fill="#FBF8EF"/>
-            <g mask="url(#mask0_2802_147)" class="rotating-element">
+            <g mask="url(#mask0_2802_147)" class="z-rotation-scroll">
               <path d="M64 4.00001C30.8629 4.00001 4 30.8629 4 64C4 97.1371 30.8629 124 64 124C97.1371 124 124 97.1371 124 64C124 30.8629 97.1371 4.00001 64 4.00001Z" fill="#F8A300"/>
               <path d="M74.6836 46.3683C75.8658 45.2411 77.4615 44.4436 79.3348 43.8937L80.0518 43.6983C83.6994 42.7813 88.2554 42.7272 92.775 43.0817L93.6766 43.1575C98.1838 43.5639 102.582 44.3476 105.923 45.0482L107.201 45.3223C108.417 45.5902 109.444 45.8349 110.22 46.0272L110.22 46.0281L111.021 46.2295L111.72 46.4096L111.307 47.0008L110.83 47.6759C110.365 48.3269 109.745 49.1811 108.996 50.1759L108.204 51.2154C106.122 53.9207 103.291 57.3776 100.133 60.6184L99.4972 61.2625C96.2953 64.4718 92.8 67.3948 89.4332 69.0713L88.7616 69.3894C86.9811 70.1903 85.2505 70.6227 83.6194 70.5358C82.0787 70.4536 80.6516 69.9093 79.3843 68.822L79.1335 68.5971C76.4077 66.0589 74.5507 63.4478 73.4791 60.5499C72.4075 57.6516 72.1189 54.4598 72.5379 50.7589L72.5821 50.425C72.8374 48.7748 73.567 47.433 74.6836 46.3683Z" fill="#63BCE5" stroke="#FBF8EF"/>
               <path d="M39.5716 58.5736C41.2348 57.8663 42.8514 57.4917 44.3806 57.5732C46.0241 57.6609 47.5383 58.2742 48.8674 59.5116L49.3676 59.9888C51.8216 62.3776 53.5162 64.8423 54.5208 67.5592C55.5254 70.2762 55.8421 73.2511 55.5324 76.662L55.4626 77.3489C55.2582 79.1533 54.5075 80.605 53.3163 81.7408C52.208 82.7975 50.7365 83.5646 49.0134 84.1095L48.6652 84.2154C45.1429 85.2493 40.6499 85.3905 36.1299 85.0926L35.2259 85.027C31.0099 84.6967 26.833 84.0118 23.4676 83.3451L22.0766 83.0608C20.7405 82.7805 19.574 82.5136 18.6377 82.2895L17.781 82.0815L17.7801 82.0819C17.472 82.0055 17.2035 81.9374 16.9785 81.8795L16.2799 81.6995L16.6933 81.1083L17.1705 80.4331L17.6864 79.7166C18.2517 78.9372 18.9639 77.9755 19.7964 76.8937L20.6682 75.7738C22.7903 73.0778 25.5166 69.84 28.5037 66.8462L29.1476 66.2083C32.3866 63.0417 35.8906 60.2258 39.2384 58.7197L39.5716 58.5736Z" fill="#63BCE5" stroke="#FBF8EF"/>
@@ -542,7 +550,7 @@
         <svg viewBox="0 0 128 128">
           <path d="M128 0L0 0L0 128H128V0Z" fill="#FBF8EF"/>
           <path d="M64 2.19063e-06L0 64L64 128L128 64L64 2.19063e-06Z" fill="#65D157"/>
-          <g class="rotating-element">
+          <g class="z-rotation-scroll">
             <path d="M102.927 56.8828C103.63 56.8448 104.177 56.9074 104.66 57.1104L104.93 57.2363C105.545 57.5508 106.071 58.0203 106.452 58.6006L106.567 58.7939C106.82 59.2585 106.955 59.8232 107.027 60.5723L107.055 60.9053C107.11 61.7089 107.109 62.7088 107.109 63.9883C107.109 65.2675 107.11 66.267 107.055 67.0703L107.027 67.4033C106.955 68.1522 106.82 68.717 106.567 69.1816L106.452 69.375C106.071 69.9555 105.545 70.4248 104.93 70.7393L104.661 70.8643C104.178 71.0673 103.632 71.1304 102.929 71.0928L102.617 71.0703C101.975 71.0139 101.207 70.8879 100.258 70.7158L99.2451 70.5293C94.5763 69.664 90.9285 68.9884 88.2275 68.3535L87.1279 68.083C85.9118 67.7698 84.9294 67.4622 84.1719 67.1406L83.8613 67.002C83.1678 66.676 82.6977 66.3336 82.4414 65.957L82.3447 65.7939C81.7726 64.6608 81.7722 63.3229 82.3438 62.1895V62.1885L82.4404 62.0254C82.6966 61.6488 83.1668 61.3066 83.8604 60.9805L84.1709 60.8418C84.9282 60.52 85.91 60.211 87.126 59.8975L88.2266 59.6279C90.9273 58.9921 94.5747 58.3141 99.2432 57.4473L100.256 57.2607C101.206 57.0882 101.974 56.962 102.616 56.9053L102.927 56.8828Z" fill="#F8A300" stroke="#FBF8EF"/>
             <path d="M23.7773 57.042C24.2796 56.8794 24.8588 56.8502 25.6074 56.917L25.9385 56.9521C26.737 57.0454 27.718 57.2276 28.9736 57.4619L32.6973 58.1602C36.1753 58.8187 38.9249 59.369 40.9932 59.9043L41.9707 60.1719C42.8919 60.4383 43.6449 60.7042 44.2354 60.9824L44.5176 61.123C45.1429 61.4524 45.5488 61.8005 45.7441 62.1855L45.8457 62.4014C46.2875 63.418 46.2876 64.5733 45.8457 65.5898L45.7441 65.8057C45.5486 66.1907 45.1424 66.5387 44.5166 66.8682L44.2354 67.0078C43.6449 67.2861 42.8921 67.5529 41.9707 67.8193L40.9932 68.0859C38.9247 68.6213 36.1748 69.1719 32.6963 69.8301L28.9736 70.5273C27.7181 70.7616 26.737 70.9449 25.9385 71.0381L25.6074 71.0723C24.8591 71.139 24.2796 71.1107 23.7773 70.9482L23.5664 70.8701C22.9218 70.6007 22.361 70.1675 21.9375 69.6162L21.7646 69.373C21.478 68.9359 21.3163 68.4106 21.2256 67.7139L21.1914 67.4043C21.1096 66.5497 21.1094 65.4546 21.1094 63.9951C21.1094 62.5355 21.1096 61.4407 21.1914 60.5859V60.585L21.2256 60.2764C21.3033 59.6787 21.4333 59.2074 21.6494 58.8096L21.7646 58.6162C22.2025 57.9486 22.8299 57.427 23.5664 57.1191L23.7773 57.042Z" fill="#F8A300" stroke="#FBF8EF"/>
             <path d="M64.1011 21.001C65.5658 21.001 66.6645 21.0008 67.522 21.083L67.8325 21.1182C68.5319 21.2094 69.0587 21.3712 69.4966 21.6592L69.7397 21.833C70.2896 22.2569 70.7212 22.8181 70.9897 23.4619L71.0679 23.6729C71.207 24.1048 71.247 24.5935 71.2124 25.1973L71.189 25.5088C71.1301 26.1522 71.0006 26.9202 70.8247 27.8711L70.6343 28.8857C69.7554 33.5323 69.0686 37.1624 68.4263 39.8506L68.1528 40.9453C67.8365 42.1554 67.526 43.133 67.2026 43.8867L67.063 44.1963C66.7357 44.8864 66.393 45.3547 66.0161 45.6094L65.853 45.7051C64.7868 46.2408 63.5412 46.2706 62.4556 45.7959L62.2407 45.6943C61.8553 45.4978 61.5075 45.0897 61.1792 44.4609L61.0396 44.1777C60.7626 43.5846 60.4979 42.8284 60.2339 41.9033L59.9702 40.9209C59.4402 38.8431 58.8972 36.0809 58.2485 32.5869L57.561 28.8467C57.3315 27.5928 57.1522 26.6129 57.062 25.8154L57.0288 25.4844C56.9556 24.6304 57.0061 23.9971 57.2378 23.4473L57.3638 23.1777C57.6792 22.5619 58.1494 22.0364 58.731 21.6553L58.9243 21.54C59.3879 21.2885 59.9513 21.1545 60.6978 21.083L61.0288 21.0557C61.8297 21.0008 62.826 21.001 64.1011 21.001Z" fill="#F8A300" stroke="#FBF8EF"/>
@@ -574,7 +582,7 @@
           <path d="M4 92V124H36L4 92Z" fill="#65D157"/>
           <path d="M36 4L4 4L4 36L36 4Z" fill="#65D157"/>
         </svg>
-        <p class="cols-3">Each tile pattern has to fit all puzzles: players should be able to restore it if cut into 64 pieces & shuffled, and scaled down or up. To fit the overall style, each pattern uses a limited pallete, shapes, and strokes.</p> 
+        <p class="narrative paragraph cols-3">Each tile pattern has to fit all puzzles: players should be able to restore it if cut into 64 pieces & shuffled, and scaled down or up. To fit the overall style, each pattern uses a limited pallete, shapes, and strokes.</p> 
         <img loading="lazy" src="images/21.svg" alt="Pocket puzzles" />
         <img loading="lazy" src="images/31.svg" alt="Pocket puzzles" />
         <img loading="lazy" src="images/33.svg" alt="Pocket puzzles" />
@@ -600,7 +608,7 @@
             <path d="M85.2354 52C92.2855 52.0001 98 57.373 98 64C98 70.627 92.2855 75.9999 85.2354 76C81.9308 76 77.0579 74.8197 72.8135 72.8828L71.9736 72.4854C69.8983 71.4674 68.0163 70.2676 66.6025 68.9385L66.3262 68.6709C64.8861 67.2351 64 65.6566 64 64C64 62.3434 64.8861 60.7649 66.3262 59.3291L66.6025 59.0615C68.0163 57.7324 69.8983 56.5326 71.9736 55.5146L72.8135 55.1172C77.0579 53.1803 81.9308 52 85.2354 52Z" fill="#F8A300" stroke="#F8A300"/>
             <path d="M64 64C66.209 64 68.2895 65.1459 70.168 67.0029L70.5176 67.3594C72.2545 69.1821 73.8097 71.6058 75.1221 74.2725L75.3818 74.8086C78.0268 80.3831 79.6172 86.8926 79.6172 91.1729C79.6172 100.009 72.4537 107.173 63.6172 107.173C54.7807 107.173 47.6172 100.009 47.6172 91.1729C47.6172 86.7544 49.5039 79.9611 52.4951 74.2725L52.7783 73.7432C54.2124 71.1104 55.8837 68.7441 57.7119 67.0029L58.0801 66.6631C59.9289 65.0071 61.929 64 64 64Z" fill="#FBF8EF" stroke="#F8A300"/>
             <path d="M64.2871 64C65.9437 64 67.5043 64.9024 68.9131 66.3652L69.1758 66.6455C70.4785 68.081 71.6447 69.99 72.6289 72.0898L73.0127 72.9395C74.8827 77.2314 76 82.1374 76 85.3994C76 92.3588 70.6272 98 64 98C57.3728 98 52 92.3588 52 85.3994C52 81.9199 53.4147 76.5697 55.6582 72.0898L56.0889 71.2607C57.1146 69.3532 58.2917 67.6449 59.5713 66.3652C61.034 64.9025 62.6303 64 64.2871 64Z" fill="#F8A300" stroke="#F8A300"/>
-            <g class="rotating-element rotating-faster">
+            <g class="z-rotation-scroll rotating-faster">
               <path d="M57.2739 61.8203L57.7808 61.835C60.2927 61.9445 62.4689 62.6053 63.9995 64L64.2954 64.2871C65.7228 65.7622 66.3826 67.8293 66.48 70.21L66.4917 70.6904C66.5132 72.9503 66.0574 75.467 65.2905 78.0137L65.1216 78.5596C63.3272 84.2051 60.0682 89.9187 57.1606 93.2393L56.8804 93.5527C51.0214 99.9818 41.1232 100.538 34.5854 94.876L34.2769 94.6016C27.7458 88.6496 27.2768 78.5291 33.229 71.998L33.5161 71.6914C36.583 68.5161 42.4561 65.1853 48.397 63.3184L48.9722 63.1416C51.8475 62.2846 54.7185 61.7834 57.2739 61.8203Z" fill="#FBF8EF" stroke="#F8A300"/>
               <path d="M33.8564 33.9688C39.842 27.726 49.7485 27.3634 56.1777 33.2227L56.4844 33.5098C59.6571 36.5767 62.9453 42.4513 64.7695 48.3936L64.9414 48.9688C65.7219 51.6532 66.1931 54.3332 66.21 56.7568L66.207 57.2725C66.1544 59.8286 65.5677 62.0691 64.2686 63.6846L63.999 64C62.6042 65.5302 60.6086 66.2795 58.2861 66.4521L57.8174 66.4785C55.4522 66.5751 52.7781 66.1094 50.0703 65.2871L49.5283 65.1182C43.9254 63.3222 38.2544 60.062 34.9365 57.1543L34.623 56.874C28.092 50.9218 27.623 40.8016 33.5752 34.2705L33.8564 33.9688Z" fill="#FBF8EF" stroke="#F8A300"/>
               <path d="M71.5044 33.5234C77.4898 27.2807 87.3964 26.9177 93.8257 32.7764L94.1274 33.0586C100.271 38.9491 100.721 48.6374 95.1489 55.0713L94.8745 55.3799C91.9915 58.5434 86.1895 62.0608 80.231 64.1709L79.6548 64.3711C76.768 65.3474 73.865 65.9804 71.2593 66.0713L70.7427 66.082C68.1781 66.0997 65.931 65.562 64.3149 64.2686L64.0005 63.999C62.4699 62.6042 61.7265 60.5647 61.562 58.1748L61.5366 57.6924C61.4426 55.0948 61.9911 52.1214 62.9302 49.1299L63.1108 48.5684C65.0228 42.7705 68.34 36.9887 71.2231 33.8252L71.5044 33.5234Z" fill="#FBF8EF" stroke="#F8A300"/>
@@ -611,14 +619,14 @@
         </svg>
         <img loading="lazy" src="images/25.svg" alt="Pocket puzzles" />
       </figure>
-    </section>
-    <section class="cols-12">
-      <h3>And some details</h3>
-      <p>This is a work in progress with some experimentation happening once in a while with tile patterns and game functionality.</p> 
-      <p>The game is built with JavaScript without external dependecies. Game state is managed through local storage, sound effects are implemented with the Web Audio API to reduce latency, offline functionality is managed by a service worker.</p>
-    </section>
+    </div>
+    <div class="row-margin large">
+      <h2 class="column-padding regular heading-2">And some details</h2>
+      <p class="column-padding regular narrative paragraph">This is a work in progress with some experimentation happening once in a while with tile patterns and game functionality.</p> 
+      <p class="column-padding regular narrative paragraph">The game is built with JavaScript without external dependecies. Game state is managed through local storage, sound effects are implemented with the Web Audio API to reduce latency, offline functionality is managed by a service worker.</p>
+    </div>
   </main> 
-  <footer>
+  <footer class="column-padding regular page-footer">
     Created by Otaniyoz in 2023..
   </footer>
 </body>

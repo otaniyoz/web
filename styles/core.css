@@ -1,0 +1,122 @@
+*,
+html {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  line-height: 1.25em;
+  font-family: 'Inter';
+  color: var(--text-main);
+  font-size: var(--font-size-regular);
+  background: var(--background-main);
+}
+
+.heading-1,
+.heading-2,
+.heading-3 {
+  font-weight: 700;
+  line-height: 1.25em;
+  margin: 0 0 0.5em -0.025em;
+}
+
+.heading-1 {
+  line-height: 1.15em;
+  font-size: var(--font-size-xlarge);
+}
+
+.heading-2 {
+  font-size: var(--font-size-large);
+}
+
+.heading-3 {
+  font-size: var(--font-size-medium);
+}
+
+.caption,
+.paragraph {
+  margin-block: 0;
+  min-height: 1.3em;
+  line-height: 1.3em;
+  margin: 0 0 0.75em 0;
+  font-size: var(--font-size-regular);
+}
+
+.illustration {
+  margin-block: 0;
+  margin-inline: 0;
+}
+
+.caption {
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  font-size: var(--font-size-small);
+}
+
+.large {
+  --size: 2;
+}
+
+.regular {
+  --size: 1;
+}
+
+.small {
+  --size: 0.5;
+}
+
+.column-padding {
+  padding-left: clamp(calc(var(--size, 1) * 1rem), calc(var(--size, 1) * 2vw), calc(var(--size, 1) * 3rem));
+  padding-right: clamp(calc(var(--size, 1) * 1rem), calc(var(--size, 1) * 2vw), calc(var(--size, 1) * 3rem));
+}
+.row-margin {
+  margin-bottom: clamp(calc(var(--size, 1) * 2rem), calc(var(--size, 1) * 4vmax), calc(var(--size, 1) * 4rem));
+}
+
+.narrative {
+  max-width: 768px;
+}
+
+.main-navigation > * {
+  height: 100%;
+  min-width: 40px;
+  margin-right: 1vmin;
+  display: inline-block;
+}
+
+.page-header {
+  padding-top: 1vw;
+  padding-bottom: clamp(3rem, 4vmax, 5rem);
+}
+
+.page-footer {
+  padding-bottom: 1vw;
+  padding-top: clamp(3rem, 4vmax, 5rem);
+}
+
+img,
+video {
+  width: 100%;
+  display: block;
+  position: relative;
+  object-fit: cover;
+}
+
+.square {
+  aspect-ratio: 1 / 1;
+}
+.desktop-image-container {
+  aspect-ratio: 16 / 10;
+  contain: paint;
+}
+
+.device-frame {
+  fill: rgba(225, 225, 225, 0.5);
+}

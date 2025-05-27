@@ -1,0 +1,105 @@
+.grid {
+  display: grid;
+}
+
+.stack {
+  grid-template-areas: stack;
+}
+
+.stack > * {
+  grid-area: stack;
+}
+
+.small-gap {
+  gap: clamp(0.25rem, 0.5vw, 1rem);
+}
+
+.regular-gap {
+  gap: clamp(0.5rem, 1vw, 2rem);
+}
+
+.large-gap {
+  gap: clamp(1rem, 2vw, 4rem);
+}
+
+.two-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.three-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.four-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.five-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+.six-cols {
+  grid-template-columns: repeat(6, 1fr);
+}
+.seven-cols {
+  grid-template-columns: repeat(7, 1fr);
+}
+.eight-cols {
+  grid-template-columns: repeat(8, 1fr);
+}
+.twelve-cols {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.cols-2 {
+  grid-column: span 2;
+}
+.cols-3 {
+  grid-column: span 3;
+}
+.cols-4 {
+  grid-column: span 4;
+}
+.cols-5 {
+  grid-column: span 5;
+}
+.cols-6 {
+  grid-column: span 6;
+}
+.cols-7 {
+  grid-column: span 7;
+}
+.cols-8 {
+  grid-column: span 8;
+}
+.cols-9 {
+  grid-column: span 9;
+}
+.cols-10 {
+  grid-column: span 10;
+}
+.cols-12 {
+  grid-column: span 12;
+}
+
+@media screen and (max-width:  479px) {
+  .cols-2,
+  .cols-3,
+  .cols-4,
+  .cols-5,
+  .cols-6,
+  .cols-8,
+  .cols-9,
+  .cols-10 {
+    grid-column: 1 / -1;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .cols-2,
+  .cols-3,
+  .cols-4,
+  .cols-5,
+  .cols-6,
+  .cols-8,
+  .cols-9,
+  .cols-10 {
+    grid-column: span 6;
+  }
+}

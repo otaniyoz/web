@@ -1,0 +1,9 @@
+.x-translation {
+  animation: x-translation-animation 1s linear forwards;
+  animation-timeline: scroll();
+}
+
+@keyframes x-translation-animation {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(var(--x-translation-distance, 1)); }
+}

@@ -1,0 +1,22 @@
+.carousel-wrapper {
+  position: relative;
+  contain: paint;
+}
+.carousel {
+  display: flex;
+  overflow-x: visible;
+  flex-flow: row nowrap;
+  scrollbar-width: none;
+}
+.carousel > * {
+  min-width: 24%;
+  padding-right: clamp(0.5rem, 1vw, 2rem);
+}
+
+.carousel:first-child {
+  padding-left: clamp(1rem, 2vw, 4rem);
+}
+
+.carousel:last-child {
+  padding-right: 0;
+}

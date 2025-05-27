@@ -1,41 +1,12 @@
 @import url('../../styles/fonts.css');
-@import url('../../styles/common.css');
-@import url('../../styles/link.css');
 @import url('../../styles/variables.css');
+@import url('../../styles/core.css');
+@import url('../../styles/grid.css');
+@import url('../../styles/link.css');
+@import url('../../styles/carousel.css');
+@import url('../../styles/x-translation.css');
 
 body {
   --background-main: #005b98;
-  --light-text-main: #fff;
-}
-
-.scrolling-element {
-  animation: scroll-element 1s linear forwards;
-  animation-timeline: scroll();
-}
-
-.scrollable-gallery-wrapper {
-  position: relative;
-  contain: paint;
-}
-.scrollable-gallery {
-  display: flex;
-  overflow-x: visible;
-  flex-flow: row nowrap;
-  scrollbar-width: none;
-}
-.scrollable-gallery > * {
-  min-width: 25%;
-}
-
-.grid {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  gap: 1vmax;
-  z-index: 12;
-}
-
-@keyframes scroll-element {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-350%); }
+  --text-main: rgb(250, 250, 250);
 }
