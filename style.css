@@ -14,3 +14,9 @@
 .wheel {
   --rotation-duration: 4s;
 }
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .twevle-cols {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
