@@ -17,6 +17,12 @@ body {
   background: var(--background-main);
 }
 
+img,
+video {
+  width: 100%;
+  display: block;
+}
+
 .heading-1,
 .heading-2,
 .heading-3 {
@@ -54,7 +60,7 @@ body {
 
 .caption {
   font-weight: 700;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.075em;
   font-variant: small-caps;
   text-transform: lowercase;
   font-size: var(--font-size-small);
@@ -99,14 +105,6 @@ body {
 .page-footer {
   padding-bottom: 1vw;
   padding-top: clamp(3rem, 4vmax, 5rem);
-}
-
-img,
-video {
-  width: 100%;
-  display: block;
-  position: relative;
-  object-fit: cover;
 }
 
 .square {
