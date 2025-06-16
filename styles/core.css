@@ -59,6 +59,20 @@ video {
   font-size: var(--font-size-regular);
 }
 
+.content {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.narrative {
+  max-width: 768px;
+}
+
+.bleed {
+  margin: 0;
+  max-width: 100%;
+}
+
 .illustration {
   margin-block: 0;
   margin-inline: 0;
@@ -92,10 +106,6 @@ video {
   margin-bottom: clamp(calc(var(--size, 1) * 2rem), calc(var(--size, 1) * 4vmax), calc(var(--size, 1) * 4rem));
 }
 
-.narrative {
-  max-width: 768px;
-}
-
 .main-navigation > * {
   height: 100%;
   min-width: 40px;
@@ -113,9 +123,6 @@ video {
   padding-top: clamp(3rem, 4vmax, 5rem);
 }
 
-.square {
-  aspect-ratio: 1 / 1;
-}
 .desktop-image-container {
   aspect-ratio: 16 / 10;
   contain: paint;
@@ -123,4 +130,10 @@ video {
 
 .device-frame {
   fill: rgba(225, 225, 225, 0.5);
+}
+
+.avatar {
+  max-width: 64px;
+  aspect-ratio: 1 / 1;
+  border-radius: 10000px;
 }

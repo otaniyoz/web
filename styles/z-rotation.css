@@ -2,7 +2,7 @@
 .z-rotation-infinite {
   transform-box: fill-box;
   transform-origin: center;
-  animation: z-rotation-animation var(--rotation-duration, 1s) ease-in-out 0.2s forwards;
+  animation: z-rotation-animation var(--rotation-duration, 1s) var(--transition-function, linear) 0.2s forwards;
 }
 
 .z-rotation-scroll {

@@ -15,6 +15,16 @@
   --rotation-duration: 4s;
 }
 
+.color-transition {
+  animation: color-animation 30s linear infinite;
+}
+
+@keyframes color-animation { 
+  0% { fill: var(--accent-main); }
+  50% { fill: var(--accent-secondary); } 
+  100% { fill: var(--accent-main); } 
+}
+
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .twevle-cols {
     grid-template-columns: repeat(6, 1fr);
