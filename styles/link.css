@@ -7,7 +7,7 @@
 }
 .link:hover {
   transition: 0;
-  text-decoration-color: var(--accent-main);
+  text-decoration-color: var(--accent-secondary);
 }
 .external-link {
   display: inline-block;
@@ -17,7 +17,7 @@
   content: " ↗";
 }
 .link:hover .external-link {
-  color: var(--accent-main);
+  color: var(--accent-secondary);
   animation-play-state: running !important;
 }
 

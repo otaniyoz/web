@@ -133,7 +133,17 @@ video {
 }
 
 .avatar {
-  max-width: 64px;
+  width: 64px;
   aspect-ratio: 1 / 1;
   border-radius: 10000px;
+}
+
+.eyes {
+  transition: 0.5s;
+}
+
+.avatar:hover > .eyes {
+  transition: 0;
+  filter: blur(8px);
+  fill: var(--accent-main);
 }
