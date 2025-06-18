@@ -9,8 +9,8 @@
 @import url('../../styles/fade-in.css');
 
 body {
-  --background-main: #f8a300;
-  --light-text-main: #111;
+  --background-main: #64d159;
+  --text-main: #111;
 }
 
 .content-container {
