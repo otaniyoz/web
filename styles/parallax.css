@@ -5,7 +5,7 @@
 
 .y-parallax-image {
   animation: y-parallax-animation linear both;
-  animation-timeline: scroll();
+  animation-timeline: --scrollTimeline;
   animation-range: 0 var(--parallaxDistance, 1);
   position: fixed;
 }

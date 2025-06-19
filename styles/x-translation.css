@@ -1,6 +1,10 @@
 .x-translation {
-  animation: x-translation-animation 1s linear forwards;
-  animation-timeline: scroll();
+  transform: translateX(0);
+  animation-name: x-translation-animation;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: forwards;
+  animation-timeline: --scrollTimeline;
 }
 
 @keyframes x-translation-animation {

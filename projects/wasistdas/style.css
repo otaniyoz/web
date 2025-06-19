@@ -6,6 +6,10 @@
 @import url('../../styles/carousel.css');
 @import url('../../styles/x-translation.css');
 
+html {
+  scroll-timeline-name: --scrollTimeline;
+}
+
 body {
   --background-main: #005b98;
   --text-main: rgb(250, 250, 250);

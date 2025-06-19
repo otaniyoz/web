@@ -6,6 +6,10 @@
 @import url('styles/parallax.css');
 @import url('styles/z-rotation.css');
 
+html {
+  scroll-timeline-name: --scrollTimeline;
+}
+
 .murals-cover {
   --parallaxSpeed: -40;
   --parallaxDistance: 400px;

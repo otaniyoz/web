@@ -8,9 +8,14 @@
 @import url('../../styles/z-rotation.css');
 @import url('../../styles/fade-in.css');
 
+html {
+  scroll-timeline-name: --scrollTimeline;
+}
+
 body {
   --background-main: #64d159;
-  --text-main: #111;
+  --text-main: #fbf8ee;
+  --accent-secondary: #fbf8ee;
 }
 
 .content-container {

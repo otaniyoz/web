@@ -6,7 +6,7 @@
 }
 
 .z-rotation-scroll {
-  animation-timeline: scroll();
+  animation-timeline: --scrollTimeline;
 }
 
 .z-rotation-infinite {
