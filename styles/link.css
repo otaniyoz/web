@@ -14,7 +14,9 @@
   animation-play-state: paused !important;
 }
 .external-link:after {
-  content: " ↗";
+  margin-left: 0.25em;
+  transform-origin: -0.25em 0;
+  content: var(--external-link-sign, "↗");
 }
 .link:hover .external-link {
   color: rgb(var(--accent-secondary));

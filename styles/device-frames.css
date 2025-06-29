@@ -91,7 +91,7 @@
 
 .desktop > .browser > .browser-top,
 .desktop > .browser > .browser-bottom {
-  padding: 8px 16px;
+  padding: 4px 16px;
   width: calc(100% - 3ch);
 }
 
