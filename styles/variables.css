@@ -1,10 +1,10 @@
 :root {
-  --text-main: rgb(1, 15, 25);
-  --text-secondary: rgb(150, 150, 150);
-  --accent-main: rgb(15, 145, 200);
-  --accent-secondary: rgb(255, 69, 0);
-  --background-main: rgb(250, 250, 250); 
-  --background-secondary: rgb(225, 225, 225);
+  --text-main: 1, 15, 25;
+  --text-secondary: 150, 150, 150;
+  --accent-main: 15, 145, 200;
+  --accent-secondary: 255, 69, 0;
+  --background-main: 250, 250, 250; 
+  --background-secondary: 225, 225, 225;
 
   --font-size-xlarge: clamp(3.5rem, 0.75rem + 5lvw, 4.5rem); 
   --font-size-large: clamp(2.5rem, 0.75rem + 3lvw, 3.5rem); 

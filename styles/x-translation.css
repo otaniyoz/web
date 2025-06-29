@@ -1,10 +1,13 @@
 .x-translation {
   transform: translateX(0);
   animation-name: x-translation-animation;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-direction: forwards;
-  animation-timeline: --scrollTimeline;
+  animation-duration: var(--translation-duration, 1s);
+  animation-delay: var(--translation-delay, 0);
+  animation-timing-function: var(--translation-timing-function, ease-in);
+  animation-direction: normal;
+  animation-range-start: var(--translation-range-start);
+  animation-range-end: var(--translation-range-end);
+  animation-timeline: var(--translation-timeline);
 }
 
 @keyframes x-translation-animation {

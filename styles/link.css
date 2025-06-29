@@ -3,11 +3,11 @@
   transition: 0.25s;
   text-underline-offset: 0.2em;
   text-decoration-thickness: 1px;
-  text-decoration-color: inherit;
+  text-decoration-color: rgba(var(--text-main), 0.25);
 }
 .link:hover {
   transition: 0;
-  text-decoration-color: var(--accent-secondary);
+  text-decoration-color: rgb(var(--accent-secondary));
 }
 .external-link {
   display: inline-block;
@@ -17,10 +17,10 @@
   content: " ↗";
 }
 .link:hover .external-link {
-  color: var(--accent-secondary);
+  color: rgb(var(--accent-secondary));
   animation-play-state: running !important;
 }
 
 .link .secondary {
-  color: var(--text-secondary);
+  color: rgb(var(--text-secondary));
 }

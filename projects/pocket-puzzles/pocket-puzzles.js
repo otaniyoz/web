@@ -10,4 +10,10 @@ window.onload = () => {
     else if (event.target.id === 'image-2') sound2.play();
     else if (event.target.id === 'image-3') sound3.play();
   });
+
+  if (typeof window.chrome === 'undefined') {
+    const animationTarget = document.querySelector('.x-translation');
+    const animationTargetWrapper = animationTarget.parentNode;
+    animationTargetWrapper.style.overflow = 'auto';
+  }
 };

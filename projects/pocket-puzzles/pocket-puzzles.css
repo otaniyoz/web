@@ -7,15 +7,18 @@
 @import url('../../styles/x-translation.css');
 @import url('../../styles/z-rotation.css');
 @import url('../../styles/fade-in.css');
-
-html {
-  scroll-timeline-name: --scrollTimeline;
-}
+@import url('../../styles/device-frames.css');
 
 body {
-  --background-main: #64d159;
-  --text-main: #fbf8ee;
-  --accent-secondary: #fbf8ee;
+  --translation-timeline: view();
+  --rotation-timeline: scroll();
+  --translation-range-start: contain 30%;
+  --translation-range-end: exit 150%;
+  --background-main: 100, 209, 89;
+  --text-main: 17, 17, 17;
+  --desktop-browser-margin: 0;
+  --phone-frame-thickness: 1px;
+  --phone-browser-content-aspect-ratio: 1 / 1.85;
 }
 
 .content-container {

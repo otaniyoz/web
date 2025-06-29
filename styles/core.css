@@ -12,9 +12,9 @@ body {
   min-height: 100vh;
   line-height: 1.25em;
   font-family: 'Inter';
-  color: var(--text-main);
+  color: rgb(var(--text-main));
   font-size: var(--font-size-regular);
-  background: var(--background-main);
+  background: rgb(var(--background-main));
 }
 
 img,
@@ -25,8 +25,8 @@ video {
 }
 
 ::selection {
-  color: var(--background-main);
-  background-color: var(--accent-secondary);
+  color: rgb(var(--background-main));
+  background-color: rgb(var(--accent-secondary));
 }
 
 .heading-1,
@@ -132,9 +132,10 @@ video {
   fill: rgba(225, 225, 225, 0.5);
 }
 
-.avatar {
+.avatar-wrapper {
   width: 64px;
-  aspect-ratio: 1 / 1;
+  height: 64px;
+  contain: paint;
   border-radius: 10000px;
 }
 
@@ -142,8 +143,8 @@ video {
   transition: 0.5s;
 }
 
-.avatar:hover > .eyes {
+.avatar-wrapper:hover > .avatar > .eyes {
   transition: 0;
   filter: blur(8px);
-  fill: var(--accent-main);
+  fill: rgb(var(--accent-main));
 }

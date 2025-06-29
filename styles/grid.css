@@ -3,7 +3,7 @@
 }
 
 .stack {
-  grid-template-areas: stack;
+  grid-template-areas: "stack";
 }
 
 .stack > * {

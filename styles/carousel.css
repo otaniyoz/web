@@ -9,14 +9,15 @@
   scrollbar-width: none;
 }
 .carousel > * {
-  min-width: 24%;
-  padding-right: clamp(0.5rem, 1vw, 2rem);
+  flex: 0 0 auto;
+  width: clamp(var(--slot-min-width, 196px), var(--slot-width, 24svmax), var(--slot-max-width, 512px));
+  margin-right: clamp(0.5rem, 2svmax, 2rem);
 }
 
 .carousel:first-child {
-  padding-left: clamp(1rem, 2vw, 4rem);
+  margin-left: clamp(1rem, 2svmax, 4rem);
 }
 
 .carousel:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }

@@ -4,6 +4,6 @@
 @import url('../../styles/variables.css');
 
 body {
-  --text-main: rgb(250, 250, 250); 
-  --background-main: rgb(0, 13, 7);
+  --text-main: 250, 250, 250; 
+  --background-main: 0, 13, 7;
 }

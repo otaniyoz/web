@@ -1,0 +1,59 @@
+@import url('styles/variables.css');
+@import url('styles/fonts.css');
+@import url('styles/core.css');
+@import url('styles/grid.css');
+@import url('styles/link.css');
+@import url('styles/parallax.css');
+@import url('styles/z-rotation.css');
+
+html {
+  scroll-timeline-name: --scrollTimeline;
+}
+
+.murals-cover {
+  --parallaxSpeed: -40;
+  --parallaxDistance: 400px;
+}
+
+.wheel {
+  --rotation-duration: 4s;
+}
+
+.color-transition {
+  fill: var(--accent-main);
+  animation: colorTransition 10s ease-in-out infinite alternate;
+}
+
+@keyframes colorTransition {
+  0% { fill: hsl(198deg 86% 42%); }
+  12% { fill: hsl(201deg 76% 46%); }
+  18% { fill: hsl(205deg 66% 50%); }
+  22% { fill: hsl(209deg 67% 54%); }
+  26% { fill: hsl(215deg 67% 58%); }
+  29% { fill: hsl(221deg 67% 62%); }
+  33% { fill: hsl(230deg 64% 66%); }
+  36% { fill: hsl(241deg 61% 69%); }
+  39% { fill: hsl(254deg 61% 67%); }
+  42% { fill: hsl(267deg 59% 65%); }
+  44% { fill: hsl(279deg 56% 63%); }
+  47% { fill: hsl(291deg 53% 60%); }
+  50% { fill: hsl(303deg 53% 59%); }
+  53% { fill: hsl(313deg 64% 59%); }
+  56% { fill: hsl(320deg 75% 60%); }
+  58% { fill: hsl(325deg 85% 60%); }
+  61% { fill: hsl(330deg 94% 60%); }
+  64% { fill: hsl(333deg 100% 59%); }
+  67% { fill: hsl(336deg 100% 57%); }
+  71% { fill: hsl(340deg 100% 56%); }
+  74% { fill: hsl(344deg 100% 56%); }
+  78% { fill: hsl(350deg 100% 57%); }
+  82% { fill: hsl(357deg 100% 59%); }
+  88% { fill: hsl(6deg 100% 57%); }
+  100% { fill: hsl(16deg 100% 50%); }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .twevle-cols {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
