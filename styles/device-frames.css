@@ -47,12 +47,20 @@
   font-weight: 700;
 }
 
-.status-bar:before {
-  content: attr(data-status-left);
+.phone > .status-bar:before {
+  content: var(--phone-status-left, "9:15");
 }
 
-.status-bar:after {
-  content: attr(data-status-right);
+.phone > .status-bar:after {
+  content: var(--phone-status-right, "●●○");
+}
+
+.desktop > .status-bar:before {
+  content: var(--desktop-status-left, "");
+}
+
+.desktop > .status-bar:after {
+  content: var(--desktop-status-right, "9:15");
 }
 
 .browser {
@@ -99,7 +107,7 @@
 
 .browser-top:after,
 .browser-bottom:after {
-  content: attr(data-url);
+  content: var(--page-url);
 
   display: block;
   padding: 0 3%;

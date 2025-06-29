@@ -14,8 +14,11 @@ body {
   --rotation-timeline: scroll();
   --translation-range-start: contain 30%;
   --translation-range-end: exit 150%;
+
   --background-main: 100, 209, 89;
   --text-main: 17, 17, 17;
+  
+  --page-url: "otaniyoz.github.io/pocket-puzzles/";
   --desktop-browser-margin: 0;
   --phone-frame-thickness: 1px;
   --phone-browser-content-aspect-ratio: 1 / 1.85;

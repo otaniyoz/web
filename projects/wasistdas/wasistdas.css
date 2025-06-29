@@ -15,6 +15,7 @@ body {
   --translation-range-start: contain 20%;
   --translation-range-end: exit 80%;
 
+  --page-url: "otaniyoz.github.io/wasistdas/";
   --frame-aspect-ratio: 1.8 / 1;
 }
 
