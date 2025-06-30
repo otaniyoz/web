@@ -5,24 +5,27 @@
   text-decoration-thickness: 1px;
   text-decoration-color: rgba(var(--text-main), 0.25);
 }
+
 .link:hover {
   transition: 0;
   text-decoration-color: rgb(var(--accent-secondary));
 }
+
 .external-link {
+  transition: 0.25s;
   display: inline-block;
+  color: rgba(var(--text-main), 0.25);
   animation-play-state: paused !important;
 }
+
 .external-link:after {
   margin-left: 0.25em;
   transform-origin: -0.25em 0;
   content: var(--external-link-sign, "↗");
 }
+
 .link:hover .external-link {
+  transition: 0;
   color: rgb(var(--accent-secondary));
   animation-play-state: running !important;
-}
-
-.link .secondary {
-  color: rgb(var(--text-secondary));
 }
