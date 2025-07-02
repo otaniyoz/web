@@ -7,7 +7,7 @@
 }
 
 .link:hover {
-  transition: 0;
+  transition: 0s;
   text-decoration-color: rgb(var(--accent-secondary));
 }
 
@@ -25,7 +25,7 @@
 }
 
 .link:hover .external-link {
-  transition: 0;
+  transition: 0s;
   color: rgb(var(--accent-secondary));
   animation-play-state: running !important;
 }

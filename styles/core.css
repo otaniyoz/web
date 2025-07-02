@@ -144,7 +144,7 @@ video {
 }
 
 .avatar-wrapper:hover > .avatar > .eyes {
-  transition: 0;
+  transition: 0s;
   filter: blur(8px);
   fill: rgb(var(--accent-main));
 }

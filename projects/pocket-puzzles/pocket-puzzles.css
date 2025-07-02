@@ -34,7 +34,7 @@ body {
 }
 
 .sound-container:hover {
-  transition: 0;
+  transition: 0s;
   filter: brightness(1);
 }
 
