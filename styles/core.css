@@ -79,8 +79,8 @@ video {
 }
 
 .caption {
-  font-weight: 700;
-  letter-spacing: 0.075em;
+  font-weight: 400;
+  letter-spacing: 0.1em;
   font-variant: small-caps;
   text-transform: uppercase;
   font-size: var(--font-size-small);
@@ -133,10 +133,14 @@ video {
 }
 
 .avatar-wrapper {
-  width: 64px;
-  height: 64px;
   contain: paint;
   border-radius: 10000px;
+}
+
+.avatar-wrapper,
+.avatar-wrapper > canvas {
+  width: 64px;
+  height: 64px;
 }
 
 .eyes {
@@ -144,7 +148,7 @@ video {
 }
 
 .avatar-wrapper:hover > .avatar > .eyes {
-  transition: 0s;
+  transition: 0.5s;
   filter: blur(8px);
   fill: rgb(var(--accent-main));
 }

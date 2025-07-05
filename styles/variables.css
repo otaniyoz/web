@@ -9,7 +9,7 @@
   --font-size-xlarge: clamp(4rem, 0.75rem + 5lvw, 5rem); 
   --font-size-large: clamp(3rem, 0.75rem + 3lvw, 4rem); 
   --font-size-medium: clamp(2rem, 0.75rem + 2lvw, 3rem); 
-  --font-size-regular: clamp(1.5rem, 0.75rem + 1lvw, 1.75rem); 
+  --font-size-regular: clamp(1.5rem, 0.75rem + 0.5lvw, 1.75rem); 
   --font-size-small: 1rem;
 
   --x-translation-distance: -250%;
