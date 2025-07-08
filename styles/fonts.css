@@ -1,4 +1,10 @@
 @font-face {
+  font-family: 'Inter Display';
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/InterDisplay-Bold.woff2') format('woff2');
+}
+@font-face {
   font-family: 'Inter';
   font-weight: 700;
   font-display: swap;

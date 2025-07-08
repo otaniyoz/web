@@ -7,8 +7,8 @@
   --background-secondary: 225, 225, 225;
 
   --font-size-xlarge: clamp(3rem, 1rem + 4lvw, 5rem); 
-  --font-size-large: clamp(2.5rem, 1rem + 2.5lvw, 4rem); 
-  --font-size-medium: clamp(2rem, 1rem + 1.5lvw, 3rem); 
+  --font-size-large: clamp(2.25rem, 1rem + 2.5lvw, 4rem); 
+  --font-size-medium: clamp(2rem, 1rem + 1.5lvw, 2.5rem); 
   --font-size-regular: clamp(1.25rem, 1rem + 1lvw, 1.75rem); 
   --font-size-small: 1rem;
 
