@@ -81,11 +81,11 @@ video {
   text-transform: uppercase;
 }
 
-/*.module {
+.module {
   display: flex;
   flex-flow: column nowrap;
 }
-*/
+
 .content {
   max-width: 1440px;
   margin: 0 auto;
@@ -135,6 +135,10 @@ video {
 .page-footer {
   padding-bottom: 1vw;
   padding-top: clamp(3rem, 4vmax, 5rem);
+}
+
+.avatar {
+  transform: translate(-10%, -5%) rotateZ(-125deg);
 }
 
 .avatar-wrapper {
