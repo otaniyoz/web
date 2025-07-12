@@ -130,28 +130,28 @@
         <p class="narrative paragraph">In <i>Slide</i>, you slide the shuffled tiles into proper   positions to restore the original image.</p>
         <div class="grid four-cols regular-gap content-container">
           <div class="canvas-screen-container">
-            <div class="pointer-container">
+            <div class="pointer-container media">
               <img class="canvas-screen" src="images/slide_1.webp" />
               <span class="pointer slide-pointer-1"></span>
             </div>
             <p class="caption">1. Inspect the board and identify which tiles seem to be out of place.</p>
           </div>
           <div class="canvas-screen-container">
-            <div class="pointer-container">
+            <div class="pointer-container media">
               <img class="canvas-screen" src="images/slide_2.webp" />
               <span class="pointer slide-pointer-2"></span>
             </div>
             <p class="caption">2. Get the pieces in the correct order by sliding one tile at a time.</p>
           </div>
           <div class="canvas-screen-container">
-            <div class="pointer-container">
+            <div class="pointer-container media">
               <img class="canvas-screen" src="images/slide_3.webp" />
               <span class="pointer slide-pointer-3"></span>
             </div>
             <p class="caption">3. Slide the tiles around until all are placed correctly.</p>
           </div>
           <div class="canvas-screen-container">
-            <img class="canvas-screen" src="images/slide_4.webp" />
+            <img class="canvas-screen media" src="images/slide_4.webp" />
             <p class="caption">4. There are no limits. Press stop to see solution.</p>
           </div>
         </div>
@@ -160,14 +160,14 @@
         <p class="narrative paragraph">In <i>Pairs</i>, you find matching tiles in the grid.</p>
         <div class="grid four-cols regular-gap content-container">
           <div class="canvas-screen-container">
-            <div class="pointer-container">
+            <div class="pointer-container media">
               <img class="canvas-screen" src="images/pairs_0.webp" />
               <span class="pointer pairs-pointer-0"></span>
             </div>
             <p class="caption">1. Try to find matching pairs by flipping tiles.</p>
           </div>
           <div class="canvas-screen-container">
-            <div class="pointer-container">
+            <div class="pointer-container media">
               <img class="canvas-screen" src="images/pairs_1.webp" />
               <span class="pointer pairs-pointer-1"></span>
               <span class="pointer pairs-pointer-2"></span>
@@ -177,7 +177,7 @@
             <p class="caption">2. If the tiles do not match, they are flipped back after one second.</p>
           </div>
           <div class="canvas-screen-container">
-            <div class="pointer-container">
+            <div class="pointer-container media">
               <img class="canvas-screen" src="images/pairs_2.webp" />
               <span class="pointer pairs-pointer-5"></span>
               <span class="pointer pairs-pointer-6"></span>
@@ -185,7 +185,7 @@
             <p class="caption">3. Use your memory to try and match all pairs.</p>
           </div>
           <div class="canvas-screen-container">
-            <img class="canvas-screen" src="images/pairs_3.webp" />
+            <img class="canvas-screen media" src="images/pairs_3.webp" />
             <p class="caption">4. Flip all tiles or press stop to see the solution.</p>
           </div>
         </div>
@@ -194,22 +194,22 @@
         <p class="narrative paragraph">In <i>That</i>, you tap the tile that stands out from the rest before a second ends.</p>
         <div class="grid four-cols content-container regular-gap">
           <div class="canvas-screen-container">
-            <img class="canvas-screen" src="images/that_0.webp" />
+            <img class="canvas-screen media" src="images/that_0.webp" />
             <p class="caption">1. Quickly scan the grid of tiles that appears on the screen.</p>
           </div>
           <div class="canvas-screen-container">
-            <div class="pointer-container">
-              <img class="canvas-screen" src="images/that_1.webp" />
+            <div class="pointer-container media">
+              <img class="canvas-screen media" src="images/that_1.webp" />
               <span class="pointer that-pointer-1"></span>
             </div>
             <p class="caption">2. Tap the tile that looks different from the rest.</p>
           </div>
           <div class="canvas-screen-container">
-            <img class="canvas-screen" src="images/that_0.webp" />
+            <img class="canvas-screen media" src="images/that_0.webp" />
             <p class="caption">3. You only have one second before a new grid appears.</p>
           </div>
           <div class="canvas-screen-container">
-            <div class="pointer-container">
+            <div class="pointer-container media">
               <img class="canvas-screen" src="images/that_2.webp" />
               <span class="pointer that-pointer-2"></span>
             </div>
@@ -223,7 +223,7 @@
       <p class="narrative column-padding regular paragraph">Puzzles share the main element of the game - a common board with dynamic grid, where the number of rows and columns increases proportionally to difficulty:</p>
       <figure class="column-padding regular illustration grid regular-gap three-cols">
         <div>
-          <div class="grid stack">
+          <div class="media grid stack">
             <div class="four-by-four grid fade-in-view">
               <div class="grid-cell"></div>
               <div class="grid-cell"></div>
@@ -247,7 +247,7 @@
           <p class="caption">Low difficulty</p> 
         </div>
         <div>
-          <div class="grid stack">
+          <div class="media grid stack">
             <div class="six-by-six grid fade-in-view">
               <div class="grid-cell"></div>
               <div class="grid-cell"></div>
@@ -291,7 +291,7 @@
           <p class="caption">Medium difficulty</p> 
         </div>
         <div>
-          <div class="grid stack">
+          <div class="media grid stack">
             <div class="eight-by-eight grid fade-in-view">
               <div class="grid-cell"></div>
               <div class="grid-cell"></div>
@@ -370,8 +370,8 @@
       <figure id="sounds-container" class="column-padding regular illustration grid regular-gap six-cols">
         <div id="sound-container-1" class="sound-container cols-2">
           <img id="image-1" loading="lazy" src="images/paper_1.webp" alt="Pocket puzzles" />
-          <audio id="sound-1" src="sounds/0.mp3"></audio>
-          <p class="caption">tap to play</p>
+          <audio class="media" id="sound-1" src="sounds/0.mp3"></audio>
+          <p class="caption">Tap to play</p>
         </div>
         <div id="sound-container-2" class="sound-container cols-2">
           <img id="image-2" loading="lazy" src="images/paper_2.webp" alt="Pocket puzzles" />
