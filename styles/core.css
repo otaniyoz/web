@@ -1,5 +1,16 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: bottom;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: subpixel-antialiased;
+  letter-spacing: clamp(-0.075em, calc(sign(1rem - 1em) * 0.025em + 0.025rem), 0.075em);
+}
+
 *,
-html {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -8,13 +19,10 @@ html {
 }
 
 body {
-  margin: 0;
   min-height: 100vh;
-  line-height: 1.25em;
   font-family: 'Inter';
   color: rgb(var(--text-main));
-  font-size: var(--font-size-regular);
-  background: rgb(var(--background-main));
+  background: rgb(var(--background-main));  
 }
 
 img,
@@ -33,7 +41,7 @@ video {
 .heading-2,
 .heading-3 {
   font-weight: 700;
-  letter-spacing: -0.01em;
+  line-height: 1.05em;
   font-family: "InterDisplay";
   margin: 0 0 0.5em -0.025em;
 }
@@ -44,24 +52,40 @@ video {
 }
 
 .heading-2 {
-  line-height: 1.05em;
   font-size: var(--font-size-large);
 }
 
 .heading-3 {
-  line-height: 1.05em;
   font-size: var(--font-size-medium);
 }
 
 .caption,
 .paragraph {
-  margin-block: 0;
   min-height: 1.3em;
   line-height: 1.3em;
   margin: 0 0 0.75em 0;
   font-size: var(--font-size-regular);
 }
 
+.caption {
+  font-size: var(--font-size-small);
+}
+
+.media + .caption {
+  margin: 0.5em 0 1em 0;
+}
+
+.small-capitals {
+  letter-spacing: 0.1em;
+  font-variant: small-caps;
+  text-transform: uppercase;
+}
+
+/*.module {
+  display: flex;
+  flex-flow: column nowrap;
+}
+*/
 .content {
   max-width: 1440px;
   margin: 0 auto;
@@ -74,26 +98,6 @@ video {
 .bleed {
   margin: 0;
   max-width: 100%;
-}
-
-.illustration {
-  margin-block: 0;
-  margin-inline: 0;
-}
-
-.caption {
-  letter-spacing: 0.1em;
-  font-size: var(--font-size-small);
-}
-
-.media + .caption {
-  margin: 0.5em 0 1em 0;
-}
-
-.small-capitals {
-  letter-spacing: 0.1em;
-  font-variant: small-caps;
-  text-transform: uppercase;
 }
 
 .large {
@@ -131,15 +135,6 @@ video {
 .page-footer {
   padding-bottom: 1vw;
   padding-top: clamp(3rem, 4vmax, 5rem);
-}
-
-.desktop-image-container {
-  aspect-ratio: 16 / 10;
-  contain: paint;
-}
-
-.device-frame {
-  fill: rgba(225, 225, 225, 0.5);
 }
 
 .avatar-wrapper {

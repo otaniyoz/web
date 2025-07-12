@@ -1,12 +1,13 @@
 .parallax-container {
   position: relative;
   contain: paint;
+  aspect-ratio: var(--parallax-container-aspect-ratio, 16 / 9);
 }
 
 .y-parallax-image {
   animation: y-parallax-animation linear both;
   animation-timeline: --scrollTimeline;
-  animation-range: 0 var(--parallaxDistance, 1);
+  animation-range: 0 var(--parallaxDistance, 100cqh);
   position: fixed;
 }
 

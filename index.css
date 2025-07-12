@@ -8,14 +8,9 @@
 
 html {
   scroll-timeline-name: --scrollTimeline;
-}
 
-.murals-cover {
   --parallaxSpeed: -40;
-  --parallaxDistance: 400px;
-}
 
-.wheel {
   --rotation-duration: 4s;
 }
 
