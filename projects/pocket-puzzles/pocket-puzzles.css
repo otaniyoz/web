@@ -10,6 +10,8 @@
 @import url('../../styles/device-frames.css');
 
 body {
+  --x-translation-distance: -250%;
+  
   --translation-timeline: view();
   --rotation-timeline: scroll();
   --translation-range-start: contain 30%;
@@ -20,6 +22,8 @@ body {
   
   --page-url: "otaniyoz.github.io/pocket-puzzles/";
   --desktop-browser-margin: 0;
+  --frame-text-color: rgba(var(--text-main), 0.25);
+  --browser-text-color: rgba(var(--text-main), 0.25);
   --phone-frame-thickness: 1px;
   --phone-browser-content-aspect-ratio: 1 / 1.85;
 }

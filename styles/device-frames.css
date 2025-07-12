@@ -35,8 +35,8 @@
   aspect-ratio: var(--frame-aspect-ratio, auto);
 
   line-height: 1.2em;
-  font-size: var(--frame-font-size);
-  color: rgba(var(--text-main), 0.25);
+  font-size: var(--frame-font-size, 1rem);
+  color: var(--frame-text-color, #000);
 }
 
 .status-bar {
@@ -71,7 +71,7 @@
 
   line-height: 1.2em;
   font-size: var(--browser-font-size);
-  color: rgba(var(--text-main), 0.25);
+  color: var(--browser-text-color, inherit);
 }
 
 .browser-top,

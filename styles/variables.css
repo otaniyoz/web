@@ -11,6 +11,4 @@
   --font-size-medium: clamp(2rem, 1rem + 1.5lvw, 2.5rem); 
   --font-size-regular: clamp(1.25rem, 1rem + 0.5lvw, 1.75rem); 
   --font-size-small: 1rem;
-
-  --x-translation-distance: -250%;
 }
