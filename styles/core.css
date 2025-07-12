@@ -33,21 +33,23 @@ video {
 .heading-2,
 .heading-3 {
   font-weight: 700;
-  line-height: 1.15em;
   letter-spacing: -0.01em;
   font-family: "Inter Display";
   margin: 0 0 0.5em -0.025em;
 }
 
 .heading-1 {
+  line-height: 1.15em;
   font-size: var(--font-size-xlarge);
 }
 
 .heading-2 {
+  line-height: 1.05em;
   font-size: var(--font-size-large);
 }
 
 .heading-3 {
+  line-height: 1.05em;
   font-size: var(--font-size-medium);
 }
 
