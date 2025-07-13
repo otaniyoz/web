@@ -20,8 +20,24 @@ body {
   --page-url: "otaniyoz.github.io/wasistdas/";
   --frame-text-color: rgba(var(--text-main), 0.25);
   --frame-aspect-ratio: 1.8 / 1;
+  --browser-text-color: rgba(var(--text-main), 0.25);
 }
 
-.intro-container {
+.desktop-wrapper {
+  padding-inline: clamp(calc(var(--size, 1) * 1rem), calc(var(--size, 1) * 2vw), calc(var(--size, 1) * 3rem));
   border-bottom: 1px solid rgba(var(--text-main), 0.25);
+}
+
+.desktop-dark {
+  --desktop-browser-margin: 0;
+  
+  animation: fade-in-inverted-image 2s ease-in-out forwards;
+  animation-range-start: contain 5%;
+  animation-range-end: contain 25%;
+  animation-timeline: view();
+}
+
+@keyframes fade-in-inverted-image {
+  0% { filter: none; }
+  100% { filter: invert() contrast(85%) brightness(85%) hue-rotate(180deg); }
 }

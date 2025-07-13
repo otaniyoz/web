@@ -2,7 +2,7 @@
   border: 0;
   margin: 0;
   padding: 0;
-  vertical-align: bottom;
+  vertical-align: baseline;
   scroll-behavior: smooth;
   -webkit-font-smoothing: subpixel-antialiased;
   letter-spacing: clamp(-0.075em, calc(sign(1rem - 1em) * 0.025em + 0.025rem), 0.075em);
@@ -20,7 +20,7 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: 'Inter';
+  font-family: "Inter", sans-serif;
   color: rgb(var(--text-main));
   background: rgb(var(--background-main));  
 }
@@ -42,8 +42,8 @@ video {
 .heading-3 {
   font-weight: 700;
   line-height: 1.05em;
-  font-family: "InterDisplay";
-  margin: 0 0 0.5em -0.025em;
+  font-family: "InterDisplay", sans-serif;
+  margin: 1.5em 0 0.5em -0.025em;
 }
 
 .heading-1 {
@@ -59,11 +59,21 @@ video {
   font-size: var(--font-size-medium);
 }
 
+.heading-1 h1,
+.heading-2 h2,
+.heading-3 h3 {
+  font: inherit;
+}
+
+.code {
+  font-family: "Fira Code", monospace;
+}
+
 .caption,
 .paragraph {
   min-height: 1.3em;
   line-height: 1.3em;
-  margin: 0 0 0.75em 0;
+  margin: 0 0 1em 0;
   font-size: var(--font-size-regular);
 }
 
@@ -81,14 +91,17 @@ video {
   text-transform: uppercase;
 }
 
-.module {
-  display: flex;
-  flex-flow: column nowrap;
+.module:has(:nth-child(2)) > *:last-child {
+  margin-bottom: clamp(calc(var(--size, 1) * 2rem), calc(var(--size, 1) * 4vmax), calc(var(--size, 1) * 4rem));
+}
+
+.module > *:not(.bleed) {
+  padding-inline: clamp(calc(var(--size, 1) * 1rem), calc(var(--size, 1) * 2vw), calc(var(--size, 1) * 3rem));
 }
 
 .content {
   max-width: 1440px;
-  margin: 0 auto;
+  margin-inline: auto;
 }
 
 .narrative {
@@ -96,8 +109,8 @@ video {
 }
 
 .bleed {
-  margin: 0;
   max-width: 100%;
+  padding-inline: 0;
 }
 
 .large {
@@ -112,14 +125,6 @@ video {
   --size: 0.5;
 }
 
-.column-padding {
-  padding-left: clamp(calc(var(--size, 1) * 1rem), calc(var(--size, 1) * 2vw), calc(var(--size, 1) * 3rem));
-  padding-right: clamp(calc(var(--size, 1) * 1rem), calc(var(--size, 1) * 2vw), calc(var(--size, 1) * 3rem));
-}
-.row-margin {
-  margin-bottom: clamp(calc(var(--size, 1) * 2rem), calc(var(--size, 1) * 4vmax), calc(var(--size, 1) * 4rem));
-}
-
 .main-navigation > * {
   height: 100%;
   min-width: 40px;
@@ -128,17 +133,19 @@ video {
 }
 
 .page-header {
-  padding-top: 1vw;
-  padding-bottom: clamp(3rem, 4vmax, 5rem);
+  margin-top: 1em;
+  margin-bottom: 4em;
 }
 
 .page-footer {
-  padding-bottom: 1vw;
-  padding-top: clamp(3rem, 4vmax, 5rem);
+  margin-top: 4em;
+  margin-bottom: 1em;
 }
 
 .avatar {
-  transform: translate(-10%, -5%) rotateZ(-125deg);
+  width: 64px;
+  zoom: 1.1;
+  transform: translate(-10%, -15%) rotateZ(-125deg);
 }
 
 .avatar-wrapper {
@@ -160,4 +167,8 @@ video {
   transition: 0.5s;
   filter: blur(8px);
   fill: rgb(var(--accent-main));
+}
+
+.inverted {
+  filter: invert() contrast(85%) brightness(85%) hue-rotate(180deg);
 }
