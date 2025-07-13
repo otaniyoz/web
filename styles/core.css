@@ -133,13 +133,23 @@ video {
 }
 
 .page-header {
-  margin-top: 1em;
-  margin-bottom: 4em;
+  margin-block: 1em 4em;
 }
 
 .page-footer {
-  margin-top: 4em;
-  margin-bottom: 1em;
+  margin-block: 4em 1em;
+}
+
+.block {
+  margin-block: attr(data-block, 1em);
+}
+
+.inline {
+  padding-block: attr(data-inline, 1em);
+}
+
+.gutter {
+  
 }
 
 .avatar {

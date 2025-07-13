@@ -30,9 +30,9 @@ body {
 
 .desktop-dark {
   --desktop-browser-margin: 0;
+  filter: invert() contrast(85%) brightness(85%) hue-rotate(180deg);
   
-  animation: fade-in-inverted-image 2s ease-in-out forwards;
-  animation-range-start: contain 5%;
+  animation: fade-in-inverted-image 1s ease-in-out forwards;
   animation-range-end: contain 25%;
   animation-timeline: view();
 }
