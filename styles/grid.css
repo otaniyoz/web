@@ -22,36 +22,76 @@
   gap: clamp(1rem, 2vw, 4rem);
 }
 
-.col.xs {
-  grid-column: auto / span 2;
+.col {
+  grid-column: auto / span calc(1 * var(--scale, 1));
 }
 
-.col.s {
-  grid-column: auto / span 4;
+.x3s {
+  --scale: 0;
 }
 
-.col.m {
-  grid-column: auto / span 6;
+.x2s {
+  --scale: 1;
 }
 
-.col.l {
-  grid-column: auto / span 8;
+.xxs {
+  --scale: 2;
 }
 
-.col.xl {
-  grid-column: auto / span 10;
+.xs {
+  --scale: 3;
 }
 
-.col.xxl {
-  grid-column: auto / span 12;
+.s {
+  --scale: 4;
 }
 
-.col.xxxl {
-  grid-column: auto / span 14;
+.m {
+  --scale: 5;
 }
 
-.col.xxxxl {
-  grid-column: auto / span 16;
+.l {
+  --scale: 6;
+}
+
+.xl {
+  --scale: 7;
+}
+
+.xxl {
+  --scale: 8;
+}
+
+.x2l {
+  --scale: 9;
+}
+
+.x3l {
+  --scale: 10;
+}
+
+.x4l {
+  --scale: 11;
+}
+
+.x5l {
+  --scale: 12;
+}
+
+.x6l {
+  --scale: 13;
+}
+
+.x7l {
+  --scale: 14;
+}
+
+.x8l {
+  --scale: 15;
+}
+
+.x9l {
+  --scale: 16;
 }
 
 .stack {
