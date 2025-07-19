@@ -15,7 +15,7 @@
 }
 
 .carousel:first-child {
-  margin-left: clamp(1rem, 2svmax, 4rem);
+  margin-left: var(--carousel-first-child-left-margin, clamp(1rem, 2svw, 4rem));
 }
 
 .carousel:last-child {
