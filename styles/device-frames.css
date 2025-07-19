@@ -1,15 +1,26 @@
 .phone {
-  --frame-thickness: var(--phone-frame-thickness, 1cqmax);
-  --frame-border-radius: var(--phone-frame-border-radius, 3.5cqmax);
+  --frame-thickness: clamp(1px, var(--phone-frame-thickness, 1cqmax), 64px);
+  --frame-border-radius: clamp(1px, var(--phone-frame-border-radius, 3.5cqmax), 64px);
+
   --browser-thickness: var(--phone-browser-thickness, 0);
   --browser-border-radius: var(--phone-browser-border-radius, 0);
   --browser-content-aspect-ratio: var(--phone-browser-content-aspect-ratio, auto);
   --browser-font-size: clamp(8px, var(--phone-browser-font-size, 0.8 * var(--browser-border-radius)), 64px);
 }
 
+.tablet {
+  --frame-thickness: clamp(1px, var(--tablet-frame-thickness, 1cqmax), 64px);
+  --frame-border-radius: clamp(1px, var(--tablet-frame-border-radius, 2.25cqmax), 64px);
+
+  --browser-thickness: var(--tablet-browser-thickness, 0);
+  --browser-border-radius: var(--tablet-browser-border-radius, 0);
+  --browser-content-aspect-ratio: var(--tablet-browser-content-aspect-ratio, auto);
+  --browser-font-size: clamp(8px, var(--tablet-browser-font-size, 0.8 * var(--browser-border-radius)), 64px);
+}
+
 .desktop {
-  --frame-thickness: var(--desktop-frame-thickness, 2cqmax);
-  --frame-border-radius: var(--desktop-frame-border-radius, 2cqmax);
+  --frame-thickness: clamp(1px, var(--desktop-frame-thickness, 2cqmax), 64px);
+  --frame-border-radius: clamp(1px, var(--desktop-frame-border-radius, 2cqmax), 64px);
 
   --browser-margin: var(--desktop-browser-margin, 2cqmax 4cqmax);
   --browser-thickness: var(--desktop-browser-thickness, 1px);
@@ -37,6 +48,7 @@
   line-height: 1.2em;
   font-size: var(--frame-font-size, 1rem);
   color: var(--frame-text-color, #000);
+  background: var(--frame-background, inherit);
 }
 
 .status-bar {
@@ -45,6 +57,14 @@
   justify-content: space-between;  
   
   font-weight: 700;
+}
+
+.tablet > .status-bar:before {
+  content: var(--tablet-status-left, "9:15");
+}
+
+.tablet > .status-bar:after {
+  content: var(--tablet-status-right, "●●○");
 }
 
 .phone > .status-bar:before {
@@ -72,6 +92,7 @@
   line-height: 1.2em;
   font-size: var(--browser-font-size);
   color: var(--browser-text-color, inherit);
+  background: var(--browser-background, inherit);
 }
 
 .browser-top,
@@ -87,22 +108,6 @@
   width: 100%;
   min-height: calc(0.75 * var(--frame-border-radius));
   padding: 0 calc(0.75 * var(--frame-border-radius));
-}
-
-.desktop > .browser > .browser-top,
-.desktop > .browser > .browser-bottom {
-  padding: 4px 16px;
-  width: calc(100% - 3ch);
-}
-
-.desktop > .status-bar {
-  border-bottom: var(--browser-thickness) solid rgba(var(--text-main), 0.15);
-}
-
-.browser-content {
-  object-fit: cover;
-  object-position: top;
-  aspect-ratio: var(--browser-content-aspect-ratio);
 }
 
 .browser-top:after,
@@ -121,4 +126,20 @@
 
 .browser-top:before {
   content: "●●●";
+}
+
+.browser-content {
+  object-fit: cover;
+  object-position: top;
+  aspect-ratio: var(--browser-content-aspect-ratio);
+}
+
+.desktop > .browser > .browser-top,
+.desktop > .browser > .browser-bottom {
+  padding: 4px 16px;
+  width: calc(100% - 3ch);
+}
+
+.desktop > .status-bar {
+  border-bottom: var(--browser-thickness) solid rgba(var(--text-main), 0.15);
 }
