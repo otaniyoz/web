@@ -9,21 +9,21 @@
 @import url('../../styles/fade-in.css');
 @import url('../../styles/device-frames.css');
 
-body {
+.webpage {
   --x-translation-distance: -250%;
   
   --translation-timeline: view();
   --rotation-timeline: scroll();
-  --translation-range-start: contain 30%;
+  --translation-range-start: contain 50%;
   --translation-range-end: exit 150%;
+  --carousel-first-child-left-margin: clamp(0.5rem, calc(var(--padding-scale, 1)*4vw - 1vmin), 10rem);
 
-  --background-main: 100, 209, 89;
-  --text-main: 17, 17, 17;
-  
   --page-url: "otaniyoz.github.io/pocket-puzzles/";
   --desktop-browser-margin: 0;
   --frame-text-color: rgba(var(--text-main), 0.25);
+  --frame-background: #fbf8ef;
   --browser-text-color: rgba(var(--text-main), 0.25);
+  --browser-background: #fbf8ef;
   --phone-frame-thickness: 1px;
   --phone-browser-content-aspect-ratio: 1 / 1.85;
 }
