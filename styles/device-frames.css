@@ -1,6 +1,6 @@
 .phone {
-  --frame-thickness: clamp(1px, var(--phone-frame-thickness, 1cqmax), 64px);
-  --frame-border-radius: clamp(1px, var(--phone-frame-border-radius, 3.5cqmax), 64px);
+  --frame-thickness: var(--phone-frame-thickness, clamp(1px, 1cqmax, 64px));
+  --frame-border-radius: var(--phone-frame-border-radius, clamp(1px, 3.5cqmax, 64px));
 
   --browser-thickness: var(--phone-browser-thickness, 0);
   --browser-border-radius: var(--phone-browser-border-radius, 0);
@@ -9,8 +9,8 @@
 }
 
 .tablet {
-  --frame-thickness: clamp(1px, var(--tablet-frame-thickness, 1cqmax), 64px);
-  --frame-border-radius: clamp(1px, var(--tablet-frame-border-radius, 2.25cqmax), 64px);
+  --frame-thickness: var(--tablet-frame-thickness, clamp(1px, 1cqmax, 64px));
+  --frame-border-radius: var(--tablet-frame-border-radius, clamp(1px, 2.25cqmax, 64px));
 
   --browser-thickness: var(--tablet-browser-thickness, 0);
   --browser-border-radius: var(--tablet-browser-border-radius, 0);
@@ -19,8 +19,8 @@
 }
 
 .desktop {
-  --frame-thickness: clamp(1px, var(--desktop-frame-thickness, 2cqmax), 64px);
-  --frame-border-radius: clamp(1px, var(--desktop-frame-border-radius, 2cqmax), 64px);
+  --frame-thickness: var(--desktop-frame-thickness, clamp(1px, 2cqmax, 64px));
+  --frame-border-radius: var(--desktop-frame-border-radius, clamp(1px, 2cqmax, 64px));
 
   --browser-margin: var(--desktop-browser-margin, 2cqmax 4cqmax);
   --browser-thickness: var(--desktop-browser-thickness, 1px);
