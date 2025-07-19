@@ -1,0 +1,21 @@
+@import url('../../styles/variables.css');
+@import url('../../styles/core.css');
+@import url('../../styles/grid.css');
+@import url('../../styles/fonts.css');
+@import url('../../styles/link.css');
+@import url('../../styles/device-frames.css');
+
+.webpage {
+  --page-url: "otaniyoz.github.io/murals/";
+  --phone-frame-thickness: 1px;
+  --tablet-frame-thickness: 1px;
+  --frame-text-color: rgba(136, 136, 136, 0.3);
+}
+
+.murals-dark-theme {
+  --frame-background: rgb(17, 17, 17);
+}
+
+.murals-light-theme {
+  --frame-background: rgb(248, 248, 242);
+}

@@ -7,13 +7,13 @@
   <meta name="theme-color" content="#151516">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
   <link rel="icon" href="../../images/favicon.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="murals.css">
   <script src="../../scripts/alaska.js"></script>
   <title>Murals</title>
 </head>
 
-<body>
-  <header class="module regular page-header content">
+<body class="webpage">
+  <header class="header container content">
     <nav class="main-navigation">
       <a href="/web" class="link">
         <div class="grid stack avatar-wrapper">
@@ -32,70 +32,84 @@
       </a>
     </nav>
   </header>
-  <main class="alaska" data-remove-leading-spaces="false" data-remove-trailing-spaces="false">
-    <div class="module module regular content">
-      <h1 class="heading-1 narrative"><a class="link" href="https://otaniyoz.github.io/murals/">Murals</a>: exploring street art</h1>
-      <p class="paragraph narrative">This is a self-initiated effort to capture and document art in the streets so people can explore and be inspired by places and artists in the cities across the globe.</p>
-    </div>
-    <div class="module regular content">
+  <main class="alaska main container content" data-remove-leading-spaces="false" data-remove-trailing-spaces="false">
+    <section class="row narrative">
+      <h1 class="heading-1"><a class="link" href="https://otaniyoz.github.io/murals/">Murals</a>: exploring street art</h1>
+      <p class="paragraph">This is a self-initiated effort to capture and document art in the streets so people can explore and be inspired by places and artists in the cities across the globe.</p>
+    </section>
+    <section class="row">
       <h2 class="heading-2 narrative">The interface is intentionally minimal to let people focus on artworks</h2>
-
-      <figure class="grid cols m">
-        <p class="paragraph narrative col s">Lazy loaded images are displayed on a single long page.</p>
-        <video width="2" height="1" class="col x5l" autoplay loop muted class="project-thumbnail">
+      <figure class="media-container">
+        <p class="paragraph narrative">Lazy loaded images are displayed on a single long page.</p>
+        <video class="video media" width="2" height="1" autoplay loop muted>
           <source src="videos/loading.mp4" type="video/mp4" />
         </video>
       </figure>
-    </div>
-    <div class="module regular content">
-      <figure class="grid cols m">
-        <p class="paragraph narrative col s">Artworks can be filtered by artist, location, genre, object, and year.</p>
-        <video width="2" height="1" class="col x5l" autoplay loop muted class="project-thumbnail">
+      <figure class="media-container">
+        <p class="paragraph narrative">Artworks can be filtered by artist, location, genre, object, and year.</p>
+        <video class="video media" width="2" height="1" autoplay loop muted>
           <source src="videos/filtering.mp4" type="video/mp4" />
         </video>
       </figure>
-    </div>
-    <div class="module regular content">
-      <figure class="grid cols m">
-        <p class="paragraph narrative col s">Each artwork can be expanded into a gallery view with additional information displayed whenever available.</p>
-        <video width="2" height="1" class="col x5l" autoplay loop muted class="project-thumbnail">
+      <figure class="media-container">
+        <p class="paragraph narrative">Each artwork can be expanded into a gallery view with additional information displayed whenever available.</p>
+        <video class="video media" width="2" height="1" autoplay loop muted>
           <source src="videos/gallery.mp4" type="video/mp4" />
         </video>
       </figure>
-    </div>
-    <div class="module regular content">
+    </section>
+    <section class="row">
       <h2 class="heading-2 narrative">And most of the work goes into details</h2>
-      <div class="grid cols m">
-        <figure class="col m">
-          <p class="paragraph narrative">Users can choose between russian and english languages - website will remember the choice.</p>
-          <img class="media" loading="lazy" src="images/russian.webp" alt="Murals" />
-          <p class="caption">Mobile</p>
-        </figure>
-
-        <figure class="col m">
+      <div class="grid cols gap">
+        <div class="span5">
+          <p class="paragraph narrative">Users can pick russian or english language - the choice will be remembered.</p>
+          <div class="frame-wrapper media-container murals-dark-theme">
+            <div class="frame phone">
+              <div class="status-bar"></div>
+              <div class="browser">
+                <img class="image browser-content" src="images/russian.webp" alt="" />
+                <div class="browser-bottom"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="span5">
           <p class="paragraph narrative">Interface automatically adapts to dark- and light-theme user preferences.</p>
-          <img class="media" loading="lazy" src="images/light.webp" alt="Murals" />
-          <p class="caption">Mobile</p>
-        </figure>
-
-        <figure class="col l murals-screens">
+          <div class="frame-wrapper media-container murals-light-theme">
+            <div class="frame phone">
+              <div class="status-bar"></div>
+              <div class="browser">
+                <img class="image browser-content" src="images/light.webp" alt="" />
+                <div class="browser-bottom"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="span6">
           <p class="paragraph narrative">And it responds nicely to different screen sizes so that artworks are always displayed optimally.</p>
-          <img class="media" loading="lazy" src="images/tablet.webp" alt="Murals" />
-          <p class="caption">Tablet</p>
-        </figure>
+          <div class="frame-wrapper media-container murals-dark-theme">
+            <div class="frame tablet">
+              <div class="status-bar"></div>
+              <div class="browser">
+                <img class="image browser-content" src="images/tablet.webp" alt="" />
+                <div class="browser-bottom"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="module regular narrative">
+    </section>
+    <section class="row narrative">
       <h2 class="heading-2">Technically speaking</h2>
       <p class="paragraph">In the general spirit of the project, webpage was implemented from scratch without frameworks or third-party libraries. The gallery is dynamically built on the client and data are fetched from a single JSON. User preferences, layout, responsiveness, gallery view - all are managed on the client in pure JavaScript as well.</p>
       <p class="paragraph">The project was developed progressively: the main goal was to ship a working good enough version fast and cheap sacrificing nonessential functionality to meet the constraints. This means that there are things that can be improved and added. This also means this project went from idea to web in around two days including time for taking and editing first batch of photographs, and researching.</p>
-    </div>
-    <div class="module regular narrative">
+    </section>
+    <section class="row narrative">
       <h2 class="heading-2">Thanks</h2>
       <p class="paragraph">This project was inspired by <a class="link" href="https://stamps.vla.so/">Eugene Vlasov's Stamps</a>. <a class="link" href="https://github.com/googlefonts/comforter">Title font</a> is by Robert Leuschke. <a class="link" href="https://github.com/IBM/plex">Main font</a> and <a class="link" href="https://www.ibm.com/design/language/iconography/ui-icons/library">icons</a> are by IBM.</p>
-    </div>
+    </section>
   </main> 
-  <footer class="page-footer module regular content">
+  <footer class="footer container content">
     <p class="caption">Created by Otaniyoz in 2024</p>
   </footer>
 </body>

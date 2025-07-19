@@ -1,9 +1,0 @@
-@import url('../../styles/variables.css');
-@import url('../../styles/core.css');
-@import url('../../styles/grid.css');
-@import url('../../styles/fonts.css');
-@import url('../../styles/link.css');
-
-.murals-screens {
-  height: fit-content;
-}
