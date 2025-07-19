@@ -4,7 +4,7 @@
 @import url('../../styles/grid.css');
 @import url('../../styles/variables.css');
 
-body {
+.webpage {
   --text-main: 250, 250, 250; 
   --background-main: 0, 13, 7;
 }
