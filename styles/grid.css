@@ -2,96 +2,8 @@
   display: grid;
 }
 
-.rows {
-  grid-template-rows: repeat(16, 1fr);
-}
-
 .cols {
-  grid-template-columns: repeat(16, 1fr);
-}
-
-.grid.s {
-  gap: clamp(0.25rem, 0.5vw, 1rem);
-}
-
-.grid.m {
-  gap: clamp(0.5rem, 1vw, 2rem);
-}
-
-.grid.l {
-  gap: clamp(1rem, 2vw, 4rem);
-}
-
-.col {
-  grid-column: auto / span calc(1 * var(--scale, 1));
-}
-
-.x3s {
-  --scale: 0;
-}
-
-.x2s {
-  --scale: 1;
-}
-
-.xxs {
-  --scale: 2;
-}
-
-.xs {
-  --scale: 3;
-}
-
-.s {
-  --scale: 4;
-}
-
-.m {
-  --scale: 5;
-}
-
-.l {
-  --scale: 6;
-}
-
-.xl {
-  --scale: 7;
-}
-
-.xxl {
-  --scale: 8;
-}
-
-.x2l {
-  --scale: 9;
-}
-
-.x3l {
-  --scale: 10;
-}
-
-.x4l {
-  --scale: 11;
-}
-
-.x5l {
-  --scale: 12;
-}
-
-.x6l {
-  --scale: 13;
-}
-
-.x7l {
-  --scale: 14;
-}
-
-.x8l {
-  --scale: 15;
-}
-
-.x9l {
-  --scale: 16;
+  grid-template-columns: var(--grid-cols, repeat(16, 1fr));
 }
 
 .stack {
@@ -102,24 +14,61 @@
   grid-area: stack;
 }
 
-@media screen and (max-width:  479px) {
-  .col.xs,
-  .col.s,
-  .col.m,
-  .col.l,
-  .col.xl,
-  .col.xxl,
-  .col.xxxl {
-    grid-column: 1 / -1;
+.gap {
+  gap: var(--grid-gap, clamp(0.5rem, calc(var(--scale, 1) * 2ch), 1.5rem));
+}
+
+.span2 { grid-column: auto / span 2; }
+.span3 { grid-column: auto / span 3; }
+.span4 { grid-column: auto / span 4; }
+.span5 { grid-column: auto / span 5; }
+.span6 { grid-column: auto / span 6; }
+.span7 { grid-column: auto / span 7; }
+.span8 { grid-column: auto / span 8; }
+.span9 { grid-column: auto / span 9; }
+.span10 { grid-column: auto / span 10; }
+.span11 { grid-column: auto / span 11; }
+.span12 { grid-column: auto / span 12; }
+.span13 { grid-column: auto / span 13; }
+.span14 { grid-column: auto / span 14; }
+.span15 { grid-column: auto / span 15; }
+.span16 { grid-column: 1 / -1; }
+
+@media screen and (max-width: 430px) {
+  .cols {
+    grid-template-columns: 1;
   }
 
-  .cols {
-    grid-template-columns: repeat(1, 1fr);
+  .span2,
+  .span3,
+  .span4,
+  .span5,
+  .span6,
+  .span7,
+  .span8,
+  .span9,
+  .span10,
+  .span11,
+  .span12,
+  .span13,
+  .span14,
+  .span15 { 
+    grid-column: 1 / -1; 
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width:  720px) {
   .cols {
     grid-template-columns: repeat(8, 1fr);
+  }
+
+  .span9,
+  .span10,
+  .span11,
+  .span12,
+  .span13,
+  .span14,
+  .span15 { 
+    grid-column: 1 / -1; 
   }
 }
