@@ -1,0 +1,35 @@
+.list-wrapper {
+}
+
+.list-wrapper * {
+  width: fit-content;
+}
+
+.list {
+  list-style: none;
+}
+
+.list-item {
+  min-height: 1.3em;
+  line-height: 1.3em;
+  margin-bottom: 0.5em;
+  font-size: var(--font-size-regular);
+}
+
+.list > .list-item:first-child {
+  margin-top: -0.6em;
+}
+
+ol.list {
+  counter-reset: list;
+}
+
+ol.list .list-item:before {
+  counter-increment: list;
+  content: counter(list) ". ";
+  font-variant-numeric: tabular-nums;
+}
+
+ul.list .list-item {
+  margin-left: 2ch;
+}
