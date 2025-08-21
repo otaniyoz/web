@@ -9,7 +9,6 @@
   vertical-align: baseline;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
-  letter-spacing: clamp(-0.075em, calc(sign(1rem - 1em) * 0.025em + 0.025rem), 0.075em);
 }
 
 *,
@@ -41,7 +40,8 @@
   min-height: 100vh;
   font-family: "Inter", sans-serif;
   color: rgb(var(--text-main));
-  background: rgb(var(--background-main));  
+  background: rgb(var(--background-main));
+  letter-spacing: clamp(-0.075em, calc(sign(1rem - 1em) * 0.025em + 0.025rem), 0.075em);
 }
 
 .header {
@@ -149,7 +149,7 @@
 }
 
 .small-capitals {
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1em !important;
   font-variant: small-caps;
   text-transform: uppercase;
 }
