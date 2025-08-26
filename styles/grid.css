@@ -34,18 +34,11 @@
 .span15 { grid-column: auto / span 15; }
 .span16 { grid-column: 1 / -1; }
 
-@media screen and (max-width: 430px) {
+@media (min-width: 431px) and (max-width:  720px) {
   .cols {
-    grid-template-columns: 1;
+    grid-template-columns: repeat(8, 1fr);
   }
 
-  .span2,
-  .span3,
-  .span4,
-  .span5,
-  .span6,
-  .span7,
-  .span8,
   .span9,
   .span10,
   .span11,
@@ -57,11 +50,18 @@
   }
 }
 
-@media screen and (max-width:  720px) {
+@media (max-width: 430px) {
   .cols {
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: 1fr;
   }
 
+  .span2,
+  .span3,
+  .span4,
+  .span5,
+  .span6,
+  .span7,
+  .span8,
   .span9,
   .span10,
   .span11,
