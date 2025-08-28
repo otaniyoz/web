@@ -34,7 +34,7 @@
 .span15 { grid-column: auto / span 15; }
 .span16 { grid-column: 1 / -1; }
 
-@media (min-width: 431px) and (max-width:  720px) {
+@media (min-width: 431px) and (max-width:  768px) {
   .cols {
     grid-template-columns: repeat(8, 1fr);
   }
