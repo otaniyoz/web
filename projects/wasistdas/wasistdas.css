@@ -3,8 +3,6 @@
 @import url('../../styles/core.css');
 @import url('../../styles/grid.css');
 @import url('../../styles/link.css');
-@import url('../../styles/carousel.css');
-@import url('../../styles/x-translation.css');
 @import url('../../styles/device-frames.css');
 
 .webpage {
@@ -45,4 +43,10 @@
 @keyframes fade-in-inverted-image {
   0% { filter: none; }
   100% { filter: invert() contrast(85%) brightness(85%) hue-rotate(180deg); }
+}
+
+@media (max-width: 430px) {
+  .phone {
+    margin-inline: 16vw;
+  }
 }
