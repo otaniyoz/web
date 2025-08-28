@@ -23,13 +23,9 @@
   --browser-text-color: rgba(var(--text-main), 0.25);
 }
 
-.desktop-wrapper {
-  padding-inline: clamp(0.5rem, calc(0.5*(var(--padding-scale, 1)*4vw - 1vmin)), 10rem);
-  border-bottom: 1px solid rgba(var(--text-main), 0.25);
-}
-
-.desktop-dark-wrapper {
+.desktop {
   --desktop-browser-margin: 0;
+  aspect-ratio: 1.91;
 }
 
 .desktop-dark {
