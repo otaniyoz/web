@@ -12,6 +12,14 @@
   --frame-text-color: rgba(136, 136, 136, 0.3);
 }
 
+.phone {
+  aspect-ratio: 0.44;
+}
+
+.tablet {
+  aspect-ratio: 0.7;
+}
+
 .murals-dark-theme {
   --frame-background: rgb(17, 17, 17);
 }

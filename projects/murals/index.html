@@ -41,21 +41,30 @@
       <h2 class="heading-2 narrative">The interface is intentionally minimal to let people focus on artworks</h2>
       <figure class="media-container">
         <p class="paragraph narrative">Lazy loaded images are displayed on a single long page.</p>
-        <video class="video media" width="2" height="1" autoplay loop muted>
-          <source src="videos/loading.mp4" type="video/mp4" />
-        </video>
+        <div class="media grid stack">
+          <img width="1.81" height="1" class="image" src="images/fallback-1.webp" decoding="async" />
+          <video class="video" width="1.81" height="1" autoplay loop muted>
+            <source src="videos/loading.mp4" type="video/mp4" />
+          </video>
+        </div>
       </figure>
       <figure class="media-container">
         <p class="paragraph narrative">Artworks can be filtered by artist, location, genre, object, and year.</p>
-        <video class="video media" width="2" height="1" autoplay loop muted>
-          <source src="videos/filtering.mp4" type="video/mp4" />
-        </video>
+        <div class="media grid stack">
+          <img width="1.81" height="1" class="image" src="images/fallback-2.webp" decoding="async" />
+          <video class="video" width="1.81" height="1" autoplay loop muted>
+            <source src="videos/filtering.mp4" type="video/mp4" />
+          </video>
+        </div>
       </figure>
       <figure class="media-container">
         <p class="paragraph narrative">Each artwork can be expanded into a gallery view with additional information displayed whenever available.</p>
-        <video class="video media" width="2" height="1" autoplay loop muted>
-          <source src="videos/gallery.mp4" type="video/mp4" />
-        </video>
+        <div class="media grid stack">
+          <img width="1.81" height="1" class="image" src="images/fallback-3.webp" decoding="async" />
+          <video class="video" width="1.81" height="1" autoplay loop muted>
+            <source src="videos/gallery.mp4" type="video/mp4" />
+          </video>
+        </div>
       </figure>
     </section>
     <section class="row">
@@ -67,7 +76,7 @@
             <div class="frame phone">
               <div class="status-bar"></div>
               <div class="browser">
-                <img loading="lazy" class="image browser-content" src="images/russian.webp" alt="" />
+                <img width="0.46" height="1" class="image browser-content" src="images/russian.webp" loading="lazy" decoding="async" />
                 <div class="browser-bottom"></div>
               </div>
             </div>
@@ -79,19 +88,19 @@
             <div class="frame phone">
               <div class="status-bar"></div>
               <div class="browser">
-                <img loading="lazy" class="image browser-content" src="images/light.webp" alt="" />
+                <img width="0.46" height="1" class="image browser-content" src="images/light.webp" loading="lazy" decoding="async" />
                 <div class="browser-bottom"></div>
               </div>
             </div>
           </div>
         </div>
         <div class="span6">
-          <p class="paragraph narrative">And it responds nicely to different screen sizes so that artworks are always displayed optimally.</p>
+          <p class="paragraph narrative">Layout responds nicely to different screen sizes.</p>
           <div class="frame-wrapper media-container murals-dark-theme">
             <div class="frame tablet">
               <div class="status-bar"></div>
               <div class="browser">
-                <img loading="lazy" class="image browser-content" src="images/tablet.webp" alt="" />
+                <img width="0.75" height="1" class="image browser-content" src="images/tablet.webp" loading="lazy" decoding="async" />
                 <div class="browser-bottom"></div>
               </div>
             </div>
@@ -101,7 +110,7 @@
     </section>
     <section class="row narrative">
       <h2 class="heading-2">Technically speaking</h2>
-      <p class="paragraph">In the general spirit of the project, webpage was implemented from scratch without frameworks or third-party libraries. The gallery is dynamically built on the client and data are fetched from a single JSON. User preferences, layout, responsiveness, gallery view - all are managed on the client in pure JavaScript as well.</p>
+      <p class="paragraph">In the general spirit of the project, webpage was implemented from scratch without frameworks or third-party libraries. User preferences, layout, responsiveness, gallery view - all are managed on the client in pure JavaScript as well.</p>
       <p class="paragraph">The project was developed progressively: the main goal was to ship a working good enough version fast and cheap sacrificing nonessential functionality to meet the constraints. This means that there are things that can be improved and added. This also means this project went from idea to web in around two days including time for taking and editing first batch of photographs, and researching.</p>
     </section>
     <section class="row narrative">
