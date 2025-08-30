@@ -12,6 +12,10 @@
   text-decoration-color: rgb(var(--accent-secondary));
 }
 
+.onpage-link {
+  text-decoration-style: dashed;
+}
+
 .external-link {
   transition: 0.25s;
   display: inline-block;
